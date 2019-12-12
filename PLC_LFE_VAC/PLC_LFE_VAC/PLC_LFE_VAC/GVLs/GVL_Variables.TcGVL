@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+  <GVL Name="GVL_Variables" Id="{0b31be2f-6c9a-4798-a48f-4b64605f971e}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+VAR_GLOBAL
+	{attribute 'pytmc' := 'pv:VAC:OVRDON'}
+	xSystemOverrideMode: BOOL; (* Global system override for the HXR Vacuum System*)
+	xEBD_FEE_MPS_OK: BOOL := TRUE;
+	xH1_1_H1_2_MPS_OK: BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
