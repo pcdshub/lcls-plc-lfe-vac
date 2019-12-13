@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4022.22">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4022.30">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -144,13 +144,13 @@
 		<ImageData Id="1012">424dba000000000000004a00000028000000100000000e000000010004000000000070000000c30e0000c30e0000050000000500000000000000ff00ff0080808000007fff0000ff000011111111111111110000000000000000020202020000044004040404000004400000000000000000000000000000000002020202000004400404040400000440000000000000000033333311111111113333331111111111333333111111111133333311111111113333331111111111</ImageData>
 		<ImageData Id="1013">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{50E9F7F6-4DDA-4056-B3EC-19F5903640D3}" Target64Bit="true" ShowHideConfigurations="#x306">
+	<Project ProjectGUID="{50E9F7F6-4DDA-4056-B3EC-19F5903640D3}" TargetNetId="172.21.148.145.1.1" ShowHideConfigurations="#x306">
 		<System>
 			<Licenses>
 				<Target>
 					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
-					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</ManualSelect>
+					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect Instances="1">{103F30C9-DF25-439E-837B-9DF80CB9356C}</ManualSelect>
 					<ManualSelect>{B27B051A-CA6A-42EA-833E-82CC92903D83}</ManualSelect>
 				</Target>
