@@ -4,8 +4,6 @@
     <Declaration><![CDATA[//{attribute 'qualified_only'}
 VAR_GLOBAL
 	
-number:	INT;
-	
 
 (*TRANSPORT VACUUM 1 HXR 0 LINE*) //HXR INSTALLATION SECTION 1
 	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E1_EL1004]^Channel 1^Input;
@@ -107,7 +105,7 @@ number:	INT;
 		pv: MBXPM1:PIP:01
 		io: io
 	'}
-	MBXPM1_PIP_01 : FB_PIP_Gamma;
+	IM1L0_XTES_PIP_01 : FB_PIP_Gamma;
 	
 (*TV2L0*)
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E7_EL3064]^AI Standard Channel 1^Value;
