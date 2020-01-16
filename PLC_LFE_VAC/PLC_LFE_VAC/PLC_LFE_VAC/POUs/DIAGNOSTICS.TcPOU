@@ -4,7 +4,7 @@
     <Declaration><![CDATA[PROGRAM DIAGNOSTICS
 VAR
 	//Change the PLC String Name to the actual PLC NAME
-	sPLCName :STRING := 'PLC-VAC';
+	sPLCName :STRING := 'PLC-LFE-VAC';
 	//Link the sAMSNetID to the Etherat Master netID
 	i_sAMSNetID AT %I*: AMSNETID;
 	// DO NOT CHANGE
