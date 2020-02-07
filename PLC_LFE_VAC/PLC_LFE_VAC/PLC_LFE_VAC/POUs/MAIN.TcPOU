@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{53e436ba-9af9-4ca4-ad7b-a6b2399fa417}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -88,7 +88,7 @@ END_IF
 	
 	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>);
 	
-	TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>);
+	//TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>);
 	
 	TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>);
 	

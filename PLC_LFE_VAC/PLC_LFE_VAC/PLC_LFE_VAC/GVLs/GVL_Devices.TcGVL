@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_Devices" Id="{1e099b9b-502c-4923-9f77-b69bd66fefa8}">
     <Declaration><![CDATA[//{attribute 'qualified_only'}
 VAR_GLOBAL
@@ -158,25 +158,13 @@ VAR_GLOBAL
 	
 	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E18_EL3064]^AI Standard Channel 1^Value;
 								 .q_xHV_DIS		:= 	TIIB[MKS_E20_EL2794]^Channel 1^Output
-	'}
-	{attribute 'pytmc' := '
-		pv: TV2L0:GFS:01
-		io: io
-	'}
-	TV2L0_GFS_01 : FB_MKS422;
-	
-(*	{attribute 'TcLinkTo' := 	'.i_xTrigger	:=	OtherPLCTask;
-								 .q_xPress_OK		:= 	OtherPLCTask
-	'}
-//									 .q_xTrigger	:=	TIIB[]^^;
-//								 .q_xAT_VAC		:=	TIIB[]^^;
-//								 .q_xPRESS_OK	:=	TIIB[]^^;
+	'}	
 	{attribute 'pytmc' := '
 		pv: TV2L0:GFS:01
 		io: io
 	'}	
-	TV2L0_GFS_01_Interface	:	FB_GFS;
-*)	
+	TV2L0_GFS_01	:	FB_MKS422;
+	
 	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E5_EL3064]^AI Standard Channel 1^Value
 	'}
 	{attribute 'pytmc' := '
@@ -319,13 +307,20 @@ VAR_GLOBAL
 		io: io
 	'}
 	PA1L0_PIN_01 : FB_PIP_Gamma; //PIN???	
-(*
+	
+	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK;
+								 .q_xVAC_FAULT_Reset:= 	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault;
+								 .i_xTrigger		:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger;
+								 .i_xVFS_Open		:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Open;
+								 .i_xVFS_Closed		:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed;
+								 .i_xVAC_FAULT_OK	:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVAC_FAULT_OK
+	'}
 	{attribute 'pytmc' := '
 		pv: PA1L0:VFS:01
 		io: io
-	'}
-	PA1L0_VFS_01 : FB_VFS;
-*)	
+	'}	
+	PA1L0_VFS_01	:	FB_VFS_Interface;
+	
 	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E15_EL3064]^AI Standard Channel 1^Value
 	'}
 	{attribute 'pytmc' := '
@@ -494,6 +489,20 @@ VAR_GLOBAL
 		io: io
 	'}
 	MR2L0_HOMS_VGC_02 : FB_VGC;	
+	
+		
+	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
+								 .q_xVAC_FAULT_Reset:= 	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault;
+								 .i_xTrigger		:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
+								 .i_xVFS_Open		:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
+								 .i_xVFS_Closed		:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
+								 .i_xVAC_FAULT_OK	:=	TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK
+	'}
+	{attribute 'pytmc' := '
+		pv: TV3L0:VFS:01
+		io: io
+	'}	
+	TV3L0_VFS_01_Interface	:	FB_VFS_Interface;
 
 (*TV1L1*)
 	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 5^Input;
@@ -692,6 +701,7 @@ VAR_GLOBAL
 		io: io
 	'}
 	TV5L0_GFS_01 : FB_MKS422;
+
 	
 	
 (*TV6L0*)
