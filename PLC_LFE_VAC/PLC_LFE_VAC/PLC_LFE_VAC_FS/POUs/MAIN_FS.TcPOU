@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="MAIN_FS" Id="{cd87fa27-2963-491a-8560-055b56a6fb32}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN_FS
+VAR
+	i_xFFReset: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[PA1L0_VFS_01(
+	i_xPMPS_OK:= TRUE, 
+	i_xExt_OK:= TRUE, 
+	i_xOverrideMode:= FALSE, 
+	iq_stValve=> );
+	
+TV3L0_VFS_01(
+	i_xPMPS_OK:= TRUE, 
+	i_xExt_OK:= TRUE, 
+	i_xOverrideMode:= FALSE, 
+	iq_stValve=> );]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN_FS">
+      <LineId Id="28" Count="0" />
+      <LineId Id="30" Count="4" />
+      <LineId Id="36" Count="3" />
+      <LineId Id="35" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
