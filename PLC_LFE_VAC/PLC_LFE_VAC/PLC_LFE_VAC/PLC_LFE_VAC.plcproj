@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{7f027014-22a4-4112-b84c-c85c77085658}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
-    <Name>PLC_LFE_VAC</Name>
+    <Name>plc_lfe_vac</Name>
     <ProgramVersion>3.1.4022.3</ProgramVersion>
     <Application>{a9b01f43-4e18-4416-80cb-13bbbf91088d}</Application>
     <TypeSystem>{3657d7af-4f6d-4417-bebe-d9de64f690ae}</TypeSystem>
@@ -38,15 +38,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\PRG_Section_1.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\PRG_Section_2.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Task_4.TcTTO">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -94,7 +85,7 @@
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PLC_LFE_VAC.tmc">
+    <None Include="plc_lfe_vac.tmc">
       <SubType>Content</SubType>
     </None>
   </ItemGroup>

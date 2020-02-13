@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{11330276-c55f-4a32-8cc9-f4bab4b536e0}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
-    <Name>PLC_LFE_VAC_FS</Name>
+    <Name>plc_lfe_vac_fs</Name>
     <ProgramVersion>3.1.4022.7</ProgramVersion>
     <Application>{a1aac271-8474-437a-bd09-ad2a7b448c5b}</Application>
     <TypeSystem>{9a5fb774-f87f-473a-8ef3-7ebc9a49ae26}</TypeSystem>
@@ -16,10 +16,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GVLs\GVL_FS_Devices.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
-    </Compile>
-    <Compile Include="GVLs\GVL_FS_PMPS.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
@@ -74,7 +70,7 @@
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PLC_LFE_VAC_FS.tmc">
+    <None Include="plc_lfe_vac_fs.tmc">
       <SubType>Content</SubType>
     </None>
   </ItemGroup>

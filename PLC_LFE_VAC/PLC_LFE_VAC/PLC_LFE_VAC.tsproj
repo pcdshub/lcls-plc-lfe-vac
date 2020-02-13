@@ -25,8 +25,8 @@
 			<Licenses>
 				<Target>
 					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
-					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</ManualSelect>
+					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect Instances="1">{103F30C9-DF25-439E-837B-9DF80CB9356C}</ManualSelect>
 					<ManualSelect>{B27B051A-CA6A-42EA-833E-82CC92903D83}</ManualSelect>
 				</Target>
@@ -35,15 +35,12 @@
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="4" Priority="1" CycleTime="100000" AmsPort="351" AdtTasks="true">
-					<Name>Task_Disable</Name>
-				</Task>
 			</Tasks>
 		</System>
 		<Plc>
-			<Project GUID="{7F027014-22A4-4112-B84C-C85C77085658}" Name="PLC_LFE_VAC" PrjFilePath="PLC_LFE_VAC\PLC_LFE_VAC.plcproj" TmcFilePath="PLC_LFE_VAC\PLC_LFE_VAC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="1" TmcPath="PLC_LFE_VAC\PLC_LFE_VAC.tmc">
-					<Name>PLC_LFE_VAC Instance</Name>
+			<Project GUID="{7F027014-22A4-4112-B84C-C85C77085658}" Name="plc_lfe_vac" PrjFilePath="plc_lfe_vac\plc_lfe_vac.plcproj" TmcFilePath="plc_lfe_vac\plc_lfe_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="1" TmcPath="plc_lfe_vac\plc_lfe_vac.tmc">
+					<Name>plc_lfe_vac Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
@@ -1030,12 +1027,11 @@
 						</OwnerA>
 					</UnrestoredVarLinks>
 					<TaskPouOids>
-						<TaskPouOid Prio="1" OTCID="#x08502001"/>
 						<TaskPouOid Prio="20" OTCID="#x08502002"/>
 					</TaskPouOids>
 				</Instance>
 			</Project>
-			<Project File="PLC_LFE_VAC_FS.xti"/>
+			<Project File="plc_lfe_vac_fs.xti"/>
 		</Plc>
 		<Io>
 			<Device File="Device 1 (EtherCAT).xti" Id="1"/>
@@ -1044,8 +1040,8 @@
 	<Mappings>
 		<MappingInfo Identifier="{00000000-2002-0850-0020-500840205008}" Id="#x02030030"/>
 		<MappingInfo Identifier="{00000000-2041-0850-4020-500810000403}" Id="#x02030020"/>
-		<MappingInfo Identifier="{00000000-2002-0850-0120-500810000403}" Id="#x02030010"/>
-		<OwnerA Name="TIPC^PLC_LFE_VAC^PLC_LFE_VAC Instance">
+		<MappingInfo Identifier="{00000000-2002-0850-0020-500810000403}" Id="#x02030010"/>
+		<OwnerA Name="TIPC^plc_lfe_vac^plc_lfe_vac Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FEE_Stands^FEE_L0S10_EP1_EP2338-0002">
 				<Link VarA="PlcTask Inputs^GVL_Devices.MR1L0_HOMS_VGC_01.i_xClsLS" VarB="Channel 2^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.MR1L0_HOMS_VGC_01.i_xOpnLS" VarB="Channel 1^Input" AutoLink="true"/>
@@ -1289,7 +1285,7 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_EBD^EBD_E0_EK1100^EBD_E8_EL2794">
 				<Link VarA="PlcTask Outputs^MAIN.q_xUpstreamTreaty_PressOK" VarB="Channel 1^Output" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIPC^PLC_LFE_VAC_FS^PLC_LFE_VAC_FS Instance">
+			<OwnerB Name="TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance">
 				<Link VarA="PlcTask Inputs^GVL_Devices.PA1L0_VFS_01.i_xTrigger" VarB="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.PA1L0_VFS_01.i_xVAC_FAULT_OK" VarB="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.PA1L0_VFS_01.i_xVFS_Closed" VarB="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>

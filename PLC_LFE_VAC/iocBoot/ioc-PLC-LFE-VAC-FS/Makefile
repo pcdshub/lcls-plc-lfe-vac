@@ -3,7 +3,7 @@ IOC_INSTANCE_PATH := $(shell pwd)
 
 PROJECT_NAME = plc_lfe_vac
 PROJECT_PATH := ../../plc_lfe_vac/plc_lfe_vac.tsproj
-PLC = plc_lfe_vac
+PLC = plc_lfe_vac_fs
 
 PYTMC_OPTS = 
 PREFIX = PREFIX:
