@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNestedPlcProjDef">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
+			<BitSize>48</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+			<Format>
+				<Printf>%d.%d.%d.%d.%d.%d</Printf>
+				<Parameter>[0]</Parameter>
+				<Parameter>[1]</Parameter>
+				<Parameter>[2]</Parameter>
+				<Parameter>[3]</Parameter>
+				<Parameter>[4]</Parameter>
+				<Parameter>[5]</Parameter>
+			</Format>
+		</DataType>
+	</DataTypes>
+	<Project GUID="{11330276-C55F-4A32-8CC9-F4BAB4B536E0}" Name="plc_lfe_vac_fs" PrjFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.plcproj" TmcFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_lfe_vac_fs\plc_lfe_vac_fs.tmc">
+			<Name>plc_lfe_vac_fs Instance</Name>
+			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="1">
+				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>L2SI_Vacuum_Library.Global_Variables.g_stSystem.I_EcatMaster1</Name>
+					<Comment>
+						<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
+					</Comment>
+					<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+				</Var>
+				<Var>
+					<Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
+					<Comment>
+						<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
+					</Comment>
+					<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xCLS_SW</Name>
+					<Comment>
+						<![CDATA[external open signal e.g epics]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xTrigger</Name>
+					<Comment>
+						<![CDATA[ Could be Up to 4]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK</Name>
+					<Comment>
+						<![CDATA[To be linked to the Fast sensor structure signal IG.xPRESS_OK, to make sure that the device is connected]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault</Name>
+					<Comment>
+						<![CDATA[FFO iReset]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW</Name>
+					<Comment>
+						<![CDATA[external open signal e.g epics]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xTrigger</Name>
+					<Comment>
+						<![CDATA[ Could be Up to 4]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK</Name>
+					<Comment>
+						<![CDATA[To be linked to the Fast sensor structure signal IG.xPRESS_OK, to make sure that the device is connected]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault</Name>
+					<Comment>
+						<![CDATA[FFO iReset]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="2">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xClose_A</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xClose_B</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xClose_C</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger</Name>
+					<Comment>
+						<![CDATA[Interface]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Open</Name>
+					<Comment>
+						<![CDATA[Interface]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed</Name>
+					<Comment>
+						<![CDATA[Interface]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xVAC_FAULT_OK</Name>
+					<Comment>
+						<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xMPS_OK</Name>
+					<Comment>
+						<![CDATA[MPS Fault OK, is set when the Valve is Open and there is no trigger]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xClose_A</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xClose_B</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xClose_C</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger</Name>
+					<Comment>
+						<![CDATA[Interface]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open</Name>
+					<Comment>
+						<![CDATA[Interface]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed</Name>
+					<Comment>
+						<![CDATA[Interface]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK</Name>
+					<Comment>
+						<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK</Name>
+					<Comment>
+						<![CDATA[MPS Fault OK, is set when the Valve is Open and there is no trigger]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="8">
+				<Name>PlcTask Retains</Name>
+				<Var>
+					<Name>PMPS_GVL.SuccessfulPreemption</Name>
+					<Comment>
+						<![CDATA[ Any time BPTM applies a new BP request which is confirmed]]>
+					</Comment>
+					<Type>ULINT</Type>
+					<InOut>7</InOut>
+				</Var>
+				<Var>
+					<Name>PMPS_GVL.AccumulatedFF</Name>
+					<Comment>
+						<![CDATA[ Any time a FF occurs]]>
+					</Comment>
+					<Type>ULINT</Type>
+					<InOut>7</InOut>
+				</Var>
+			</Vars>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502041"/>
+			</TaskPouOids>
+		</Instance>
+	</Project>
+	<Mappings>
+		<OwnerA Name="plc_lfe_vac_fs Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E7_EK1122_QpcMks^MKS_E0_EK1100^MKS_E22_EL1124">
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xTrigger" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xTrigger" VarB="Channel 2^Input" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E1_EL1004">
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xClsLS" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E3_EL2212">
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_A" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_B" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E4_EL2212">
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_C" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xOPN_DO" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E1_EL1004">
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xClsLS" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E3_EL2212">
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xClose_A" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xClose_B" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E4_EL2212">
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xClose_C" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xOPN_DO" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>

@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_Devices" Id="{1e099b9b-502c-4923-9f77-b69bd66fefa8}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+
+(*TRANSPORT VACUUM 1 HXR 0 LINE*) //HXR INSTALLATION SECTION 1
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E1_EL1004]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[EBD_E1_EL1004]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[EBD_E2_EL2004]^Channel 1^Output;
+								 .q_xOPN_DO_2	:=	TIIB[EBD_E2_EL2004]^Channel 2^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV1L0:VGC:01
+		io: io
+	'}
+	TV1L0_VGC_01 : FB_VGC_EBD;
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E2_EL3064]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: TV1L0:GPI:01
+		io: io
+	'}
+	TV1L0_GPI_01 : FB_MKS317;
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E1_EL3064]^AI Standard Channel 1^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E3_EL2794]^Channel 1^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV1L0:GCC:01
+		io: io
+	'}
+	TV1L0_GCC_01 : FB_MKS422;
+	
+(*RAPID TRANSIT DIAGNOSTIC STAND HXR 0 LINE*)
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E1_EL3064]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E2_EL1004]^Channel 1^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 1^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: RTDSL0:VAC:PIP:01
+		io: io
+	'}
+	RTDSL0_PIP_01 : FB_PIP_Gamma;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E1_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E2_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: RTDSL0:VAC:PIP:02
+		io: io
+	'}
+	RTDSL0_PIP_02 : FB_PIP_Gamma;
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E1_EL3064]^AI Standard Channel 3^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E2_EL1004]^Channel 3^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 3^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: RTDSL0:VAC:PIP:03
+		io: io
+	'}
+	RTDSL0_PIP_03 : FB_PIP_Gamma;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E1_EL3064]^AI Standard Channel 4^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E2_EL1004]^Channel 4^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 4^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: RTDSL0:VAC:PIP:04
+		io: io
+	'}
+	RTDSL0_PIP_04 : FB_PIP_Gamma;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 1^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E6_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: RTDSL0:VAC:PIP:05
+		io: io
+	'}
+	RTDSL0_PIP_05 : FB_PIP_Gamma;
+
+(* IM1L0-XTES*) //HXR INSTALLATION SECTION 2
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E1_EL1004]^Channel 3^Input;
+								 .i_xClsLS	:=	TIIB[EBD_E1_EL1004]^Channel 4^Input;
+								 .q_xOPN_DO	:=	TIIB[EBD_E2_EL2004]^Channel 3^Output;
+								 .q_xOPN_DO_2	:=	TIIB[EBD_E2_EL2004]^Channel 4^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: IM1L0:XTES:VGC:01
+		io: io
+	'}
+	IM1L0_XTES_VGC_01 : FB_VGC_EBD;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E6_EL2794]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: MBXPM1:PIP:01
+		io: io
+	'}
+	IM1L0_XTES_PIP_01 : FB_PIP_Gamma;
+	
+(*TV2L0*)
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E7_EL3064]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E8_EL1004]^Channel 1^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E9_EL2794]^Channel 1^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV2L0:PIP:01
+		io: io
+	'}
+	TV2L0_PIP_01 : FB_PIP_Gamma;
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E2_EL3064]^AI Standard Channel 2^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: TV2L0:GPI:01
+		io: io
+	'}
+	TV2L0_GPI_01 : FB_MKS317;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E1_EL3064]^AI Standard Channel 3^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E3_EL2794]^Channel 3^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: TV2L0:GCC:01
+		io: io
+	'}
+	TV2L0_GCC_01 : FB_MKS422;
+	//HXR INSTALLATION SECTION 3
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E3_EL1004]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[EBD_E3_EL1004]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[EBD_E4_EL2004]^Channel 1^Output;
+								 .q_xOPN_DO_2	:=	TIIB[EBD_E4_EL2004]^Channel 2^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV2L0:VGC:01
+		io: io
+	'}
+	TV2L0_VGC_01 : FB_VGC_EBD;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E7_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E8_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E9_EL2794]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: TV2L0:PIP:02
+		io: io
+	'}
+	TV2L0_PIP_02 : FB_PIP_Gamma;
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E18_EL3064]^AI Standard Channel 1^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E20_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: TV2L0:GFS:01
+		io: io
+	'}	
+	TV2L0_GFS_01	:	FB_MKS422;
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E5_EL3064]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: TV2L0:GPI:02
+		io: io
+	'}
+	TV2L0_GPI_02 : FB_MKS317;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E4_EL3064]^AI Standard Channel 1^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E6_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: TV2L0:GCC:02
+		io: io
+	'}
+	TV2L0_GCC_02 : FB_MKS422;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E7_EL3064]^AI Standard Channel 3^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E8_EL1004]^Channel 3^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E9_EL2794]^Channel 3^Output
+	'}		
+	{attribute 'pytmc' := '
+		pv: TV2L0:PIP:03
+		io: io
+	'}
+	TV2L0_PIP_03 : FB_PIP_Gamma;
+	
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S2_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S2_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S2_EP1_EP2338-0002]^Channel 11^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV2L0:VGC:02
+		io: io
+	'}
+	TV2L0_VGC_02 : FB_VGC;
+	
+(*SL1L0-POWER*) //HXR INSTALLATION SECTION 4
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E9_EL3064]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: SL1L0:POWER:GPI:01
+		io: io
+	'}
+	SL1L0_POWER_GPI_01 : FB_MKS317;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E8_EL3064]^AI Standard Channel 1^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E10_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: SL1L0:POWER:GCC:01
+		io: io
+	'}
+	SL1L0_POWER_GCC_01 : FB_MKS422;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E21_EL3064]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E22_EL1004]^Channel 1^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 1^Output
+	'}		
+	{attribute 'pytmc' := '
+		pv: SL1L0:POWER:PIP:01
+		io: io
+	'}
+	SL1L0_POWER_PIN_01 : FB_PIP_Gamma;
+	
+(*AT2L0-SOLID*) //HXR INSTALLATION SECTION 6
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E9_EL3064]^AI Standard Channel 2^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: AT2L0:SOLID:GPI:01
+		io: io
+	'}
+	AT2L0_SOLID_GPI_01 : FB_MKS317;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E8_EL3064]^AI Standard Channel 3^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E10_EL2794]^Channel 3^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: AT2L0:SOLID:GCC:01
+		io: io
+	'}
+	AT2L0_SOLID_GCC_01 : FB_MKS422;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E21_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E22_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: AT2L0:SOLID:PIP:01
+		io: io
+	'}
+	AT2L0_SOLID_PIN_01 : FB_PIP_Gamma;
+	
+(*PC1L0-XTES*) //HXR INSTALLATION SECTION 7
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S8_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S8_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S8_EP1_EP2338-0002]^Channel 11^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: PC1L0:XTES:VGC:01
+		io: io
+	'}
+	PC1L0_XTES_VGC_01 : FB_VGC;	
+	
+(*SP1L0-KMONO*)	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E12_EL3064]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: SP1L0:KMONO:GPI:01
+		io: io
+	'}
+	SP1L0_KMONO_GPI_01 : FB_MKS317;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E11_EL3064]^AI Standard Channel 1^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E13_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: SP1L0:KMONO:GCC:01
+		io: io
+	'}
+	SP1L0_KMONO_GCC_01 : FB_MKS422;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E11_EL3064]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E12_EL1004]^Channel 1^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E13_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: SP1L0:KMONO:PIP:01
+		io: io
+	'}
+	SP1L0_KMONO_PIP_01 : FB_PIP_Gamma;
+	
+(*PA1L0*)
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E21_EL3064]^AI Standard Channel 3^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E22_EL1004]^Channel 3^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 3^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: PA1L0:PIN:01
+		io: io
+	'}
+	PA1L0_PIN_01 : FB_PIP_Gamma; //PIN???	
+	
+	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK;
+								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault;
+								 .i_xTrigger		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger;
+								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Open;
+								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed;
+								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVAC_FAULT_OK
+	'}
+	{attribute 'pytmc' := '
+		pv: PA1L0:VFS:01
+		io: io
+	'}	
+	PA1L0_VFS_01	:	FB_VFS_Interface;
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E15_EL3064]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: PA1L0:GPI:01
+		io: io
+	'}
+	PA1L0_GPI_01 : FB_MKS317;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E14_EL3064]^AI Standard Channel 1^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E16_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: PA1L0:GCC:01
+		io: io
+	'}
+	PA1L0_GCC_01 : FB_MKS422;
+	
+(*MR1L0-HOMS*) //HXR INSTALLATION SECTION 8
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 11^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: MR1L0:HOMS:VGC:01
+		io: io
+	'}
+	MR1L0_HOMS_VGC_01 : FB_VGC;	
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E15_EL3064]^AI Standard Channel 2^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: MR1L0:HOMS:GPI:01
+		io: io
+	'}
+	MR1L0_HOMS_GPI_01 : FB_MKS317;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E14_EL3064]^AI Standard Channel 3^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E16_EL2794]^Channel 3^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: MR1L0:HOMS:GCC:01
+		io: io
+	'}
+	MR1L0_HOMS_GCC_01 : FB_MKS422;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E11_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E12_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E13_EL2794]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: MR1L0:HOMS:PIP:01
+		io: io
+	'}
+	MR1L0_HOMS_PIP_01 : FB_PIP_Gamma;
+	
+(*MR1L1-TXI*)
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S14_EP2_EP3174-0002]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: MR1L1:TXI:GPI:01
+		io: io
+	'}
+	MR1L1_TXI_GPI_01 : FB_MKS275;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S14_EP2_EP3174-0002]^AI Standard Channel 2^Value;
+								 .q_xHV_DIS		:= 	TIIB[FEE_L0S14_EP3_EP2624-0002]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: MR1L1:TXI:GCC:01
+		io: io
+	'}
+	MR1L1_TXI_GCC_01 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 3^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 3^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 3^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: MR1L1:TXI:PIP:01
+		io: io
+	'}
+	MR1L1_TXI_PIP_01 : FB_PIP_Gamma;
+	
+(*BT2L0-PLEG*) //HXR INSTALLATION SECTION 9
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S14_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S14_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S14_EP1_EP2338-0002]^Channel 11^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: BT2L0:PLEG:VGC:01
+		io: io
+	'}
+	BT2L0_PLEG_VGC_01 : FB_VGC;	
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S14_EP2_EP3174-0002]^AI Standard Channel 3^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: BT2L0:PLEG:GPI:01
+		io: io
+	'}
+	BT2L0_PLEG_GPI_01 : FB_MKS275;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S14_EP2_EP3174-0002]^AI Standard Channel 4^Value;
+								 .q_xHV_DIS		:= 	TIIB[FEE_L0S14_EP3_EP2624-0002]^Channel 4^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: BT2L0:PLEG:GCC:01
+		io: io
+	'}
+	BT2L0_PLEG_GCC_01 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E11_EL3064]^AI Standard Channel 3^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E12_EL1004]^Channel 3^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E13_EL2794]^Channel 3^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: BT2L0:PLEG:PIP:01
+		io: io
+	'}
+	BT2L0_PLEG_PIP_01 : FB_PIP_Gamma;
+	
+(*MR2L0-HOMS*) //HXR INSTALLATION SECTION 10
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 11^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: MR2L0:HOMS:VGC:01
+		io: io
+	'}
+	MR2L0_HOMS_VGC_01 : FB_VGC;	
+	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S18_EP2_EP3174-0002]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: MR2L0:HOMS:GPI:01
+		io: io
+	'}
+	MR2L0_HOMS_GPI_01 : FB_MKS275;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S18_EP2_EP3174-0002]^AI Standard Channel 2^Value;
+								 .q_xHV_DIS		:= 	TIIB[FEE_L0S18_EP3_EP2624-0002]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: MR2L0:HOMS:GCC:01
+		io: io
+	'}
+	MR2L0_HOMS_GCC_01 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E11_EL3064]^AI Standard Channel 4^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E12_EL1004]^Channel 4^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E13_EL2794]^Channel 4^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: MR2L0:HOMS:PIP:01
+		io: io
+	'}
+	MR2L0_HOMS_PIP_01 : FB_PIP_Gamma;
+	
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 11^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: MR2L0:HOMS:VGC:02
+		io: io
+	'}
+	MR2L0_HOMS_VGC_02 : FB_VGC;	
+	
+		
+	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
+								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault;
+								 .i_xTrigger		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
+								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
+								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
+								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK
+	'}
+	{attribute 'pytmc' := '
+		pv: TV3L0:VFS:01
+		io: io
+	'}	
+	TV3L0_VFS_01_Interface	:	FB_VFS_Interface;
+
+(*TV1L1*)
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 5^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 6^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 15^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV1L1:VGC:01
+		io: io
+	'}
+	TV1L1_VGC_01 : FB_VGC;		
+
+(*TV3L0*) //HXR INSTALLATION SECTION 11
+(*
+	{attribute 'pytmc' := '
+		pv: TV3L0:VFS:01
+		io: io
+	'}
+	TV3L0_VFS_01 : FB_VFS;
+*)	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 1^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 1^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV3L0:PIP:01
+		io: io
+	'}
+	TV3L0_PIP_01 : FB_PIP_Gamma;
+	
+(*ST1L0-XTES*)
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S21-2_EP1_EP3174-0002]^AI Standard Channel 1^Value
+	'}
+	{attribute 'pytmc' := '
+		pv: ST1L0:XTES:GPI:01
+		io: io
+	'}
+	ST1L0_XTES_GPI_01 : FB_MKS275;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S21-2_EP1_EP3174-0002]^AI Standard Channel 2^Value;
+								 .q_xHV_DIS		:= 	TIIB[FEE_L0S21-2_EP2_EP2624-0002]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: ST1L0:XTES:GCC:01
+		io: io
+	'}
+	ST1L0_XTES_GCC_01 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: ST1L0:XTES:PIP:01
+		io: io
+	'}
+	ST1L0_XTES_PIP_01 : FB_PIP_Gamma;
+	
+(*PC2L1-L2SI*)
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 5^Input;
+								 .i_xClsLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 6^Input;
+								 .q_xOPN_DO	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 15^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: PC2L1:L2SI:VGC:01
+		io: io
+	'}
+	PC2L1_L2SI_VGC_01 : FB_VGC;
+	
+	(*
+
+(*TV4L0*) // Hutch 1.1
+	{attribute 'pytmc' := '
+		pv: TV4L0:GPI:01
+		io: io
+	'}
+	TV4L0_GPI_01 : FB_MKS275;
+	
+	{attribute 'pytmc' := '
+		pv: TV4L0:GCC:01
+		io: io
+	'}
+	TV4L0_GCC_01 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 1^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E19_EL2794]^Channel 1^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: TV4L0:PIP:01
+		io: io
+	'}
+	TV4L0_PIP_01 : FB_PIP_Gamma;
+	
+	{attribute 'pytmc' := '
+		pv: TV4L0:VGC:01
+		io: io
+	'}
+	TV4L0_VGC_01 : FB_VGC;
+	
+	{attribute 'pytmc' := '
+		pv: TV4L0:GPI:02
+		io: io
+	'}
+	TV4L0_GPI_02 : FB_MKS275;
+	
+	{attribute 'pytmc' := '
+		pv: TV4L0:GCC:02
+		io: io
+	'}
+	TV4L0_GCC_02 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E19_EL2794]^Channel 2^Output
+	'}		
+	{attribute 'pytmc' := '
+		pv: TV4L0:PIP:02
+		io: io
+	'}
+	TV4L0_PIP_02 : FB_PIP_Gamma;
+
+(*PA2L0*)
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E21_EL3064]^AI Standard Channel 4^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E22_EL1004]^Channel 4^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 4^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: PA2L0:PIN:01
+		io: io
+	'}
+	PA2L0_PIN_01 : FB_PIP_Gamma;
+
+(*TV5L0*) 
+	{attribute 'pytmc' := '
+		pv: TV5L0:VGC:01
+		io: io
+	'}
+	TV5L0_VGC_01 : FB_VGC;
+//Hutch 1.2
+	{attribute 'pytmc' := '
+		pv: TV5L0:GPI:01
+		io: io
+	'}
+	TV5L0_GPI_01 : FB_MKS275;
+	
+	{attribute 'pytmc' := '
+		pv: TV5L0:GCC:01
+		io: io
+	'}
+	TV5L0_GCC_01 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 3^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 3^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E19_EL2794]^Channel 3^Output
+	'}		
+	{attribute 'pytmc' := '
+		pv: TV5L0:PIP:01
+		io: io
+	'}
+	TV5L0_PIP_01 : FB_PIP_Gamma;
+	
+	{attribute 'pytmc' := '
+		pv: TV5L0:VGC:02
+		io: io
+	'}
+	TV5L0_VGC_02 : FB_VGC;
+	
+	{attribute 'pytmc' := '
+		pv: TV5L0:GPI:02
+		io: io
+	'}
+	TV5L0_GPI_02 : FB_MKS275;
+	
+	{attribute 'pytmc' := '
+		pv: TV5L0:GCC:02
+		io: io
+	'}
+	TV5L0_GCC_02 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 4^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 4^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E19_EL2794]^Channel 4^Output
+	'}		
+	{attribute 'pytmc' := '
+		pv: TV5L0:PIP:02
+		io: io
+	'}
+	TV5L0_PIP_02 : FB_PIP_Gamma;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E18_EL3064]^AI Standard Channel 3^Value;
+								 .q_xHV_DIS		:= 	TIIB[MKS_E20_EL2794]^Channel 2^Output
+	'}	
+	{attribute 'pytmc' := '
+		pv: TV5L0:GFS:01
+		io: io
+	'}
+	TV5L0_GFS_01 : FB_MKS422;
+
+	
+	
+(*TV6L0*)
+	{attribute 'pytmc' := '
+		pv: TV6L0:VGC:01
+		io: io
+	'}
+	TV6L0_VGC_01 : FB_VGC;
+	*)
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

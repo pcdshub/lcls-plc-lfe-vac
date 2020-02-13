@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_FS_Devices" Id="{e3ddbd4f-7af3-4e4d-8158-9278134aef15}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+
+	{attribute 'TcLinkTo' := 	'.i_xOPNLS	:=	TIIB[FSV1_E1_EL1004]^Channel 2^Input;
+								 .i_xClsLS	:=	TIIB[FSV1_E1_EL1004]^Channel 1^Input;
+								 .q_xClose_A	:=	TIIB[FSV1_E3_EL2212]^DOX Control Channel 1^Control^Output;
+								 .q_xClose_B	:=	TIIB[FSV1_E3_EL2212]^DOX Control Channel 2^Control^Output;
+								 .q_xClose_C	:=	TIIB[FSV1_E4_EL2212]^DOX Control Channel 1^Control^Output;
+								 .q_xOPN_DO		:=	TIIB[FSV1_E4_EL2212]^DOX Control Channel 2^Control^Output;
+								 .i_xTrigger	:= TIIB[MKS_E22_EL1124]^Channel 1^Input
+								 
+	'}
+	PA1L0_VFS_01 : FB_VFS;
+	
+	{attribute 'TcLinkTo' := 	'.i_xOPNLS	:=	TIIB[FSV2_E1_EL1004]^Channel 2^Input;
+								 .i_xClsLS	:=	TIIB[FSV2_E1_EL1004]^Channel 1^Input;
+								 .q_xClose_A	:=	TIIB[FSV2_E3_EL2212]^DOX Control Channel 1^Control^Output;
+								 .q_xClose_B	:=	TIIB[FSV2_E3_EL2212]^DOX Control Channel 2^Control^Output;
+								 .q_xClose_C	:=	TIIB[FSV2_E4_EL2212]^DOX Control Channel 1^Control^Output;
+								 .q_xOPN_DO		:=	TIIB[FSV2_E4_EL2212]^DOX Control Channel 2^Control^Output;
+								 .i_xTrigger	:= TIIB[MKS_E22_EL1124]^Channel 2^Input
+								 
+	'}
+	{attribute 'pytmc' := '
+		pv: PA1L0:VFS:01
+		io: io
+	'}
+	TV3L0_VFS_01 : FB_VFS;
+	
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
