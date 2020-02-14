@@ -1294,6 +1294,10 @@
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK" VarB="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" VarB="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open" VarB="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.PA1L0_VFS_01.q_xPRESS_OK" VarB="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.PA1L0_VFS_01.q_xVAC_FAULT_Reset" VarB="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xPRESS_OK" VarB="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" VarB="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

@@ -4,7 +4,7 @@
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
-epicsEnvSet("IOCNAME", "ioc-plc-lfe-vac" )
+epicsEnvSet("IOCNAME", "ioc-plc-lfe-vac-fs" )
 epicsEnvSet("ENGINEER", "root" )
 epicsEnvSet("LOCATION", "PREFIX:" )
 epicsEnvSet("IOCSH_PS1", "$(IOCNAME)> " )
@@ -19,7 +19,7 @@ adsIoc_registerRecordDeviceDriver(pdbbase)
 epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "172.21.88.138")
 epicsEnvSet("AMSID",            "172.21.88.138.1.1")
-epicsEnvSet("AMS_PORT",         "851")
+epicsEnvSet("AMS_PORT",         "852")
 epicsEnvSet("ADS_MAX_PARAMS",   "2000")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
@@ -50,9 +50,6 @@ epicsEnvSet("ADS_TIME_SOURCE",  "0")
 #                     EPICS=1: The time stamp will be made when the updated data
 #                         arrives in the EPICS client.
 adsAsynPortDriverConfigure("$(ASYN_PORT)", "$(IPADDR)", "$(AMSID)", "$(AMS_PORT)", "$(ADS_MAX_PARAMS)", 0, 0, "$(ADS_SAMPLE_MS)", "$(ADS_MAX_DELAY_MS)", "$(ADS_TIMEOUT_MS)", "$(ADS_TIME_SOURCE)")
-
-cd "$(IOC_TOP)"
-dbLoadRecords("plc_lfe_vac.db", "PORT=ASYN_PLC,PREFIX=PREFIX::,IOCNAME=$(IOCNAME),")
 
 cd "$(IOC_TOP)"
 

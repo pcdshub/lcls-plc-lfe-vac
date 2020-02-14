@@ -308,8 +308,8 @@ VAR_GLOBAL
 	'}
 	PA1L0_PIN_01 : FB_PIP_Gamma; //PIN???	
 	
-	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK;
-								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault;
+	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK;
+								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault;
 								 .i_xTrigger		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger;
 								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Open;
 								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed;
@@ -491,8 +491,8 @@ VAR_GLOBAL
 	MR2L0_HOMS_VGC_02 : FB_VGC;	
 	
 		
-	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
-								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault;
+	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
+								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault;
 								 .i_xTrigger		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
 								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
 								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
