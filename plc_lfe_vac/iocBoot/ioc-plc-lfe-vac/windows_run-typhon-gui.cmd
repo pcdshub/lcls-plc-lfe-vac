@@ -3,7 +3,7 @@ echo Starting Typhon...
 echo on
 
 "C:/Program Files/Docker/Docker/resources/bin/docker.exe" run ^
-        -v "c:\Repos\ads-deploy\tools\:/ads-deploy/tools" ^
+        -v "C:\Repos\ads-deploy\tools\:/ads-deploy/tools" ^
         -v "C:\Repos\lcls-plc-lfe-vac\plc_lfe_vac\:/reg/g/pcds/epics/ioc/plc_lfe_vac" ^
 	-e DISPLAY=host.docker.internal:0.0 ^
 	-i pcdshub/ads-deploy:latest ^
