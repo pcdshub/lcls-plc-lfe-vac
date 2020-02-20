@@ -870,7 +870,7 @@ record(bi, "TV1L0:GCC:01:ILK_OK_RBV") {
   field(ONAM, "One")
 }
 
-record(bi, "RTDSL0:VAC:PIP:01:ILK_OK_RBV") {
+record(bi, "RTDSL0:PIP:01:ILK_OK_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -881,7 +881,7 @@ record(bi, "RTDSL0:VAC:PIP:01:ILK_OK_RBV") {
   field(ONAM, "OK")
 }
 
-record(ai, "RTDSL0:VAC:PIP:01:AT_VAC_SP_RBV") {
+record(ai, "RTDSL0:PIP:01:AT_VAC_SP_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -892,7 +892,7 @@ record(ai, "RTDSL0:VAC:PIP:01:AT_VAC_SP_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ao, "RTDSL0:VAC:PIP:01:AT_VAC_SP") {
+record(ao, "RTDSL0:PIP:01:AT_VAC_SP") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_01.stPump.rHVEna_SP=")
@@ -900,7 +900,7 @@ record(ao, "RTDSL0:VAC:PIP:01:AT_VAC_SP") {
   info(autosave_pass0, "PREC VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:01:HV_SW_RBV") {
+record(bi, "RTDSL0:PIP:01:HV_SW_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -911,7 +911,7 @@ record(bi, "RTDSL0:VAC:PIP:01:HV_SW_RBV") {
   field(ONAM, "ON")
 }
 
-record(bo, "RTDSL0:VAC:PIP:01:HV_SW") {
+record(bo, "RTDSL0:PIP:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_01.stPump.xHVEna_SW=")
@@ -920,7 +920,7 @@ record(bo, "RTDSL0:VAC:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:01:HV_DO_RBV") {
+record(bi, "RTDSL0:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -931,7 +931,7 @@ record(bi, "RTDSL0:VAC:PIP:01:HV_DO_RBV") {
   field(ONAM, "ON")
 }
 
-record(ai, "RTDSL0:VAC:PIP:01:PRESS_RBV") {
+record(ai, "RTDSL0:PIP:01:PRESS_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS..._01.stPump.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -945,7 +945,7 @@ record(ai, "RTDSL0:VAC:PIP:01:PRESS_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ai, "RTDSL0:VAC:PIP:01:PRESS_AI_RBV") {
+record(ai, "RTDSL0:PIP:01:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...1.stPump.i_iPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -956,7 +956,7 @@ record(ai, "RTDSL0:VAC:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:VAC:PIP:01:SP_DI_RBV") {
+record(bi, "RTDSL0:PIP:01:SP_DI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...1.stPump.i_xSP_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -967,7 +967,7 @@ record(bi, "RTDSL0:VAC:PIP:01:SP_DI_RBV") {
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:VAC:PIP:02:ILK_OK_RBV") {
+record(bi, "RTDSL0:PIP:02:ILK_OK_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -978,7 +978,7 @@ record(bi, "RTDSL0:VAC:PIP:02:ILK_OK_RBV") {
   field(ONAM, "OK")
 }
 
-record(ai, "RTDSL0:VAC:PIP:02:AT_VAC_SP_RBV") {
+record(ai, "RTDSL0:PIP:02:AT_VAC_SP_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -989,7 +989,7 @@ record(ai, "RTDSL0:VAC:PIP:02:AT_VAC_SP_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ao, "RTDSL0:VAC:PIP:02:AT_VAC_SP") {
+record(ao, "RTDSL0:PIP:02:AT_VAC_SP") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_02.stPump.rHVEna_SP=")
@@ -997,7 +997,7 @@ record(ao, "RTDSL0:VAC:PIP:02:AT_VAC_SP") {
   info(autosave_pass0, "PREC VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:02:HV_SW_RBV") {
+record(bi, "RTDSL0:PIP:02:HV_SW_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1008,7 +1008,7 @@ record(bi, "RTDSL0:VAC:PIP:02:HV_SW_RBV") {
   field(ONAM, "ON")
 }
 
-record(bo, "RTDSL0:VAC:PIP:02:HV_SW") {
+record(bo, "RTDSL0:PIP:02:HV_SW") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_02.stPump.xHVEna_SW=")
@@ -1017,7 +1017,7 @@ record(bo, "RTDSL0:VAC:PIP:02:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:02:HV_DO_RBV") {
+record(bi, "RTDSL0:PIP:02:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1028,7 +1028,7 @@ record(bi, "RTDSL0:VAC:PIP:02:HV_DO_RBV") {
   field(ONAM, "ON")
 }
 
-record(ai, "RTDSL0:VAC:PIP:02:PRESS_RBV") {
+record(ai, "RTDSL0:PIP:02:PRESS_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS..._02.stPump.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1042,7 +1042,7 @@ record(ai, "RTDSL0:VAC:PIP:02:PRESS_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ai, "RTDSL0:VAC:PIP:02:PRESS_AI_RBV") {
+record(ai, "RTDSL0:PIP:02:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...2.stPump.i_iPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1053,7 +1053,7 @@ record(ai, "RTDSL0:VAC:PIP:02:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:VAC:PIP:02:SP_DI_RBV") {
+record(bi, "RTDSL0:PIP:02:SP_DI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...2.stPump.i_xSP_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1064,7 +1064,7 @@ record(bi, "RTDSL0:VAC:PIP:02:SP_DI_RBV") {
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:VAC:PIP:03:ILK_OK_RBV") {
+record(bi, "RTDSL0:PIP:03:ILK_OK_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1075,7 +1075,7 @@ record(bi, "RTDSL0:VAC:PIP:03:ILK_OK_RBV") {
   field(ONAM, "OK")
 }
 
-record(ai, "RTDSL0:VAC:PIP:03:AT_VAC_SP_RBV") {
+record(ai, "RTDSL0:PIP:03:AT_VAC_SP_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1086,7 +1086,7 @@ record(ai, "RTDSL0:VAC:PIP:03:AT_VAC_SP_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ao, "RTDSL0:VAC:PIP:03:AT_VAC_SP") {
+record(ao, "RTDSL0:PIP:03:AT_VAC_SP") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_03.stPump.rHVEna_SP=")
@@ -1094,7 +1094,7 @@ record(ao, "RTDSL0:VAC:PIP:03:AT_VAC_SP") {
   info(autosave_pass0, "PREC VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:03:HV_SW_RBV") {
+record(bi, "RTDSL0:PIP:03:HV_SW_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1105,7 +1105,7 @@ record(bi, "RTDSL0:VAC:PIP:03:HV_SW_RBV") {
   field(ONAM, "ON")
 }
 
-record(bo, "RTDSL0:VAC:PIP:03:HV_SW") {
+record(bo, "RTDSL0:PIP:03:HV_SW") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_03.stPump.xHVEna_SW=")
@@ -1114,7 +1114,7 @@ record(bo, "RTDSL0:VAC:PIP:03:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:03:HV_DO_RBV") {
+record(bi, "RTDSL0:PIP:03:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1125,7 +1125,7 @@ record(bi, "RTDSL0:VAC:PIP:03:HV_DO_RBV") {
   field(ONAM, "ON")
 }
 
-record(ai, "RTDSL0:VAC:PIP:03:PRESS_RBV") {
+record(ai, "RTDSL0:PIP:03:PRESS_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS..._03.stPump.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1139,7 +1139,7 @@ record(ai, "RTDSL0:VAC:PIP:03:PRESS_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ai, "RTDSL0:VAC:PIP:03:PRESS_AI_RBV") {
+record(ai, "RTDSL0:PIP:03:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...3.stPump.i_iPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1150,7 +1150,7 @@ record(ai, "RTDSL0:VAC:PIP:03:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:VAC:PIP:03:SP_DI_RBV") {
+record(bi, "RTDSL0:PIP:03:SP_DI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...3.stPump.i_xSP_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1161,7 +1161,7 @@ record(bi, "RTDSL0:VAC:PIP:03:SP_DI_RBV") {
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:VAC:PIP:04:ILK_OK_RBV") {
+record(bi, "RTDSL0:PIP:04:ILK_OK_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1172,7 +1172,7 @@ record(bi, "RTDSL0:VAC:PIP:04:ILK_OK_RBV") {
   field(ONAM, "OK")
 }
 
-record(ai, "RTDSL0:VAC:PIP:04:AT_VAC_SP_RBV") {
+record(ai, "RTDSL0:PIP:04:AT_VAC_SP_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1183,7 +1183,7 @@ record(ai, "RTDSL0:VAC:PIP:04:AT_VAC_SP_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ao, "RTDSL0:VAC:PIP:04:AT_VAC_SP") {
+record(ao, "RTDSL0:PIP:04:AT_VAC_SP") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_04.stPump.rHVEna_SP=")
@@ -1191,7 +1191,7 @@ record(ao, "RTDSL0:VAC:PIP:04:AT_VAC_SP") {
   info(autosave_pass0, "PREC VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:04:HV_SW_RBV") {
+record(bi, "RTDSL0:PIP:04:HV_SW_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1202,7 +1202,7 @@ record(bi, "RTDSL0:VAC:PIP:04:HV_SW_RBV") {
   field(ONAM, "ON")
 }
 
-record(bo, "RTDSL0:VAC:PIP:04:HV_SW") {
+record(bo, "RTDSL0:PIP:04:HV_SW") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_04.stPump.xHVEna_SW=")
@@ -1211,7 +1211,7 @@ record(bo, "RTDSL0:VAC:PIP:04:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:04:HV_DO_RBV") {
+record(bi, "RTDSL0:PIP:04:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1222,7 +1222,7 @@ record(bi, "RTDSL0:VAC:PIP:04:HV_DO_RBV") {
   field(ONAM, "ON")
 }
 
-record(ai, "RTDSL0:VAC:PIP:04:PRESS_RBV") {
+record(ai, "RTDSL0:PIP:04:PRESS_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS..._04.stPump.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1236,7 +1236,7 @@ record(ai, "RTDSL0:VAC:PIP:04:PRESS_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ai, "RTDSL0:VAC:PIP:04:PRESS_AI_RBV") {
+record(ai, "RTDSL0:PIP:04:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...4.stPump.i_iPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1247,7 +1247,7 @@ record(ai, "RTDSL0:VAC:PIP:04:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:VAC:PIP:04:SP_DI_RBV") {
+record(bi, "RTDSL0:PIP:04:SP_DI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...4.stPump.i_xSP_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1258,7 +1258,7 @@ record(bi, "RTDSL0:VAC:PIP:04:SP_DI_RBV") {
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:VAC:PIP:05:ILK_OK_RBV") {
+record(bi, "RTDSL0:PIP:05:ILK_OK_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1269,7 +1269,7 @@ record(bi, "RTDSL0:VAC:PIP:05:ILK_OK_RBV") {
   field(ONAM, "OK")
 }
 
-record(ai, "RTDSL0:VAC:PIP:05:AT_VAC_SP_RBV") {
+record(ai, "RTDSL0:PIP:05:AT_VAC_SP_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1280,7 +1280,7 @@ record(ai, "RTDSL0:VAC:PIP:05:AT_VAC_SP_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ao, "RTDSL0:VAC:PIP:05:AT_VAC_SP") {
+record(ao, "RTDSL0:PIP:05:AT_VAC_SP") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.rHVEna_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_05.stPump.rHVEna_SP=")
@@ -1288,7 +1288,7 @@ record(ao, "RTDSL0:VAC:PIP:05:AT_VAC_SP") {
   info(autosave_pass0, "PREC VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:05:HV_SW_RBV") {
+record(bi, "RTDSL0:PIP:05:HV_SW_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1299,7 +1299,7 @@ record(bi, "RTDSL0:VAC:PIP:05:HV_SW_RBV") {
   field(ONAM, "ON")
 }
 
-record(bo, "RTDSL0:VAC:PIP:05:HV_SW") {
+record(bo, "RTDSL0:PIP:05:HV_SW") {
   field(DESC, "ads:GVL_Devices.RTDS....stPump.xHVEna_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_05.stPump.xHVEna_SW=")
@@ -1308,7 +1308,7 @@ record(bo, "RTDSL0:VAC:PIP:05:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
-record(bi, "RTDSL0:VAC:PIP:05:HV_DO_RBV") {
+record(bi, "RTDSL0:PIP:05:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1319,7 +1319,7 @@ record(bi, "RTDSL0:VAC:PIP:05:HV_DO_RBV") {
   field(ONAM, "ON")
 }
 
-record(ai, "RTDSL0:VAC:PIP:05:PRESS_RBV") {
+record(ai, "RTDSL0:PIP:05:PRESS_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS..._05.stPump.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1333,7 +1333,7 @@ record(ai, "RTDSL0:VAC:PIP:05:PRESS_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ai, "RTDSL0:VAC:PIP:05:PRESS_AI_RBV") {
+record(ai, "RTDSL0:PIP:05:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...5.stPump.i_iPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1344,7 +1344,7 @@ record(ai, "RTDSL0:VAC:PIP:05:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:VAC:PIP:05:SP_DI_RBV") {
+record(bi, "RTDSL0:PIP:05:SP_DI_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...5.stPump.i_xSP_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4430,7 +4430,7 @@ record(bi, "SL1L0:POWER:GCC:01:ILK_OK_RBV") {
   field(ONAM, "One")
 }
 
-record(bi, "SL1L0:POWER:PIP:01:ILK_OK_RBV") {
+record(bi, "SL1L0:POWER:PIN:01:ILK_OK_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L...stPump.xHV_ExtIlk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4441,7 +4441,7 @@ record(bi, "SL1L0:POWER:PIP:01:ILK_OK_RBV") {
   field(ONAM, "OK")
 }
 
-record(ai, "SL1L0:POWER:PIP:01:AT_VAC_SP_RBV") {
+record(ai, "SL1L0:POWER:PIN:01:AT_VAC_SP_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L....stPump.rHVEna_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4452,7 +4452,7 @@ record(ai, "SL1L0:POWER:PIP:01:AT_VAC_SP_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ao, "SL1L0:POWER:PIP:01:AT_VAC_SP") {
+record(ao, "SL1L0:POWER:PIN:01:AT_VAC_SP") {
   field(DESC, "ads:GVL_Devices.SL1L....stPump.rHVEna_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SL1L0_POWER_PIN_01.stPump.rHVEna_SP=")
@@ -4460,7 +4460,7 @@ record(ao, "SL1L0:POWER:PIP:01:AT_VAC_SP") {
   info(autosave_pass0, "PREC VAL")
 }
 
-record(bi, "SL1L0:POWER:PIP:01:HV_SW_RBV") {
+record(bi, "SL1L0:POWER:PIN:01:HV_SW_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L....stPump.xHVEna_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4471,7 +4471,7 @@ record(bi, "SL1L0:POWER:PIP:01:HV_SW_RBV") {
   field(ONAM, "ON")
 }
 
-record(bo, "SL1L0:POWER:PIP:01:HV_SW") {
+record(bo, "SL1L0:POWER:PIN:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.SL1L....stPump.xHVEna_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SL1L0_POWER_PIN_01.stPump.xHVEna_SW=")
@@ -4480,7 +4480,7 @@ record(bo, "SL1L0:POWER:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
-record(bi, "SL1L0:POWER:PIP:01:HV_DO_RBV") {
+record(bi, "SL1L0:POWER:PIN:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4491,7 +4491,7 @@ record(bi, "SL1L0:POWER:PIP:01:HV_DO_RBV") {
   field(ONAM, "ON")
 }
 
-record(ai, "SL1L0:POWER:PIP:01:PRESS_RBV") {
+record(ai, "SL1L0:POWER:PIN:01:PRESS_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L..._01.stPump.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4505,7 +4505,7 @@ record(ai, "SL1L0:POWER:PIP:01:PRESS_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ai, "SL1L0:POWER:PIP:01:PRESS_AI_RBV") {
+record(ai, "SL1L0:POWER:PIN:01:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L...1.stPump.i_iPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4516,7 +4516,7 @@ record(ai, "SL1L0:POWER:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "SL1L0:POWER:PIP:01:SP_DI_RBV") {
+record(bi, "SL1L0:POWER:PIN:01:SP_DI_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L...1.stPump.i_xSP_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4909,7 +4909,7 @@ record(bi, "AT2L0:SOLID:GCC:01:ILK_OK_RBV") {
   field(ONAM, "One")
 }
 
-record(bi, "AT2L0:SOLID:PIP:01:ILK_OK_RBV") {
+record(bi, "AT2L0:SOLID:PIN:01:ILK_OK_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L...stPump.xHV_ExtIlk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4920,7 +4920,7 @@ record(bi, "AT2L0:SOLID:PIP:01:ILK_OK_RBV") {
   field(ONAM, "OK")
 }
 
-record(ai, "AT2L0:SOLID:PIP:01:AT_VAC_SP_RBV") {
+record(ai, "AT2L0:SOLID:PIN:01:AT_VAC_SP_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L....stPump.rHVEna_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4931,7 +4931,7 @@ record(ai, "AT2L0:SOLID:PIP:01:AT_VAC_SP_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ao, "AT2L0:SOLID:PIP:01:AT_VAC_SP") {
+record(ao, "AT2L0:SOLID:PIN:01:AT_VAC_SP") {
   field(DESC, "ads:GVL_Devices.AT2L....stPump.rHVEna_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.rHVEna_SP=")
@@ -4939,7 +4939,7 @@ record(ao, "AT2L0:SOLID:PIP:01:AT_VAC_SP") {
   info(autosave_pass0, "PREC VAL")
 }
 
-record(bi, "AT2L0:SOLID:PIP:01:HV_SW_RBV") {
+record(bi, "AT2L0:SOLID:PIN:01:HV_SW_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L....stPump.xHVEna_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4950,7 +4950,7 @@ record(bi, "AT2L0:SOLID:PIP:01:HV_SW_RBV") {
   field(ONAM, "ON")
 }
 
-record(bo, "AT2L0:SOLID:PIP:01:HV_SW") {
+record(bo, "AT2L0:SOLID:PIN:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.AT2L....stPump.xHVEna_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.xHVEna_SW=")
@@ -4959,7 +4959,7 @@ record(bo, "AT2L0:SOLID:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
-record(bi, "AT2L0:SOLID:PIP:01:HV_DO_RBV") {
+record(bi, "AT2L0:SOLID:PIN:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4970,7 +4970,7 @@ record(bi, "AT2L0:SOLID:PIP:01:HV_DO_RBV") {
   field(ONAM, "ON")
 }
 
-record(ai, "AT2L0:SOLID:PIP:01:PRESS_RBV") {
+record(ai, "AT2L0:SOLID:PIN:01:PRESS_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L..._01.stPump.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4984,7 +4984,7 @@ record(ai, "AT2L0:SOLID:PIP:01:PRESS_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(ai, "AT2L0:SOLID:PIP:01:PRESS_AI_RBV") {
+record(ai, "AT2L0:SOLID:PIN:01:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L...1.stPump.i_iPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -4995,7 +4995,7 @@ record(ai, "AT2L0:SOLID:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "AT2L0:SOLID:PIP:01:SP_DI_RBV") {
+record(bi, "AT2L0:SOLID:PIN:01:SP_DI_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L...1.stPump.i_xSP_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")

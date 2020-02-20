@@ -40,7 +40,7 @@ VAR_GLOBAL
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 1^Output
 	'}
 	{attribute 'pytmc' := '
-		pv: RTDSL0:VAC:PIP:01
+		pv: RTDSL0:PIP:01
 		io: io
 	'}
 	RTDSL0_PIP_01 : FB_PIP_Gamma;
@@ -50,7 +50,7 @@ VAR_GLOBAL
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 2^Output
 	'}	
 	{attribute 'pytmc' := '
-		pv: RTDSL0:VAC:PIP:02
+		pv: RTDSL0:PIP:02
 		io: io
 	'}
 	RTDSL0_PIP_02 : FB_PIP_Gamma;
@@ -60,7 +60,7 @@ VAR_GLOBAL
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 3^Output
 	'}
 	{attribute 'pytmc' := '
-		pv: RTDSL0:VAC:PIP:03
+		pv: RTDSL0:PIP:03
 		io: io
 	'}
 	RTDSL0_PIP_03 : FB_PIP_Gamma;
@@ -70,7 +70,7 @@ VAR_GLOBAL
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E3_EL2794]^Channel 4^Output
 	'}	
 	{attribute 'pytmc' := '
-		pv: RTDSL0:VAC:PIP:04
+		pv: RTDSL0:PIP:04
 		io: io
 	'}
 	RTDSL0_PIP_04 : FB_PIP_Gamma;
@@ -80,7 +80,7 @@ VAR_GLOBAL
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E6_EL2794]^Channel 1^Output
 	'}	
 	{attribute 'pytmc' := '
-		pv: RTDSL0:VAC:PIP:05
+		pv: RTDSL0:PIP:05
 		io: io
 	'}
 	RTDSL0_PIP_05 : FB_PIP_Gamma;
@@ -225,7 +225,7 @@ VAR_GLOBAL
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 1^Output
 	'}		
 	{attribute 'pytmc' := '
-		pv: SL1L0:POWER:PIP:01
+		pv: SL1L0:POWER:PIN:01
 		io: io
 	'}
 	SL1L0_POWER_PIN_01 : FB_PIP_Gamma;
@@ -253,7 +253,7 @@ VAR_GLOBAL
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 2^Output
 	'}	
 	{attribute 'pytmc' := '
-		pv: AT2L0:SOLID:PIP:01
+		pv: AT2L0:SOLID:PIN:01
 		io: io
 	'}
 	AT2L0_SOLID_PIN_01 : FB_PIP_Gamma;
