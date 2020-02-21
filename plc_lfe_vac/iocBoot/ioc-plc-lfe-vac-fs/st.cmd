@@ -52,6 +52,9 @@ epicsEnvSet("ADS_TIME_SOURCE",  "0")
 adsAsynPortDriverConfigure("$(ASYN_PORT)", "$(IPADDR)", "$(AMSID)", "$(AMS_PORT)", "$(ADS_MAX_PARAMS)", 0, 0, "$(ADS_SAMPLE_MS)", "$(ADS_MAX_DELAY_MS)", "$(ADS_TIMEOUT_MS)", "$(ADS_TIME_SOURCE)")
 
 cd "$(IOC_TOP)"
+dbLoadRecords("plc_lfe_vac_fs.db", "PORT=ASYN_PLC,PREFIX=PREFIX::,IOCNAME=$(IOCNAME),")
+
+cd "$(IOC_TOP)"
 
 dbLoadRecords("db/iocSoft.db", "IOC=PREFIX:")
 dbLoadRecords("db/save_restoreStatus.db", "P=PREFIX::")
