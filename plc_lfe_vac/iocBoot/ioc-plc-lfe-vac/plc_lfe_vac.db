@@ -263,8 +263,8 @@ record(bi, "TV1L0:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV1L0:VGC:01:EXT_ILK_OK_RBV") {
@@ -545,8 +545,8 @@ record(bi, "TV1L0:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV1L0:GPI:01:PRESS_OK_RBV") {
@@ -592,16 +592,16 @@ record(bi, "TV1L0:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "TV1L0:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.TV1L0_GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV1L0_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -643,8 +643,8 @@ record(bi, "TV1L0:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "TV1L0:GPI:01:VAC_SP_RBV") {
@@ -711,8 +711,8 @@ record(bi, "TV1L0:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "TV1L0:GCC:01:PRESS_RBV") {
@@ -736,8 +736,8 @@ record(bi, "TV1L0:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV1L0:GCC:01:PRESS_OK_RBV") {
@@ -783,16 +783,16 @@ record(bi, "TV1L0:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "TV1L0:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.TV1L0_GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV1L0_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -834,8 +834,8 @@ record(bi, "TV1L0:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "TV1L0:GCC:01:VAC_SP_RBV") {
@@ -902,17 +902,17 @@ record(bi, "TV1L0:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "RTDSL0:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.RTDS..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -956,6 +956,25 @@ record(bo, "RTDSL0:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "RTDSL0:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "RTDSL0:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.RTDS...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "RTDSL0:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -992,24 +1011,41 @@ record(ai, "RTDSL0:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...1.stPump.i_xSP_DI")
+record(bi, "RTDSL0:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:PIP:02:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
+record(mbbi, "RTDSL0:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._01.stPump.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_02.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
+}
+
+record(bi, "RTDSL0:PIP:02:ILK_OK_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._02.stPump.xILKOk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_02.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -1053,6 +1089,25 @@ record(bo, "RTDSL0:PIP:02:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "RTDSL0:PIP:02:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...02.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_02.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "RTDSL0:PIP:02:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.RTDS...02.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_02.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "RTDSL0:PIP:02:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -1089,24 +1144,41 @@ record(ai, "RTDSL0:PIP:02:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:PIP:02:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...2.stPump.i_xSP_DI")
+record(bi, "RTDSL0:PIP:02:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...2.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_02.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_02.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:PIP:03:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
+record(mbbi, "RTDSL0:PIP:02:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._02.stPump.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_03.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_02.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
+}
+
+record(bi, "RTDSL0:PIP:03:ILK_OK_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._03.stPump.xILKOk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_03.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -1150,6 +1222,25 @@ record(bo, "RTDSL0:PIP:03:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "RTDSL0:PIP:03:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...03.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_03.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "RTDSL0:PIP:03:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.RTDS...03.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_03.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "RTDSL0:PIP:03:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -1186,24 +1277,41 @@ record(ai, "RTDSL0:PIP:03:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:PIP:03:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...3.stPump.i_xSP_DI")
+record(bi, "RTDSL0:PIP:03:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...3.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_03.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_03.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:PIP:04:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
+record(mbbi, "RTDSL0:PIP:03:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._03.stPump.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_04.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_03.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
+}
+
+record(bi, "RTDSL0:PIP:04:ILK_OK_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._04.stPump.xILKOk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_04.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -1247,6 +1355,25 @@ record(bo, "RTDSL0:PIP:04:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "RTDSL0:PIP:04:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...04.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_04.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "RTDSL0:PIP:04:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.RTDS...04.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_04.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "RTDSL0:PIP:04:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -1283,24 +1410,41 @@ record(ai, "RTDSL0:PIP:04:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:PIP:04:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...4.stPump.i_xSP_DI")
+record(bi, "RTDSL0:PIP:04:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...4.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_04.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_04.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
 }
 
-record(bi, "RTDSL0:PIP:05:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...stPump.xHV_ExtIlk")
+record(mbbi, "RTDSL0:PIP:04:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._04.stPump.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_05.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_04.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
+}
+
+record(bi, "RTDSL0:PIP:05:ILK_OK_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._05.stPump.xILKOk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_05.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -1344,6 +1488,25 @@ record(bo, "RTDSL0:PIP:05:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "RTDSL0:PIP:05:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...05.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_05.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "RTDSL0:PIP:05:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.RTDS...05.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.RTDSL0_PIP_05.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "RTDSL0:PIP:05:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.RTDS...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -1380,15 +1543,32 @@ record(ai, "RTDSL0:PIP:05:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "RTDSL0:PIP:05:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.RTDS...5.stPump.i_xSP_DI")
+record(bi, "RTDSL0:PIP:05:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS...5.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_05.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_05.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "RTDSL0:PIP:05:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.RTDS..._05.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.RTDSL0_PIP_05.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "IM1L0:XTES:VGC:01:Dis_DPIlk_RBV") {
@@ -1580,8 +1760,8 @@ record(bi, "IM1L0:XTES:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "IM1L0:XTES:VGC:01:EXT_ILK_OK_RBV") {
@@ -1842,12 +2022,12 @@ record(bo, "IM1L0:XTES:VGC:01:MPS_FAULT") {
 }
 
 record(bi, "IM1L0:XTES:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.IM1L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.IM1L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -1891,6 +2071,25 @@ record(bo, "IM1L0:XTES:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "IM1L0:XTES:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.IM1L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "IM1L0:XTES:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.IM1L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.IM1L0_XTES_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "IM1L0:XTES:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.IM1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -1927,24 +2126,41 @@ record(ai, "IM1L0:XTES:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "IM1L0:XTES:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.IM1L...1.stPump.i_xSP_DI")
+record(bi, "IM1L0:XTES:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.IM1L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
 }
 
-record(bi, "TV2L0:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.TV2L...stPump.xHV_ExtIlk")
+record(mbbi, "IM1L0:XTES:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.IM1L..._01.stPump.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
+}
+
+record(bi, "TV2L0:PIP:01:ILK_OK_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L..._01.stPump.xILKOk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -1988,6 +2204,25 @@ record(bo, "TV2L0:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "TV2L0:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "TV2L0:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.TV2L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "TV2L0:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.TV2L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -2024,15 +2259,32 @@ record(ai, "TV2L0:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "TV2L0:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.TV2L...1.stPump.i_xSP_DI")
+record(bi, "TV2L0:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "TV2L0:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(ai, "TV2L0:GPI:01:PRESS_RBV") {
@@ -2056,8 +2308,8 @@ record(bi, "TV2L0:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV2L0:GPI:01:PRESS_OK_RBV") {
@@ -2103,16 +2355,16 @@ record(bi, "TV2L0:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "TV2L0:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.TV2L0_GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -2154,8 +2406,8 @@ record(bi, "TV2L0:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "TV2L0:GPI:01:VAC_SP_RBV") {
@@ -2222,8 +2474,8 @@ record(bi, "TV2L0:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "TV2L0:GCC:01:PRESS_RBV") {
@@ -2247,8 +2499,8 @@ record(bi, "TV2L0:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV2L0:GCC:01:PRESS_OK_RBV") {
@@ -2294,16 +2546,16 @@ record(bi, "TV2L0:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "TV2L0:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.TV2L0_GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -2345,8 +2597,8 @@ record(bi, "TV2L0:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "TV2L0:GCC:01:VAC_SP_RBV") {
@@ -2413,8 +2665,8 @@ record(bi, "TV2L0:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "TV2L0:VGC:01:Dis_DPIlk_RBV") {
@@ -2606,8 +2858,8 @@ record(bi, "TV2L0:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV2L0:VGC:01:EXT_ILK_OK_RBV") {
@@ -2868,12 +3120,12 @@ record(bo, "TV2L0:VGC:01:MPS_FAULT") {
 }
 
 record(bi, "TV2L0:PIP:02:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.TV2L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.TV2L..._02.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_02.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_02.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -2917,6 +3169,25 @@ record(bo, "TV2L0:PIP:02:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "TV2L0:PIP:02:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L...02.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_02.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "TV2L0:PIP:02:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.TV2L...02.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_PIP_02.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "TV2L0:PIP:02:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.TV2L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -2953,15 +3224,32 @@ record(ai, "TV2L0:PIP:02:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "TV2L0:PIP:02:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.TV2L...2.stPump.i_xSP_DI")
+record(bi, "TV2L0:PIP:02:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L...2.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_02.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_02.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "TV2L0:PIP:02:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L..._02.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_02.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(ai, "TV2L0:GFS:01:PRESS_RBV") {
@@ -2985,8 +3273,8 @@ record(bi, "TV2L0:GFS:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GFS_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV2L0:GFS:01:PRESS_OK_RBV") {
@@ -3032,16 +3320,16 @@ record(bi, "TV2L0:GFS:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GFS_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "TV2L0:GFS:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.TV2L0_GFS_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_GFS_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -3083,8 +3371,8 @@ record(bi, "TV2L0:GFS:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GFS_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "TV2L0:GFS:01:VAC_SP_RBV") {
@@ -3151,8 +3439,8 @@ record(bi, "TV2L0:GFS:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GFS_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "TV2L0:GPI:02:PRESS_RBV") {
@@ -3176,8 +3464,8 @@ record(bi, "TV2L0:GPI:02:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_02.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV2L0:GPI:02:PRESS_OK_RBV") {
@@ -3223,16 +3511,16 @@ record(bi, "TV2L0:GPI:02:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_02.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "TV2L0:GPI:02:HV_SW") {
   field(DESC, "ads:GVL_Devices.TV2L0_GPI_02.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_GPI_02.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -3274,8 +3562,8 @@ record(bi, "TV2L0:GPI:02:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_02.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "TV2L0:GPI:02:VAC_SP_RBV") {
@@ -3342,8 +3630,8 @@ record(bi, "TV2L0:GPI:02:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GPI_02.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "TV2L0:GCC:02:PRESS_RBV") {
@@ -3367,8 +3655,8 @@ record(bi, "TV2L0:GCC:02:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_02.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV2L0:GCC:02:PRESS_OK_RBV") {
@@ -3414,16 +3702,16 @@ record(bi, "TV2L0:GCC:02:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_02.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "TV2L0:GCC:02:HV_SW") {
   field(DESC, "ads:GVL_Devices.TV2L0_GCC_02.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_GCC_02.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -3465,8 +3753,8 @@ record(bi, "TV2L0:GCC:02:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_02.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "TV2L0:GCC:02:VAC_SP_RBV") {
@@ -3533,17 +3821,17 @@ record(bi, "TV2L0:GCC:02:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_GCC_02.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "TV2L0:PIP:03:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.TV2L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.TV2L..._03.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_03.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_03.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -3587,6 +3875,25 @@ record(bo, "TV2L0:PIP:03:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "TV2L0:PIP:03:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L...03.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_03.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "TV2L0:PIP:03:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.TV2L...03.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_PIP_03.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "TV2L0:PIP:03:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.TV2L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -3623,15 +3930,32 @@ record(ai, "TV2L0:PIP:03:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "TV2L0:PIP:03:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.TV2L...3.stPump.i_xSP_DI")
+record(bi, "TV2L0:PIP:03:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L...3.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_03.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_03.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "TV2L0:PIP:03:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.TV2L..._03.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_PIP_03.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "TV2L0:VGC:02:Dis_DPIlk_RBV") {
@@ -3823,8 +4147,8 @@ record(bi, "TV2L0:VGC:02:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_VGC_02.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV2L0:VGC:02:EXT_ILK_OK_RBV") {
@@ -4105,8 +4429,8 @@ record(bi, "SL1L0:POWER:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "SL1L0:POWER:GPI:01:PRESS_OK_RBV") {
@@ -4152,16 +4476,16 @@ record(bi, "SL1L0:POWER:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "SL1L0:POWER:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.SL1L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SL1L0_POWER_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -4203,8 +4527,8 @@ record(bi, "SL1L0:POWER:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "SL1L0:POWER:GPI:01:VAC_SP_RBV") {
@@ -4271,8 +4595,8 @@ record(bi, "SL1L0:POWER:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "SL1L0:POWER:GCC:01:PRESS_RBV") {
@@ -4296,8 +4620,8 @@ record(bi, "SL1L0:POWER:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "SL1L0:POWER:GCC:01:PRESS_OK_RBV") {
@@ -4343,16 +4667,16 @@ record(bi, "SL1L0:POWER:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "SL1L0:POWER:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.SL1L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SL1L0_POWER_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -4394,8 +4718,8 @@ record(bi, "SL1L0:POWER:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "SL1L0:POWER:GCC:01:VAC_SP_RBV") {
@@ -4462,17 +4786,17 @@ record(bi, "SL1L0:POWER:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "SL1L0:POWER:PIN:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.SL1L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.SL1L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_PIN_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_PIN_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -4516,6 +4840,25 @@ record(bo, "SL1L0:POWER:PIN:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "SL1L0:POWER:PIN:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.SL1L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_PIN_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "SL1L0:POWER:PIN:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.SL1L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SL1L0_POWER_PIN_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "SL1L0:POWER:PIN:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.SL1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -4552,15 +4895,32 @@ record(ai, "SL1L0:POWER:PIN:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "SL1L0:POWER:PIN:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.SL1L...1.stPump.i_xSP_DI")
+record(bi, "SL1L0:POWER:PIN:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.SL1L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_PIN_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_PIN_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "SL1L0:POWER:PIN:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.SL1L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SL1L0_POWER_PIN_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(ai, "AT2L0:SOLID:GPI:01:PRESS_RBV") {
@@ -4584,8 +4944,8 @@ record(bi, "AT2L0:SOLID:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "AT2L0:SOLID:GPI:01:PRESS_OK_RBV") {
@@ -4631,16 +4991,16 @@ record(bi, "AT2L0:SOLID:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "AT2L0:SOLID:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.AT2L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.AT2L0_SOLID_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -4682,8 +5042,8 @@ record(bi, "AT2L0:SOLID:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "AT2L0:SOLID:GPI:01:VAC_SP_RBV") {
@@ -4750,8 +5110,8 @@ record(bi, "AT2L0:SOLID:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "AT2L0:SOLID:GCC:01:PRESS_RBV") {
@@ -4775,8 +5135,8 @@ record(bi, "AT2L0:SOLID:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "AT2L0:SOLID:GCC:01:PRESS_OK_RBV") {
@@ -4822,16 +5182,16 @@ record(bi, "AT2L0:SOLID:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "AT2L0:SOLID:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.AT2L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.AT2L0_SOLID_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -4873,8 +5233,8 @@ record(bi, "AT2L0:SOLID:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "AT2L0:SOLID:GCC:01:VAC_SP_RBV") {
@@ -4941,17 +5301,17 @@ record(bi, "AT2L0:SOLID:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "AT2L0:SOLID:PIN:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.AT2L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.AT2L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -4995,6 +5355,25 @@ record(bo, "AT2L0:SOLID:PIN:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "AT2L0:SOLID:PIN:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.AT2L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "AT2L0:SOLID:PIN:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.AT2L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "AT2L0:SOLID:PIN:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.AT2L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -5031,15 +5410,32 @@ record(ai, "AT2L0:SOLID:PIN:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "AT2L0:SOLID:PIN:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.AT2L...1.stPump.i_xSP_DI")
+record(bi, "AT2L0:SOLID:PIN:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.AT2L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "AT2L0:SOLID:PIN:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.AT2L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.AT2L0_SOLID_PIN_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "PC1L0:XTES:VGC:01:Dis_DPIlk_RBV") {
@@ -5231,8 +5627,8 @@ record(bi, "PC1L0:XTES:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PC1L0_XTES_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "PC1L0:XTES:VGC:01:EXT_ILK_OK_RBV") {
@@ -5513,8 +5909,8 @@ record(bi, "SP1L0:KMONO:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "SP1L0:KMONO:GPI:01:PRESS_OK_RBV") {
@@ -5560,16 +5956,16 @@ record(bi, "SP1L0:KMONO:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "SP1L0:KMONO:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.SP1L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SP1L0_KMONO_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -5611,8 +6007,8 @@ record(bi, "SP1L0:KMONO:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "SP1L0:KMONO:GPI:01:VAC_SP_RBV") {
@@ -5679,8 +6075,8 @@ record(bi, "SP1L0:KMONO:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "SP1L0:KMONO:GCC:01:PRESS_RBV") {
@@ -5704,8 +6100,8 @@ record(bi, "SP1L0:KMONO:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "SP1L0:KMONO:GCC:01:PRESS_OK_RBV") {
@@ -5751,16 +6147,16 @@ record(bi, "SP1L0:KMONO:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "SP1L0:KMONO:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.SP1L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SP1L0_KMONO_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -5802,8 +6198,8 @@ record(bi, "SP1L0:KMONO:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "SP1L0:KMONO:GCC:01:VAC_SP_RBV") {
@@ -5870,17 +6266,17 @@ record(bi, "SP1L0:KMONO:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "SP1L0:KMONO:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.SP1L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.SP1L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -5924,6 +6320,25 @@ record(bo, "SP1L0:KMONO:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "SP1L0:KMONO:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.SP1L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "SP1L0:KMONO:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.SP1L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.SP1L0_KMONO_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "SP1L0:KMONO:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.SP1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -5960,24 +6375,41 @@ record(ai, "SP1L0:KMONO:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "SP1L0:KMONO:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.SP1L...1.stPump.i_xSP_DI")
+record(bi, "SP1L0:KMONO:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.SP1L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
 }
 
-record(bi, "PA1L0:PIN:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.PA1L...stPump.xHV_ExtIlk")
+record(mbbi, "SP1L0:KMONO:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.SP1L..._01.stPump.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_PIN_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.SP1L0_KMONO_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
+}
+
+record(bi, "PA1L0:PIN:01:ILK_OK_RBV") {
+  field(DESC, "ads:GVL_Devices.PA1L..._01.stPump.xILKOk")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_PIN_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -6021,6 +6453,25 @@ record(bo, "PA1L0:PIN:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "PA1L0:PIN:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.PA1L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_PIN_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "PA1L0:PIN:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.PA1L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.PA1L0_PIN_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "PA1L0:PIN:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.PA1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -6057,15 +6508,32 @@ record(ai, "PA1L0:PIN:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "PA1L0:PIN:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.PA1L...1.stPump.i_xSP_DI")
+record(bi, "PA1L0:PIN:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.PA1L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_PIN_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_PIN_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "PA1L0:PIN:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.PA1L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_PIN_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "PA1L0:VFS:01:FF_Reset_RBV") {
@@ -6249,8 +6717,8 @@ record(bi, "PA1L0:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "PA1L0:GPI:01:PRESS_OK_RBV") {
@@ -6296,16 +6764,16 @@ record(bi, "PA1L0:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "PA1L0:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.PA1L0_GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.PA1L0_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -6347,8 +6815,8 @@ record(bi, "PA1L0:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "PA1L0:GPI:01:VAC_SP_RBV") {
@@ -6415,8 +6883,8 @@ record(bi, "PA1L0:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "PA1L0:GCC:01:PRESS_RBV") {
@@ -6440,8 +6908,8 @@ record(bi, "PA1L0:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "PA1L0:GCC:01:PRESS_OK_RBV") {
@@ -6487,16 +6955,16 @@ record(bi, "PA1L0:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "PA1L0:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.PA1L0_GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.PA1L0_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -6538,8 +7006,8 @@ record(bi, "PA1L0:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "PA1L0:GCC:01:VAC_SP_RBV") {
@@ -6606,8 +7074,8 @@ record(bi, "PA1L0:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PA1L0_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "MR1L0:HOMS:VGC:01:Dis_DPIlk_RBV") {
@@ -6799,8 +7267,8 @@ record(bi, "MR1L0:HOMS:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR1L0:HOMS:VGC:01:EXT_ILK_OK_RBV") {
@@ -7081,8 +7549,8 @@ record(bi, "MR1L0:HOMS:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR1L0:HOMS:GPI:01:PRESS_OK_RBV") {
@@ -7128,16 +7596,16 @@ record(bi, "MR1L0:HOMS:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "MR1L0:HOMS:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.MR1L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR1L0_HOMS_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -7179,8 +7647,8 @@ record(bi, "MR1L0:HOMS:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "MR1L0:HOMS:GPI:01:VAC_SP_RBV") {
@@ -7247,8 +7715,8 @@ record(bi, "MR1L0:HOMS:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "MR1L0:HOMS:GCC:01:PRESS_RBV") {
@@ -7272,8 +7740,8 @@ record(bi, "MR1L0:HOMS:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR1L0:HOMS:GCC:01:PRESS_OK_RBV") {
@@ -7319,16 +7787,16 @@ record(bi, "MR1L0:HOMS:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "MR1L0:HOMS:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.MR1L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR1L0_HOMS_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -7370,8 +7838,8 @@ record(bi, "MR1L0:HOMS:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "MR1L0:HOMS:GCC:01:VAC_SP_RBV") {
@@ -7438,17 +7906,17 @@ record(bi, "MR1L0:HOMS:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "MR1L0:HOMS:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.MR1L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.MR1L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -7492,6 +7960,25 @@ record(bo, "MR1L0:HOMS:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "MR1L0:HOMS:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.MR1L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "MR1L0:HOMS:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.MR1L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR1L0_HOMS_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "MR1L0:HOMS:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.MR1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -7528,15 +8015,32 @@ record(ai, "MR1L0:HOMS:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "MR1L0:HOMS:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.MR1L...1.stPump.i_xSP_DI")
+record(bi, "MR1L0:HOMS:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.MR1L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "MR1L0:HOMS:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.MR1L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(ai, "MR1L1:TXI:GPI:01:PRESS_RBV") {
@@ -7560,8 +8064,8 @@ record(bi, "MR1L1:TXI:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR1L1:TXI:GPI:01:PRESS_OK_RBV") {
@@ -7607,16 +8111,16 @@ record(bi, "MR1L1:TXI:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "MR1L1:TXI:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.MR1L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR1L1_TXI_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -7658,8 +8162,8 @@ record(bi, "MR1L1:TXI:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "MR1L1:TXI:GPI:01:VAC_SP_RBV") {
@@ -7726,8 +8230,8 @@ record(bi, "MR1L1:TXI:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "MR1L1:TXI:GCC:01:PRESS_RBV") {
@@ -7751,8 +8255,8 @@ record(bi, "MR1L1:TXI:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR1L1:TXI:GCC:01:PRESS_OK_RBV") {
@@ -7798,16 +8302,16 @@ record(bi, "MR1L1:TXI:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "MR1L1:TXI:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.MR1L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR1L1_TXI_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -7849,8 +8353,8 @@ record(bi, "MR1L1:TXI:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "MR1L1:TXI:GCC:01:VAC_SP_RBV") {
@@ -7917,17 +8421,17 @@ record(bi, "MR1L1:TXI:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "MR1L1:TXI:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.MR1L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.MR1L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -7971,6 +8475,25 @@ record(bo, "MR1L1:TXI:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "MR1L1:TXI:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.MR1L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "MR1L1:TXI:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.MR1L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR1L1_TXI_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "MR1L1:TXI:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.MR1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -8007,15 +8530,32 @@ record(ai, "MR1L1:TXI:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "MR1L1:TXI:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.MR1L...1.stPump.i_xSP_DI")
+record(bi, "MR1L1:TXI:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.MR1L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "MR1L1:TXI:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.MR1L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L1_TXI_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "BT2L0:PLEG:VGC:01:Dis_DPIlk_RBV") {
@@ -8207,8 +8747,8 @@ record(bi, "BT2L0:PLEG:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "BT2L0:PLEG:VGC:01:EXT_ILK_OK_RBV") {
@@ -8489,8 +9029,8 @@ record(bi, "BT2L0:PLEG:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "BT2L0:PLEG:GPI:01:PRESS_OK_RBV") {
@@ -8536,16 +9076,16 @@ record(bi, "BT2L0:PLEG:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "BT2L0:PLEG:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.BT2L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.BT2L0_PLEG_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -8587,8 +9127,8 @@ record(bi, "BT2L0:PLEG:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "BT2L0:PLEG:GPI:01:VAC_SP_RBV") {
@@ -8655,8 +9195,8 @@ record(bi, "BT2L0:PLEG:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "BT2L0:PLEG:GCC:01:PRESS_RBV") {
@@ -8680,8 +9220,8 @@ record(bi, "BT2L0:PLEG:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "BT2L0:PLEG:GCC:01:PRESS_OK_RBV") {
@@ -8727,16 +9267,16 @@ record(bi, "BT2L0:PLEG:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "BT2L0:PLEG:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.BT2L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.BT2L0_PLEG_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -8778,8 +9318,8 @@ record(bi, "BT2L0:PLEG:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "BT2L0:PLEG:GCC:01:VAC_SP_RBV") {
@@ -8846,17 +9386,17 @@ record(bi, "BT2L0:PLEG:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "BT2L0:PLEG:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.BT2L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.BT2L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -8900,6 +9440,25 @@ record(bo, "BT2L0:PLEG:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "BT2L0:PLEG:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.BT2L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "BT2L0:PLEG:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.BT2L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.BT2L0_PLEG_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "BT2L0:PLEG:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.BT2L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -8936,15 +9495,32 @@ record(ai, "BT2L0:PLEG:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "BT2L0:PLEG:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.BT2L...1.stPump.i_xSP_DI")
+record(bi, "BT2L0:PLEG:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.BT2L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "BT2L0:PLEG:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.BT2L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "MR2L0:HOMS:VGC:01:Dis_DPIlk_RBV") {
@@ -9136,8 +9712,8 @@ record(bi, "MR2L0:HOMS:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR2L0:HOMS:VGC:01:EXT_ILK_OK_RBV") {
@@ -9418,8 +9994,8 @@ record(bi, "MR2L0:HOMS:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR2L0:HOMS:GPI:01:PRESS_OK_RBV") {
@@ -9465,16 +10041,16 @@ record(bi, "MR2L0:HOMS:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "MR2L0:HOMS:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.MR2L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR2L0_HOMS_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -9516,8 +10092,8 @@ record(bi, "MR2L0:HOMS:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "MR2L0:HOMS:GPI:01:VAC_SP_RBV") {
@@ -9584,8 +10160,8 @@ record(bi, "MR2L0:HOMS:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "MR2L0:HOMS:GCC:01:PRESS_RBV") {
@@ -9609,8 +10185,8 @@ record(bi, "MR2L0:HOMS:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR2L0:HOMS:GCC:01:PRESS_OK_RBV") {
@@ -9656,16 +10232,16 @@ record(bi, "MR2L0:HOMS:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "MR2L0:HOMS:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.MR2L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR2L0_HOMS_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -9707,8 +10283,8 @@ record(bi, "MR2L0:HOMS:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "MR2L0:HOMS:GCC:01:VAC_SP_RBV") {
@@ -9775,17 +10351,17 @@ record(bi, "MR2L0:HOMS:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "MR2L0:HOMS:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.MR2L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.MR2L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -9829,6 +10405,25 @@ record(bo, "MR2L0:HOMS:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "MR2L0:HOMS:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.MR2L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "MR2L0:HOMS:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.MR2L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR2L0_HOMS_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "MR2L0:HOMS:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.MR2L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -9865,15 +10460,32 @@ record(ai, "MR2L0:HOMS:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "MR2L0:HOMS:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.MR2L...1.stPump.i_xSP_DI")
+record(bi, "MR2L0:HOMS:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.MR2L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "MR2L0:HOMS:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.MR2L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "MR2L0:HOMS:VGC:02:Dis_DPIlk_RBV") {
@@ -10065,8 +10677,8 @@ record(bi, "MR2L0:HOMS:VGC:02:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_VGC_02.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "MR2L0:HOMS:VGC:02:EXT_ILK_OK_RBV") {
@@ -10675,8 +11287,8 @@ record(bi, "TV1L1:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L1_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "TV1L1:VGC:01:EXT_ILK_OK_RBV") {
@@ -10937,12 +11549,12 @@ record(bo, "TV1L1:VGC:01:MPS_FAULT_OK") {
 }
 
 record(bi, "TV3L0:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.TV3L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.TV3L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV3L0_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV3L0_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -10986,6 +11598,25 @@ record(bo, "TV3L0:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "TV3L0:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.TV3L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV3L0_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "TV3L0:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.TV3L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV3L0_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "TV3L0:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.TV3L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -11022,15 +11653,32 @@ record(ai, "TV3L0:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "TV3L0:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.TV3L...1.stPump.i_xSP_DI")
+record(bi, "TV3L0:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.TV3L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV3L0_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV3L0_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "TV3L0:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.TV3L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV3L0_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(ai, "ST1L0:XTES:GPI:01:PRESS_RBV") {
@@ -11054,8 +11702,8 @@ record(bi, "ST1L0:XTES:GPI:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GPI_01.PG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "ST1L0:XTES:GPI:01:PRESS_OK_RBV") {
@@ -11101,16 +11749,16 @@ record(bi, "ST1L0:XTES:GPI:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GPI_01.PG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "ST1L0:XTES:GPI:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.ST1L..._GPI_01.PG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.ST1L0_XTES_GPI_01.PG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -11152,8 +11800,8 @@ record(bi, "ST1L0:XTES:GPI:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GPI_01.PG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "ST1L0:XTES:GPI:01:VAC_SP_RBV") {
@@ -11220,8 +11868,8 @@ record(bi, "ST1L0:XTES:GPI:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GPI_01.PG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(ai, "ST1L0:XTES:GCC:01:PRESS_RBV") {
@@ -11245,8 +11893,8 @@ record(bi, "ST1L0:XTES:GCC:01:AT_VAC_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GCC_01.IG.xAT_VAC?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "ST1L0:XTES:GCC:01:PRESS_OK_RBV") {
@@ -11292,16 +11940,16 @@ record(bi, "ST1L0:XTES:GCC:01:HV_SW_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GCC_01.IG.xHV_SW?")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
 }
 
 record(bo, "ST1L0:XTES:GCC:01:HV_SW") {
   field(DESC, "ads:GVL_Devices.ST1L..._GCC_01.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.ST1L0_XTES_GCC_01.IG.xHV_SW=")
-  field(ZNAM, "Off")
-  field(ONAM, "On")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
   info(autosave_pass0, "VAL")
 }
 
@@ -11343,8 +11991,8 @@ record(bi, "ST1L0:XTES:GCC:01:HV_DIS_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GCC_01.IG.q_xHV_DIS?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(ai, "ST1L0:XTES:GCC:01:VAC_SP_RBV") {
@@ -11411,17 +12059,17 @@ record(bi, "ST1L0:XTES:GCC:01:ILK_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_GCC_01.IG.xILKOk?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "NOT OK")
+  field(ONAM, "OK")
 }
 
 record(bi, "ST1L0:XTES:PIP:01:ILK_OK_RBV") {
-  field(DESC, "ads:GVL_Devices.ST1L...stPump.xHV_ExtIlk")
+  field(DESC, "ads:GVL_Devices.ST1L..._01.stPump.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_PIP_01.stPump.xHV_ExtIlk?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_PIP_01.stPump.xILKOk?")
   field(ZNAM, "NOT OK")
   field(ONAM, "OK")
 }
@@ -11465,6 +12113,25 @@ record(bo, "ST1L0:XTES:PIP:01:HV_SW") {
   info(autosave_pass0, "VAL")
 }
 
+record(ai, "ST1L0:XTES:PIP:01:SP_HYS_RBV") {
+  field(DESC, "ads:GVL_Devices.ST1L...01.stPump.rHYS_PR")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_PIP_01.stPump.rHYS_PR?")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC")
+}
+
+record(ao, "ST1L0:XTES:PIP:01:SP_HYS") {
+  field(DESC, "ads:GVL_Devices.ST1L...01.stPump.rHYS_PR")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.ST1L0_XTES_PIP_01.stPump.rHYS_PR=")
+  field(PREC, "3")
+  info(autosave_pass0, "PREC VAL")
+}
+
 record(bi, "ST1L0:XTES:PIP:01:HV_DO_RBV") {
   field(DESC, "ads:GVL_Devices.ST1L...tPump.q_xHVEna_DO")
   field(SCAN, "I/O Intr")
@@ -11501,15 +12168,32 @@ record(ai, "ST1L0:XTES:PIP:01:PRESS_AI_RBV") {
   info(autosave_pass0, "PREC")
 }
 
-record(bi, "ST1L0:XTES:PIP:01:SP_DI_RBV") {
-  field(DESC, "ads:GVL_Devices.ST1L...1.stPump.i_xSP_DI")
+record(bi, "ST1L0:XTES:PIP:01:HV_DI_RBV") {
+  field(DESC, "ads:GVL_Devices.ST1L...1.stPump.i_xHV_DI")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_PIP_01.stPump.i_xSP_DI?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_PIP_01.stPump.i_xHV_DI?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
+}
+
+record(mbbi, "ST1L0:XTES:PIP:01:STATE_RBV") {
+  field(DESC, "ads:GVL_Devices.ST1L..._01.stPump.eState")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.ST1L0_XTES_PIP_01.stPump.eState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "STOPPED")
+  field(ONST, "STARTING")
+  field(TWST, "RUNNING")
+  field(THST, "FAULT")
 }
 
 record(bi, "PC2L1:L2SI:VGC:01:Dis_DPIlk_RBV") {
@@ -11701,8 +12385,8 @@ record(bi, "PC2L1:L2SI:VGC:01:OPN_DO_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PC2L1_L2SI_VGC_01.iq_stValve.q_xOPN_DO?")
-  field(ZNAM, "Zero")
-  field(ONAM, "One")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
 }
 
 record(bi, "PC2L1:L2SI:VGC:01:EXT_ILK_OK_RBV") {

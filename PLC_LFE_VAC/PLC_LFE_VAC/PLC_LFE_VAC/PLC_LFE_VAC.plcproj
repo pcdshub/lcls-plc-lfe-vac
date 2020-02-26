@@ -48,9 +48,9 @@
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="L2SI Vacuum Library">
-      <DefaultResolution>L2SI Vacuum Library, * (SLAC)</DefaultResolution>
-      <Namespace>L2SI_Vacuum_Library</Namespace>
+    <PlaceholderReference Include="L2SI Vacuum Library-TEST">
+      <DefaultResolution>L2SI Vacuum Library-TEST, * (SLAC)</DefaultResolution>
+      <Namespace>L2SI_Vacuum_Library_TEST</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="LCLS General">
       <DefaultResolution>LCLS General, * (SLAC)</DefaultResolution>
@@ -74,8 +74,8 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="L2SI Vacuum Library">
-      <Resolution>L2SI Vacuum Library, 0.0.0 (SLAC)</Resolution>
+    <PlaceholderResolution Include="L2SI Vacuum Library-TEST">
+      <Resolution>L2SI Vacuum Library-TEST, * (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="LCLS General">
       <Resolution>LCLS General, * (SLAC)</Resolution>
@@ -83,11 +83,6 @@
     <PlaceholderResolution Include="PMPS">
       <Resolution>PMPS, * (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="plc_lfe_vac.tmc">
-      <SubType>Content</SubType>
-    </None>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
