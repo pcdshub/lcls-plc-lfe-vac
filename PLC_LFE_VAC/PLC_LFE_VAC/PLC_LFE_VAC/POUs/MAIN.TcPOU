@@ -17,11 +17,16 @@ VAR
 	(*TXI PLC Interface*)
 
 	(*XPP PLC Interface*)
+
+	fbLogHandler : FB_LogHandler;
 	
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// Run the Diagnostics PRG
+      <ST><![CDATA[
+fbLogHandler();
+
+// Run the Diagnostics PRG
 DIAGNOSTICS();
 
 (*HXR Accelerator side PLC Interface*)
