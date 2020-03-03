@@ -523,16 +523,16 @@ record(bi, "TV1L0:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L0_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "TV1L0:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.TV1L0_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV1L0_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -2138,16 +2138,16 @@ record(bi, "IM1L0:XTES:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.IM1L0_XTES_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "IM1L0:XTES:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.IM1L...ES_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.IM1L0_XTES_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -3312,16 +3312,16 @@ record(bi, "TV2L0:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "TV2L0:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.TV2L0_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -4695,16 +4695,16 @@ record(bi, "TV2L0:VGC:02:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV2L0_VGC_02.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "TV2L0:VGC:02:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.TV2L0_VGC_02.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV2L0_VGC_02.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -6287,16 +6287,16 @@ record(bi, "PC1L0:XTES:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PC1L0_XTES_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "PC1L0:XTES:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.PC1L...ES_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.PC1L0_XTES_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -8039,16 +8039,16 @@ record(bi, "MR1L0:HOMS:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR1L0_HOMS_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "MR1L0:HOMS:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.MR1L...MS_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR1L0_HOMS_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -9631,16 +9631,16 @@ record(bi, "BT2L0:PLEG:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.BT2L0_PLEG_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "BT2L0:PLEG:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.BT2L...EG_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.BT2L0_PLEG_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -10658,16 +10658,16 @@ record(bi, "MR2L0:HOMS:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "MR2L0:HOMS:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.MR2L...MS_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR2L0_HOMS_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -11685,16 +11685,16 @@ record(bi, "MR2L0:HOMS:VGC:02:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.MR2L0_HOMS_VGC_02.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "MR2L0:HOMS:VGC:02:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.MR2L...MS_VGC_02.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.MR2L0_HOMS_VGC_02.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -12307,16 +12307,16 @@ record(bi, "TV1L1:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.TV1L1_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "TV1L1:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.TV1L1_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.TV1L1_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
@@ -13481,16 +13481,16 @@ record(bi, "PC2L1:L2SI:VGC:01:MPS_FAULT_OK_RBV") {
   field(TSE, "-2")
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Devices.PC2L1_L2SI_VGC_01.xMPS_OK?")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
 }
 
 record(bo, "PC2L1:L2SI:VGC:01:MPS_FAULT_OK") {
   field(DESC, "ads:GVL_Devices.PC2L...SI_VGC_01.xMPS_OK")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Devices.PC2L1_L2SI_VGC_01.xMPS_OK=")
-  field(ZNAM, "MPS OK")
-  field(ONAM, "MPS FAULT")
+  field(ZNAM, "MPS FAULT")
+  field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
 }
 
