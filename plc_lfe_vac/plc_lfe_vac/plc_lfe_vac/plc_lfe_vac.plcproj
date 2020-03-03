@@ -48,8 +48,8 @@
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="L2SI Vacuum Library-TEST">
-      <DefaultResolution>L2SI Vacuum Library-TEST, * (SLAC)</DefaultResolution>
+    <PlaceholderReference Include="L2SI Vacuum Library TEST">
+      <DefaultResolution>L2SI Vacuum Library TEST, * (SLAC)</DefaultResolution>
       <Namespace>L2SI_Vacuum_Library_TEST</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="LCLS General">
@@ -74,8 +74,8 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="L2SI Vacuum Library-TEST">
-      <Resolution>L2SI Vacuum Library-TEST, * (SLAC)</Resolution>
+    <PlaceholderResolution Include="L2SI Vacuum Library TEST">
+      <Resolution>L2SI Vacuum Library TEST, * (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="LCLS General">
       <Resolution>LCLS General, * (SLAC)</Resolution>

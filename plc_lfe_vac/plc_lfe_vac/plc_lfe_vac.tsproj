@@ -25,8 +25,8 @@
 			<Licenses>
 				<Target>
 					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
-					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</ManualSelect>
+					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect Instances="1">{103F30C9-DF25-439E-837B-9DF80CB9356C}</ManualSelect>
 					<ManualSelect>{B27B051A-CA6A-42EA-833E-82CC92903D83}</ManualSelect>
 				</Target>
@@ -45,14 +45,14 @@
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>L2SI_Vacuum_Library_TEST.Global_Variables.g_stSystem.I_EcatMaster1</Name>
+							<Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
 							<Comment>
 								<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
 							</Comment>
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 						</Var>
 						<Var>
-							<Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
+							<Name>L2SI_Vacuum_Library_TEST.Global_Variables.g_stSystem.I_EcatMaster1</Name>
 							<Comment>
 								<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
 							</Comment>
@@ -1038,6 +1038,7 @@
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-2002-0850-0020-500840205008}" Id="#x02030030"/>
 		<MappingInfo Identifier="{00000000-2041-0850-4020-500810000403}" Id="#x02030020"/>
 		<MappingInfo Identifier="{00000000-2002-0850-0020-500810000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^plc_lfe_vac^plc_lfe_vac Instance">
@@ -1283,6 +1284,20 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_EBD^EBD_E0_EK1100^EBD_E8_EL2794">
 				<Link VarA="PlcTask Outputs^MAIN.q_xUpstreamTreaty_PressOK" VarB="Channel 1^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance">
+				<Link VarA="PlcTask Inputs^GVL_Devices.PA1L0_VFS_01.i_xTrigger" VarB="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.PA1L0_VFS_01.i_xVAC_FAULT_OK" VarB="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVAC_FAULT_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.PA1L0_VFS_01.i_xVFS_Closed" VarB="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.PA1L0_VFS_01.i_xVFS_Open" VarB="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Open" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" VarB="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK" VarB="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" VarB="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open" VarB="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.PA1L0_VFS_01.q_xPRESS_OK" VarB="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.PA1L0_VFS_01.q_xVAC_FAULT_Reset" VarB="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xPRESS_OK" VarB="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" VarB="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

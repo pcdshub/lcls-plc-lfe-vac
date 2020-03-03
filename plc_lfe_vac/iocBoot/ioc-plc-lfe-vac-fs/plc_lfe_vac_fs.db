@@ -11,7 +11,7 @@ record(longout, "$(IOC):LCLSGeneral:LogPort") {
   field(DESC, "The log host UDP port")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=852/GVL_Logger.iLogPort=")
-  info(autosave_pass0, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(waveform, "$(IOC):LCLSGeneral:LogHost_RBV") {
@@ -31,5 +31,5 @@ record(waveform, "$(IOC):LCLSGeneral:LogHost") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/GVL_Logger.cLogHost=")
   field(FTVL, "CHAR")
   field(NELM, "15")
-  info(autosave_pass0, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
