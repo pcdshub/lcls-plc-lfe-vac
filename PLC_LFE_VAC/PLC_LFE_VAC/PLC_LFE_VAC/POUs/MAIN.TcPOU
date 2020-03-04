@@ -17,6 +17,8 @@ VAR
 	(*TXI PLC Interface*)
 
 	(*XPP PLC Interface*)
+
+	fbLogHandler : FB_LogHandler;
 	
 	fbLogHandler : FB_LogHandler;
 	
@@ -24,6 +26,7 @@ END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[fbLogHandler();
+
 
 // Run the Diagnostics PRG
 DIAGNOSTICS();
