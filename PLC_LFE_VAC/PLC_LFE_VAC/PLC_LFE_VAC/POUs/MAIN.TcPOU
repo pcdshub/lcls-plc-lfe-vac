@@ -20,11 +20,13 @@ VAR
 
 	fbLogHandler : FB_LogHandler;
 	
+	fbLogHandler : FB_LogHandler;
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[
-fbLogHandler();
+      <ST><![CDATA[fbLogHandler();
+
 
 // Run the Diagnostics PRG
 DIAGNOSTICS();
@@ -93,7 +95,7 @@ END_IF
 	
 	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>);
 	
-	//TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>);
+	TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>);
 	
 	TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>);
 	
@@ -133,62 +135,62 @@ END_IF
 	
 (*Ion Pumps*)
 
-	RTDSL0_PIP_01(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_02(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_03(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_04(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_05(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
+	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
 	
-	TV2L0_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
+	TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
 	
-	TV2L0_PIP_02(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
+	TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
 	
-	TV2L0_PIP_03(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
+	TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
 	
-	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GCC_01.IG, stPump=>);
+	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, stPump=>);
 	
-	AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GCC_01.IG, stPump=>);
+	AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, stPump=>);
 	
-	SP1L0_KMONO_PIP_01(i_stGauge:=SP1L0_KMONO_GCC_01.IG, stPump=>);
+	SP1L0_KMONO_PIP_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, stPump=>);
 	
-	PA1L0_PIN_01(i_stGauge:=SP1L0_KMONO_GCC_01.IG, stPump=>); //PIN???	Do I also need CC setpoint?
+	PA1L0_PIN_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, stPump=>); //PIN???	Do I also need CC setpoint?
 	
-	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GCC_01.IG, stPump=>);
+	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, stPump=>);
 	
-	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GCC_01.IG, stPump=>);
+	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, stPump=>);
 	
-	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GCC_01.IG, stPump=>);
+	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, stPump=>);
 	
-	MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GCC_01.IG, stPump=>);
+	MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GPI_01.PG, stPump=>);
 	
-	TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GCC_01.IG, stPump=>);
+	TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, stPump=>);
 	
-	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GCC_01.IG, stPump=>);
+	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, stPump=>);
 	
 	
 	(*H1.1 and H1.2
-	TV4L0_PIP_01(i_stGauge:=TV4L0_GCC_01.IG, stPump=>);
+	TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
 	
-	TV4L0_PIP_02(i_stGauge:=TV4L0_GCC_02.IG, stPump=>);
+	TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
 	
 	PA2L0_PIN_01 : FB_PIP_Gamma;
 	
-	TV5L0_PIP_01(i_stGauge:=TV5L0_GCC_01.IG, stPump=>);
+	TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 	
-	TV5L0_PIP_02(i_stGauge:=TV5L0_GCC_02.IG, stPump=>);
+	TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 	*)
 
 (*Vacuum Gate Valve*)
 	
 	TV1L0_VGC_01(
 	i_stUSG:= Accelerator_Upstream_Gauge, 
-	i_stDSG:= TV1L0_GCC_01.IG, 
+	i_stDSG:= RTDSL0_PIP_03.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -200,8 +202,8 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput1);
 	
 	IM1L0_XTES_VGC_01(
-	i_stUSG:= TV1L0_GCC_01.IG, 
-	i_stDSG:= TV2L0_GCC_01.IG, 
+	i_stUSG:= RTDSL0_PIP_03.q_IG, 
+	i_stDSG:= IM1L0_XTES_PIP_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -213,8 +215,8 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput1);
 
 	TV2L0_VGC_01(
-	i_stUSG:= TV2L0_GCC_01.IG, 
-	i_stDSG:= TV2L0_GCC_02.IG, 
+	i_stUSG:= TV2L0_PIP_01.q_IG, 
+	i_stDSG:= TV2L0_PIP_02.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -226,8 +228,8 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput1);
 	
 	TV2L0_VGC_02(
-	i_stUSG:= TV2L0_GCC_02.IG, 
-	i_stDSG:= SL1L0_POWER_GCC_01.IG, 
+	i_stUSG:= TV2L0_PIP_03.q_IG, 
+	i_stDSG:= SL1L0_POWER_PIN_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -239,8 +241,8 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput1);
 	
 	PC1L0_XTES_VGC_01(
-	i_stUSG:= AT2L0_SOLID_GCC_01.IG, 
-	i_stDSG:= SP1L0_KMONO_GCC_01.IG, 
+	i_stUSG:= AT2L0_SOLID_PIN_01.q_IG, 
+	i_stDSG:= SP1L0_KMONO_PIP_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -254,7 +256,7 @@ END_IF
 //	PA1L0_VFS_01 : FB_VFS;
 
 	MR1L0_HOMS_VGC_01(
-	i_stUSG:= PA1L0_GCC_01.IG, 
+	i_stUSG:= PA1L0_PIN_01.q_IG, 
 	i_stDSG:= MR1L0_HOMS_PIP_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
@@ -268,7 +270,7 @@ END_IF
 
 	BT2L0_PLEG_VGC_01(
 	i_stUSG:= MR1L0_HOMS_PIP_01.q_IG, 
-	i_stDSG:= BT2L0_PLEG_GCC_01.IG, 
+	i_stDSG:= BT2L0_PLEG_PIP_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -280,8 +282,8 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput1);
 
 	MR2L0_HOMS_VGC_01(
-	i_stUSG:= BT2L0_PLEG_GCC_01.IG, 
-	i_stDSG:= MR2L0_HOMS_GCC_01.IG, 
+	i_stUSG:= BT2L0_PLEG_PIP_01.q_IG, 
+	i_stDSG:= MR2L0_HOMS_PIP_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -293,8 +295,8 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput1);	
 	
 	MR2L0_HOMS_VGC_02(
-	i_stUSG:= MR2L0_HOMS_GCC_01.IG, 
-	i_stDSG:= ST1L0_XTES_GCC_01.IG, 
+	i_stUSG:= MR2L0_HOMS_PIP_01.q_IG, 
+	i_stDSG:= ST1L0_XTES_PIP_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -306,8 +308,8 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput1);
 
 	TV1L1_VGC_01(
-	i_stUSG:= MR1L1_TXI_GCC_01.IG, 
-	i_stDSG:= MR2L0_HOMS_GCC_01.IG, 
+	i_stUSG:= MR1L1_TXI_PIP_01.q_IG, 
+	i_stDSG:= MR2L0_HOMS_PIP_01.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -384,170 +386,5 @@ END_IF
 
 ]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="8" Count="0" />
-      <LineId Id="2" Count="0" />
-      <LineId Id="994" Count="0" />
-      <LineId Id="839" Count="0" />
-      <LineId Id="838" Count="0" />
-      <LineId Id="837" Count="0" />
-      <LineId Id="851" Count="0" />
-      <LineId Id="848" Count="0" />
-      <LineId Id="847" Count="0" />
-      <LineId Id="850" Count="0" />
-      <LineId Id="853" Count="1" />
-      <LineId Id="860" Count="1" />
-      <LineId Id="855" Count="0" />
-      <LineId Id="551" Count="0" />
-      <LineId Id="987" Count="1" />
-      <LineId Id="991" Count="0" />
-      <LineId Id="990" Count="0" />
-      <LineId Id="993" Count="0" />
-      <LineId Id="992" Count="0" />
-      <LineId Id="989" Count="0" />
-      <LineId Id="852" Count="0" />
-      <LineId Id="535" Count="0" />
-      <LineId Id="602" Count="0" />
-      <LineId Id="31" Count="0" />
-      <LineId Id="634" Count="1" />
-      <LineId Id="642" Count="1" />
-      <LineId Id="648" Count="1" />
-      <LineId Id="655" Count="0" />
-      <LineId Id="657" Count="0" />
-      <LineId Id="656" Count="0" />
-      <LineId Id="658" Count="0" />
-      <LineId Id="674" Count="1" />
-      <LineId Id="678" Count="1" />
-      <LineId Id="666" Count="1" />
-      <LineId Id="683" Count="1" />
-      <LineId Id="691" Count="1" />
-      <LineId Id="697" Count="0" />
-      <LineId Id="703" Count="1" />
-      <LineId Id="698" Count="0" />
-      <LineId Id="863" Count="0" />
-      <LineId Id="902" Count="0" />
-      <LineId Id="904" Count="1" />
-      <LineId Id="903" Count="0" />
-      <LineId Id="935" Count="0" />
-      <LineId Id="934" Count="0" />
-      <LineId Id="864" Count="0" />
-      <LineId Id="869" Count="0" />
-      <LineId Id="603" Count="1" />
-      <LineId Id="32" Count="0" />
-      <LineId Id="37" Count="0" />
-      <LineId Id="636" Count="1" />
-      <LineId Id="640" Count="1" />
-      <LineId Id="644" Count="1" />
-      <LineId Id="650" Count="1" />
-      <LineId Id="659" Count="0" />
-      <LineId Id="661" Count="0" />
-      <LineId Id="660" Count="0" />
-      <LineId Id="662" Count="0" />
-      <LineId Id="668" Count="1" />
-      <LineId Id="676" Count="1" />
-      <LineId Id="685" Count="3" />
-      <LineId Id="652" Count="0" />
-      <LineId Id="699" Count="0" />
-      <LineId Id="696" Count="0" />
-      <LineId Id="708" Count="1" />
-      <LineId Id="870" Count="1" />
-      <LineId Id="908" Count="0" />
-      <LineId Id="910" Count="1" />
-      <LineId Id="930" Count="0" />
-      <LineId Id="932" Count="0" />
-      <LineId Id="931" Count="0" />
-      <LineId Id="909" Count="0" />
-      <LineId Id="933" Count="0" />
-      <LineId Id="874" Count="0" />
-      <LineId Id="877" Count="0" />
-      <LineId Id="707" Count="0" />
-      <LineId Id="710" Count="1" />
-      <LineId Id="605" Count="1" />
-      <LineId Id="610" Count="8" />
-      <LineId Id="609" Count="0" />
-      <LineId Id="630" Count="1" />
-      <LineId Id="633" Count="0" />
-      <LineId Id="632" Count="0" />
-      <LineId Id="638" Count="1" />
-      <LineId Id="646" Count="1" />
-      <LineId Id="653" Count="1" />
-      <LineId Id="663" Count="1" />
-      <LineId Id="670" Count="3" />
-      <LineId Id="665" Count="0" />
-      <LineId Id="680" Count="0" />
-      <LineId Id="689" Count="1" />
-      <LineId Id="681" Count="1" />
-      <LineId Id="693" Count="0" />
-      <LineId Id="700" Count="2" />
-      <LineId Id="712" Count="1" />
-      <LineId Id="694" Count="0" />
-      <LineId Id="878" Count="0" />
-      <LineId Id="880" Count="0" />
-      <LineId Id="885" Count="0" />
-      <LineId Id="917" Count="1" />
-      <LineId Id="912" Count="0" />
-      <LineId Id="887" Count="0" />
-      <LineId Id="926" Count="1" />
-      <LineId Id="929" Count="0" />
-      <LineId Id="928" Count="0" />
-      <LineId Id="879" Count="0" />
-      <LineId Id="608" Count="0" />
-      <LineId Id="607" Count="0" />
-      <LineId Id="542" Count="0" />
-      <LineId Id="619" Count="10" />
-      <LineId Id="39" Count="0" />
-      <LineId Id="69" Count="0" />
-      <LineId Id="726" Count="10" />
-      <LineId Id="725" Count="0" />
-      <LineId Id="107" Count="0" />
-      <LineId Id="737" Count="10" />
-      <LineId Id="108" Count="0" />
-      <LineId Id="748" Count="0" />
-      <LineId Id="751" Count="10" />
-      <LineId Id="749" Count="0" />
-      <LineId Id="144" Count="0" />
-      <LineId Id="763" Count="10" />
-      <LineId Id="762" Count="0" />
-      <LineId Id="189" Count="0" />
-      <LineId Id="250" Count="0" />
-      <LineId Id="269" Count="0" />
-      <LineId Id="776" Count="10" />
-      <LineId Id="775" Count="0" />
-      <LineId Id="313" Count="0" />
-      <LineId Id="789" Count="10" />
-      <LineId Id="788" Count="0" />
-      <LineId Id="319" Count="0" />
-      <LineId Id="801" Count="10" />
-      <LineId Id="800" Count="0" />
-      <LineId Id="356" Count="0" />
-      <LineId Id="826" Count="10" />
-      <LineId Id="825" Count="0" />
-      <LineId Id="369" Count="0" />
-      <LineId Id="813" Count="10" />
-      <LineId Id="812" Count="0" />
-      <LineId Id="371" Count="0" />
-      <LineId Id="377" Count="0" />
-      <LineId Id="416" Count="0" />
-      <LineId Id="421" Count="0" />
-      <LineId Id="889" Count="1" />
-      <LineId Id="895" Count="0" />
-      <LineId Id="940" Count="9" />
-      <LineId Id="938" Count="0" />
-      <LineId Id="936" Count="0" />
-      <LineId Id="898" Count="0" />
-      <LineId Id="951" Count="10" />
-      <LineId Id="899" Count="1" />
-      <LineId Id="963" Count="10" />
-      <LineId Id="901" Count="0" />
-      <LineId Id="925" Count="0" />
-      <LineId Id="974" Count="10" />
-      <LineId Id="924" Count="0" />
-      <LineId Id="888" Count="0" />
-      <LineId Id="715" Count="2" />
-      <LineId Id="714" Count="0" />
-      <LineId Id="422" Count="0" />
-      <LineId Id="471" Count="0" />
-      <LineId Id="540" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
