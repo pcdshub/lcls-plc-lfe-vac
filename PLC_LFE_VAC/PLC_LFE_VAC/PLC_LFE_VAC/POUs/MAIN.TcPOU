@@ -20,8 +20,6 @@ VAR
 
 	fbLogHandler : FB_LogHandler;
 	
-	fbLogHandler : FB_LogHandler;
-	
 END_VAR
 ]]></Declaration>
     <Implementation>

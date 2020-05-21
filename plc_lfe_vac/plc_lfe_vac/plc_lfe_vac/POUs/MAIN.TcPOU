@@ -4,7 +4,7 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	(*HXR Accelerator side PLC Interface*)
-	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input
+	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input;
 	'}
 	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
 	
@@ -17,7 +17,7 @@ VAR
 	(*TXI PLC Interface*)
 
 	(*XPP PLC Interface*)
-	
+
 	fbLogHandler : FB_LogHandler;
 	
 END_VAR
@@ -25,23 +25,23 @@ END_VAR
     <Implementation>
       <ST><![CDATA[fbLogHandler();
 
+
 // Run the Diagnostics PRG
 DIAGNOSTICS();
 
 (*HXR Accelerator side PLC Interface*)
 //Update Accelerator Gauge Pressure Reading
 Accelerator_Upstream_Gauge.xPRESS_OK	:=	i_xUpstreamTreaty_PressOK;
+//update pressure reading from epics? orsomething?
 
-IF (i_xUpstreamTreaty_PressOK) THEN
-	Accelerator_Upstream_Gauge.xPRESS_OK 	:= TRUE;
-	//Accelerator_Upstream_Gauge.eState 		:= gc_GaugeValidState;
-	Accelerator_Upstream_Gauge.rPRESS		:= 5e-6;
+//Provide Pressure OK reading for Upstream Accelerator Vacuum System
+(*
+IF  Accelerator_Upstream_Gauge.rPress <= r_Accelerator_Setpoint THEN
+	q_xUpstreamTreaty_PressOK	:=	TRUE;
 ELSE
-	Accelerator_Upstream_Gauge.xPRESS_OK 	:= FALSE;
-	//Accelerator_Upstream_Gauge.eState 		:= 1;
-	Accelerator_Upstream_Gauge.rPRESS		:= 760; //torr	
+	q_xUpstreamTreaty_PressOK	:=	FALSE;
 END_IF
-
+*)
 
 (*HXR Gas Attenuator PLC Interface*)
 
@@ -133,23 +133,23 @@ END_IF
 	
 (*Ion Pumps*)
 
-	RTDSL0_PIP_01(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_02(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_03(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_04(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_05(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
+	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
 	
-	TV2L0_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
+	TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
 	
-	TV2L0_PIP_02(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
+	TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
 	
-	TV2L0_PIP_03(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
+	TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
 	
 	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, stPump=>);
 	
