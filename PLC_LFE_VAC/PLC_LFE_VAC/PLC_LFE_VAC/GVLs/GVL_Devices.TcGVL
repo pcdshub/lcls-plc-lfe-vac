@@ -571,16 +571,20 @@ VAR_GLOBAL
 		io: io
 	'}
 	PC2L1_L2SI_VGC_01 : FB_VGC;
-	
-	(*
 
 (*TV4L0*) // Hutch 1.1
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H11_L0S2_EP2_EP3174-0002]^AI Standard Channel 1^Value
+	'}
 	{attribute 'pytmc' := '
 		pv: TV4L0:GPI:01
 		io: io
 	'}
 	TV4L0_GPI_01 : FB_MKS275;
 	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H11_L0S2_EP2_EP3174-0002]^AI Standard Channel 2^Value;
+								 .q_xHV_DIS		:= 	TIIB[H11_L0S2_EP3_EP2624-0002]^Channel 2^Output
+	'}
 	{attribute 'pytmc' := '
 		pv: TV4L0:GCC:01
 		io: io
@@ -597,18 +601,27 @@ VAR_GLOBAL
 	'}
 	TV4L0_PIP_01 : FB_PIP_Gamma;
 	
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[H11_L0S2_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[H11_L0S2_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[H11_L0S2_EP1_EP2338-0002]^Channel 11^Output
+	'}
 	{attribute 'pytmc' := '
 		pv: TV4L0:VGC:01
 		io: io
 	'}
 	TV4L0_VGC_01 : FB_VGC;
 	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H11_L0S9_EP1_EP3174-0002]^AI Standard Channel 1^Value
+	'}
 	{attribute 'pytmc' := '
 		pv: TV4L0:GPI:02
 		io: io
 	'}
 	TV4L0_GPI_02 : FB_MKS275;
 	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H11_L0S9_EP1_EP3174-0002]^AI Standard Channel 2^Value;
+								 .q_xHV_DIS		:= 	TIIB[H11_L0S9_EP2_EP2624-0002]^Channel 2^Output
+	'}
 	{attribute 'pytmc' := '
 		pv: TV4L0:GCC:02
 		io: io
@@ -636,19 +649,21 @@ VAR_GLOBAL
 	'}
 	PA2L0_PIN_01 : FB_PIP_Gamma;
 
-(*TV5L0*) 
-	{attribute 'pytmc' := '
-		pv: TV5L0:VGC:01
-		io: io
-	'}
-	TV5L0_VGC_01 : FB_VGC;
+
 //Hutch 1.2
+(*TV5L0*) 
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H12_L0S1_EP1_EP3174-0002]^AI Standard Channel 1^Value
+	'}
 	{attribute 'pytmc' := '
 		pv: TV5L0:GPI:01
 		io: io
 	'}
 	TV5L0_GPI_01 : FB_MKS275;
 	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H12_L0S1_EP1_EP3174-0002]^AI Standard Channel 2^Value;
+								 .q_xHV_DIS		:= 	TIIB[H12_L0S1_EP2_EP2624-0002]^Channel 2^Output
+	'}
 	{attribute 'pytmc' := '
 		pv: TV5L0:GCC:01
 		io: io
@@ -665,18 +680,27 @@ VAR_GLOBAL
 	'}
 	TV5L0_PIP_01 : FB_PIP_Gamma;
 	
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[H12_L0S3_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[H12_L0S3_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[H12_L0S3_EP1_EP2338-0002]^Channel 11^Output
+	'}
 	{attribute 'pytmc' := '
-		pv: TV5L0:VGC:02
+		pv: TV5L0:VGC:01
 		io: io
 	'}
-	TV5L0_VGC_02 : FB_VGC;
+	TV5L0_VGC_01 : FB_VGC;
 	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H12_L0S3_EP2_EP3174-0002]^AI Standard Channel 1^Value
+	'}
 	{attribute 'pytmc' := '
 		pv: TV5L0:GPI:02
 		io: io
 	'}
 	TV5L0_GPI_02 : FB_MKS275;
 	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H12_L0S3_EP2_EP3174-0002]^AI Standard Channel 2^Value;
+								 .q_xHV_DIS		:= 	TIIB[H12_L0S3_EP3_EP2624-0002]^Channel 2^Output
+	'}
 	{attribute 'pytmc' := '
 		pv: TV5L0:GCC:02
 		io: io
@@ -702,15 +726,36 @@ VAR_GLOBAL
 	'}
 	TV5L0_GFS_01 : FB_MKS422;
 
-	
+	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H12_L0S3_EP2_EP3174-0002]^AI Standard Channel 4^Value;
+								 .q_xHV_DIS		:= 	TIIB[H12_L0S3_EP3_EP2624-0002]^Channel 4^Output
+	'}
+	{attribute 'pytmc' := '
+		pv: TV5L0:GCC:03
+		io: io
+	'}
+	TV5L0_GCC_03 : FB_MKS500_EP;
+
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 4^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 4^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E6_EL2794]^Channel 4^Output
+	'}		
+	{attribute 'pytmc' := '
+		pv: TV5L0:PIP:03
+		io: io
+	'}
+	TV5L0_PIP_03 : FB_PIP_Gamma;
 	
 (*TV6L0*)
+	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 1^Input;
+								 .i_xClsLS	:=	TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 2^Input;
+								 .q_xOPN_DO	:=	TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 11^Output
+	'}
 	{attribute 'pytmc' := '
 		pv: TV6L0:VGC:01
 		io: io
 	'}
 	TV6L0_VGC_01 : FB_VGC;
-	*)
+
 
 END_VAR]]></Declaration>
   </GVL>

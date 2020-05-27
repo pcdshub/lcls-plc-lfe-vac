@@ -8,9 +8,9 @@ VAR
 	'}
 	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
 	
-	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output;
-	'}
-	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
+//	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output;
+//	'}
+//	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
 	
 	(*HXR Gas Attenuator PLC Interface*)
 
@@ -31,17 +31,18 @@ DIAGNOSTICS();
 
 (*HXR Accelerator side PLC Interface*)
 //Update Accelerator Gauge Pressure Reading
-Accelerator_Upstream_Gauge.xPRESS_OK	:=	i_xUpstreamTreaty_PressOK;
-//update pressure reading from epics? orsomething?
+//Accelerator_Upstream_Gauge.xPRESS_OK	:=	i_xUpstreamTreaty_PressOK;
 
-//Provide Pressure OK reading for Upstream Accelerator Vacuum System
-(*
-IF  Accelerator_Upstream_Gauge.rPress <= r_Accelerator_Setpoint THEN
-	q_xUpstreamTreaty_PressOK	:=	TRUE;
+IF(i_xUpstreamTreaty_PressOK) THEN
+	Accelerator_Upstream_Gauge.xPRESS_OK 	:= TRUE;
+	//Accelerator_Upstream_Gauge.eState 	:= gc_GaugeValidState;
+	Accelerator_Upstream_Gauge.rPRESS	 	:= 5e-6; //torr
 ELSE
-	q_xUpstreamTreaty_PressOK	:=	FALSE;
+	Accelerator_Upstream_Gauge.xPRESS_OK 	:= FALSE;
+	//Accelerator_Upstream_Gauge.eState 	:= 1;
+	Accelerator_Upstream_Gauge.rPRESS	 	:= 760;	//torr
+
 END_IF
-*)
 
 (*HXR Gas Attenuator PLC Interface*)
 
@@ -76,7 +77,7 @@ END_IF
 	
 	ST1L0_XTES_GPI_01(PG=>);
 	
-	(*H1.1 and H1.2
+	//H1.1 and H1.2
 	TV4L0_GPI_01(PG=>);
 	
 	TV4L0_GPI_02(PG=>);
@@ -85,7 +86,6 @@ END_IF
 	
 	TV5L0_GPI_02(PG=>);
 	
-	*)
 	
 (*Cold Cathode Gauges*)
 	
@@ -115,7 +115,7 @@ END_IF
 	
 	ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>);
 
-	(*H1.1 and H1.2
+	//H1.1 and H1.2
 	TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>);
 	
 	TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>);
@@ -125,31 +125,30 @@ END_IF
 	TV5L0_GCC_02(PG:=TV5L0_GPI_02.PG,IG=>);
 	
 	TV5L0_GFS_01(PG:=TV5L0_GPI_02.PG,IG=>);
-
 	
-	*)
+	TV5L0_GCC_03(PG:=TV5L0_GPI_02.PG,IG=>);
 	
 	
 	
 (*Ion Pumps*)
 
-	RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_01(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
 	
-	RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_02(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
 	
-	RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_03(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
 	
-	RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_04(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
 	
-	RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_05(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
 	
-	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
+	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
 	
-	TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
+	TV2L0_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
 	
-	TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
+	TV2L0_PIP_02(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
 	
-	TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
+	TV2L0_PIP_03(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
 	
 	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, stPump=>);
 	
@@ -172,17 +171,18 @@ END_IF
 	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, stPump=>);
 	
 	
-	(*H1.1 and H1.2
+	//H1.1 and H1.2
 	TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
 	
 	TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
 	
-	PA2L0_PIN_01 : FB_PIP_Gamma;
+	PA2L0_PIN_01(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 	
 	TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 	
 	TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
-	*)
+	
+	TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 
 (*Vacuum Gate Valve*)
 	
@@ -322,7 +322,7 @@ END_IF
 
 //	PC2L1_L2SI_VGC_01 : FB_VGC;
 
-	(*H1.1
+	//H1.1
 	TV4L0_VGC_01(
 	i_stUSG:= TV4L0_GCC_01.IG, 
 	i_stDSG:= TV4L0_GCC_02.IG, 
@@ -335,22 +335,8 @@ END_IF
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);	
-	
 		
 	TV5L0_VGC_01(
-	i_stUSG:= TV4L0_GCC_02.IG, 
-	i_stDSG:= TV5L0_GCC_01.IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
-	i_xReset:= xReset_PMPS_FFO2, 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2);	
-		
-	TV5L0_VGC_02(
 	i_stUSG:= TV5L0_GCC_01.IG, 
 	i_stDSG:= TV5L0_GCC_02.IG, 
 	i_xDis_DPIlk:= FALSE , 
@@ -364,7 +350,7 @@ END_IF
 	io_fbFFHWO:= g_FastFaultOutput2);	
 	
 	TV6L0_VGC_01(
-	i_stUSG:= TV5L0_GCC_02.IG, 
+	i_stUSG:= TV5L0_GCC_03.IG, 
 	i_stDSG:= XPP_Downstream_Vacuum, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
@@ -375,7 +361,6 @@ END_IF
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);		
-	*)
 
 (*Vacuum Fast Shutter Valve*)
 
