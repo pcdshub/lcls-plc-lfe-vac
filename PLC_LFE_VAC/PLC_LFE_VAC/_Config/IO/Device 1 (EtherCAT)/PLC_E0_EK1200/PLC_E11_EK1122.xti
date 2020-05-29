@@ -7,5 +7,38 @@
 		<Name>__FILENAME__</Name>
 		<ImageId>1000</ImageId>
 		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122"/>
+		<Box File="H11_L0S2_EP1_EP2338-0002.xti" Id="199">
+			<EtherCAT PortABoxInfo="#x03000061"/>
+		</Box>
+		<Box File="H11_L0S2_EP2_EP3174-0002.xti" Id="200">
+			<EtherCAT PortABoxInfo="#x010000c7"/>
+		</Box>
+		<Box File="H11_L0S2_EP3_EP2624-0002.xti" Id="201">
+			<EtherCAT PortABoxInfo="#x010000c8"/>
+		</Box>
+		<Box File="H11_L0S9_EP1_EP3174-0002.xti" Id="202">
+			<EtherCAT PortABoxInfo="#x010000c9"/>
+		</Box>
+		<Box File="H11_L0S9_EP2_EP2624-0002.xti" Id="203">
+			<EtherCAT PortABoxInfo="#x010000ca"/>
+		</Box>
+		<Box File="H12_L0S1_EP1_EP3174-0002.xti" Id="204">
+			<EtherCAT PortABoxInfo="#x010000cb"/>
+		</Box>
+		<Box File="H12_L0S1_EP2_EP2624-0002.xti" Id="205">
+			<EtherCAT PortABoxInfo="#x010000cc"/>
+		</Box>
+		<Box File="H12_L0S3_EP1_EP2338-0002.xti" Id="206">
+			<EtherCAT PortABoxInfo="#x010000cd"/>
+		</Box>
+		<Box File="H12_L0S3_EP2_EP3174-0002.xti" Id="207">
+			<EtherCAT PortABoxInfo="#x010000ce"/>
+		</Box>
+		<Box File="H12_L0S3_EP3_EP2624-0002.xti" Id="208">
+			<EtherCAT PortABoxInfo="#x010000cf"/>
+		</Box>
+		<Box File="H12_L0S6_EP1_EP2338-0002.xti" Id="209">
+			<EtherCAT PortABoxInfo="#x010000d0"/>
+		</Box>
 	</Box>
 </TcSmItem>
