@@ -27,14 +27,14 @@
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
 				<Var>
-					<Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
+					<Name>L2SI_Vacuum_Library.Global_Variables.g_stSystem.I_EcatMaster1</Name>
 					<Comment>
 						<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
 					</Comment>
 					<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 				</Var>
 				<Var>
-					<Name>L2SI_Vacuum_Library.Global_Variables.g_stSystem.I_EcatMaster1</Name>
+					<Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
 					<Comment>
 						<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
 					</Comment>
@@ -250,33 +250,33 @@
 	</Project>
 	<Mappings>
 		<OwnerA Name="plc_lfe_vac_fs Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E7_EK1122_QpcMks^MKS_E0_EK1100^MKS_E22_EL1124">
-				<Link VarA="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xTrigger" VarB="Channel 1^Input" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xTrigger" VarB="Channel 2^Input" AutoLink="true"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E1_EL1004">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E1_EL1004">
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xClsLS" VarB="Channel 1^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E3_EL2212">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E3_EL2212">
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_A" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_B" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E4_EL2212">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E4_EL2212">
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_C" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xOPN_DO" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E1_EL1004">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E1_EL1004">
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xClsLS" VarB="Channel 1^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E3_EL2212">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E3_EL2212">
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xClose_A" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xClose_B" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E4_EL2212">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E4_EL2212">
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xClose_C" VarB="DOX Control Channel 1^Control^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xOPN_DO" VarB="DOX Control Channel 2^Control^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^MKS_E0_EK1100^MKS_E22_EL1124">
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xTrigger" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xTrigger" VarB="Channel 2^Input" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
