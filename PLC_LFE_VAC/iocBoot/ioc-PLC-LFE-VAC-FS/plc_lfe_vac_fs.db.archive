@@ -1,0 +1,4 @@
+$(IOC):LCLSGeneral:LogPort_RBV.VAL	1	scan
+$(IOC):LCLSGeneral:LogPort.VAL	1	scan
+$(IOC):LCLSGeneral:LogHost_RBV.VAL	1	scan
+$(IOC):LCLSGeneral:LogHost.VAL	1	scan
