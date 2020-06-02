@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CFlbTermDef" SubType="9099">
+	<Box Id="58" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>65</ImageId>
+		<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="" Desc="EK1100"/>
+	</Box>
+</TcSmItem>
