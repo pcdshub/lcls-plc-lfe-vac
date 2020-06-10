@@ -25,8 +25,8 @@
 			<Licenses>
 				<Target>
 					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
-					<ManualSelect>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</ManualSelect>
 					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
+					<ManualSelect>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</ManualSelect>
 					<ManualSelect Instances="1">{103F30C9-DF25-439E-837B-9DF80CB9356C}</ManualSelect>
 					<ManualSelect>{B27B051A-CA6A-42EA-833E-82CC92903D83}</ManualSelect>
 				</Target>
@@ -1571,17 +1571,17 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^QPC_E0_EK1100^QPC_E4_EL3064">
 				<Link VarA="PlcTask Inputs^GVL_Devices.IM1L0_XTES_PIP_01.i_iPRESS" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.RTDSL0_PIP_05.i_iPRESS" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_Devices.TV5L0_PIP_03.i_iPRESS" VarB="AI Standard Channel 4^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV5L0_PIP_03.i_iPRESS" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^QPC_E0_EK1100^QPC_E5_EL1004">
 				<Link VarA="PlcTask Inputs^GVL_Devices.IM1L0_XTES_PIP_01.i_xSP_DI" VarB="Channel 2^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.RTDSL0_PIP_05.i_xSP_DI" VarB="Channel 1^Input" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_Devices.TV5L0_PIP_03.i_xSP_DI" VarB="Channel 4^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV5L0_PIP_03.i_xSP_DI" VarB="Channel 3^Input" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^QPC_E0_EK1100^QPC_E6_EL2794">
 				<Link VarA="PlcTask Outputs^GVL_Devices.IM1L0_XTES_PIP_01.q_xHVEna_DO" VarB="Channel 2^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.RTDSL0_PIP_05.q_xHVEna_DO" VarB="Channel 1^Output" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_Devices.TV5L0_PIP_03.q_xHVEna_DO" VarB="Channel 4^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV5L0_PIP_03.q_xHVEna_DO" VarB="Channel 3^Output" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^QPC_E0_EK1100^QPC_E7_EL3064">
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV2L0_PIP_01.i_iPRESS" VarB="AI Standard Channel 1^Value" AutoLink="true"/>

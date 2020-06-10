@@ -735,9 +735,9 @@ VAR_GLOBAL
 	'}
 	TV5L0_GCC_03 : FB_MKS500_EP;
 
-	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 4^Value;
-								 .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 4^Input;
-								 .q_xHVEna_DO	:= 	TIIB[QPC_E6_EL2794]^Channel 4^Output
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 3^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 3^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E6_EL2794]^Channel 3^Output
 	'}		
 	{attribute 'pytmc' := '
 		pv: TV5L0:PIP:03
