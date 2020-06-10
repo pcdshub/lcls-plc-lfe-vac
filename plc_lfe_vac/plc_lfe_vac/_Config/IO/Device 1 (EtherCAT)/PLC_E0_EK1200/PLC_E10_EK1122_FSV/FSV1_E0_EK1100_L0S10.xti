@@ -13,14 +13,14 @@
 		<Box File="FSV1_E2_EL9190.xti" Id="108">
 			<EtherCAT PortABoxInfo="#x01000048"/>
 		</Box>
-		<Box File="FSV1_E3_EL2212.xti" Id="73">
+		<Box File="FSV1_E3_EL2202.xti" Id="77">
 			<EtherCAT PortABoxInfo="#x01000048"/>
 		</Box>
-		<Box File="FSV1_E4_EL2212.xti" Id="74">
-			<EtherCAT PortABoxInfo="#x01000049"/>
+		<Box File="FSV1_E4_EL2202.xti" Id="78">
+			<EtherCAT PortABoxInfo="#x0100004d"/>
 		</Box>
 		<Box File="FSV1_END_EL9011.xti" Id="100">
-			<EtherCAT PortABoxInfo="#x0100004a"/>
+			<EtherCAT PortABoxInfo="#x0100004e"/>
 		</Box>
 	</Box>
 </TcSmItem>

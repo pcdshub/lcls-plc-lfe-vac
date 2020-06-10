@@ -7,10 +7,10 @@ VAR_GLOBAL
 
 	{attribute 'TcLinkTo' := 	'.i_xOPNLS	:=	TIIB[FSV1_E1_EL1004]^Channel 2^Input;
 								 .i_xClsLS	:=	TIIB[FSV1_E1_EL1004]^Channel 1^Input;
-								 .q_xClose_A	:=	TIIB[FSV1_E3_EL2212]^DOX Control Channel 1^Control^Output;
-								 .q_xClose_B	:=	TIIB[FSV1_E3_EL2212]^DOX Control Channel 2^Control^Output;
-								 .q_xClose_C	:=	TIIB[FSV1_E4_EL2212]^DOX Control Channel 1^Control^Output;
-								 .q_xOPN_DO		:=	TIIB[FSV1_E4_EL2212]^DOX Control Channel 2^Control^Output;
+								 .q_xClose_A	:=	TIIB[FSV1_E3_EL2202]^Channel 1^Output;
+								 .q_xClose_B	:=	TIIB[FSV1_E3_EL2202]^Channel 2^Output;
+								 .q_xClose_C	:=	TIIB[FSV1_E4_EL2202]^Channel 1^Output;
+								 .q_xOPN_DO		:=	TIIB[FSV1_E4_EL2202]^Channel 2^Output;
 								 .i_xTrigger	:= TIIB[MKS_E22_EL1124]^Channel 1^Input
 								 
 	'}
@@ -18,10 +18,10 @@ VAR_GLOBAL
 	
 	{attribute 'TcLinkTo' := 	'.i_xOPNLS	:=	TIIB[FSV2_E1_EL1004]^Channel 2^Input;
 								 .i_xClsLS	:=	TIIB[FSV2_E1_EL1004]^Channel 1^Input;
-								 .q_xClose_A	:=	TIIB[FSV2_E3_EL2212]^DOX Control Channel 1^Control^Output;
-								 .q_xClose_B	:=	TIIB[FSV2_E3_EL2212]^DOX Control Channel 2^Control^Output;
-								 .q_xClose_C	:=	TIIB[FSV2_E4_EL2212]^DOX Control Channel 1^Control^Output;
-								 .q_xOPN_DO		:=	TIIB[FSV2_E4_EL2212]^DOX Control Channel 2^Control^Output;
+								 .q_xClose_A	:=	TIIB[FSV2_E3_EL2202]^Channel 1^Output;
+								 .q_xClose_B	:=	TIIB[FSV2_E3_EL2202]^Channel 2^Output;
+								 .q_xClose_C	:=	TIIB[FSV2_E4_EL2202]^Channel 1^Output;
+								 .q_xOPN_DO		:=	TIIB[FSV2_E4_EL2202]^Channel 2^Output;
 								 .i_xTrigger	:= TIIB[MKS_E22_EL1124]^Channel 2^Input
 								 
 	'}
