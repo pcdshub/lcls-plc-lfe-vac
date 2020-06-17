@@ -366,9 +366,9 @@ VAR_GLOBAL
 	'}
 	MR1L0_HOMS_GCC_01 : FB_MKS422;
 
-	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 4^Value;
-								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 4^Input;
-								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 4^Output
+	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E11_EL3064]^AI Standard Channel 2^Value;
+								 .i_xSP_DI		:= 	TIIB[QPC_E12_EL1004]^Channel 2^Input;
+								 .q_xHVEna_DO	:= 	TIIB[QPC_E13_EL2794]^Channel 2^Output
 	'}	
 	{attribute 'pytmc' := '
 		pv: MR1L0:HOMS:PIP:01
