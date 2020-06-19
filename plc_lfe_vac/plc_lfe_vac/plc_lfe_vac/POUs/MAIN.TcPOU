@@ -19,12 +19,19 @@ VAR
 	(*XPP PLC Interface*)
 
 	fbLogHandler : FB_LogHandler;
+	fb_ADS_WATCHDOG_VAC_LFE_GEM:FB_ADS_WATCHDOG;
 	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[fbLogHandler();
 
+//Writes watchdog bit to remote vac_lfe_gem reading the ion pumps around the gass attenuator
+fb_ADS_WATCHDOG_VAC_LFE_GEM(
+	sNetId:= '172.21.88.32.1.1', 
+	nPort:= 851, 
+	sVarName:= 'MAIN.iWatchdog', 
+	bError=> );
 
 // Run the Diagnostics PRG
 DIAGNOSTICS();
@@ -53,21 +60,21 @@ END_IF
 
 (*PIRANI Gauges*)
 
-	TV1L0_GPI_01(PG=>);
+	TV1L0_GPI_01(b937A:=TRUE, PG=>);
 	
-	TV2L0_GPI_01(PG=>);
+	TV2L0_GPI_01(b937A:=TRUE, PG=>);
 	
-	TV2L0_GPI_02(PG=>);
+	TV2L0_GPI_02(b937A:=TRUE, PG=>);
 	
-	SL1L0_POWER_GPI_01(PG=>);
+	SL1L0_POWER_GPI_01(b937A:=TRUE, PG=>);
 	
-	AT2L0_SOLID_GPI_01(PG=>);
+	AT2L0_SOLID_GPI_01(b937A:=TRUE, PG=>);
 	
-	SP1L0_KMONO_GPI_01(PG=>);
+	SP1L0_KMONO_GPI_01(b937A:=TRUE, PG=>);
 	
-	PA1L0_GPI_01(PG=>);
+	PA1L0_GPI_01(b937A:=TRUE, PG=>);
 	
-	MR1L0_HOMS_GPI_01(PG=>);
+	MR1L0_HOMS_GPI_01(b937A:=TRUE, PG=>);
 	
 	MR1L1_TXI_GPI_01(PG=>);
 	
@@ -89,66 +96,66 @@ END_IF
 	
 (*Cold Cathode Gauges*)
 	
-	TV1L0_GCC_01(PG:=TV1L0_GPI_01.PG,IG=>);
+	TV1L0_GCC_01(PG:=TV1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>);
+	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>, b937A:=TRUE);
 	
-	TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>);
+	TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
 	
-	TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>);
+	TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
 	
-	SL1L0_POWER_GCC_01(PG:=SL1L0_POWER_GPI_01.PG,IG=>);
+	SL1L0_POWER_GCC_01(PG:=SL1L0_POWER_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>);
+	AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	SP1L0_KMONO_GCC_01(PG:=SP1L0_KMONO_GPI_01.PG,IG=>);
+	SP1L0_KMONO_GCC_01(PG:=SP1L0_KMONO_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>);
+	PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>);
+	MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>, b937A:=TRUE);
 	
 	MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>);
 	
-	BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>);
+	BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>);
+	MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>);
+	ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>,bEP:=TRUE);
 
 	//H1.1 and H1.2
-	TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>);
+	TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>);
+	TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>,bEP:=TRUE);
 
-	TV5L0_GCC_01(PG:=TV5L0_GPI_01.PG,IG=>);
+	TV5L0_GCC_01(PG:=TV5L0_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	TV5L0_GCC_02(PG:=TV5L0_GPI_02.PG,IG=>);
+	TV5L0_GCC_02(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
 	
 	TV5L0_GFS_01(PG:=TV5L0_GPI_02.PG,IG=>);
 	
-	TV5L0_GCC_03(PG:=TV5L0_GPI_02.PG,IG=>);
+	TV5L0_GCC_03(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
 	
 	
 	
 (*Ion Pumps*)
 
-	RTDSL0_PIP_01(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_02(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_03(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_04(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	RTDSL0_PIP_05(i_stGauge:=TV1L0_GCC_01.IG, stPump=>);
+	RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
 	
-	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
+	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
 	
-	TV2L0_PIP_01(i_stGauge:=TV2L0_GCC_01.IG, stPump=>);
+	TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
 	
-	TV2L0_PIP_02(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
+	TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
 	
-	TV2L0_PIP_03(i_stGauge:=TV2L0_GCC_02.IG, stPump=>);
+	TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
 	
 	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, stPump=>);
 	
@@ -361,6 +368,9 @@ END_IF
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);		
+
+	g_FastFaultOutput1.EvaluateOutput();
+	g_FastFaultOutput2.EvaluateOutput(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1]);
 
 (*Vacuum Fast Shutter Valve*)
 

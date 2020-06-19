@@ -392,7 +392,7 @@ VAR_GLOBAL
 		pv: MR1L1:TXI:GCC:01
 		io: io
 	'}
-	MR1L1_TXI_GCC_01 : FB_MKS500_EP;
+	MR1L1_TXI_GCC_01 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 3^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 3^Input;
@@ -430,7 +430,7 @@ VAR_GLOBAL
 		pv: BT2L0:PLEG:GCC:01
 		io: io
 	'}
-	BT2L0_PLEG_GCC_01 : FB_MKS500_EP;
+	BT2L0_PLEG_GCC_01 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E11_EL3064]^AI Standard Channel 3^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E12_EL1004]^Channel 3^Input;
@@ -468,7 +468,7 @@ VAR_GLOBAL
 		pv: MR2L0:HOMS:GCC:01
 		io: io
 	'}
-	MR2L0_HOMS_GCC_01 : FB_MKS500_EP;
+	MR2L0_HOMS_GCC_01 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E11_EL3064]^AI Standard Channel 4^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E12_EL1004]^Channel 4^Input;
@@ -549,7 +549,7 @@ VAR_GLOBAL
 		pv: ST1L0:XTES:GCC:01
 		io: io
 	'}
-	ST1L0_XTES_GCC_01 : FB_MKS500_EP;
+	ST1L0_XTES_GCC_01 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 2^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 2^Input;
@@ -589,7 +589,7 @@ VAR_GLOBAL
 		pv: TV4L0:GCC:01
 		io: io
 	'}
-	TV4L0_GCC_01 : FB_MKS500_EP;
+	TV4L0_GCC_01 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 1^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 1^Input;
@@ -626,7 +626,7 @@ VAR_GLOBAL
 		pv: TV4L0:GCC:02
 		io: io
 	'}
-	TV4L0_GCC_02 : FB_MKS500_EP;
+	TV4L0_GCC_02 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 2^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 2^Input;
@@ -668,7 +668,7 @@ VAR_GLOBAL
 		pv: TV5L0:GCC:01
 		io: io
 	'}
-	TV5L0_GCC_01 : FB_MKS500_EP;
+	TV5L0_GCC_01 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 3^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 3^Input;
@@ -705,7 +705,7 @@ VAR_GLOBAL
 		pv: TV5L0:GCC:02
 		io: io
 	'}
-	TV5L0_GCC_02 : FB_MKS500_EP;
+	TV5L0_GCC_02 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E17_EL3064]^AI Standard Channel 4^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E18_EL1004]^Channel 4^Input;
@@ -733,7 +733,7 @@ VAR_GLOBAL
 		pv: TV5L0:GCC:03
 		io: io
 	'}
-	TV5L0_GCC_03 : FB_MKS500_EP;
+	TV5L0_GCC_03 : FB_MKS500;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 3^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 3^Input;

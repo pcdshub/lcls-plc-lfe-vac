@@ -10,20 +10,14 @@ END_VAR
       <ST><![CDATA[PA1L0_VFS_01(
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= FALSE, 
-	iq_stValve=> );
+	iq_stValve=>,
+	io_fbFFHWO:= g_FastFaultOutput3);
 	
 TV3L0_VFS_01(
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= FALSE, 
-	iq_stValve=> );]]></ST>
+	iq_stValve=>,
+	io_fbFFHWO:= g_FastFaultOutput3);]]></ST>
     </Implementation>
-    <LineIds Name="MAIN_FS">
-      <LineId Id="28" Count="0" />
-      <LineId Id="30" Count="4" />
-      <LineId Id="36" Count="3" />
-      <LineId Id="35" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
