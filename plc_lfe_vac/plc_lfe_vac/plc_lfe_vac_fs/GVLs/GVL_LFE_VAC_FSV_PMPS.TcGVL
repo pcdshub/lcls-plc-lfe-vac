@@ -6,7 +6,7 @@ VAR_GLOBAL
 	
 //Example implementation of the FFO
     {attribute 'pytmc' := '
-    pv: PLC:LFE:VAC:FF3
+	pv: PLC:LFE:VAC:FFO:03    
     '}
     {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PLC_E2_EL2202]^Channel 1^Output'}
     g_FastFaultOutput3  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
