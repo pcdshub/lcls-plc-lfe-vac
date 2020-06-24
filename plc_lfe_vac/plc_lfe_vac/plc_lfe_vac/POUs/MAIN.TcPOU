@@ -369,12 +369,19 @@ END_IF
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);		
 
-	g_FastFaultOutput1.EvaluateOutput();
-	g_FastFaultOutput2.EvaluateOutput(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1]);
+	
 
 (*Vacuum Fast Shutter Valve*)
+TV3L0_VFS_01_Interface(
+		IG:=TV5L0_GFS_01.IG,
+		i_xFFReset:=TRUE);
 
 
+(*FastFaultOuput*)
+	g_FastFaultOutput1.EvaluateOutput();
+	g_FastFaultOutput1.EvaluateOverrides();
+	g_FastFaultOutput1.ExecuteLogging();
+	g_FastFaultOutput2.EvaluateOutput(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1]);
 
 
 ]]></ST>
