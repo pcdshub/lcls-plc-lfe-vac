@@ -3,14 +3,6 @@
   <POU Name="MAIN" Id="{53e436ba-9af9-4ca4-ad7b-a6b2399fa417}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	(*HXR Accelerator side PLC Interface*)
-	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input;
-	'}
-	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
-	
-//	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output;
-//	'}
-//	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
 	
 	(*HXR Gas Attenuator PLC Interface*)
 
@@ -192,16 +184,16 @@ END_IF
 	TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 
 (*Vacuum Gate Valve*)
-	
 	TV1L0_VGC_01(
 	i_stUSG:= Accelerator_Upstream_Gauge, 
 	i_stDSG:= RTDSL0_PIP_03.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
+	i_xDis_DPIlk:= FALSE, 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_EBD, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'TV1L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -215,6 +207,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_EBD, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'IM1L0:XTES:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -228,6 +221,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_EBD, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'TV2L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -241,6 +235,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'TV2L0:VGC:02', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -254,6 +249,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'PC1L0:XTES:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -269,6 +265,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'MR1L0:HOMS:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -282,6 +279,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'BT2L0:PLEG:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -295,6 +293,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'MR2L0:HOMS:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);	
@@ -308,6 +307,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'MR2L0:HOMS:VGC:02', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -321,6 +321,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= "TV1L1:VGC:01", 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);		
@@ -339,6 +340,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
 	i_xReset:= xReset_PMPS_FFO2, 
+	i_sDevName:= 'TV4L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);	
@@ -351,7 +353,8 @@ END_IF
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
-	i_xReset:= xReset_PMPS_FFO2, 
+	i_xReset:= xReset_PMPS_FFO2,
+	i_sDevName:= 'TV5L0:VGC:01',  
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);	
@@ -365,6 +368,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
 	i_xReset:= xReset_PMPS_FFO2, 
+	i_sDevName:= 'TV6L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);		

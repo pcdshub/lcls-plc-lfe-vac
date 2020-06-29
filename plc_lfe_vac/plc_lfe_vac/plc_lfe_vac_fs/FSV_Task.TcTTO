@@ -3,7 +3,7 @@
   <Task Name="FSV_Task" Id="{e4979a02-912e-43a0-8402-bdfbea135f90}">
     <!--CycleTime in micro seconds.-->
     <CycleTime>1000</CycleTime>
-    <Priority>1</Priority>
+    <Priority>13</Priority>
     <PouCall>
       <Name>MAIN_FS</Name>
     </PouCall>

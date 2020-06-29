@@ -4,6 +4,13 @@
     <Declaration><![CDATA[//{attribute 'qualified_only'}
 VAR_GLOBAL
 	
+(*HXR Accelerator side PLC Interface*)
+	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input
+	'}
+	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
+//	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output
+//	'}
+//	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
 
 (*TRANSPORT VACUUM 1 HXR 0 LINE*) //HXR INSTALLATION SECTION 1
 	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E1_EL1004]^Channel 1^Input;
@@ -307,20 +314,15 @@ VAR_GLOBAL
 		io: io
 	'}
 	PA1L0_PIN_01 : FB_PIP_Gamma; //PIN???	
-	
-	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK;
-								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault;
-								 .i_xTrigger		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger;
-								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Open;
-								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed;
-								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^PlcTask Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xVAC_FAULT_OK
+(*	
+	{attribute 'TcLinkTo' := 	'.???
 	'}
 	{attribute 'pytmc' := '
 		pv: PA1L0:VFS:01
 		io: io
 	'}	
 	PA1L0_VFS_01	:	FB_VFS_Interface;
-	
+*)	
 	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E15_EL3064]^AI Standard Channel 1^Value
 	'}
 	{attribute 'pytmc' := '
@@ -501,7 +503,8 @@ VAR_GLOBAL
 								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
 								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
 								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK;
-								 .i_xMPS_OK			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK
+								 .i_xMPS_OK			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK;
+								 .i_eVFS_State		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State
 	'}
 	{attribute 'pytmc' := '
 		pv: TV3L0:VFS:01
