@@ -32,11 +32,14 @@
 				</Target>
 			</Licenses>
 			<Tasks>
-				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" ExceedWarning="2" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="4" Priority="13" CycleTime="10000" AmsPort="351" AdtTasks="true">
+				<Task Id="4" Priority="13" CycleTime="10000" AmsPort="351" ExceedWarning="2" AdtTasks="true">
 					<Name>FSV_Task</Name>
+				</Task>
+				<Task Id="5" Priority="1" CycleTime="10000" AmsPort="352" AdtTasks="true">
+					<Name>FSV_Task1</Name>
 				</Task>
 			</Tasks>
 		</System>
@@ -1789,7 +1792,7 @@
 			</OwnerB>
 			<OwnerB Name="TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance">
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open" AutoLink="true"/>

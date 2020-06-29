@@ -7,17 +7,19 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[PA1L0_VFS_01(
+      <ST><![CDATA[(*
+PA1L0_VFS_01(
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
-	iq_stValve=>,
 	io_fbFFHWO:= g_FastFaultOutput3);
-	
+*)	
 TV3L0_VFS_01(
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
-	iq_stValve=>,
-	io_fbFFHWO:= g_FastFaultOutput3);]]></ST>
+	io_fbFFHWO:= g_FastFaultOutput3);
+
+(*FastFaultOuput*)	
+g_FastFaultOutput3.Execute(bAutoReset:= TRUE);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

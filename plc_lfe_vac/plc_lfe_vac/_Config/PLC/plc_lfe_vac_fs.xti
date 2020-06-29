@@ -20,7 +20,7 @@
 			</Format>
 		</DataType>
 		<DataType>
-			<Name GUID="{5C2CBA75-FF67-4818-B199-200A23111D3C}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_ValvePositionState</Name>
+			<Name GUID="{9E6934F9-4617-4183-9352-0EE776164716}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_ValvePositionState</Name>
 			<BitSize>16</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
 			<EnumInfo>
@@ -53,12 +53,9 @@
 				</Text>
 				<Enum>4</Enum>
 			</EnumInfo>
-			<Hides>
-				<Hide GUID="{5BC49909-C73F-4580-81E9-62228110C3E6}"/>
-			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{C0CF3B8F-F186-456A-831A-C697D6594B5E}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_VGC</Name>
+			<Name GUID="{AE5DE0D9-8E17-4A8C-9D0B-17D4B50596B2}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_VGC</Name>
 			<BitSize>16</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
 			<EnumInfo>
@@ -91,12 +88,9 @@
 				</Text>
 				<Enum>4</Enum>
 			</EnumInfo>
-			<Hides>
-				<Hide GUID="{592345EE-3DED-4D88-9DB8-9A12B399992E}"/>
-			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{BF02F017-0983-4909-AB2E-028FFD035744}" Namespace="LCLS_Vacuum" AutoDeleteType="true">ST_ValveBase</Name>
+			<Name GUID="{EC5126F1-29CF-440D-8048-FED9BB109743}" Namespace="LCLS_Vacuum" AutoDeleteType="true">ST_ValveBase</Name>
 			<BitSize>800</BitSize>
 			<SubItem>
 				<Name>pv_xOPN_SW</Name>
@@ -255,7 +249,7 @@
 			</SubItem>
 			<SubItem>
 				<Name>eState</Name>
-				<Type GUID="{5C2CBA75-FF67-4818-B199-200A23111D3C}" Namespace="LCLS_Vacuum">E_ValvePositionState</Type>
+				<Type GUID="{9E6934F9-4617-4183-9352-0EE776164716}" Namespace="LCLS_Vacuum">E_ValvePositionState</Type>
 				<Comment>
 					<![CDATA[ States ]]>
 				</Comment>
@@ -280,7 +274,7 @@
 			</SubItem>
 			<SubItem>
 				<Name>eVGC_State</Name>
-				<Type GUID="{C0CF3B8F-F186-456A-831A-C697D6594B5E}" Namespace="LCLS_Vacuum">E_VGC</Type>
+				<Type GUID="{AE5DE0D9-8E17-4A8C-9D0B-17D4B50596B2}" Namespace="LCLS_Vacuum">E_VGC</Type>
 				<BitSize>16</BitSize>
 				<BitOffs>96</BitOffs>
 				<Properties>
@@ -351,14 +345,11 @@
 					</Property>
 				</Properties>
 			</SubItem>
-			<Hides>
-				<Hide GUID="{ADD235FB-8F6D-4298-B737-B4D01436D012}"/>
-			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{76834F54-5143-4289-9860-01BAA80F7201}" Namespace="LCLS_Vacuum" AutoDeleteType="true">ST_VGC</Name>
+			<Name GUID="{023A9239-1311-4E80-9839-D1F84B4BACFD}" Namespace="LCLS_Vacuum" AutoDeleteType="true">ST_VGC</Name>
 			<BitSize>2304</BitSize>
-			<ExtendsType GUID="{BF02F017-0983-4909-AB2E-028FFD035744}" Namespace="LCLS_Vacuum">ST_ValveBase</ExtendsType>
+			<ExtendsType GUID="{EC5126F1-29CF-440D-8048-FED9BB109743}" Namespace="LCLS_Vacuum">ST_ValveBase</ExtendsType>
 			<SubItem>
 				<Name>xDP_OK</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
@@ -396,7 +387,8 @@
 	field: HOPR 1000
 	field: LOPR 0
 	field: PREC 2
-	field: EGU "TORR"</Value>
+	field: EGU "TORR"
+	autosave_pass1: VAL DESC</Value>
 					</Property>
 				</Properties>
 			</SubItem>
@@ -431,7 +423,8 @@
 	field: HOPR 1000
 	field: LOPR 0
 	field: PREC 2
-	field: EGU "TORR"</Value>
+	field: EGU "TORR"
+	autosave_pass1: VAL DESC</Value>
 					</Property>
 				</Properties>
 			</SubItem>
@@ -450,7 +443,8 @@
 					<Property>
 						<Name>pytmc</Name>
 						<Value>pv: HYST_PERC ;
-	io: o;</Value>
+	io: o;
+	autosave_pass1: VAL DESC</Value>
 					</Property>
 				</Properties>
 			</SubItem>
@@ -486,7 +480,7 @@
 						<Value>pv: ERR_DifPres;
 	field: ZNAM NO ERROR ;
 	field: ONAM Diffrential error present ;
-	io: o;</Value>
+	io: i;</Value>
 					</Property>
 				</Properties>
 			</SubItem>
@@ -501,7 +495,7 @@
 						<Value>pv: ERR_SP;
 	field: ZNAM NO ERROR ;
 	field: ONAM Setpoint error present ;
-	io: o;</Value>
+	io: i;</Value>
 					</Property>
 				</Properties>
 			</SubItem>
@@ -516,7 +510,7 @@
 						<Value>pv: ERR_Ext;
 	field: ZNAM NO ERROR ;
 	field: ONAM External error present ;
-	io: o;</Value>
+	io: i;</Value>
 					</Property>
 				</Properties>
 			</SubItem>
@@ -538,7 +532,7 @@
 					<Property>
 						<Name>pytmc</Name>
 						<Value>pv: ILK_DEVICE_US;
-	io: o;</Value>
+	io: i;</Value>
 					</Property>
 				</Properties>
 			</SubItem>
@@ -551,13 +545,10 @@
 					<Property>
 						<Name>pytmc</Name>
 						<Value>pv: ILK_DEVICE_DS;
-	io: o;</Value>
+	io: i;</Value>
 					</Property>
 				</Properties>
 			</SubItem>
-			<Hides>
-				<Hide GUID="{4F2C5ACA-AD96-4C80-98BE-5C31AC2DE3D1}"/>
-			</Hides>
 		</DataType>
 	</DataTypes>
 	<Project GUID="{11330276-C55F-4A32-8CC9-F4BAB4B536E0}" Name="plc_lfe_vac_fs" PrjFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.plcproj" TmcFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
@@ -586,60 +577,6 @@
 						<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
 					</Comment>
 					<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xOpnLS</Name>
-					<Comment>
-						<![CDATA[IO]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xClsLS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xTrigger</Name>
-					<Comment>
-						<![CDATA[ Could be Up to 4]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xPress_OK</Name>
-					<Comment>
-						<![CDATA[To be linked to the Fast sensor structure signal IG.xPRESS_OK, to make sure that the device is connected]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xOPN_SW</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xCLS_SW</Name>
-					<Comment>
-						<![CDATA[external open signal e.g epics]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xResetFault</Name>
-					<Comment>
-						<![CDATA[FFO iReset]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xOverrideMode</Name>
-					<Comment>
-						<![CDATA[To be linked to global override bit. This Overrides Vacuum logic only, EPS, MPS and PMPS are still enforces]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.i_xOverrideOpen</Name>
-					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xOpnLS</Name>
@@ -699,166 +636,11 @@
 			<Vars VarGrpType="2">
 				<Name>FSV_Task Outputs</Name>
 				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.iq_stValve</Name>
-					<Comment>
-						<![CDATA[ All valve data and states will be in this struct]]>
-					</Comment>
-					<Type GUID="{76834F54-5143-4289-9860-01BAA80F7201}" Namespace="LCLS_Vacuum">ST_VGC</Type>
-					<SubVar>
-						<Name>pv_xOPN_SW</Name>
-						<Comment>
-							<![CDATA[ EPICS Controls ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>xOverrideMode</Name>
-						<Comment>
-							<![CDATA[ Shows the override status of this valve ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>i_xOpnLS</Name>
-						<Comment>
-							<![CDATA[ I/Os
- Readbacks ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>q_xOPN_DO</Name>
-						<Comment>
-							<![CDATA[ Controls ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>xEXT_OK</Name>
-						<Comment>
-							<![CDATA[ External interlock for custom interlocking in addition to regular DP ilk, this must be set true, or the interlock condition before calling the FB_VGC ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>xOPN_OK</Name>
-						<Comment>
-							<![CDATA[ Final SUM of DP_OK and EXT_OK, needed because it allows the DP ilk to be switched off, see FB_VGC.Dis_DPIlk ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>eState</Name>
-						<Comment>
-							<![CDATA[ States ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>bErrorPresent</Name>
-						<Comment>
-							<![CDATA[ Error ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>xDP_OK</Name>
-						<Comment>
-							<![CDATA[ Indicates the valve can be opened because the differential pressure is low enough]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>rAT_VAC_SP</Name>
-						<Comment>
-							<![CDATA[ Interlock setpoint for gauges on both sides of valve]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>rAT_VAC_SP_LAST</Name>
-						<Comment>
-							<![CDATA[ Interlock setpoint for gauges on both sides of valve]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>rAT_VAC_HYS</Name>
-						<Comment>
-							<![CDATA[ Hysteresis of the vacuum sp]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>rHYST_PERC</Name>
-						<Comment>
-							<![CDATA[ Hysteresis percentage]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>xAT_VAC</Name>
-						<Comment>
-							<![CDATA[At vacuum setpoint]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>xERR_DifPres</Name>
-						<Comment>
-							<![CDATA[ Alarm Outputs ]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>sIlkUSDeviceName</Name>
-						<Comment>
-							<![CDATA[ILK Devices]]>
-						</Comment>
-					</SubVar>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xClose_A</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xClose_B</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xClose_C</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xOPN_DO</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xTrigger</Name>
-					<Comment>
-						<![CDATA[Interface]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Open</Name>
-					<Comment>
-						<![CDATA[Interface]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xVFS_Closed</Name>
-					<Comment>
-						<![CDATA[Interface]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xVAC_FAULT_OK</Name>
-					<Comment>
-						<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_FS_Devices.PA1L0_VFS_01.q_xMPS_OK</Name>
-					<Comment>
-						<![CDATA[MPS Fault OK, is set when the Valve is Open and there is no trigger]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_FS_Devices.TV3L0_VFS_01.iq_stValve</Name>
 					<Comment>
 						<![CDATA[ All valve data and states will be in this struct]]>
 					</Comment>
-					<Type GUID="{76834F54-5143-4289-9860-01BAA80F7201}" Namespace="LCLS_Vacuum">ST_VGC</Type>
+					<Type GUID="{023A9239-1311-4E80-9839-D1F84B4BACFD}" Namespace="LCLS_Vacuum">ST_VGC</Type>
 					<SubVar>
 						<Name>pv_xOPN_SW</Name>
 						<Comment>
@@ -1033,24 +815,12 @@
 				</Var>
 			</Vars>
 			<TaskPouOids>
-				<TaskPouOid Prio="13" OTCID="#x08502041"/>
+				<TaskPouOid Prio="1" OTCID="#x08502041"/>
 			</TaskPouOids>
 		</Instance>
 	</Project>
 	<Mappings>
 		<OwnerA Name="plc_lfe_vac_fs Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E1_EL1004">
-				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xClsLS" VarB="Channel 1^Input" AutoLink="true"/>
-				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E3_EL2202">
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_A" VarB="Channel 1^Output" AutoLink="true"/>
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_B" VarB="Channel 2^Output" AutoLink="true"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV1_E0_EK1100_L0S10^FSV1_E4_EL2202">
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xClose_C" VarB="Channel 1^Output" AutoLink="true"/>
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.PA1L0_VFS_01.q_xOPN_DO" VarB="Channel 2^Output" AutoLink="true"/>
-			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E10_EK1122_FSV^FSV2_E0_EK1100_L0S19^FSV2_E1_EL1004">
 				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xClsLS" VarB="Channel 1^Input" AutoLink="true"/>
 				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true"/>
@@ -1067,7 +837,6 @@
 				<Link VarA="FSV_Task Outputs^GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.q_xFastFaultOut" VarB="Channel 1^Output" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^MKS_E0_EK1100^MKS_E22_EL1124">
-				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.PA1L0_VFS_01.i_xTrigger" VarB="Channel 1^Input" AutoLink="true"/>
 				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xTrigger" VarB="Channel 2^Input" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>

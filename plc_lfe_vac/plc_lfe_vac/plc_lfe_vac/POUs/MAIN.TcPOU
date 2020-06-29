@@ -378,10 +378,8 @@ TV3L0_VFS_01_Interface(
 
 
 (*FastFaultOuput*)
-	g_FastFaultOutput1.EvaluateOutput();
-	g_FastFaultOutput1.EvaluateOverrides();
-	g_FastFaultOutput1.ExecuteLogging();
-	g_FastFaultOutput2.EvaluateOutput(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1]);
+g_FastFaultOutput1.Execute(bAutoReset:= TRUE);
+g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
 
 
 ]]></ST>
