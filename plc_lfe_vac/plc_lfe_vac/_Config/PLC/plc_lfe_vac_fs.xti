@@ -20,39 +20,72 @@
 			</Format>
 		</DataType>
 		<DataType>
-			<Name GUID="{78F32653-BB45-441F-A5B0-F071D374485A}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_VFS</Name>
+			<Name GUID="{807045C9-9F81-4E2C-ACB9-51496E2C7AC7}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_VGC</Name>
 			<BitSize>16</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
 			<EnumInfo>
 				<Text>
-					<![CDATA[At_Vac]]>
+					<![CDATA[Vented]]>
 				</Text>
 				<Enum>0</Enum>
 			</EnumInfo>
 			<EnumInfo>
 				<Text>
-					<![CDATA[Triggered]]>
+					<![CDATA[AtVacuum]]>
 				</Text>
 				<Enum>1</Enum>
 			</EnumInfo>
 			<EnumInfo>
 				<Text>
-					<![CDATA[Vac_Fault]]>
+					<![CDATA[ERR_DiffPress]]>
 				</Text>
 				<Enum>2</Enum>
 			</EnumInfo>
 			<EnumInfo>
 				<Text>
-					<![CDATA[Cls_Timeout]]>
+					<![CDATA[ERR_LostVac]]>
 				</Text>
 				<Enum>3</Enum>
 			</EnumInfo>
 			<EnumInfo>
 				<Text>
-					<![CDATA[Opn_Timeout]]>
+					<![CDATA[ERR_ExtFault]]>
 				</Text>
 				<Enum>4</Enum>
 			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[At_Vac]]>
+				</Text>
+				<Enum>5</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Triggered]]>
+				</Text>
+				<Enum>6</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Vac_Fault]]>
+				</Text>
+				<Enum>7</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Cls_Timeout]]>
+				</Text>
+				<Enum>8</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Opn_Timeout]]>
+				</Text>
+				<Enum>9</Enum>
+			</EnumInfo>
+			<Hides>
+				<Hide GUID="{F601A201-27AA-4893-97C7-408019C53CC9}"/>
+			</Hides>
 		</DataType>
 	</DataTypes>
 	<Project GUID="{11330276-C55F-4A32-8CC9-F4BAB4B536E0}" Name="plc_lfe_vac_fs" PrjFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.plcproj" TmcFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
@@ -192,7 +225,7 @@
 					<Comment>
 						<![CDATA[Interface]]>
 					</Comment>
-					<Type GUID="{78F32653-BB45-441F-A5B0-F071D374485A}" Namespace="LCLS_Vacuum">E_VFS</Type>
+					<Type GUID="{807045C9-9F81-4E2C-ACB9-51496E2C7AC7}" Namespace="LCLS_Vacuum">E_VGC</Type>
 				</Var>
 				<Var>
 					<Name>GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.q_xFastFaultOut</Name>
