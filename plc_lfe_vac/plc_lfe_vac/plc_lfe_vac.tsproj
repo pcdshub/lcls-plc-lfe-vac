@@ -20,74 +20,6 @@
 			</Format>
 		</DataType>
 		<DataType>
-			<Name GUID="{807045C9-9F81-4E2C-ACB9-51496E2C7AC7}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_VGC</Name>
-			<BitSize>16</BitSize>
-			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
-			<EnumInfo>
-				<Text>
-					<![CDATA[Vented]]>
-				</Text>
-				<Enum>0</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[AtVacuum]]>
-				</Text>
-				<Enum>1</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[ERR_DiffPress]]>
-				</Text>
-				<Enum>2</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[ERR_LostVac]]>
-				</Text>
-				<Enum>3</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[ERR_ExtFault]]>
-				</Text>
-				<Enum>4</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[At_Vac]]>
-				</Text>
-				<Enum>5</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[Triggered]]>
-				</Text>
-				<Enum>6</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[Vac_Fault]]>
-				</Text>
-				<Enum>7</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[Cls_Timeout]]>
-				</Text>
-				<Enum>8</Enum>
-			</EnumInfo>
-			<EnumInfo>
-				<Text>
-					<![CDATA[Opn_Timeout]]>
-				</Text>
-				<Enum>9</Enum>
-			</EnumInfo>
-			<Hides>
-				<Hide GUID="{F601A201-27AA-4893-97C7-408019C53CC9}"/>
-			</Hides>
-		</DataType>
-		<DataType>
 			<Name GUID="{FE32F9A9-7E7A-413D-8D77-0C99C34D8CD9}">ST_PMPS_Attenuator_IO</Name>
 			<BitSize>32</BitSize>
 			<SubItem>
@@ -340,6 +272,74 @@
 				<Hide GUID="{729DFDAA-EB68-494E-B247-D86DA3C0AE5E}"/>
 			</Hides>
 		</DataType>
+		<DataType>
+			<Name GUID="{807045C9-9F81-4E2C-ACB9-51496E2C7AC7}" Namespace="LCLS_Vacuum" AutoDeleteType="true">E_VGC</Name>
+			<BitSize>16</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Vented]]>
+				</Text>
+				<Enum>0</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[AtVacuum]]>
+				</Text>
+				<Enum>1</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[ERR_DiffPress]]>
+				</Text>
+				<Enum>2</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[ERR_LostVac]]>
+				</Text>
+				<Enum>3</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[ERR_ExtFault]]>
+				</Text>
+				<Enum>4</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[At_Vac]]>
+				</Text>
+				<Enum>5</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Triggered]]>
+				</Text>
+				<Enum>6</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Vac_Fault]]>
+				</Text>
+				<Enum>7</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Cls_Timeout]]>
+				</Text>
+				<Enum>8</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[Opn_Timeout]]>
+				</Text>
+				<Enum>9</Enum>
+			</EnumInfo>
+			<Hides>
+				<Hide GUID="{F601A201-27AA-4893-97C7-408019C53CC9}"/>
+			</Hides>
+		</DataType>
 	</DataTypes>
 	<Project ProjectGUID="{50E9F7F6-4DDA-4056-B3EC-19F5903640D3}" TargetNetId="172.21.88.138.1.1" ShowHideConfigurations="#x306">
 		<System>
@@ -397,18 +397,156 @@
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.i_xUpstreamTreaty_PressOK</Name>
-							<Comment>
-								<![CDATA[HXR Accelerator side PLC Interface]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>DIAGNOSTICS.fbEcatDiag.I_AMSNetId</Name>
 							<Comment>
 								<![CDATA[Link to the AMSNETID name in the ethercat master info.]]>
 							</Comment>
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP</Name>
+							<Type GUID="{41059C79-1015-4C2C-AFF4-697A824775D7}">ST_BeamParams_IO</Type>
+							<SubVar>
+								<Name>fAtt</Name>
+								<Comment>
+									<![CDATA[  Requested pre-optic attenuation %  ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>nRate</Name>
+								<Comment>
+									<![CDATA[ Pulse-rate ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>fPP_mJ</Name>
+								<Comment>
+									<![CDATA[ Per pulse max energy (mJ) ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>neVRange</Name>
+								<Comment>
+									<![CDATA[ Photon energy ranges ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astAttenuators</Name>
+								<Comment>
+									<![CDATA[ Beamline attenuators ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>aStoppers</Name>
+								<Comment>
+									<![CDATA[ Stopper statuses ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>xValidToggle</Name>
+								<Comment>
+									<![CDATA[ Toggle for watchdog]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>xValid</Name>
+								<Comment>
+									<![CDATA[ Beam parameter set is valid (if readback), or acknowledged (if request)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>nCohortInt</Name>
+								<Comment>
+									<![CDATA[ Cohort index. Identifies which cohort this BP set was included in arbitration]]>
+								</Comment>
+							</SubVar>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_toggle</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_state</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.i_xUpstreamTreaty_PressOK</Name>
+							<Comment>
+								<![CDATA[HXR Accelerator side PLC Interface]]>
+							</Comment>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Devices.TV1L0_VGC_01.i_xOpnLS</Name>
@@ -1246,8 +1384,19 @@
 							<Name>GVL_Devices.TV6L0_VGC_01.i_xClsLS</Name>
 							<Type>BOOL</Type>
 						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>PlcTask Outputs</Name>
 						<Var>
-							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP</Name>
+							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP</Name>
 							<Type GUID="{41059C79-1015-4C2C-AFF4-697A824775D7}">ST_BeamParams_IO</Type>
 							<SubVar>
 								<Name>fAtt</Name>
@@ -1376,17 +1525,6 @@
 								</Comment>
 							</SubVar>
 						</Var>
-						<Var>
-							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_toggle</Name>
-							<Type>BIT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_state</Name>
-							<Type>BIT</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2">
-						<Name>PlcTask Outputs</Name>
 						<Var>
 							<Name>GVL_Devices.TV1L0_VGC_01.q_xOPN_DO</Name>
 							<Type>BOOL</Type>
@@ -1805,144 +1943,6 @@
 						<Var>
 							<Name>GVL_Devices.TV6L0_VGC_01.q_xOPN_DO</Name>
 							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP</Name>
-							<Type GUID="{41059C79-1015-4C2C-AFF4-697A824775D7}">ST_BeamParams_IO</Type>
-							<SubVar>
-								<Name>fAtt</Name>
-								<Comment>
-									<![CDATA[  Requested pre-optic attenuation %  ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>nRate</Name>
-								<Comment>
-									<![CDATA[ Pulse-rate ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>fPP_mJ</Name>
-								<Comment>
-									<![CDATA[ Per pulse max energy (mJ) ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>neVRange</Name>
-								<Comment>
-									<![CDATA[ Photon energy ranges ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astAttenuators</Name>
-								<Comment>
-									<![CDATA[ Beamline attenuators ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[0]^Width</Name>
-								<Comment>
-									<![CDATA[ distance between horizontal slits (x)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[0]^Height</Name>
-								<Comment>
-									<![CDATA[ distance between vertical slits (y)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[0]^xOK</Name>
-								<Comment>
-									<![CDATA[ status of aperture, false if error or in motion]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[1]^Width</Name>
-								<Comment>
-									<![CDATA[ distance between horizontal slits (x)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[1]^Height</Name>
-								<Comment>
-									<![CDATA[ distance between vertical slits (y)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[1]^xOK</Name>
-								<Comment>
-									<![CDATA[ status of aperture, false if error or in motion]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[2]^Width</Name>
-								<Comment>
-									<![CDATA[ distance between horizontal slits (x)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[2]^Height</Name>
-								<Comment>
-									<![CDATA[ distance between vertical slits (y)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[2]^xOK</Name>
-								<Comment>
-									<![CDATA[ status of aperture, false if error or in motion]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[3]^Width</Name>
-								<Comment>
-									<![CDATA[ distance between horizontal slits (x)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[3]^Height</Name>
-								<Comment>
-									<![CDATA[ distance between vertical slits (y)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>astApertures^astApertures[3]^xOK</Name>
-								<Comment>
-									<![CDATA[ status of aperture, false if error or in motion]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>aStoppers</Name>
-								<Comment>
-									<![CDATA[ Stopper statuses ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>xValidToggle</Name>
-								<Comment>
-									<![CDATA[ Toggle for watchdog]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>xValid</Name>
-								<Comment>
-									<![CDATA[ Beam parameter set is valid (if readback), or acknowledged (if request)]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>nCohortInt</Name>
-								<Comment>
-									<![CDATA[ Cohort index. Identifies which cohort this BP set was included in arbitration]]>
-								</Comment>
-							</SubVar>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="8">
