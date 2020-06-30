@@ -87,6 +87,259 @@
 				<Hide GUID="{F601A201-27AA-4893-97C7-408019C53CC9}"/>
 			</Hides>
 		</DataType>
+		<DataType>
+			<Name GUID="{FE32F9A9-7E7A-413D-8D77-0C99C34D8CD9}">ST_PMPS_Attenuator_IO</Name>
+			<BitSize>32</BitSize>
+			<SubItem>
+				<Name>nAtt</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>xAttOK</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<Hides>
+				<Hide GUID="{76269EAC-36F0-4513-B811-3725FD02409A}"/>
+				<Hide GUID="{E96BEA56-6301-4A6A-BF6A-F08340C87594}"/>
+			</Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{67AC048F-B785-4A4D-B941-B11E2213F502}">ST_PMPS_Aperture_IO</Name>
+			<BitSize>96</BitSize>
+			<SubItem>
+				<Name>Width</Name>
+				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
+				<Comment>
+					<![CDATA[ distance between horizontal slits (x)]]>
+				</Comment>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: Width
+            io: i
+            field: EGU mm</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>Height</Name>
+				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
+				<Comment>
+					<![CDATA[ distance between vertical slits (y)]]>
+				</Comment>
+				<BitSize>32</BitSize>
+				<BitOffs>32</BitOffs>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: Height
+            io: i
+            field: EGU mm</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>xOK</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+				<Comment>
+					<![CDATA[ status of aperture, false if error or in motion]]>
+				</Comment>
+				<BitSize>8</BitSize>
+				<BitOffs>64</BitOffs>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: OK
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{41059C79-1015-4C2C-AFF4-697A824775D7}">ST_BeamParams_IO</Name>
+			<BitSize>1216</BitSize>
+			<SubItem>
+				<Name>fAtt</Name>
+				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
+				<Comment>
+					<![CDATA[  Requested pre-optic attenuation %  ]]>
+				</Comment>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+				<Default>
+					<Value>100</Value>
+				</Default>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: Attenuation
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>nRate</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+				<Comment>
+					<![CDATA[ Pulse-rate ]]>
+				</Comment>
+				<BitSize>32</BitSize>
+				<BitOffs>32</BitOffs>
+				<Default>
+					<Value>10</Value>
+				</Default>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: Rate
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>fPP_mJ</Name>
+				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
+				<Comment>
+					<![CDATA[ Per pulse max energy (mJ) ]]>
+				</Comment>
+				<BitSize>32</BitSize>
+				<BitOffs>64</BitOffs>
+				<Default>
+					<Value>20</Value>
+				</Default>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: PulseEnergy
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>neVRange</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<Comment>
+					<![CDATA[ Photon energy ranges ]]>
+				</Comment>
+				<BitSize>16</BitSize>
+				<BitOffs>96</BitOffs>
+				<Default>
+					<Value>65535</Value>
+				</Default>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: PhotonEnergy
+        io: i</Value>
+					</Property>
+					<Property>
+						<Name>plcAttribute_displaymode</Name>
+						<Value>binary</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>astAttenuators</Name>
+				<Type GUID="{FE32F9A9-7E7A-413D-8D77-0C99C34D8CD9}">ST_PMPS_Attenuator_IO</Type>
+				<ArrayInfo>
+					<LBound>1</LBound>
+					<Elements>16</Elements>
+				</ArrayInfo>
+				<Comment>
+					<![CDATA[ Beamline attenuators ]]>
+				</Comment>
+				<BitSize>512</BitSize>
+				<BitOffs>112</BitOffs>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: AuxAttenuator
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>astApertures</Name>
+				<Type GUID="{67AC048F-B785-4A4D-B941-B11E2213F502}">ST_PMPS_Aperture_IO</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>4</Elements>
+				</ArrayInfo>
+				<BitSize>384</BitSize>
+				<BitOffs>640</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>aStoppers</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+				<ArrayInfo>
+					<LBound>1</LBound>
+					<Elements>16</Elements>
+				</ArrayInfo>
+				<Comment>
+					<![CDATA[ Stopper statuses ]]>
+				</Comment>
+				<BitSize>128</BitSize>
+				<BitOffs>1024</BitOffs>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: AuxAttenuator
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>xValidToggle</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+				<Comment>
+					<![CDATA[ Toggle for watchdog]]>
+				</Comment>
+				<BitSize>8</BitSize>
+				<BitOffs>1152</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>xValid</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+				<Comment>
+					<![CDATA[ Beam parameter set is valid (if readback), or acknowledged (if request)]]>
+				</Comment>
+				<BitSize>8</BitSize>
+				<BitOffs>1160</BitOffs>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: Valid
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>nCohortInt</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+				<Comment>
+					<![CDATA[ Cohort index. Identifies which cohort this BP set was included in arbitration]]>
+				</Comment>
+				<BitSize>32</BitSize>
+				<BitOffs>1184</BitOffs>
+				<Properties>
+					<Property>
+						<Name>plcAttribute_pytmc</Name>
+						<Value>pv: Attenuation
+        io: i</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<Hides>
+				<Hide GUID="{ADE62DDD-CAE3-4FE3-BE11-F358D7D0CDD8}"/>
+				<Hide GUID="{729DFDAA-EB68-494E-B247-D86DA3C0AE5E}"/>
+			</Hides>
+		</DataType>
 	</DataTypes>
 	<Project ProjectGUID="{50E9F7F6-4DDA-4056-B3EC-19F5903640D3}" TargetNetId="172.21.88.138.1.1" ShowHideConfigurations="#x306">
 		<System>
@@ -993,6 +1246,144 @@
 							<Name>GVL_Devices.TV6L0_VGC_01.i_xClsLS</Name>
 							<Type>BOOL</Type>
 						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP</Name>
+							<Type GUID="{41059C79-1015-4C2C-AFF4-697A824775D7}">ST_BeamParams_IO</Type>
+							<SubVar>
+								<Name>fAtt</Name>
+								<Comment>
+									<![CDATA[  Requested pre-optic attenuation %  ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>nRate</Name>
+								<Comment>
+									<![CDATA[ Pulse-rate ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>fPP_mJ</Name>
+								<Comment>
+									<![CDATA[ Per pulse max energy (mJ) ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>neVRange</Name>
+								<Comment>
+									<![CDATA[ Photon energy ranges ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astAttenuators</Name>
+								<Comment>
+									<![CDATA[ Beamline attenuators ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>aStoppers</Name>
+								<Comment>
+									<![CDATA[ Stopper statuses ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>xValidToggle</Name>
+								<Comment>
+									<![CDATA[ Toggle for watchdog]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>xValid</Name>
+								<Comment>
+									<![CDATA[ Beam parameter set is valid (if readback), or acknowledged (if request)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>nCohortInt</Name>
+								<Comment>
+									<![CDATA[ Cohort index. Identifies which cohort this BP set was included in arbitration]]>
+								</Comment>
+							</SubVar>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_toggle</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_state</Name>
+							<Type>BIT</Type>
+						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
 						<Name>PlcTask Outputs</Name>
@@ -1423,6 +1814,136 @@
 							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
 							<Type>BOOL</Type>
 						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP</Name>
+							<Type GUID="{41059C79-1015-4C2C-AFF4-697A824775D7}">ST_BeamParams_IO</Type>
+							<SubVar>
+								<Name>fAtt</Name>
+								<Comment>
+									<![CDATA[  Requested pre-optic attenuation %  ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>nRate</Name>
+								<Comment>
+									<![CDATA[ Pulse-rate ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>fPP_mJ</Name>
+								<Comment>
+									<![CDATA[ Per pulse max energy (mJ) ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>neVRange</Name>
+								<Comment>
+									<![CDATA[ Photon energy ranges ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astAttenuators</Name>
+								<Comment>
+									<![CDATA[ Beamline attenuators ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[0]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[1]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[2]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^Width</Name>
+								<Comment>
+									<![CDATA[ distance between horizontal slits (x)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^Height</Name>
+								<Comment>
+									<![CDATA[ distance between vertical slits (y)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>astApertures^astApertures[3]^xOK</Name>
+								<Comment>
+									<![CDATA[ status of aperture, false if error or in motion]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>aStoppers</Name>
+								<Comment>
+									<![CDATA[ Stopper statuses ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>xValidToggle</Name>
+								<Comment>
+									<![CDATA[ Toggle for watchdog]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>xValid</Name>
+								<Comment>
+									<![CDATA[ Beam parameter set is valid (if readback), or acknowledged (if request)]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>nCohortInt</Name>
+								<Comment>
+									<![CDATA[ Cohort index. Identifies which cohort this BP set was included in arbitration]]>
+								</Comment>
+							</SubVar>
+						</Var>
 					</Vars>
 					<Vars VarGrpType="8">
 						<Name>PlcTask Retains</Name>
@@ -1811,6 +2332,12 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_EBD^EBD_E0_EK1100^EBD_E5_EL1008">
 				<Link VarA="PlcTask Inputs^GVL_Devices.i_xUpstreamTreaty_PressOK" VarB="Channel 1^Input" AutoLink="true"/>
 			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PMPS_PRE">
+				<Link VarA="PlcTask Inputs^GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP" VarB="IO Inputs^CurrentBP" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_state" VarB="SYNC Inputs^TxPDO state" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_toggle" VarB="SYNC Inputs^TxPDO toggle" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP" VarB="IO Outputs^RequestedBP" AutoLink="true"/>
+			</OwnerB>
 			<OwnerB Name="TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance">
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_eVFS_State" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK" AutoLink="true"/>
@@ -1823,7 +2350,7 @@
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideMode" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideOpen" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xPRESS_OK" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

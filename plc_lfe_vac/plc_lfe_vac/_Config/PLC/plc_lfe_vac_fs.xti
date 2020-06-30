@@ -149,9 +149,9 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xResetFault</Name>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset</Name>
 					<Comment>
-						<![CDATA[FFO iReset]]>
+						<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
 					</Comment>
 					<Type>BOOL</Type>
 				</Var>

@@ -30,6 +30,10 @@ VAR_GLOBAL
 	xEBD_FEE_MPS_OK: BOOL := TRUE;
 	xH1_1_H1_2_MPS_OK: BOOL;
 
+//Preemptive Arbiter Content
+	(*LFE Arbiter Interface*)
+	fb_to_LFE_Arbiter :	FB_SubSysToArbiter_IO;
+	g_fbArbiter1    :   FB_Arbiter(1);
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

@@ -19,7 +19,7 @@
 		<Box File="PLC_E4_EL9184.xti" Id="106">
 			<EtherCAT PortABoxInfo="#x01000002"/>
 		</Box>
-		<Box File="PLC_E5_EL6692.xti" Id="4">
+		<Box File="PMPS_PRE.xti" Id="4">
 			<EtherCAT PortABoxInfo="#x01000002"/>
 		</Box>
 		<Box File="PLC_E6_EL6692.xti" Id="5">
