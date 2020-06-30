@@ -23,10 +23,9 @@ VAR_GLOBAL
 								 .q_xClose_C	:=	TIIB[FSV2_E4_EL2202]^Channel 1^Output;
 								 .q_xOPN_DO		:=	TIIB[FSV2_E4_EL2202]^Channel 2^Output;
 								 .i_xTrigger	:= TIIB[MKS_E22_EL1124]^Channel 2^Input
-								 
 	'}
 	{attribute 'pytmc' := '
-		pv: PA1L0:VFS:01
+		pv: TV3L0:VFS:01
 		io: io
 	'}
 	TV3L0_VFS_01 : FB_VFS;
