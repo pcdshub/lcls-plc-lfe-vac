@@ -16,13 +16,13 @@ VAR_GLOBAL
 	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E1_EL1004]^Channel 1^Input;
 								 .i_xClsLS	:=	TIIB[EBD_E1_EL1004]^Channel 2^Input;
 								 .q_xOPN_DO	:=	TIIB[EBD_E2_EL2004]^Channel 1^Output;
-								 .q_xOPN_DO_2	:=	TIIB[EBD_E2_EL2004]^Channel 2^Output
+								 .q_xOPN_DO	:=	TIIB[EBD_E2_EL2004]^Channel 2^Output
 	'}
 	{attribute 'pytmc' := '
 		pv: TV1L0:VGC:01
 		io: io
 	'}
-	TV1L0_VGC_01 : FB_VGC_EBD;
+	TV1L0_VGC_01 : FB_VGC;
 	
 	{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[MKS_E2_EL3064]^AI Standard Channel 1^Value
 	'}
@@ -96,13 +96,13 @@ VAR_GLOBAL
 	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E1_EL1004]^Channel 3^Input;
 								 .i_xClsLS	:=	TIIB[EBD_E1_EL1004]^Channel 4^Input;
 								 .q_xOPN_DO	:=	TIIB[EBD_E2_EL2004]^Channel 3^Output;
-								 .q_xOPN_DO_2	:=	TIIB[EBD_E2_EL2004]^Channel 4^Output
+								 .q_xOPN_DO	:=	TIIB[EBD_E2_EL2004]^Channel 4^Output
 	'}
 	{attribute 'pytmc' := '
 		pv: IM1L0:XTES:VGC:01
 		io: io
 	'}
-	IM1L0_XTES_VGC_01 : FB_VGC_EBD;
+	IM1L0_XTES_VGC_01 : FB_VGC;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 2^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 2^Input;
@@ -145,13 +145,13 @@ VAR_GLOBAL
 	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E3_EL1004]^Channel 1^Input;
 								 .i_xClsLS	:=	TIIB[EBD_E3_EL1004]^Channel 2^Input;
 								 .q_xOPN_DO	:=	TIIB[EBD_E4_EL2004]^Channel 1^Output;
-								 .q_xOPN_DO_2	:=	TIIB[EBD_E4_EL2004]^Channel 2^Output
+								 .q_xOPN_DO	:=	TIIB[EBD_E4_EL2004]^Channel 2^Output
 	'}
 	{attribute 'pytmc' := '
 		pv: TV2L0:VGC:01
 		io: io
 	'}
-	TV2L0_VGC_01 : FB_VGC_EBD;
+	TV2L0_VGC_01 : FB_VGC;
 
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E7_EL3064]^AI Standard Channel 2^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E8_EL1004]^Channel 2^Input;
