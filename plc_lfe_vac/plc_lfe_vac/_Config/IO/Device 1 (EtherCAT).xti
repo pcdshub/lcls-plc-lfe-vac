@@ -30,9 +30,20 @@
 		<Image Id="1" AddrType="9" ImageType="3">
 			<Name>Image</Name>
 		</Image>
+		<Image Id="3" AddrType="10" ImageType="3">
+			<Name>Image-2</Name>
+		</Image>
 		<Box File="PLC_E0_EK1200.xti" Id="1">
 			<EtherCAT PortABoxInfo="#x00ffffff"/>
 		</Box>
-		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="3" MaxSwitchFrames="140"/>
+		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="3" MaxSwitchFrames="140" MaxSwitchMACs="100">
+			<SyncUnit Name="QPC" NoDeleteIfUnused="true"/>
+			<SyncUnit Name="MKS" NoDeleteIfUnused="true"/>
+			<SyncUnit Name="EBD" NoDeleteIfUnused="true"/>
+			<SyncUnit Name="FSV_upstream" NoDeleteIfUnused="true"/>
+			<SyncUnit Name="FSV_downstream" NoDeleteIfUnused="true"/>
+			<SyncUnit Name="FEE" NoDeleteIfUnused="true"/>
+			<SyncUnit Name="H11_H12" NoDeleteIfUnused="true"/>
+		</EtherCAT>
 	</Device>
 </TcSmItem>

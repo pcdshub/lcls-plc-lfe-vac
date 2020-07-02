@@ -15,12 +15,16 @@
     <LibraryReferences>{fa192689-4d2e-4433-a1b6-578f29e6e6ae}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FSV_Task.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GVLs\GVL_FS_Devices.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="PlcTask.TcTTO">
+    <Compile Include="GVLs\GVL_LFE_VAC_FSV_PMPS.TcGVL">
       <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
     </Compile>
     <Compile Include="POUs\MAIN_FS.TcPOU">
       <SubType>Code</SubType>
@@ -33,17 +37,9 @@
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="L2SI Vacuum Library">
-      <DefaultResolution>L2SI Vacuum Library, * (SLAC)</DefaultResolution>
-      <Namespace>L2SI_Vacuum_Library</Namespace>
-    </PlaceholderReference>
     <PlaceholderReference Include="LCLS General">
       <DefaultResolution>LCLS General, * (SLAC)</DefaultResolution>
       <Namespace>LCLS_General</Namespace>
-    </PlaceholderReference>
-    <PlaceholderReference Include="PMPS">
-      <DefaultResolution>PMPS, * (SLAC - LCLS)</DefaultResolution>
-      <Namespace>PMPS</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -59,15 +55,25 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="L2SI Vacuum Library">
-      <Resolution>L2SI Vacuum Library, * (SLAC)</Resolution>
-    </PlaceholderResolution>
     <PlaceholderResolution Include="LCLS General">
       <Resolution>LCLS General, * (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, * (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 0.0.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryReference Include="LCLS Vacuum,0.0.0,SLAC - LCLS">
+      <Namespace>LCLS_Vacuum</Namespace>
+    </LibraryReference>
+    <LibraryReference Include="PMPS,0.0.0,SLAC - LCLS">
+      <Namespace>PMPS</Namespace>
+    </LibraryReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plc_lfe_vac_fs.tmc">
+      <SubType>Content</SubType>
+    </None>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

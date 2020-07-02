@@ -1,11 +1,12 @@
-#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.2.0/bin/rhel7-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.2.4/bin/rhel7-x86_64/adsIoc
+###### AUTO-GENERATED DO NOT EDIT ##############
 
 < envPaths
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
 epicsEnvSet("IOCNAME", "ioc-plc-lfe-vac" )
-epicsEnvSet("ENGINEER", "root" )
+epicsEnvSet("ENGINEER", "adpai" )
 epicsEnvSet("LOCATION", "PREFIX" )
 epicsEnvSet("IOCSH_PS1", "$(IOCNAME)> " )
 
@@ -76,6 +77,9 @@ set_pass1_restoreFile( "info_settings.sav" )
 cd "$(IOC_TOP)/autosave"
 makeAutosaveFiles()
 cd "$(IOC_TOP)"
+
+# Create the archiver file
+makeArchiveFromDbInfo("$(IOC_DATA)/$(IOC)/archive/$(IOC).archive", "archive")
 
 # Initialize the IOC and start processing records
 iocInit()

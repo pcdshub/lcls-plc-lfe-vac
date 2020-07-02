@@ -3,44 +3,47 @@
   <POU Name="MAIN" Id="{53e436ba-9af9-4ca4-ad7b-a6b2399fa417}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	(*HXR Accelerator side PLC Interface*)
-	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input;
-	'}
-	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
-	
-	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output;
-	'}
-	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
-	
+
 	(*HXR Gas Attenuator PLC Interface*)
 
 	(*TXI PLC Interface*)
 
 	(*XPP PLC Interface*)
-	
+
 	fbLogHandler : FB_LogHandler;
+	fb_ADS_WATCHDOG_VAC_LFE_GEM:FB_ADS_WATCHDOG;
 	
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[fbLogHandler();
+      <ST><![CDATA[fb_to_LFE_Arbiter(Arbiter := g_fbArbiter1, fbFFHWO := g_FastFaultOutput1);
+
+fbLogHandler();
+
+//Writes watchdog bit to remote vac_lfe_gem reading the ion pumps around the gass attenuator
+fb_ADS_WATCHDOG_VAC_LFE_GEM(
+	sNetId:= '172.21.88.32.1.1', 
+	nPort:= 851, 
+	sVarName:= 'MAIN.iWatchdog', 
+	bError=> );
 
 // Run the Diagnostics PRG
 DIAGNOSTICS();
 
 (*HXR Accelerator side PLC Interface*)
 //Update Accelerator Gauge Pressure Reading
-Accelerator_Upstream_Gauge.xPRESS_OK	:=	i_xUpstreamTreaty_PressOK;
-//update pressure reading from epics? orsomething?
+//Accelerator_Upstream_Gauge.xPRESS_OK	:=	i_xUpstreamTreaty_PressOK;
 
-//Provide Pressure OK reading for Upstream Accelerator Vacuum System
-(*
-IF  Accelerator_Upstream_Gauge.rPress <= r_Accelerator_Setpoint THEN
-	q_xUpstreamTreaty_PressOK	:=	TRUE;
+IF(i_xUpstreamTreaty_PressOK) THEN
+	Accelerator_Upstream_Gauge.xPRESS_OK 	:= TRUE;
+	//Accelerator_Upstream_Gauge.eState 	:= gc_GaugeValidState;
+	Accelerator_Upstream_Gauge.rPRESS	 	:= 5e-6; //torr
 ELSE
-	q_xUpstreamTreaty_PressOK	:=	FALSE;
+	Accelerator_Upstream_Gauge.xPRESS_OK 	:= FALSE;
+	//Accelerator_Upstream_Gauge.eState 	:= 1;
+	Accelerator_Upstream_Gauge.rPRESS	 	:= 760;	//torr
+
 END_IF
-*)
 
 (*HXR Gas Attenuator PLC Interface*)
 
@@ -51,23 +54,23 @@ END_IF
 
 (*PIRANI Gauges*)
 
-	TV1L0_GPI_01(PG=>);
+	TV1L0_GPI_01(b937A:=TRUE, PG=>);
 	
-	TV2L0_GPI_01(PG=>);
+	TV2L0_GPI_01(b937A:=TRUE, PG=>);
 	
-	TV2L0_GPI_02(PG=>);
+	TV2L0_GPI_02(b937A:=TRUE, PG=>);
 	
-	SL1L0_POWER_GPI_01(PG=>);
+	SL1L0_POWER_GPI_01(b937A:=TRUE, PG=>);
 	
-	AT2L0_SOLID_GPI_01(PG=>);
+	AT2L0_SOLID_GPI_01(b937A:=TRUE, PG=>);
 	
-	SP1L0_KMONO_GPI_01(PG=>);
+	SP1L0_KMONO_GPI_01(b937A:=TRUE, PG=>);
 	
-	PA1L0_GPI_01(PG=>);
+	PA1L0_GPI_01(b937A:=TRUE, PG=>);
 	
-	MR1L0_HOMS_GPI_01(PG=>);
+	MR1L0_HOMS_GPI_01(b937A:=TRUE, PG=>);
 	
-	MR1L1_TXI_GPI_01(PG=>);
+//	MR1L1_TXI_GPI_01(PG=>);
 	
 	BT2L0_PLEG_GPI_01(PG=>);
 	
@@ -75,7 +78,7 @@ END_IF
 	
 	ST1L0_XTES_GPI_01(PG=>);
 	
-	(*H1.1 and H1.2
+	//H1.1 and H1.2
 	TV4L0_GPI_01(PG=>);
 	
 	TV4L0_GPI_02(PG=>);
@@ -84,49 +87,47 @@ END_IF
 	
 	TV5L0_GPI_02(PG=>);
 	
-	*)
 	
 (*Cold Cathode Gauges*)
 	
-	TV1L0_GCC_01(PG:=TV1L0_GPI_01.PG,IG=>);
+	TV1L0_GCC_01(PG:=TV1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>);
+	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>, b937A:=TRUE);
 	
-	TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>);
+	TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
 	
-	TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>);
+	TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
 	
-	SL1L0_POWER_GCC_01(PG:=SL1L0_POWER_GPI_01.PG,IG=>);
+	SL1L0_POWER_GCC_01(PG:=SL1L0_POWER_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>);
+	AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	SP1L0_KMONO_GCC_01(PG:=SP1L0_KMONO_GPI_01.PG,IG=>);
+	SP1L0_KMONO_GCC_01(PG:=SP1L0_KMONO_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>);
+	PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>);
+	MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>, b937A:=TRUE);
 	
 	MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>);
 	
-	BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>);
+	BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>);
+	MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>);
+	ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>,bEP:=TRUE);
 
-	(*H1.1 and H1.2
-	TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>);
+	//H1.1 and H1.2
+	TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>);
+	TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>,bEP:=TRUE);
 
-	TV5L0_GCC_01(PG:=TV5L0_GPI_01.PG,IG=>);
+	TV5L0_GCC_01(PG:=TV5L0_GPI_01.PG,IG=>,bEP:=TRUE);
 	
-	TV5L0_GCC_02(PG:=TV5L0_GPI_02.PG,IG=>);
+	TV5L0_GCC_02(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
 	
 	TV5L0_GFS_01(PG:=TV5L0_GPI_02.PG,IG=>);
-
 	
-	*)
+	TV5L0_GCC_03(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
 	
 	
 	
@@ -160,7 +161,7 @@ END_IF
 	
 	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, stPump=>);
 	
-	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, stPump=>);
+//	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, stPump=>);
 	
 	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, stPump=>);
 	
@@ -171,29 +172,30 @@ END_IF
 	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, stPump=>);
 	
 	
-	(*H1.1 and H1.2
+	//H1.1 and H1.2
 	TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
 	
 	TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
 	
-	PA2L0_PIN_01 : FB_PIP_Gamma;
+	PA2L0_PIN_01(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 	
 	TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 	
 	TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
-	*)
+	
+	TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
 
 (*Vacuum Gate Valve*)
-	
 	TV1L0_VGC_01(
 	i_stUSG:= Accelerator_Upstream_Gauge, 
 	i_stDSG:= RTDSL0_PIP_03.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
+	i_xDis_DPIlk:= FALSE, 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_EBD, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'TV1L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -207,6 +209,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_EBD, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'IM1L0:XTES:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -220,6 +223,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_EBD, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'TV2L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -233,6 +237,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'TV2L0:VGC:02', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -246,6 +251,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'PC1L0:XTES:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -261,6 +267,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'MR1L0:HOMS:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -274,6 +281,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'BT2L0:PLEG:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
@@ -287,6 +295,7 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'MR2L0:HOMS:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);	
@@ -300,10 +309,11 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= 'MR2L0:HOMS:VGC:02', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);
-
+(*
 	TV1L1_VGC_01(
 	i_stUSG:= MR1L1_TXI_PIP_01.q_IG, 
 	i_stDSG:= MR2L0_HOMS_PIP_01.q_IG, 
@@ -313,57 +323,46 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
+	i_sDevName:= "TV1L1:VGC:01", 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);		
-
+*)
 //	TV3L0_VFS_01 : FB_VFS;
 
 //	PC2L1_L2SI_VGC_01 : FB_VGC;
 
-	(*H1.1
+	//H1.1
 	TV4L0_VGC_01(
-	i_stUSG:= TV4L0_GCC_01.IG, 
-	i_stDSG:= TV4L0_GCC_02.IG, 
+	i_stUSG:= TV4L0_PIP_01.q_IG, 
+	i_stDSG:= TV4L0_PIP_02.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
 	i_xReset:= xReset_PMPS_FFO2, 
+	i_sDevName:= 'TV4L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);	
-	
 		
 	TV5L0_VGC_01(
-	i_stUSG:= TV4L0_GCC_02.IG, 
-	i_stDSG:= TV5L0_GCC_01.IG, 
+	i_stUSG:= TV5L0_PIP_01.q_IG, 
+	i_stDSG:= TV5L0_PIP_02.q_IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
-	i_xReset:= xReset_PMPS_FFO2, 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2);	
-		
-	TV5L0_VGC_02(
-	i_stUSG:= TV5L0_GCC_01.IG, 
-	i_stDSG:= TV5L0_GCC_02.IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
-	i_xReset:= xReset_PMPS_FFO2, 
+	i_xReset:= xReset_PMPS_FFO2,
+	i_sDevName:= 'TV5L0:VGC:01',  
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);	
 	
 	TV6L0_VGC_01(
-	i_stUSG:= TV5L0_GCC_02.IG, 
+	i_stUSG:= TV5L0_PIP_03.q_IG, 
 	i_stDSG:= XPP_Downstream_Vacuum, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
@@ -371,14 +370,21 @@ END_IF
 	i_xExt_OK:= TRUE, 
 	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
 	i_xReset:= xReset_PMPS_FFO2, 
+	i_sDevName:= 'TV6L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput2);		
-	*)
+
+	
 
 (*Vacuum Fast Shutter Valve*)
+TV3L0_VFS_01_Interface(
+		IG:=TV5L0_GFS_01.IG);
 
 
+(*FastFaultOuput*)
+g_FastFaultOutput1.Execute(bAutoReset:= TRUE);
+g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
 
 
 ]]></ST>

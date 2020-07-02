@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <Task Name="FSV_Task" Id="{e4979a02-912e-43a0-8402-bdfbea135f90}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>1000</CycleTime>
+    <Priority>13</Priority>
+    <PouCall>
+      <Name>MAIN_FS</Name>
+    </PouCall>
+    <TaskFBGuid>{d1dba749-3d53-4a83-b5f5-c2425f35c69d}</TaskFBGuid>
+    <Fb_init>{6d23e768-baf4-4c07-b488-93bdf958782c}</Fb_init>
+    <Fb_exit>{945744c8-2e00-4f27-ad55-955665bb924b}</Fb_exit>
+    <CycleUpdate>{6c09f5e8-5b14-4f35-b4c1-ac84fca29b7f}</CycleUpdate>
+    <PostCycleUpdate>{4c5f704a-72cf-4e5e-b3ed-c8f8c0102b8f}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>
