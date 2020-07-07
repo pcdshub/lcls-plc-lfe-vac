@@ -397,13 +397,6 @@
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.i_xUpstreamTreaty_PressOK</Name>
-							<Comment>
-								<![CDATA[HXR Accelerator side PLC Interface]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>DIAGNOSTICS.fbEcatDiag.I_AMSNetId</Name>
 							<Comment>
 								<![CDATA[Link to the AMSNETID name in the ethercat master info.]]>
@@ -1384,6 +1377,10 @@
 							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_state</Name>
 							<Type>BIT</Type>
 						</Var>
+						<Var>
+							<Name>GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK</Name>
+							<Type>BOOL</Type>
+						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
 						<Name>PlcTask Outputs</Name>
@@ -2004,6 +2001,13 @@
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
+					<UnrestoredVarLinks ImportTime="2020-07-07T15:50:21">
+						<OwnerA Name="InputDst" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="1">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_EBD^EBD_E0_EK1100^EBD_E5_EL1008">
+								<Link VarA="GVL_Devices.i_xUpstreamTreaty_PressOK" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^Input" AutoLink="true" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x08502002"/>
 					</TaskPouOids>
@@ -2329,7 +2333,7 @@
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV2L0_VGC_01.q_xOPN_DO" VarB="Channel 2^Output" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_EBD^EBD_E0_EK1100^EBD_E5_EL1008">
-				<Link VarA="PlcTask Inputs^GVL_Devices.i_xUpstreamTreaty_PressOK" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK" VarB="Channel 1^Input" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PMPS_PRE">
 				<Link VarA="PlcTask Inputs^GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP" VarB="IO Inputs^CurrentBP" AutoLink="true"/>

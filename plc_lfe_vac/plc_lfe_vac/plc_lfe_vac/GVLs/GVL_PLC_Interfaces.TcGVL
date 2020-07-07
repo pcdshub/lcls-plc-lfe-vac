@@ -1,20 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_PLC_Interfaces" Id="{fcddf43e-c4e4-4dff-b9ca-620efda50799}">
     <Declaration><![CDATA[//{attribute 'qualified_only'}
 VAR_GLOBAL
 	
 	(*HXR Accelerator side PLC Interface*)
 	Accelerator_Upstream_Gauge	:	ST_VG;
+
+	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input
+	'}
+	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
+//	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output
+//	'}
+//	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
 	
-	XPP_Downstream_Vacuum		:	ST_VG;
 	
 	(*HXR Gas Attenuator PLC Interface*)
+	
+	fb_ADS_WATCHDOG_VAC_LFE_GEM:FB_ADS_WATCHDOG;
 
 	(*TXI PLC Interface*)
-
+	
 	(*XPP PLC Interface*)
 	
+	XPP_Downstream_Gauge		:	ST_VG;
+	
+	{attribute 'pytmc' := '
+            pv: INTERNAL:RECORD
+            link: HX3:MON:GCC:01:PMON
+	'}
+    XPP_PressureLinkHelper : FB_LREALFromEPICS;
 	
 END_VAR]]></Declaration>
   </GVL>
