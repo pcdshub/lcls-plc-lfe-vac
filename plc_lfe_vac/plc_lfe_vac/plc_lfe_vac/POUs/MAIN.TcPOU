@@ -43,8 +43,10 @@ END_IF
 (*TXI PLC Interface*)
 
 (*XPP PLC Interface*)
-XPP_Downstream_Gauge.rPRESS := XPP_PressureLinkHelper.fValue;
+XPP_PressureLinkHelper();
+XPP_Downstream_Gauge.rPRESS := LREAL_TO_REAL(XPP_PressureLinkHelper.fValue);
 XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
+
 
 (*PIRANI Gauges*)
 

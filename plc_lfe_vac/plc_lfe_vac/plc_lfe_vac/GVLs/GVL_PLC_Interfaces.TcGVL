@@ -26,7 +26,7 @@ VAR_GLOBAL
 	XPP_Downstream_Gauge		:	ST_VG;
 	
 	{attribute 'pytmc' := '
-            pv: INTERNAL:RECORD
+            pv: PLC:LFE:VAC:XPP:Downstream:PMON
             link: HX3:MON:GCC:01:PMON
 	'}
     XPP_PressureLinkHelper : FB_LREALFromEPICS;
