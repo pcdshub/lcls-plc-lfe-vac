@@ -60,17 +60,17 @@
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
-    <None Include="plc_lfe_vac_fs.tmc">
-      <SubType>Content</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <LibraryReference Include="LCLS Vacuum,1.2.3,SLAC - LCLS">
       <Namespace>LCLS_Vacuum</Namespace>
     </LibraryReference>
     <LibraryReference Include="PMPS,0.5.0,SLAC - LCLS">
       <Namespace>PMPS</Namespace>
     </LibraryReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plc_lfe_vac_fs.tmc">
+      <SubType>Content</SubType>
+    </None>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

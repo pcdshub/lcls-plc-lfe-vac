@@ -385,15 +385,18 @@
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 						</Var>
 						<Var>
+							<Name>LCLS_Vacuum.LCLSVacuumSerialDriverLib.L2SI_Vacuum_Library.Global_Variables.g_stSystem.I_EcatMaster1</Name>
+							<Comment>
+								<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
+							</Comment>
+							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+						</Var>
+						<Var>
 							<Name>DIAGNOSTICS.i_sAMSNetID</Name>
 							<Comment>
 								<![CDATA[Link the sAMSNetID to the Etherat Master netID]]>
 							</Comment>
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
-						</Var>
-						<Var>
-							<Name>GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK</Name>
-							<Type>BOOL</Type>
 						</Var>
 						<Var>
 							<Name>DIAGNOSTICS.fbEcatDiag.I_AMSNetId</Name>
@@ -892,6 +895,13 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK</Name>
+							<Comment>
+								<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger</Name>
 							<Comment>
 								<![CDATA[inputs]]>
@@ -904,13 +914,6 @@
 						</Var>
 						<Var>
 							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK</Name>
-							<Comment>
-								<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
-							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -1375,6 +1378,10 @@
 						<Var>
 							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.xTxPDO_state</Name>
 							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK</Name>
+							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
@@ -2006,7 +2013,7 @@
 					<UnrestoredVarLinks ImportTime="2020-07-08T09:54:50">
 						<OwnerA Name="OutputSrc" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="2">
 							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PMPS_PRE">
-								<Link VarA="GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP" InOutA="1" GuidA="{41059C79-1015-4C2C-AFF4-697A824775D7}" VarB="IO Outputs^RequestedBP" AutoLink="true" RestoreInfo="TypeChanged" TypeA="ST_BeamParams_IO" IdA="303"/>
+								<Link VarA="GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP" InOutA="1" GuidA="{41059C79-1015-4C2C-AFF4-697A824775D7}" VarB="IO Outputs^RequestedBP" AutoLink="true" RestoreInfo="TypeChanged" TypeA="ST_BeamParams_IO" IdA="304"/>
 							</OwnerB>
 						</OwnerA>
 						<OwnerA Name="InputDst" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="1">
