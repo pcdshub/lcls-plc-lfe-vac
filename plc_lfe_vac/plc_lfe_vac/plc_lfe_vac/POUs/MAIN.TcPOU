@@ -87,7 +87,7 @@ XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
 	
 	
 (*Cold Cathode Gauges*)
-	
+
 	TV1L0_GCC_01(PG:=TV1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 	
 	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>, b937A:=TRUE);
@@ -116,7 +116,7 @@ XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
 
 	//H1.1 and H1.2
 	TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>,bEP:=TRUE);
-	
+
 	TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>,bEP:=TRUE);
 
 	TV5L0_GCC_01(PG:=TV5L0_GPI_01.PG,IG=>,bEP:=TRUE);
@@ -131,57 +131,57 @@ XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
 	
 (*Ion Pumps*)
 
-	RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+	RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, stPump=>);
+	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
+	TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, stPump=>);
+	TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
+	TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 	
-	TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, stPump=>);
+	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, stPump=>);
+	AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, stPump=>);
+	SP1L0_KMONO_PIP_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	SP1L0_KMONO_PIP_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, stPump=>);
+	PA1L0_PIN_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>); 
 	
-	PA1L0_PIN_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, stPump=>); //PIN???	Do I also need CC setpoint?
+	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, stPump=>);
+//	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-//	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, stPump=>);
+	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, stPump=>);
+	MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GPI_01.PG, stPump=>);
+	TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, stPump=>);
-	
-	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, stPump=>);
+	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
 	
 	//H1.1 and H1.2
-	TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
+	TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 	
-	TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, stPump=>);
+	TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 	
-	PA2L0_PIN_01(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
+	PA2L0_PIN_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 	
-	TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
+	TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 	
-	TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
+	TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 	
-	TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, stPump=>);
+	TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
 (*Vacuum Gate Valve*)
 	TV1L0_VGC_01(
@@ -304,7 +304,7 @@ XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
+	i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK, 
 	i_xOverrideMode:= xSystemOverrideMode_FEE, 
 	i_xReset:= xReset_PMPS_FFO1, 
 	i_sDevName:= 'MR2L0:HOMS:VGC:02', 
@@ -326,7 +326,7 @@ XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
 	xMPS_OK=> , 
 	io_fbFFHWO:= g_FastFaultOutput1);		
 *)
-//	TV3L0_VFS_01 : FB_VFS;
+
 
 //	PC2L1_L2SI_VGC_01 : FB_VGC;
 
@@ -337,7 +337,7 @@ XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
+	i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK, 
 	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
 	i_xReset:= xReset_PMPS_FFO2, 
 	i_sDevName:= 'TV4L0:VGC:01', 

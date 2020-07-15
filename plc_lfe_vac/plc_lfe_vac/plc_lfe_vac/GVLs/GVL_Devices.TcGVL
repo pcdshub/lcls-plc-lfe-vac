@@ -517,14 +517,7 @@ VAR_GLOBAL
 	'}
 	TV1L1_VGC_01 : FB_VGC;		
 
-(*TV3L0*) //HXR INSTALLATION SECTION 11
-(*
-	{attribute 'pytmc' := '
-		pv: TV3L0:VFS:01
-		io: io
-	'}
-	TV3L0_VFS_01 : FB_VFS;
-*)	
+(*TV3L0*) //HXR INSTALLATION SECTION 11	
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 1^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 1^Input;
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 1^Output

@@ -66,6 +66,9 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
+    <PlaceholderResolution Include="L2SI Vacuum Library">
+      <Resolution>L2SI Vacuum Library, 0.0.0 (SLAC)</Resolution>
+    </PlaceholderResolution>
     <PlaceholderResolution Include="LCLS General">
       <Resolution>LCLS General, 2.3.4 (SLAC)</Resolution>
     </PlaceholderResolution>
@@ -107,7 +110,7 @@
     <LibraryReference Include="LCLS Vacuum,0.0.0,SLAC - LCLS">
       <Namespace>LCLS_Vacuum</Namespace>
     </LibraryReference>
-    <LibraryReference Include="PMPS,0.5.0,SLAC - LCLS">
+    <LibraryReference Include="PMPS,0.5.1,SLAC - LCLS">
       <Namespace>PMPS</Namespace>
     </LibraryReference>
   </ItemGroup>
