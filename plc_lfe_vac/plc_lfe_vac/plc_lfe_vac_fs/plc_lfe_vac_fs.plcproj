@@ -66,7 +66,7 @@
     <LibraryReference Include="LCLS Vacuum,1.2.4,SLAC - LCLS">
       <Namespace>LCLS_Vacuum</Namespace>
     </LibraryReference>
-    <LibraryReference Include="PMPS,0.5.1,SLAC - LCLS">
+    <LibraryReference Include="PMPS,0.6.0,SLAC - LCLS">
       <Namespace>PMPS</Namespace>
     </LibraryReference>
   </ItemGroup>
