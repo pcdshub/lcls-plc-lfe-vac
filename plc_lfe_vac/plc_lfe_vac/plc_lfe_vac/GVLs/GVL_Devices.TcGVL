@@ -4,13 +4,7 @@
     <Declaration><![CDATA[//{attribute 'qualified_only'}
 VAR_GLOBAL
 	
-(*HXR Accelerator side PLC Interface*)
-	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input
-	'}
-	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
-//	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output
-//	'}
-//	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
+
 
 (*TRANSPORT VACUUM 1 HXR 0 LINE*) //HXR INSTALLATION SECTION 1
 	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[EBD_E1_EL1004]^Channel 1^Input;
@@ -523,14 +517,7 @@ VAR_GLOBAL
 	'}
 	TV1L1_VGC_01 : FB_VGC;		
 
-(*TV3L0*) //HXR INSTALLATION SECTION 11
-(*
-	{attribute 'pytmc' := '
-		pv: TV3L0:VFS:01
-		io: io
-	'}
-	TV3L0_VFS_01 : FB_VFS;
-*)	
+(*TV3L0*) //HXR INSTALLATION SECTION 11	
 	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 1^Value;
 								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 1^Input;
 								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 1^Output
