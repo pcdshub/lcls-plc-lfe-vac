@@ -6,7 +6,7 @@ VAR_GLOBAL
 	
 	r_Accelerator_Setpoint	: REAL := 1E-12; (*unrealistic setpoint currently*)
 	{attribute 'pytmc' := '
-		pc: PLC:LFE:VAC:EBD:OVRDON
+		pv: PLC:LFE:VAC:EBD:OVRDON
 		io: io
 	'}
 	xSystemOverrideMode_EBD	: BOOL := FALSE; (* Global system override for the HXR Vacuum System EBD*)
