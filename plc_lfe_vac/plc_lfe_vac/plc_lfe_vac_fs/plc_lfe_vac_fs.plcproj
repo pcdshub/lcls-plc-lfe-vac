@@ -59,17 +59,17 @@
       <Resolution>LCLS Vacuum, 1.2.4 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="LCLS General">
-      <Resolution>LCLS General, 2.3.4 (SLAC)</Resolution>
+      <Resolution>LCLS General, 2.4.1 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, 0.6.0 (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 0.7.1 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
     <LibraryReference Include="LCLS Vacuum,1.2.4,SLAC - LCLS">
       <Namespace>LCLS_Vacuum</Namespace>
     </LibraryReference>
-    <LibraryReference Include="PMPS,0.6.0,SLAC - LCLS">
+    <LibraryReference Include="PMPS,0.7.1,SLAC - LCLS">
       <Namespace>PMPS</Namespace>
     </LibraryReference>
   </ItemGroup>
