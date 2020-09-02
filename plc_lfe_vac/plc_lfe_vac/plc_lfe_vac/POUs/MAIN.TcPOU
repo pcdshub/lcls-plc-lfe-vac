@@ -7,6 +7,11 @@ VAR
 	fbLogHandler : FB_LogHandler;
 	
 	ctuTest : CTU;
+	tof_bValid_PV	: TOF;
+	tTimeout			: TIME := T#2S;
+	fbLogger: FB_LogMessage := (eSubsystem:=E_SubSystem.VACUUM);
+	rt_bValid: R_TRIG;
+	ft_bValid: F_TRIG;
 	
 END_VAR
 ]]></Declaration>
@@ -47,7 +52,17 @@ END_IF
 (*XPP PLC Interface*)
 XPP_PressureLinkHelper();
 XPP_Downstream_Gauge.rPRESS := LREAL_TO_REAL(XPP_PressureLinkHelper.fValue);
-XPP_Downstream_Gauge.xPRESS_OK := XPP_PressureLinkHelper.bValid;
+//Add a 2 second buffer if the PV's Severity is not 0. This protects the PV from network blips
+tof_bValid_PV(IN:=XPP_PressureLinkHelper.bValid, PT:=tTimeout);
+XPP_Downstream_Gauge.xPRESS_OK := tof_bValid_PV.Q;
+rt_bValid(CLK:=XPP_PressureLinkHelper.bValid);
+ft_bValid(CLK:=XPP_PressureLinkHelper.bValid);
+IF(rt_bValid.Q)THEN
+	fbLogger(sMsg:=concat('EPICS Signal is Valid. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Info);
+END_IF
+IF(ft_bValid.Q)THEN
+	fbLogger(sMsg:=concat('EPICS Signal Disconnected. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Critical);
+END_IF
 
 
 (*PIRANI Gauges*)

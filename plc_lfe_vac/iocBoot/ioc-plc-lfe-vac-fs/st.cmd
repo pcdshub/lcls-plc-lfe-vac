@@ -5,7 +5,7 @@
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
 epicsEnvSet("IOCNAME", "ioc-plc-lfe-vac-fs" )
-epicsEnvSet("ENGINEER", "root" )
+epicsEnvSet("ENGINEER", "adpai" )
 epicsEnvSet("LOCATION", "PREFIX" )
 epicsEnvSet("IOCSH_PS1", "$(IOCNAME)> " )
 
