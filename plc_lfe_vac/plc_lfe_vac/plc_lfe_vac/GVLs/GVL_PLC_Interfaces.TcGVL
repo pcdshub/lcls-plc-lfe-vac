@@ -22,7 +22,9 @@ VAR_GLOBAL
 	(*TXI PLC Interface*)
 	
 	(*XPP PLC Interface*)
-	
+	{attribute 'pytmc' := '
+            pv: PLC:LFE:VAC:XPP:DS:GCC_EPICS
+	'}
 	XPP_Downstream_Gauge		:	ST_VG;
 	
 	{attribute 'pytmc' := '
