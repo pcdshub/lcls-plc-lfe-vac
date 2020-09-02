@@ -18,6 +18,7 @@ $(PREFIX)CurrentBP:PhotonEnergyRanges_RBV.VAL	1	monitor
 $(PREFIX)CurrentBP:ST_RBV.VAL	1	monitor
 $(PREFIX)CurrentBP:Valid_RBV.VAL	1	monitor
 $(PREFIX)CurrentBP:Cohort_RBV.VAL	1	monitor
+$(PREFIX)eVRangeCnst_RBV.VAL	1	monitor
 $(PREFIX)FullBeamCnst:Transmission_RBV.VAL	1	monitor
 $(PREFIX)FullBeamCnst:Rate_RBV.VAL	1	monitor
 $(PREFIX)FullBeamCnst:PulseEnergy_RBV.VAL	1	monitor
@@ -32,12 +33,14 @@ $(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV.VAL	1	monitor
 $(PREFIX)SafeBeamCnst:ST_RBV.VAL	1	monitor
 $(PREFIX)SafeBeamCnst:Valid_RBV.VAL	1	monitor
 $(PREFIX)SafeBeamCnst:Cohort_RBV.VAL	1	monitor
+$(PREFIX)L:UND:FirstSegment_RBV.VAL	1	scan
+$(PREFIX)L:UND:LastSegment_RBV.VAL	1	scan
+Period_RBV.VAL	1	scan
+$(PREFIX)L:UND:LowK_RBV.VAL	1	scan
+$(PREFIX)L:UND:HiK_RBV.VAL	1	scan
 $(PREFIX)eVRangeHyst_RBV.VAL	1	monitor
-$(PREFIX)eVRangeHyst.VAL	1	monitor
-$(PREFIX)eVRangeCnst_RBV.VAL	1	monitor
-$(PREFIX)eVRangeCnst.VAL	1	monitor
-PLC:LFE:VAC:RESET:FF3_RBV.VAL	1	scan
-PLC:LFE:VAC:RESET:FF3.VAL	1	scan
+$(PREFIX)L:eVRangeCnst_RBV.VAL	1	monitor
+$(PREFIX)K:eVRangeCnst_RBV.VAL	1	monitor
 PLC:LFE:VAC:FFO:03:ClearFault_RBV.VAL	1	scan
 PLC:LFE:VAC:FFO:03:ClearFault.VAL	1	scan
 PLC:LFE:VAC:FFO:03:EnableVeto_RBV.VAL	1	scan
@@ -996,5 +999,7 @@ PLC:LFE:VAC:FFO:03:FF:050:Reset.VAL	1	scan
 PLC:LFE:VAC:FFO:03:RegistrationFailure_RBV.VAL	1	scan
 PLC:LFE:VAC:FFO:03:RegistrationFailure.VAL	1	scan
 PLC:LFE:VAC:FFO:03:OK_RBV.VAL	1	scan
+PLC:LFE:VAC:RESET:FF3_RBV.VAL	1	scan
+PLC:LFE:VAC:RESET:FF3.VAL	1	scan
 $(PREFIX)SuccessfulPreemptions_RBV.VAL	1	scan
 $(PREFIX)AccumulatedFastFaults_RBV.VAL	1	scan
