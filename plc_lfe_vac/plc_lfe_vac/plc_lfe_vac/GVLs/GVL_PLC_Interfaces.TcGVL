@@ -26,6 +26,9 @@ VAR_GLOBAL
             pv: PLC:LFE:VAC:XPP:DS:GCC_EPICS
 	'}
 	XPP_Downstream_Gauge		:	ST_VG;
+	XPP_Modbus_Gauge		:	FB_GaugeModbus; //ST_VG;
+	XPP_DS_Gauge		:	ST_VG;
+	
 	
 	{attribute 'pytmc' := '
             pv: PLC:LFE:VAC:XPP:Downstream:PMON

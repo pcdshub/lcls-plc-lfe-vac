@@ -63,7 +63,11 @@ END_IF
 IF(ft_bValid.Q)THEN
 	fbLogger(sMsg:=concat('EPICS Signal Disconnected. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Critical);
 END_IF
-
+//Modbus
+XPP_Modbus_Gauge(IP:='172.21.84.44',nMBAddr:=8#4000,iBitOffset:=24);
+//Combine two readings in one gauge
+XPP_DS_Gauge.xPRESS_OK := XPP_Downstream_Gauge.xPRESS_OK OR XPP_Modbus_Gauge.VG.xPRESS_OK;
+XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
 (*PIRANI Gauges*)
 
@@ -211,7 +215,8 @@ END_IF
 	i_sDevName:= 'TV1L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 	
 	IM1L0_XTES_VGC_01(
 	i_stUSG:= RTDSL0_PIP_03.q_IG, 
@@ -225,7 +230,8 @@ END_IF
 	i_sDevName:= 'IM1L0:XTES:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 
 	TV2L0_VGC_01(
 	i_stUSG:= TV2L0_PIP_01.q_IG, 
@@ -239,7 +245,8 @@ END_IF
 	i_sDevName:= 'TV2L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 	
 	TV2L0_VGC_02(
 	i_stUSG:= TV2L0_PIP_03.q_IG, 
@@ -253,7 +260,8 @@ END_IF
 	i_sDevName:= 'TV2L0:VGC:02', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 	
 	PC1L0_XTES_VGC_01(
 	i_stUSG:= AT2L0_SOLID_PIN_01.q_IG, 
@@ -267,7 +275,8 @@ END_IF
 	i_sDevName:= 'PC1L0:XTES:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 	
 //	PA1L0_VFS_01 : FB_VFS;
 
@@ -283,7 +292,8 @@ END_IF
 	i_sDevName:= 'MR1L0:HOMS:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 
 	BT2L0_PLEG_VGC_01(
 	i_stUSG:= MR1L0_HOMS_PIP_01.q_IG, 
@@ -297,7 +307,8 @@ END_IF
 	i_sDevName:= 'BT2L0:PLEG:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 
 	MR2L0_HOMS_VGC_01(
 	i_stUSG:= BT2L0_PLEG_PIP_01.q_IG, 
@@ -311,7 +322,8 @@ END_IF
 	i_sDevName:= 'MR2L0:HOMS:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);	
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 	
 	MR2L0_HOMS_VGC_02(
 	i_stUSG:= MR2L0_HOMS_PIP_01.q_IG, 
@@ -325,7 +337,8 @@ END_IF
 	i_sDevName:= 'MR2L0:HOMS:VGC:02', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);
+	io_fbFFHWO:= g_FastFaultOutput1,
+	fbArbiter:= g_fbArbiter1 );
 (*
 	TV1L1_VGC_01(
 	i_stUSG:= MR1L1_TXI_PIP_01.q_IG, 
@@ -358,7 +371,8 @@ END_IF
 	i_sDevName:= 'TV4L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2);	
+	io_fbFFHWO:= g_FastFaultOutput2,
+   fbArbiter:= g_fbArbiter1 );	
 		
 	TV5L0_VGC_01(
 	i_stUSG:= TV5L0_PIP_01.q_IG, 
@@ -372,11 +386,12 @@ END_IF
 	i_sDevName:= 'TV5L0:VGC:01',  
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2);	
+	io_fbFFHWO:= g_FastFaultOutput2,
+   fbArbiter:= g_fbArbiter1 );		
 	
 	TV6L0_VGC_01(
 	i_stUSG:= TV5L0_PIP_03.q_IG, 
-	i_stDSG:= XPP_Downstream_Gauge, 
+	i_stDSG:= XPP_DS_Gauge, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -386,7 +401,8 @@ END_IF
 	i_sDevName:= 'TV6L0:VGC:01', 
 	iq_stValve=> , 
 	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2);		
+	io_fbFFHWO:= g_FastFaultOutput2,
+    fbArbiter:= g_fbArbiter1 );		
 
 	
 
