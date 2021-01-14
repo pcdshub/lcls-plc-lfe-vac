@@ -1,4 +1,4 @@
-IOC_TOP = /reg/g/pcds/epics/ioc/common/ads-ioc/R0.3.1
+IOC_TOP = /reg/g/pcds/epics/ioc/common/ads-ioc/R0.4.0
 IOC_INSTANCE_PATH := $(shell pwd)
 
 # Set PRODUCTION_IOC to 1 to move from a testing to a production IOC:
@@ -9,6 +9,6 @@ PROJECT_PATH := ../../plc_lfe_vac/plc_lfe_vac.tsproj
 PLC := plc_lfe_vac_fs
 
 PYTMC_OPTS := 
-PREFIX := PREFIX
+PREFIX := PLC:LFE:VAC
 
 include $(IOC_TOP)/iocBoot/templates/Makefile.base
