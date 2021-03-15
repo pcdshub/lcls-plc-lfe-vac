@@ -9,6 +9,6 @@ PROJECT_PATH := ../../plc_lfe_vac/plc_lfe_vac.tsproj
 PLC := plc_lfe_vac_fs
 
 PYTMC_OPTS := 
-PREFIX := PLC:LFE:VAC
+PREFIX := PLC:LFE:VAC:FS
 
 include $(IOC_TOP)/iocBoot/templates/Makefile.base
