@@ -111,7 +111,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum-fb-pip-gamma">LCLS_Vacuum.FB_PIP_Gamma</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum-fb-vfs-interface">LCLS_Vacuum.FB_VFS_Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum-fb-vgc">LCLS_Vacuum.FB_VGC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum-pmps-lcls-general-fb-logmessage">LCLS_Vacuum.PMPS.LCLS_General.FB_LogMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum-st-pip">LCLS_Vacuum.ST_PIP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum-st-valvebase">LCLS_Vacuum.ST_ValveBase</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum-st-vfs">LCLS_Vacuum.ST_VFS</a></li>
@@ -3464,50 +3463,6 @@
 <div class="line">field: THST Lost Vacuum</div>
 <div class="line">field: TWST Differential Pressure</div>
 <div class="line">field: ZRST Vented</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="lcls-vacuum-pmps-lcls-general-fb-logmessage">
-<h2>LCLS_Vacuum.PMPS.LCLS_General.FB_LogMessage<a class="headerlink" href="#lcls-vacuum-pmps-lcls-general-fb-logmessage" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-center">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Record</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Pragma</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>$(PREFIX):Reset</p></td>
-<td><p>bo</p></td>
-<td><p>Rising-edge reset of trip</p></td>
-<td><div class="line-block">
-<div class="line">io: output</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX):Reset_RBV</p></td>
-<td><p>bi</p></td>
-<td><p>Rising-edge reset of trip</p></td>
-<td><div class="line-block">
-<div class="line">io: output</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX):Tripped_RBV</p></td>
-<td><p>bi</p></td>
-<td><p>Log message FB tripped</p></td>
-<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -16670,22 +16625,6 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV</p></td>
-<td><p>bi</p></td>
-<td><p>Tripped by overall log count</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogHost</p></td>
-<td><p>waveform</p></td>
-<td><p>The log host IP address</p></td>
-<td><div class="line-block">
-<div class="line">io: output</div>
-</div>
-</td>
-</tr>
 <tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogHost</p></td>
 <td><p>waveform</p></td>
 <td><p>The log host IP address</p></td>
@@ -16702,22 +16641,6 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogHost_RBV</p></td>
-<td><p>waveform</p></td>
-<td><p>The log host IP address</p></td>
-<td><div class="line-block">
-<div class="line">io: output</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogMessageCount_RBV</p></td>
-<td><p>longin</p></td>
-<td><p>Total log messages on the last cycle</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
 <tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogMessageCount_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>Total log messages on the last cycle</p></td>
@@ -16728,22 +16651,6 @@
 </tr>
 <tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogPort</p></td>
 <td><p>longout</p></td>
-<td><p>The log host UDP port</p></td>
-<td><div class="line-block">
-<div class="line">io: output</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogPort</p></td>
-<td><p>longout</p></td>
-<td><p>The log host UDP port</p></td>
-<td><div class="line-block">
-<div class="line">io: output</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogPort_RBV</p></td>
-<td><p>longin</p></td>
 <td><p>The log host UDP port</p></td>
 <td><div class="line-block">
 <div class="line">io: output</div>
