@@ -499,18 +499,18 @@ GVL_Devices
     	MR2L0_HOMS_VGC_02 : FB_VGC;	
     	
     		
-    	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
-    								 .q_xOPN_SW			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW;
-    								 .q_xCLS_SW			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW;
-    								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset;
-    								 .q_xOverrideMode	:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode;
-    								 .q_xOverrideOpen	:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen;
-    								 .i_xTrigger		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
-    								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
-    								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
-    								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK;
-    								 .i_xMPS_OK			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK;
-    								 .i_eVFS_State		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State
+    	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
+    								 .q_xOPN_SW			:=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW;
+    								 .q_xCLS_SW			:=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW;
+    								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset;
+    								 .q_xOverrideMode	:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode;
+    								 .q_xOverrideOpen	:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen;
+    								 .i_xTrigger		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
+    								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
+    								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
+    								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK;
+    								 .i_xMPS_OK			:=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK;
+    								 .i_eVFS_State		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State
     	'}
     	{attribute 'pytmc' := '
     		pv: TV3L0:VFS:01
@@ -762,6 +762,70 @@ GVL_Devices
     		io: io
     	'}
     	TV6L0_VGC_01 : FB_VGC;
+
+
+    END_VAR
+
+
+GVL_FS_Devices
+^^^^^^^^^^^^^^
+
+::
+
+    //{attribute 'qualified_only'}
+    VAR_GLOBAL
+    	
+    (*
+    	{attribute 'TcLinkTo' := 	'.i_xOPNLS	:=	TIIB[FSV1_E1_EL1004]^Channel 2^Input;
+    								 .i_xClsLS	:=	TIIB[FSV1_E1_EL1004]^Channel 1^Input;
+    								 .q_xClose_A	:=	TIIB[FSV1_E3_EL2202]^Channel 1^Output;
+    								 .q_xClose_B	:=	TIIB[FSV1_E3_EL2202]^Channel 2^Output;
+    								 .q_xClose_C	:=	TIIB[FSV1_E4_EL2202]^Channel 1^Output;
+    								 .q_xOPN_DO		:=	TIIB[FSV1_E4_EL2202]^Channel 2^Output;
+    								 .i_xTrigger	:= TIIB[MKS_E22_EL1124]^Channel 1^Input
+    								 
+    	'}
+    	PA1L0_VFS_01 : FB_VFS;
+    *)	
+    	{attribute 'TcLinkTo' := 	'.i_xOPNLS	:=	TIIB[FSV2_E1_EL1004]^Channel 2^Input;
+    								 .i_xClsLS	:=	TIIB[FSV2_E1_EL1004]^Channel 1^Input;
+    								 .q_xClose_A	:=	TIIB[FSV2_E3_EL2202]^Channel 1^Output;
+    								 .q_xClose_B	:=	TIIB[FSV2_E3_EL2202]^Channel 2^Output;
+    								 .q_xClose_C	:=	TIIB[FSV2_E4_EL2202]^Channel 1^Output;
+    								 .q_xOPN_DO		:=	TIIB[FSV2_E4_EL2202]^Channel 2^Output;
+    								 .i_xTrigger	:= TIIB[MKS_E22_EL1124]^Channel 2^Input
+    	'}
+    	{attribute 'pytmc' := '
+    		pv: TV3L0:VFS:01
+    		io: io
+    	'}
+    	TV3L0_VFS_01 : FB_VFS;
+    	
+    	
+    END_VAR
+
+
+GVL_LFE_VAC_FSV_PMPS
+^^^^^^^^^^^^^^^^^^^^
+
+::
+
+    //{attribute 'qualified_only'}
+    VAR_GLOBAL
+    	
+    //Example implementation of the FFO
+        {attribute 'pytmc' := '
+    	pv: PLC:LFE:VAC:FFO:03    
+        '}
+        {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PLC_E2_EL2202]^Channel 1^Output'}
+        g_FastFaultOutput3  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
+    	
+    	{attribute 'pytmc' := '
+        pv: PLC:LFE:VAC:RESET:FF3
+        '}
+    	xReset_PMPS_FFO3	:	BOOL	:=	FALSE;		//FFO RESET for Fast Shutter Valves upstream of ST1L0_XTES	
+    	
+    	xFEE_FSV_MPS_OK: BOOL := TRUE;
 
 
     END_VAR
@@ -1335,9 +1399,36 @@ MAIN
 
     (*FastFaultOuput*)
     g_FastFaultOutput1.Execute(bAutoReset:= TRUE);
-    g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
+    g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
 
     ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
+
+    END_PROGRAM
+
+
+PRG_FastShutter
+^^^^^^^^^^^^^^^
+
+::
+
+    PROGRAM PRG_FastShutter
+    VAR
+    END_VAR
+    (*
+    PA1L0_VFS_01(
+    	i_xPMPS_OK:= TRUE, 
+    	i_xExt_OK:= TRUE, 
+    	i_sDevName:= 'PA1L0:VFS:01', 
+    	io_fbFFHWO:= g_FastFaultOutput3);
+    *)	
+    TV3L0_VFS_01(
+    	i_xPMPS_OK:= TRUE, 
+    	i_xExt_OK:= TRUE, 
+    	i_sDevName:= 'TV3L0:VFS:01', 
+    	io_fbFFHWO:= g_FastFaultOutput3);
+
+    (*FastFaultOuput*)	
+    g_FastFaultOutput3.Execute(bAutoReset:= TRUE);
 
     END_PROGRAM
 

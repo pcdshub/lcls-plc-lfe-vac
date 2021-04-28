@@ -103,6 +103,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">DUTs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#gvls">GVLs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-devices">GVL_Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gvl-fs-devices">GVL_FS_Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gvl-lfe-vac-fsv-pmps">GVL_LFE_VAC_FSV_PMPS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-lfe-vac-pmps">GVL_LFE_VAC_PMPS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-plc-interfaces">GVL_PLC_Interfaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-variables">GVL_Variables</a></li>
@@ -111,6 +113,7 @@
 <li class="toctree-l1"><a class="reference internal" href="#pous">POUs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#diagnostics">DIAGNOSTICS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#main">MAIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prg-fastshutter">PRG_FastShutter</a></li>
 </ul>
 </li>
 </ul>
@@ -685,18 +688,18 @@ VAR_GLOBAL
     MR2L0_HOMS_VGC_02 : FB_VGC;
 
 
-    {attribute &#39;TcLinkTo&#39; :=        &#39;.q_xPress_OK           :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
-                                                             .q_xOPN_SW                     :=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW;
-                                                             .q_xCLS_SW                     :=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW;
-                                                             .q_xVAC_FAULT_Reset:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset;
-                                                             .q_xOverrideMode       :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode;
-                                                             .q_xOverrideOpen       :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen;
-                                                             .i_xTrigger            :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
-                                                             .i_xVFS_Open           :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
-                                                             .i_xVFS_Closed         :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
-                                                             .i_xVAC_FAULT_OK       :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK;
-                                                             .i_xMPS_OK                     :=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK;
-                                                             .i_eVFS_State          :=      TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State
+    {attribute &#39;TcLinkTo&#39; :=        &#39;.q_xPress_OK           :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
+                                                             .q_xOPN_SW                     :=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW;
+                                                             .q_xCLS_SW                     :=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW;
+                                                             .q_xVAC_FAULT_Reset:=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset;
+                                                             .q_xOverrideMode       :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode;
+                                                             .q_xOverrideOpen       :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen;
+                                                             .i_xTrigger            :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
+                                                             .i_xVFS_Open           :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
+                                                             .i_xVFS_Closed         :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
+                                                             .i_xVAC_FAULT_OK       :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK;
+                                                             .i_xMPS_OK                     :=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK;
+                                                             .i_eVFS_State          :=      TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State
     &#39;}
     {attribute &#39;pytmc&#39; := &#39;
             pv: TV3L0:VFS:01
@@ -951,6 +954,66 @@ VAR_GLOBAL
 
 
 END_VAR
+</pre></div>
+</div>
+</div>
+<div class="section" id="gvl-fs-devices">
+<h2>GVL_FS_Devices<a class="headerlink" href="#gvl-fs-devices" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span><span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;qualified_only&#39;</span><span class="p">}</span>
+<span class="n">VAR_GLOBAL</span>
+
+<span class="p">(</span><span class="o">*</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>        <span class="s1">&#39;.i_xOPNLS      :=      TIIB[FSV1_E1_EL1004]^Channel 2^Input;</span>
+                                                             <span class="o">.</span><span class="n">i_xClsLS</span>      <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV1_E1_EL1004</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Input</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xClose_A</span>    <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV1_E3_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xClose_B</span>    <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV1_E3_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xClose_C</span>    <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV1_E4_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xOPN_DO</span>             <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV1_E4_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">i_xTrigger</span>    <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">MKS_E22_EL1124</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Input</span>
+
+    <span class="s1">&#39;}</span>
+    <span class="n">PA1L0_VFS_01</span> <span class="p">:</span> <span class="n">FB_VFS</span><span class="p">;</span>
+<span class="o">*</span><span class="p">)</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>        <span class="s1">&#39;.i_xOPNLS      :=      TIIB[FSV2_E1_EL1004]^Channel 2^Input;</span>
+                                                             <span class="o">.</span><span class="n">i_xClsLS</span>      <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV2_E1_EL1004</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Input</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xClose_A</span>    <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV2_E3_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xClose_B</span>    <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV2_E3_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xClose_C</span>    <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV2_E4_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">q_xOPN_DO</span>             <span class="o">:=</span>      <span class="n">TIIB</span><span class="p">[</span><span class="n">FSV2_E4_EL2202</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                                                             <span class="o">.</span><span class="n">i_xTrigger</span>    <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">MKS_E22_EL1124</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Input</span>
+    <span class="s1">&#39;}</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+            <span class="n">pv</span><span class="p">:</span> <span class="n">TV3L0</span><span class="p">:</span><span class="n">VFS</span><span class="p">:</span><span class="mi">01</span>
+            <span class="n">io</span><span class="p">:</span> <span class="n">io</span>
+    <span class="s1">&#39;}</span>
+    <span class="n">TV3L0_VFS_01</span> <span class="p">:</span> <span class="n">FB_VFS</span><span class="p">;</span>
+
+
+<span class="n">END_VAR</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="gvl-lfe-vac-fsv-pmps">
+<h2>GVL_LFE_VAC_FSV_PMPS<a class="headerlink" href="#gvl-lfe-vac-fsv-pmps" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span><span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;qualified_only&#39;</span><span class="p">}</span>
+<span class="n">VAR_GLOBAL</span>
+
+<span class="o">//</span><span class="n">Example</span> <span class="n">implementation</span> <span class="n">of</span> <span class="n">the</span> <span class="n">FFO</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+    <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">LFE</span><span class="p">:</span><span class="n">VAC</span><span class="p">:</span><span class="n">FFO</span><span class="p">:</span><span class="mi">03</span>
+    <span class="s1">&#39;}</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;.q_xFastFaultOut:=TIIB[PLC_E2_EL2202]^Channel 1^Output&#39;</span><span class="p">}</span>
+    <span class="n">g_FastFaultOutput3</span>  <span class="p">:</span>   <span class="n">FB_HardwareFFOutput</span><span class="p">;</span>    <span class="o">//</span><span class="n">FFO</span> <span class="k">for</span> <span class="n">Fast</span> <span class="n">Shutter</span> <span class="n">Valves</span> <span class="n">upstream</span> <span class="n">of</span> <span class="n">ST1L0_XTES</span>
+
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+    <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">LFE</span><span class="p">:</span><span class="n">VAC</span><span class="p">:</span><span class="n">RESET</span><span class="p">:</span><span class="n">FF3</span>
+    <span class="s1">&#39;}</span>
+    <span class="n">xReset_PMPS_FFO3</span>        <span class="p">:</span>       <span class="n">BOOL</span>    <span class="o">:=</span>      <span class="n">FALSE</span><span class="p">;</span>          <span class="o">//</span><span class="n">FFO</span> <span class="n">RESET</span> <span class="k">for</span> <span class="n">Fast</span> <span class="n">Shutter</span> <span class="n">Valves</span> <span class="n">upstream</span> <span class="n">of</span> <span class="n">ST1L0_XTES</span>
+
+    <span class="n">xFEE_FSV_MPS_OK</span><span class="p">:</span> <span class="n">BOOL</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+
+
+<span class="n">END_VAR</span>
 </pre></div>
 </div>
 </div>
@@ -1510,9 +1573,34 @@ END_VAR
 
 <span class="p">(</span><span class="o">*</span><span class="n">FastFaultOuput</span><span class="o">*</span><span class="p">)</span>
 <span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
-<span class="n">g_FastFaultOutput2</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">i_xVeto</span><span class="o">:=</span><span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aStoppers</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">L_Stopper</span><span class="o">.</span><span class="n">ST1L0</span><span class="p">],</span> <span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
+<span class="n">g_FastFaultOutput2</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">i_xVeto</span><span class="o">:=</span><span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">L_Stopper</span><span class="o">.</span><span class="n">ST1L0</span><span class="p">],</span> <span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
 
 <span class="n">ctuTest</span><span class="p">(</span><span class="n">CU</span><span class="o">:=</span><span class="n">GVL_LFE_VAC_PMPS</span><span class="o">.</span><span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">q_xFastFaultOut</span><span class="p">,</span> <span class="n">PV</span><span class="o">:=</span><span class="mi">100</span><span class="p">);</span>
+
+<span class="n">END_PROGRAM</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="prg-fastshutter">
+<h2>PRG_FastShutter<a class="headerlink" href="#prg-fastshutter" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROGRAM</span> <span class="n">PRG_FastShutter</span>
+<span class="n">VAR</span>
+<span class="n">END_VAR</span>
+<span class="p">(</span><span class="o">*</span>
+<span class="n">PA1L0_VFS_01</span><span class="p">(</span>
+    <span class="n">i_xPMPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">i_xExt_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">i_sDevName</span><span class="o">:=</span> <span class="s1">&#39;PA1L0:VFS:01&#39;</span><span class="p">,</span>
+    <span class="n">io_fbFFHWO</span><span class="o">:=</span> <span class="n">g_FastFaultOutput3</span><span class="p">);</span>
+<span class="o">*</span><span class="p">)</span>
+<span class="n">TV3L0_VFS_01</span><span class="p">(</span>
+    <span class="n">i_xPMPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">i_xExt_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">i_sDevName</span><span class="o">:=</span> <span class="s1">&#39;TV3L0:VFS:01&#39;</span><span class="p">,</span>
+    <span class="n">io_fbFFHWO</span><span class="o">:=</span> <span class="n">g_FastFaultOutput3</span><span class="p">);</span>
+
+<span class="p">(</span><span class="o">*</span><span class="n">FastFaultOuput</span><span class="o">*</span><span class="p">)</span>
+<span class="n">g_FastFaultOutput3</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
 
 <span class="n">END_PROGRAM</span>
 </pre></div>

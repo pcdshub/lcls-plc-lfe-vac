@@ -187,7 +187,7 @@ PDO IO Inputs (Index #x1a00, Flags #x0021, SyncMan 3)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "CurrentBP", "", 240, "#x6000", "ST_BeamParams_IO"
+        "CurrentBP", "", , "#x6000", "ST_BeamParams_IO"
 
 
 
@@ -197,7 +197,7 @@ PDO IO Outputs (Index #x1600, Flags #x0021, SyncMan 2)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "RequestedBP", "", 240, "#x7000", "ST_BeamParams_IO"
+        "RequestedBP", "", , "#x7000", "ST_BeamParams_IO"
 
 
 .. raw:: html

@@ -33,7 +33,37 @@ LCLS_General.FB_LogMessage
       - | io: input
 
 
-                 
+    
+LCLS_Vacuum.PMPS.LCLS_General.FB_LogMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):Reset
+      - bo
+      - Rising-edge reset of trip
+      - | io: output
+
+
+    * - $(PREFIX):Reset_RBV
+      - bi
+      - Rising-edge reset of trip
+      - | io: output
+
+
+    * - $(PREFIX):Tripped_RBV
+      - bi
+      - Log message FB tripped
+      - | io: input
+
+
+               
 LCLS_Vacuum.ST_VG
 ^^^^^^^^^^^^^^^^^
 
@@ -211,7 +241,7 @@ LCLS_Vacuum.ST_VG
         | io: output
 
 
-                                          
+                                                 
 PMPS.FB_HardwareFFOutput
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -6314,7 +6344,7 @@ ST_BeamParams_IO
       - Description
       - Pragma
     * - $(PREFIX):Attenuation_RBV
-      - longin
+      - ai
       - $(SYMBOL).nTran
       - | io: input
 
@@ -6327,19 +6357,13 @@ ST_BeamParams_IO
 
     * - $(PREFIX):AuxAttenuator_RBV
       - waveform
-      - $(SYMBOL).aStoppers
+      - $(SYMBOL).aVetoDevices
       - | io: input
 
 
     * - $(PREFIX):PhotonEnergy_RBV
       - longin
       - $(SYMBOL).neVRange
-      - | io: input
-
-
-    * - $(PREFIX):PulseEnergy_RBV
-      - ai
-      - $(SYMBOL).fPP_mJ
       - | io: input
 
 
@@ -6605,7 +6629,25 @@ Database Records
       - | io: input
 
 
+    * - $(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV
+      - bi
+      - Tripped by overall log count
+      - | io: input
+
+
     * - $(PREFIX)LCLSGeneral:LogHost
+      - waveform
+      - The log host IP address
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogHost
+      - waveform
+      - The log host IP address
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogHost_RBV
       - waveform
       - The log host IP address
       - | io: output
@@ -6623,8 +6665,26 @@ Database Records
       - | io: input
 
 
+    * - $(PREFIX)LCLSGeneral:LogMessageCount_RBV
+      - longin
+      - Total log messages on the last cycle
+      - | io: input
+
+
     * - $(PREFIX)LCLSGeneral:LogPort
       - longout
+      - The log host UDP port
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogPort
+      - longout
+      - The log host UDP port
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogPort_RBV
+      - longin
       - The log host UDP port
       - | io: output
 
