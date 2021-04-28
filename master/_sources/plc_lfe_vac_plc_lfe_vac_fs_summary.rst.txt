@@ -184,10 +184,10 @@ GVL_Logger
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        GVL_Logger.bTrickleTripped, BOOL, 626219448 (8)
         GVL_Logger.bTrickleTripped, BOOL, 4096136 (8)
-        GVL_Logger.cLogHost, STRING(15), 4097536 (128)
+        GVL_Logger.bTrickleTripped, BOOL, 626219448 (8)
         GVL_Logger.cLogHost, STRING(15), 634585280 (128)
+        GVL_Logger.cLogHost, STRING(15), 4097536 (128)
         GVL_Logger.fbRootLogger, FB_LogMessage, 634586304 (81600)
         GVL_Logger.fbRootLogger, FB_LogMessage, 4098560 (81600)
         GVL_Logger.iLogPort, UINT, 4096144 (16)
@@ -206,10 +206,10 @@ GVL_Logger
         GVL_Logger.nTrickleTripTime, TIME, 4097792 (32)
         GVL_Logger.nTripResetPeriod, TIME, 4097824 (32)
         GVL_Logger.nTripResetPeriod, TIME, 634585568 (32)
-        GVL_Logger.sIpTidbit, STRING(6), 4097664 (56)
         GVL_Logger.sIpTidbit, STRING(6), 634585408 (56)
-        GVL_Logger.sPlcHostname, STRING(80), 634585600 (648)
+        GVL_Logger.sIpTidbit, STRING(6), 4097664 (56)
         GVL_Logger.sPlcHostname, STRING(80), 4097856 (648)
+        GVL_Logger.sPlcHostname, STRING(80), 634585600 (648)
         GVL_Logger.TCPADS_MAXUDP_BUFFSIZE, UDINT, 4098528 (32)
         GVL_Logger.TCPADS_MAXUDP_BUFFSIZE, UDINT, 634586272 (32)
 
