@@ -522,13 +522,6 @@
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 						</Var>
 						<Var>
-							<Name>LCLS_Vacuum.PMPS.LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
-							<Comment>
-								<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
-							</Comment>
-							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
-						</Var>
-						<Var>
 							<Name>DIAGNOSTICS.i_sAMSNetID</Name>
 							<Comment>
 								<![CDATA[Link the sAMSNetID to the Etherat Master netID]]>
@@ -2495,18 +2488,18 @@
 				<Link VarA="PlcTask Outputs^GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP" VarB="IO Outputs^RequestedBP" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIPC^plc_lfe_vac^plc_lfe_vac Instance">
-				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOPN_SW" AutoLink="true"/>
-				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideOpen" AutoLink="true"/>
-				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" AutoLink="true"/>
 				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_eVFS_State" AutoLink="true"/>
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" AutoLink="true"/>
+				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK" AutoLink="true"/>
 				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK" AutoLink="true"/>
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" AutoLink="true"/>
 				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xCLS_SW" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOPN_SW" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideMode" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideOpen" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xPRESS_OK" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
