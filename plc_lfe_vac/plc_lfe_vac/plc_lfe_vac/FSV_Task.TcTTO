@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <Task Name="FSV_Task" Id="{095bbefe-591e-4ecf-a0f4-2059f3d9db7a}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>1000</CycleTime>
+    <Priority>13</Priority>
+    <PouCall>
+      <Name>PRG_FastShutter</Name>
+    </PouCall>
+    <TaskFBGuid>{c9a4d252-afbf-4b1e-9861-1e1a8528b1d5}</TaskFBGuid>
+    <Fb_init>{eee2001f-5dfa-4c10-bbf2-571d4c721c30}</Fb_init>
+    <Fb_exit>{db04010b-7f2f-421a-8b5e-88f9e43a49b3}</Fb_exit>
+    <CycleUpdate>{ea0c782a-fddd-4d74-9b73-9313a8ced140}</CycleUpdate>
+    <PostCycleUpdate>{09384e82-2005-43c3-a2b0-d9c0290d8098}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

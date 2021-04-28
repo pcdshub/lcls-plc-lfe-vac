@@ -413,7 +413,7 @@ TV3L0_VFS_01_Interface(
 
 (*FastFaultOuput*)
 g_FastFaultOutput1.Execute(bAutoReset:= TRUE);
-g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
+g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
 
 ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
 	
