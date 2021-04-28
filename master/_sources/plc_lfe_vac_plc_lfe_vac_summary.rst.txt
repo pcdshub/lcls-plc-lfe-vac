@@ -36,7 +36,7 @@ Libraries
     :header: Library, Vendor, Default, Version
     :align: center
 
-        LCLS General, SLAC, Unset, 2.4.1
+        LCLS General, SLAC, Unset, 2.4.2
         PMPS, SLAC - LCLS, , 0.18.0
         Tc2_EtherCAT, Beckhoff Automation GmbH, , 3.3.13.0
         Tc2_IoFunctions, Beckhoff Automation GmbH, , 3.3.11.0
@@ -133,8 +133,8 @@ DefaultGlobals
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        DefaultGlobals.fTimeStamp, LREAL, 634589824 (64)
         DefaultGlobals.fTimeStamp, LREAL, 4097728 (64)
+        DefaultGlobals.fTimeStamp, LREAL, 634589824 (64)
         DefaultGlobals.stSys, ST_System, 634589728 (88)
         DefaultGlobals.stSys, ST_System, 4097632 (88)
 
@@ -558,14 +558,14 @@ GVL_Logger
 
         GVL_Logger.bTrickleTripped, BOOL, 4096136 (8)
         GVL_Logger.bTrickleTripped, BOOL, 626222952 (8)
-        GVL_Logger.cLogHost, STRING(15), 634589888 (128)
         GVL_Logger.cLogHost, STRING(15), 4097792 (128)
+        GVL_Logger.cLogHost, STRING(15), 634589888 (128)
         GVL_Logger.fbRootLogger, FB_LogMessage, 4098880 (81600)
         GVL_Logger.fbRootLogger, FB_LogMessage, 634590976 (81600)
         GVL_Logger.iLogPort, UINT, 4096144 (16)
         GVL_Logger.iLogPort, UINT, 634589104 (16)
-        GVL_Logger.nGlobAccEvents, UDINT, 4098848 (32)
         GVL_Logger.nGlobAccEvents, UDINT, 634590944 (32)
+        GVL_Logger.nGlobAccEvents, UDINT, 4098848 (32)
         GVL_Logger.nLocalTrickleTripThreshold, TIME, 4098048 (32)
         GVL_Logger.nLocalTrickleTripThreshold, TIME, 634590144 (32)
         GVL_Logger.nLocalTripThreshold, TIME, 4097984 (32)
@@ -576,10 +576,10 @@ GVL_Logger
         GVL_Logger.nTrickleThreshold, UDINT, 634672576 (32)
         GVL_Logger.nTrickleTripTime, TIME, 4098080 (32)
         GVL_Logger.nTrickleTripTime, TIME, 634590176 (32)
-        GVL_Logger.nTripResetPeriod, TIME, 4098112 (32)
         GVL_Logger.nTripResetPeriod, TIME, 634590208 (32)
-        GVL_Logger.sIpTidbit, STRING(6), 634590016 (56)
+        GVL_Logger.nTripResetPeriod, TIME, 4098112 (32)
         GVL_Logger.sIpTidbit, STRING(6), 4097920 (56)
+        GVL_Logger.sIpTidbit, STRING(6), 634590016 (56)
         GVL_Logger.sPlcHostname, STRING(80), 4098144 (648)
         GVL_Logger.sPlcHostname, STRING(80), 634590240 (648)
         GVL_Logger.TCPADS_MAXUDP_BUFFSIZE, UDINT, 4098816 (32)
