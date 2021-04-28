@@ -88,7 +88,7 @@
 			</Hides>
 		</DataType>
 	</DataTypes>
-	<Project GUID="{11330276-C55F-4A32-8CC9-F4BAB4B536E0}" Name="plc_lfe_vac_fs" PrjFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.plcproj" TmcFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+	<Project Disabled="true" GUID="{11330276-C55F-4A32-8CC9-F4BAB4B536E0}" Name="plc_lfe_vac_fs" PrjFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.plcproj" TmcFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
 		<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_lfe_vac_fs\plc_lfe_vac_fs.tmc">
 			<Name>plc_lfe_vac_fs Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -252,7 +252,7 @@
 				</Var>
 			</Vars>
 			<TaskPouOids>
-				<TaskPouOid Prio="13" OTCID="#x08502041"/>
+				<TaskPouOid Prio="0" OTCID="#x08502041"/>
 			</TaskPouOids>
 		</Instance>
 	</Project>

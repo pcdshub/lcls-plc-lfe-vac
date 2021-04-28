@@ -487,18 +487,18 @@ VAR_GLOBAL
 	MR2L0_HOMS_VGC_02 : FB_VGC;	
 	
 		
-	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
-								 .q_xOPN_SW			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW;
-								 .q_xCLS_SW			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW;
-								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset;
-								 .q_xOverrideMode	:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode;
-								 .q_xOverrideOpen	:= 	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen;
-								 .i_xTrigger		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
-								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
-								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
-								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK;
-								 .i_xMPS_OK			:=  TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK;
-								 .i_eVFS_State		:=	TIPC^plc_lfe_vac_fs^plc_lfe_vac_fs Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State
+	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK;
+								 .q_xOPN_SW			:=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW;
+								 .q_xCLS_SW			:=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW;
+								 .q_xVAC_FAULT_Reset:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset;
+								 .q_xOverrideMode	:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode;
+								 .q_xOverrideOpen	:= 	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen;
+								 .i_xTrigger		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger;
+								 .i_xVFS_Open		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open;
+								 .i_xVFS_Closed		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed;
+								 .i_xVAC_FAULT_OK	:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK;
+								 .i_xMPS_OK			:=  TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK;
+								 .i_eVFS_State		:=	TIPC^plc_lfe_vac^plc_lfe_vac Instance^FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State
 	'}
 	{attribute 'pytmc' := '
 		pv: TV3L0:VFS:01

@@ -15,9 +15,6 @@
     <LibraryReferences>{fa192689-4d2e-4433-a1b6-578f29e6e6ae}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FSV_Task.TcTTO">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="GVLs\GVL_FS_Devices.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
