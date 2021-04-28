@@ -88,7 +88,7 @@
 			</Hides>
 		</DataType>
 	</DataTypes>
-	<Project GUID="{11330276-C55F-4A32-8CC9-F4BAB4B536E0}" Name="plc_lfe_vac_fs" PrjFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.plcproj" TmcFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+	<Project GUID="{11330276-C55F-4A32-8CC9-F4BAB4B536E0}" Name="plc_lfe_vac_fs" PrjFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.plcproj" TmcFilePath="..\..\plc_lfe_vac_fs\plc_lfe_vac_fs.tmc" ReloadTmc="true" AmsPort="852" TargetArchiveSettings="#x0000" FileArchiveSettings="#x000e" SymbolicMapping="true">
 		<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_lfe_vac_fs\plc_lfe_vac_fs.tmc">
 			<Name>plc_lfe_vac_fs Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -109,13 +109,6 @@
 					<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 				</Var>
 				<Var>
-					<Name>LCLS_Vacuum.PMPS.LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
-					<Comment>
-						<![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]>
-					</Comment>
-					<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
-				</Var>
-				<Var>
 					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xOpnLS</Name>
 					<Comment>
 						<![CDATA[IO]]>
@@ -128,6 +121,17 @@
 				</Var>
 				<Var>
 					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xTrigger</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xVetoValveOpenDO</Name>
+					<Comment>
+						<![CDATA[VETO Devices]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_FS_Devices.TV3L0_VFS_01.i_xVetoValveClosed</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>

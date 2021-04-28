@@ -163,18 +163,20 @@
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{5FC92061-002A-45B0-B954-CD8F28B5CE49}">ST_BeamParams_IO</Name>
+			<Name GUID="{6E597FBD-95E0-4E3A-8361-F15F77CF10FA}">ST_BeamParams_IO</Name>
 			<BitSize>1216</BitSize>
 			<SubItem>
 				<Name>nTran</Name>
-				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-				<Comment>
-					<![CDATA[  Requested pre-optic attenuation %  ]]>
+				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
+				<Comment TxtId="">
+					<![CDATA[Requested pre-optic attenuation - 1 is full transmission]]>
 				</Comment>
-				<BitSize>16</BitSize>
+				<BitSize>32</BitSize>
 				<BitOffs>0</BitOffs>
 				<Default>
-					<Value>100</Value>
+					<Min>0</Min>
+					<Max>1</Max>
+					<Value>1</Value>
 				</Default>
 				<Properties>
 					<Property>
@@ -193,7 +195,7 @@
 				<BitSize>32</BitSize>
 				<BitOffs>32</BitOffs>
 				<Default>
-					<Value>10</Value>
+					<Value>120</Value>
 				</Default>
 				<Properties>
 					<Property>
@@ -204,34 +206,15 @@
 				</Properties>
 			</SubItem>
 			<SubItem>
-				<Name>fPP_mJ</Name>
-				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
+				<Name>neVRange</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000007}">DWORD</Type>
 				<Comment>
-					<![CDATA[ Per pulse max energy (mJ) ]]>
+					<![CDATA[ Photon energy ranges ]]>
 				</Comment>
 				<BitSize>32</BitSize>
 				<BitOffs>64</BitOffs>
 				<Default>
-					<Value>20</Value>
-				</Default>
-				<Properties>
-					<Property>
-						<Name>plcAttribute_pytmc</Name>
-						<Value>pv: PulseEnergy
-        io: i</Value>
-					</Property>
-				</Properties>
-			</SubItem>
-			<SubItem>
-				<Name>neVRange</Name>
-				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
-				<Comment>
-					<![CDATA[ Photon energy ranges ]]>
-				</Comment>
-				<BitSize>16</BitSize>
-				<BitOffs>96</BitOffs>
-				<Default>
-					<Value>65535</Value>
+					<Value>4294967295</Value>
 				</Default>
 				<Properties>
 					<Property>
@@ -276,7 +259,7 @@
 				<BitOffs>640</BitOffs>
 			</SubItem>
 			<SubItem>
-				<Name>aStoppers</Name>
+				<Name>aVetoDevices</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
 				<ArrayInfo>
 					<LBound>1</LBound>
@@ -341,6 +324,12 @@
 				<Hide GUID="{729DFDAA-EB68-494E-B247-D86DA3C0AE5E}"/>
 				<Hide GUID="{41059C79-1015-4C2C-AFF4-697A824775D7}"/>
 				<Hide GUID="{80E871EC-0C36-49B0-AD5D-F1F0FB351299}"/>
+				<Hide GUID="{5FC92061-002A-45B0-B954-CD8F28B5CE49}"/>
+				<Hide GUID="{C64C88BE-2BD8-4AC6-ACD6-2A08570B4923}"/>
+				<Hide GUID="{B472A77E-9430-445F-AD24-21E649F6ACD1}"/>
+				<Hide GUID="{559ADF00-CB27-4B7D-8DEA-9DBCF390B12B}"/>
+				<Hide GUID="{E1A510FA-6CE5-40B2-9617-7C29C5B7C692}"/>
+				<Hide GUID="{3F6D5E74-4433-4A11-8ADE-14BBEED361D6}"/>
 			</Hides>
 		</DataType>
 	</DataTypes>
@@ -362,10 +351,10 @@
 				</Target>
 			</Licenses>
 			<Tasks>
-				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" ExceedWarning="2" AdtTasks="true">
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" ExceedWarning="2" DisableFpExceptions="true" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="4" Priority="13" CycleTime="10000" AmsPort="351" ExceedWarning="2" AdtTasks="true">
+				<Task Id="4" Priority="13" CycleTime="10000" AmsPort="351" ExceedWarning="2" DisableFpExceptions="true" AdtTasks="true">
 					<Name>FSV_Task</Name>
 				</Task>
 			</Tasks>
@@ -1247,23 +1236,17 @@
 						</Var>
 						<Var>
 							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP</Name>
-							<Type GUID="{5FC92061-002A-45B0-B954-CD8F28B5CE49}">ST_BeamParams_IO</Type>
+							<Type GUID="{6E597FBD-95E0-4E3A-8361-F15F77CF10FA}">ST_BeamParams_IO</Type>
 							<SubVar>
 								<Name>nTran</Name>
 								<Comment>
-									<![CDATA[  Requested pre-optic attenuation %  ]]>
+									<![CDATA[Requested pre-optic attenuation - 1 is full transmission]]>
 								</Comment>
 							</SubVar>
 							<SubVar>
 								<Name>nRate</Name>
 								<Comment>
 									<![CDATA[ Pulse-rate ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>fPP_mJ</Name>
-								<Comment>
-									<![CDATA[ Per pulse max energy (mJ) ]]>
 								</Comment>
 							</SubVar>
 							<SubVar>
@@ -1351,7 +1334,7 @@
 								</Comment>
 							</SubVar>
 							<SubVar>
-								<Name>aStoppers</Name>
+								<Name>aVetoDevices</Name>
 								<Comment>
 									<![CDATA[ Stopper statuses ]]>
 								</Comment>
@@ -1669,6 +1652,17 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.q_xVetoValveOpenDO</Name>
+							<Comment>
+								<![CDATA[VETO Devices]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.q_xVetoValveClosed</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.TV1L1_VGC_01.q_xOPN_DO</Name>
 							<Type>BOOL</Type>
 						</Var>
@@ -1803,23 +1797,17 @@
 						</Var>
 						<Var>
 							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP</Name>
-							<Type GUID="{5FC92061-002A-45B0-B954-CD8F28B5CE49}">ST_BeamParams_IO</Type>
+							<Type GUID="{6E597FBD-95E0-4E3A-8361-F15F77CF10FA}">ST_BeamParams_IO</Type>
 							<SubVar>
 								<Name>nTran</Name>
 								<Comment>
-									<![CDATA[  Requested pre-optic attenuation %  ]]>
+									<![CDATA[Requested pre-optic attenuation - 1 is full transmission]]>
 								</Comment>
 							</SubVar>
 							<SubVar>
 								<Name>nRate</Name>
 								<Comment>
 									<![CDATA[ Pulse-rate ]]>
-								</Comment>
-							</SubVar>
-							<SubVar>
-								<Name>fPP_mJ</Name>
-								<Comment>
-									<![CDATA[ Per pulse max energy (mJ) ]]>
 								</Comment>
 							</SubVar>
 							<SubVar>
@@ -1907,7 +1895,7 @@
 								</Comment>
 							</SubVar>
 							<SubVar>
-								<Name>aStoppers</Name>
+								<Name>aVetoDevices</Name>
 								<Comment>
 									<![CDATA[ Stopper statuses ]]>
 								</Comment>
@@ -2007,18 +1995,6 @@
 						<OwnerA Name="InputDst" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="1">
 							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_EBD^EBD_E0_EK1100^EBD_E5_EL1008">
 								<Link VarA="GVL_Devices.i_xUpstreamTreaty_PressOK" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^Input" AutoLink="true" Size="1" RestoreInfo="ANotFound"/>
-							</OwnerB>
-						</OwnerA>
-					</UnrestoredVarLinks>
-					<UnrestoredVarLinks ImportTime="2020-07-08T09:54:50">
-						<OwnerA Name="OutputSrc" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="2">
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PMPS_PRE">
-								<Link VarA="GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP" InOutA="1" GuidA="{41059C79-1015-4C2C-AFF4-697A824775D7}" VarB="IO Outputs^RequestedBP" AutoLink="true" RestoreInfo="TypeChanged" TypeA="ST_BeamParams_IO" IdA="303"/>
-							</OwnerB>
-						</OwnerA>
-						<OwnerA Name="InputDst" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="1">
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PMPS_PRE">
-								<Link VarA="GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP" InOutA="0" GuidA="{41059C79-1015-4C2C-AFF4-697A824775D7}" VarB="IO Inputs^CurrentBP" AutoLink="true" RestoreInfo="TypeChanged" TypeA="ST_BeamParams_IO" IdA="143"/>
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
