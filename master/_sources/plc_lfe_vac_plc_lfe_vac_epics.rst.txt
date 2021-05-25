@@ -2524,7 +2524,7 @@ LCLS_Vacuum.FB_VGC
         | io: input
 
 
-              
+                                        
 LCLS_Vacuum.ST_PIP
 ^^^^^^^^^^^^^^^^^^
 
@@ -3645,7 +3645,7 @@ LCLS_Vacuum.ST_VGC
         | io: input
 
 
-                                                                               
+                                                                       
 PMPS.FB_Arbiter
 ^^^^^^^^^^^^^^^
 

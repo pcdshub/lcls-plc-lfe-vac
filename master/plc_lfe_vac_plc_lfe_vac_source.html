@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -1117,7 +1120,7 @@ END_VAR
             <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">LFE</span><span class="p">:</span><span class="n">VAC</span><span class="p">:</span><span class="n">H1_1H1_2</span><span class="p">:</span><span class="n">OVRDON</span>
             <span class="n">io</span><span class="p">:</span> <span class="n">io</span>
     <span class="s1">&#39;}</span>
-    <span class="n">xSystemOverrideMode_H1_1_H1_2</span>   <span class="p">:</span> <span class="n">BOOL</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span> <span class="p">(</span><span class="o">*</span> <span class="n">Global</span> <span class="n">system</span> <span class="n">override</span> <span class="k">for</span> <span class="n">the</span> <span class="n">HXR</span> <span class="n">Vacuum</span> <span class="n">System</span> <span class="n">Hutch1</span><span class="o">.</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">Hutch1</span><span class="o">.</span><span class="mi">2</span><span class="o">*</span><span class="p">)</span>
+    <span class="n">xSystemOverrideMode_H1_1_H1_2</span>   <span class="p">:</span> <span class="n">BOOL</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span> <span class="p">(</span><span class="o">*</span> <span class="n">Global</span> <span class="n">system</span> <span class="n">override</span> <span class="k">for</span> <span class="n">the</span> <span class="n">HXR</span> <span class="n">Vacuum</span> <span class="n">System</span> <span class="n">Hutch1</span><span class="mf">.1</span> <span class="ow">and</span> <span class="n">Hutch1</span><span class="mf">.2</span><span class="o">*</span><span class="p">)</span>
 <span class="n">END_VAR</span>
 </pre></div>
 </div>
@@ -1142,8 +1145,8 @@ END_VAR
     <span class="n">iMasterState</span><span class="p">:</span> <span class="n">WORD</span><span class="p">;</span>
     <span class="n">sMasterState</span><span class="p">:</span><span class="n">STRING</span><span class="p">;</span>
     <span class="n">nSlaveNumber</span> <span class="p">:</span> <span class="n">UINT</span><span class="p">;</span>
-    <span class="n">aiSlaveStates</span><span class="p">:</span> <span class="n">ARRAY</span><span class="p">[</span><span class="mf">1.</span><span class="o">.</span><span class="mi">256</span><span class="p">]</span> <span class="n">OF</span> <span class="n">BYTE</span><span class="p">;</span>
-    <span class="n">aEcSlaveInfo</span> <span class="p">:</span>  <span class="n">ARRAY</span><span class="p">[</span><span class="mf">1.</span><span class="o">.</span><span class="mi">256</span><span class="p">]</span> <span class="n">OF</span> <span class="n">ST_EcDevice</span><span class="p">;</span>
+    <span class="n">aiSlaveStates</span><span class="p">:</span> <span class="n">ARRAY</span><span class="p">[</span><span class="mf">1..256</span><span class="p">]</span> <span class="n">OF</span> <span class="n">BYTE</span><span class="p">;</span>
+    <span class="n">aEcSlaveInfo</span> <span class="p">:</span>  <span class="n">ARRAY</span><span class="p">[</span><span class="mf">1..256</span><span class="p">]</span> <span class="n">OF</span> <span class="n">ST_EcDevice</span><span class="p">;</span>
 <span class="n">END_VAR</span>
 <span class="o">//</span> <span class="n">Instaniating</span> <span class="n">a</span> <span class="n">call</span> <span class="n">to</span> <span class="n">the</span> <span class="n">fbEcatDiag</span>
 <span class="n">fbEcatDiag</span><span class="p">(</span>
@@ -1255,7 +1258,7 @@ END_VAR
 
     <span class="n">ST1L0_XTES_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 
-    <span class="o">//</span><span class="n">H1</span><span class="o">.</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">H1</span><span class="o">.</span><span class="mi">2</span>
+    <span class="o">//</span><span class="n">H1</span><span class="mf">.1</span> <span class="ow">and</span> <span class="n">H1</span><span class="mf">.2</span>
     <span class="n">TV4L0_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="n">TV4L0_GPI_02</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
@@ -1293,7 +1296,7 @@ END_VAR
 
     <span class="n">ST1L0_XTES_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">ST1L0_XTES_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
-    <span class="o">//</span><span class="n">H1</span><span class="o">.</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">H1</span><span class="o">.</span><span class="mi">2</span>
+    <span class="o">//</span><span class="n">H1</span><span class="mf">.1</span> <span class="ow">and</span> <span class="n">H1</span><span class="mf">.2</span>
     <span class="n">TV4L0_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">TV4L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
     <span class="n">TV4L0_GCC_02</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">TV4L0_GPI_02</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
@@ -1349,7 +1352,7 @@ END_VAR
     <span class="n">ST1L0_XTES_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">ST1L0_XTES_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
 
-    <span class="o">//</span><span class="n">H1</span><span class="o">.</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">H1</span><span class="o">.</span><span class="mi">2</span>
+    <span class="o">//</span><span class="n">H1</span><span class="mf">.1</span> <span class="ow">and</span> <span class="n">H1</span><span class="mf">.2</span>
     <span class="n">TV4L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV4L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="n">TV4L0_PIP_02</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV4L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
@@ -1518,7 +1521,7 @@ END_VAR
 
 <span class="o">//</span>  <span class="n">PC2L1_L2SI_VGC_01</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
 
-    <span class="o">//</span><span class="n">H1</span><span class="o">.</span><span class="mi">1</span>
+    <span class="o">//</span><span class="n">H1</span><span class="mf">.1</span>
     <span class="n">TV4L0_VGC_01</span><span class="p">(</span>
     <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">TV4L0_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
     <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">TV4L0_PIP_02</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
