@@ -13,6 +13,11 @@
     <Implicit_KindOfTask>{be5985b8-d745-41a1-8e80-2681f07afbce}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{95ab0280-49ea-44bb-b453-f4b6c0e10fba}</Implicit_Jitter_Distribution>
     <LibraryReferences>{53727914-8ad2-4653-9719-cba24b1a5126}</LibraryReferences>
+    <CombineIds>false</CombineIds>
+    <Company>SLAC - LCLS</Company>
+    <Released>false</Released>
+    <Title>LFE VAC</Title>
+    <ProjectVersion>0.0.0</ProjectVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="FSV_Task.TcTTO">
@@ -84,7 +89,7 @@
       <Resolution>LCLS General, 2.4.2 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, 1.0.0 (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 2.0.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc2_EtherCAT">
       <Resolution>Tc2_EtherCAT, 3.3.13.0 (Beckhoff Automation GmbH)</Resolution>
@@ -124,10 +129,10 @@
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
-    <LibraryReference Include="LCLS Vacuum,1.5.0,SLAC - LCLS">
+    <LibraryReference Include="LCLS Vacuum,1.6.0,SLAC - LCLS">
       <Namespace>LCLS_Vacuum</Namespace>
     </LibraryReference>
-    <LibraryReference Include="PMPS,1.0.0,SLAC - LCLS">
+    <LibraryReference Include="PMPS,2.0.0,SLAC - LCLS">
       <Namespace>PMPS</Namespace>
     </LibraryReference>
   </ItemGroup>
