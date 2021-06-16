@@ -13,6 +13,11 @@
     <Implicit_KindOfTask>{be5985b8-d745-41a1-8e80-2681f07afbce}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{95ab0280-49ea-44bb-b453-f4b6c0e10fba}</Implicit_Jitter_Distribution>
     <LibraryReferences>{53727914-8ad2-4653-9719-cba24b1a5126}</LibraryReferences>
+    <CombineIds>false</CombineIds>
+    <Company>SLAC - LCLS</Company>
+    <Released>false</Released>
+    <Title>LFE VAC</Title>
+    <ProjectVersion>0.0.0</ProjectVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="FSV_Task.TcTTO">
