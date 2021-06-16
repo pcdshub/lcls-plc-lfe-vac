@@ -84,7 +84,7 @@
       <Resolution>LCLS General, 2.4.2 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, 1.0.0 (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 2.0.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc2_EtherCAT">
       <Resolution>Tc2_EtherCAT, 3.3.13.0 (Beckhoff Automation GmbH)</Resolution>
@@ -124,10 +124,10 @@
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
-    <LibraryReference Include="LCLS Vacuum,1.5.0,SLAC - LCLS">
+    <LibraryReference Include="LCLS Vacuum,1.6.0,SLAC - LCLS">
       <Namespace>LCLS_Vacuum</Namespace>
     </LibraryReference>
-    <LibraryReference Include="PMPS,1.0.0,SLAC - LCLS">
+    <LibraryReference Include="PMPS,2.0.0,SLAC - LCLS">
       <Namespace>PMPS</Namespace>
     </LibraryReference>
   </ItemGroup>
