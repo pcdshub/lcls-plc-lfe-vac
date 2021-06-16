@@ -3645,7 +3645,7 @@ LCLS_Vacuum.ST_VGC
         | io: input
 
 
-                                                                       
+                                                                                
 PMPS.FB_Arbiter
 ^^^^^^^^^^^^^^^
 
@@ -3660,6 +3660,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:001:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:001:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -3716,6 +3722,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:002:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:002:ID_RBV
       - longin
       - Assertion Pool
@@ -3766,6 +3778,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:003:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:003:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -3822,6 +3840,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:004:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:004:ID_RBV
       - longin
       - Assertion Pool
@@ -3872,6 +3896,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:005:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:005:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -3928,6 +3958,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:006:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:006:ID_RBV
       - longin
       - Assertion Pool
@@ -3978,6 +4014,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:007:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:007:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -4034,6 +4076,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:008:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:008:ID_RBV
       - longin
       - Assertion Pool
@@ -4084,6 +4132,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:009:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:009:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -4140,6 +4194,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:010:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:010:ID_RBV
       - longin
       - Assertion Pool
@@ -4190,6 +4250,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:011:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:011:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -4246,6 +4312,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:012:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:012:ID_RBV
       - longin
       - Assertion Pool
@@ -4296,6 +4368,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:013:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:013:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -4352,6 +4430,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:014:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:014:ID_RBV
       - longin
       - Assertion Pool
@@ -4402,6 +4486,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:015:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:015:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -4458,6 +4548,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:016:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:016:ID_RBV
       - longin
       - Assertion Pool
@@ -4508,6 +4604,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:017:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:017:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -4564,6 +4666,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:018:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:018:ID_RBV
       - longin
       - Assertion Pool
@@ -4617,6 +4725,12 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:019:Device_RBV
+      - waveform
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:019:ID_RBV
       - longin
       - Assertion Pool
@@ -4667,6 +4781,12 @@ PMPS.FB_Arbiter
     * - $(PREFIX):AP:Entry:020:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:020:Device_RBV
+      - waveform
+      - Assertion Pool
       - | io: input
 
 
@@ -4788,6 +4908,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:001:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[1].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:001:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[1].nId
@@ -4838,6 +4964,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:002:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:002:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[2].sDevName
       - | io: input
 
 
@@ -4894,6 +5026,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:003:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[3].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:003:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[3].nId
@@ -4944,6 +5082,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:004:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:004:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[4].sDevName
       - | io: input
 
 
@@ -5000,6 +5144,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:005:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[5].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:005:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[5].nId
@@ -5050,6 +5200,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:006:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:006:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[6].sDevName
       - | io: input
 
 
@@ -5106,6 +5262,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:007:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[7].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:007:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[7].nId
@@ -5156,6 +5318,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:008:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:008:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[8].sDevName
       - | io: input
 
 
@@ -5212,6 +5380,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:009:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[9].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:009:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[9].nId
@@ -5262,6 +5436,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:010:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:010:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[10].sDevName
       - | io: input
 
 
@@ -5318,6 +5498,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:011:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[11].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:011:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[11].nId
@@ -5368,6 +5554,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:012:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:012:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[12].sDevName
       - | io: input
 
 
@@ -5424,6 +5616,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:013:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[13].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:013:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[13].nId
@@ -5474,6 +5672,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:014:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:014:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[14].sDevName
       - | io: input
 
 
@@ -5530,6 +5734,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:015:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[15].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:015:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[15].nId
@@ -5580,6 +5790,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:016:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:016:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[16].sDevName
       - | io: input
 
 
@@ -5636,6 +5852,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:017:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[17].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:017:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[17].nId
@@ -5686,6 +5908,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:018:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:018:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[18].sDevName
       - | io: input
 
 
@@ -5742,6 +5970,12 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:019:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[19].sDevName
+      - | io: input
+
+
     * - $(PREFIX):Entry:019:ID_RBV
       - longin
       - $(SYMBOL).epicsDataPool[19].nId
@@ -5792,6 +6026,12 @@ PMPS.FB_BeamParamAssertionPool
     * - $(PREFIX):Entry:020:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Entry:020:Device_RBV
+      - waveform
+      - $(SYMBOL).epicsDataPool[20].sDevName
       - | io: input
 
 
@@ -5980,10 +6220,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:001:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[1].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:001:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[1].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:001:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[1].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:001:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[1].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:001:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[1].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:001:Reset
@@ -6094,10 +6358,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:002:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[2].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:002:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[2].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:002:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[2].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:002:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[2].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:002:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[2].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:002:Reset
@@ -6208,10 +6496,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:003:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[3].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:003:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[3].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:003:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[3].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:003:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[3].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:003:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[3].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:003:Reset
@@ -6322,10 +6634,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:004:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[4].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:004:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[4].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:004:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[4].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:004:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[4].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:004:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[4].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:004:Reset
@@ -6436,10 +6772,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:005:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[5].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:005:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[5].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:005:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[5].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:005:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[5].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:005:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[5].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:005:Reset
@@ -6550,10 +6910,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:006:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[6].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:006:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[6].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:006:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[6].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:006:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[6].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:006:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[6].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:006:Reset
@@ -6664,10 +7048,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:007:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[7].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:007:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[7].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:007:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[7].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:007:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[7].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:007:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[7].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:007:Reset
@@ -6778,10 +7186,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:008:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[8].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:008:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[8].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:008:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[8].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:008:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[8].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:008:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[8].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:008:Reset
@@ -6892,10 +7324,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:009:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[9].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:009:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[9].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:009:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[9].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:009:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[9].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:009:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[9].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:009:Reset
@@ -7006,10 +7462,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:010:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[10].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:010:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[10].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:010:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[10].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:010:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[10].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:010:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[10].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:010:Reset
@@ -7120,10 +7600,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:011:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[11].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:011:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[11].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:011:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[11].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:011:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[11].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:011:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[11].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:011:Reset
@@ -7234,10 +7738,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:012:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[12].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:012:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[12].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:012:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[12].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:012:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[12].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:012:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[12].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:012:Reset
@@ -7348,10 +7876,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:013:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[13].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:013:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[13].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:013:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[13].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:013:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[13].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:013:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[13].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:013:Reset
@@ -7462,10 +8014,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:014:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[14].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:014:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[14].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:014:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[14].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:014:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[14].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:014:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[14].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:014:Reset
@@ -7576,10 +8152,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:015:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[15].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:015:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[15].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:015:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[15].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:015:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[15].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:015:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[15].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:015:Reset
@@ -7690,10 +8290,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:016:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[16].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:016:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[16].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:016:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[16].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:016:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[16].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:016:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[16].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:016:Reset
@@ -7804,10 +8428,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:017:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[17].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:017:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[17].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:017:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[17].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:017:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[17].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:017:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[17].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:017:Reset
@@ -7918,10 +8566,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:018:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[18].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:018:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[18].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:018:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[18].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:018:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[18].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:018:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[18].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:018:Reset
@@ -8032,10 +8704,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:019:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[19].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:019:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[19].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:019:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[19].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:019:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[19].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:019:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[19].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:019:Reset
@@ -8146,10 +8842,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:020:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[20].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:020:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[20].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:020:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[20].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:020:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[20].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:020:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[20].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:020:Reset
@@ -8260,10 +8980,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:021:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[21].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:021:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[21].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:021:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[21].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:021:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[21].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:021:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[21].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:021:Reset
@@ -8374,10 +9118,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:022:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[22].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:022:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[22].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:022:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[22].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:022:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[22].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:022:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[22].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:022:Reset
@@ -8488,10 +9256,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:023:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[23].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:023:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[23].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:023:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[23].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:023:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[23].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:023:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[23].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:023:Reset
@@ -8602,10 +9394,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:024:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[24].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:024:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[24].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:024:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[24].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:024:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[24].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:024:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[24].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:024:Reset
@@ -8716,10 +9532,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:025:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[25].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:025:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[25].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:025:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[25].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:025:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[25].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:025:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[25].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:025:Reset
@@ -8830,10 +9670,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:026:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[26].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:026:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[26].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:026:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[26].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:026:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[26].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:026:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[26].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:026:Reset
@@ -8944,10 +9808,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:027:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[27].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:027:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[27].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:027:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[27].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:027:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[27].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:027:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[27].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:027:Reset
@@ -9058,10 +9946,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:028:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[28].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:028:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[28].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:028:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[28].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:028:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[28].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:028:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[28].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:028:Reset
@@ -9172,10 +10084,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:029:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[29].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:029:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[29].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:029:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[29].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:029:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[29].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:029:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[29].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:029:Reset
@@ -9286,10 +10222,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:030:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[30].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:030:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[30].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:030:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[30].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:030:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[30].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:030:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[30].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:030:Reset
@@ -9400,10 +10360,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:031:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[31].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:031:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[31].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:031:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[31].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:031:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[31].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:031:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[31].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:031:Reset
@@ -9514,10 +10498,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:032:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[32].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:032:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[32].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:032:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[32].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:032:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[32].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:032:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[32].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:032:Reset
@@ -9628,10 +10636,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:033:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[33].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:033:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[33].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:033:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[33].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:033:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[33].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:033:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[33].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:033:Reset
@@ -9742,10 +10774,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:034:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[34].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:034:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[34].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:034:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[34].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:034:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[34].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:034:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[34].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:034:Reset
@@ -9856,10 +10912,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:035:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[35].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:035:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[35].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:035:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[35].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:035:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[35].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:035:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[35].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:035:Reset
@@ -9970,10 +11050,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:036:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[36].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:036:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[36].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:036:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[36].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:036:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[36].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:036:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[36].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:036:Reset
@@ -10084,10 +11188,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:037:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[37].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:037:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[37].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:037:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[37].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:037:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[37].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:037:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[37].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:037:Reset
@@ -10198,10 +11326,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:038:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[38].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:038:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[38].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:038:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[38].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:038:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[38].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:038:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[38].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:038:Reset
@@ -10312,10 +11464,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:039:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[39].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:039:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[39].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:039:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[39].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:039:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[39].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:039:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[39].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:039:Reset
@@ -10426,10 +11602,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:040:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[40].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:040:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[40].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:040:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[40].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:040:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[40].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:040:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[40].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:040:Reset
@@ -10540,10 +11740,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:041:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[41].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:041:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[41].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:041:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[41].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:041:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[41].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:041:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[41].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:041:Reset
@@ -10654,10 +11878,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:042:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[42].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:042:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[42].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:042:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[42].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:042:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[42].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:042:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[42].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:042:Reset
@@ -10768,10 +12016,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:043:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[43].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:043:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[43].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:043:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[43].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:043:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[43].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:043:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[43].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:043:Reset
@@ -10882,10 +12154,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:044:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[44].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:044:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[44].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:044:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[44].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:044:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[44].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:044:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[44].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:044:Reset
@@ -10996,10 +12292,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:045:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[45].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:045:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[45].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:045:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[45].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:045:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[45].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:045:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[45].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:045:Reset
@@ -11110,10 +12430,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:046:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[46].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:046:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[46].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:046:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[46].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:046:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[46].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:046:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[46].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:046:Reset
@@ -11224,10 +12568,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:047:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[47].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:047:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[47].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:047:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[47].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:047:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[47].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:047:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[47].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:047:Reset
@@ -11338,10 +12706,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:048:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[48].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:048:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[48].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:048:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[48].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:048:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[48].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:048:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[48].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:048:Reset
@@ -11452,10 +12844,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:049:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[49].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:049:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[49].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:049:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[49].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:049:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[49].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:049:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[49].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:049:Reset
@@ -11566,10 +12982,34 @@ PMPS.FB_HardwareFFOutput
       - | io: input
 
 
+    * - $(PREFIX):FF:050:Ovrd:Expiration
+      - longout
+      - $(SYMBOL).astFF[50].Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):FF:050:Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).astFF[50].Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):FF:050:Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).astFF[50].Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):FF:050:Ovrd:StartDT
+      - longout
+      - $(SYMBOL).astFF[50].Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):FF:050:Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).astFF[50].Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):FF:050:Reset
@@ -11694,6 +13134,12 @@ PMPS.ST_BP_ArbInternal
     * - $(PREFIX):Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
+      - | io: input
+
+
+    * - $(PREFIX):Device_RBV
+      - waveform
+      - $(SYMBOL).sDevName
       - | io: input
 
 
@@ -11852,10 +13298,34 @@ PMPS.ST_FF
       - | io: input
 
 
+    * - $(PREFIX):Ovrd:Expiration
+      - longout
+      - $(SYMBOL).Ovrd.Expiration
+      - | io: output
+
+
+    * - $(PREFIX):Ovrd:Expiration_RBV
+      - longin
+      - $(SYMBOL).Ovrd.Expiration
+      - | io: output
+
+
     * - $(PREFIX):Ovrd:RemainingTime_RBV
       - longin
       - $(SYMBOL).Ovrd.RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):Ovrd:StartDT
+      - longout
+      - $(SYMBOL).Ovrd.StartDT
+      - | io: output
+
+
+    * - $(PREFIX):Ovrd:StartDT_RBV
+      - longin
+      - $(SYMBOL).Ovrd.StartDT
+      - | io: output
 
 
     * - $(PREFIX):Reset
@@ -11978,10 +13448,34 @@ PMPS.ST_FFOverride
       - | io: input
 
 
+    * - $(PREFIX):Expiration
+      - longout
+      - $(SYMBOL).Expiration
+      - | io: output
+
+
+    * - $(PREFIX):Expiration_RBV
+      - longin
+      - $(SYMBOL).Expiration
+      - | io: output
+
+
     * - $(PREFIX):RemainingTime_RBV
       - longin
       - $(SYMBOL).RemainingTime
       - | io: input
+
+
+    * - $(PREFIX):StartDT
+      - longout
+      - $(SYMBOL).StartDT
+      - | io: output
+
+
+    * - $(PREFIX):StartDT_RBV
+      - longin
+      - $(SYMBOL).StartDT
+      - | io: output
 
 
  
@@ -12270,7 +13764,7 @@ ST_PMPS_Aperture_IO
         | io: input
 
 
-                          
+                            
 Database Records
 ----------------
 
@@ -18929,10 +20423,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:001:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[1].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:001:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[1].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:001:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[1].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:001:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[1].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:001:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[1].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:001:Reset
@@ -19043,10 +20561,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:002:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[2].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:002:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[2].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:002:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[2].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:002:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[2].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:002:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[2].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:002:Reset
@@ -19157,10 +20699,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:003:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[3].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:003:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[3].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:003:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[3].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:003:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[3].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:003:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[3].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:003:Reset
@@ -19271,10 +20837,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:004:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[4].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:004:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[4].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:004:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[4].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:004:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[4].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:004:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[4].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:004:Reset
@@ -19385,10 +20975,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:005:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[5].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:005:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[5].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:005:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[5].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:005:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[5].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:005:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[5].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:005:Reset
@@ -19499,10 +21113,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:006:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[6].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:006:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[6].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:006:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[6].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:006:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[6].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:006:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[6].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:006:Reset
@@ -19613,10 +21251,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:007:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[7].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:007:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[7].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:007:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[7].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:007:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[7].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:007:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[7].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:007:Reset
@@ -19727,10 +21389,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:008:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[8].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:008:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[8].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:008:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[8].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:008:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[8].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:008:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[8].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:008:Reset
@@ -19841,10 +21527,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:009:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[9].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:009:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[9].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:009:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[9].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:009:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[9].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:009:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[9].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:009:Reset
@@ -19955,10 +21665,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:010:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[10].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:010:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[10].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:010:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[10].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:010:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[10].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:010:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[10].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:010:Reset
@@ -20069,10 +21803,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:011:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[11].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:011:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[11].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:011:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[11].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:011:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[11].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:011:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[11].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:011:Reset
@@ -20183,10 +21941,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:012:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[12].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:012:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[12].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:012:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[12].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:012:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[12].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:012:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[12].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:012:Reset
@@ -20297,10 +22079,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:013:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[13].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:013:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[13].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:013:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[13].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:013:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[13].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:013:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[13].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:013:Reset
@@ -20411,10 +22217,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:014:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[14].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:014:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[14].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:014:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[14].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:014:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[14].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:014:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[14].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:014:Reset
@@ -20525,10 +22355,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:015:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[15].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:015:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[15].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:015:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[15].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:015:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[15].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:015:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[15].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:015:Reset
@@ -20639,10 +22493,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:016:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[16].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:016:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[16].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:016:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[16].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:016:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[16].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:016:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[16].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:016:Reset
@@ -20753,10 +22631,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:017:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[17].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:017:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[17].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:017:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[17].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:017:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[17].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:017:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[17].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:017:Reset
@@ -20867,10 +22769,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:018:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[18].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:018:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[18].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:018:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[18].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:018:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[18].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:018:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[18].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:018:Reset
@@ -20981,10 +22907,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:019:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[19].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:019:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[19].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:019:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[19].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:019:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[19].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:019:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[19].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:019:Reset
@@ -21095,10 +23045,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:020:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[20].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:020:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[20].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:020:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[20].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:020:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[20].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:020:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[20].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:020:Reset
@@ -21209,10 +23183,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:021:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[21].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:021:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[21].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:021:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[21].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:021:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[21].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:021:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[21].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:021:Reset
@@ -21323,10 +23321,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:022:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[22].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:022:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[22].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:022:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[22].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:022:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[22].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:022:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[22].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:022:Reset
@@ -21437,10 +23459,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:023:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[23].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:023:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[23].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:023:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[23].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:023:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[23].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:023:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[23].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:023:Reset
@@ -21551,10 +23597,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:024:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[24].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:024:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[24].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:024:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[24].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:024:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[24].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:024:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[24].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:024:Reset
@@ -21665,10 +23735,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:025:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[25].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:025:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[25].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:025:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[25].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:025:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[25].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:025:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[25].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:025:Reset
@@ -21779,10 +23873,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:026:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[26].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:026:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[26].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:026:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[26].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:026:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[26].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:026:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[26].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:026:Reset
@@ -21893,10 +24011,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:027:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[27].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:027:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[27].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:027:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[27].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:027:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[27].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:027:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[27].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:027:Reset
@@ -22007,10 +24149,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:028:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[28].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:028:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[28].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:028:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[28].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:028:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[28].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:028:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[28].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:028:Reset
@@ -22121,10 +24287,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:029:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[29].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:029:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[29].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:029:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[29].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:029:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[29].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:029:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[29].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:029:Reset
@@ -22235,10 +24425,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:030:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[30].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:030:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[30].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:030:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[30].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:030:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[30].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:030:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[30].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:030:Reset
@@ -22349,10 +24563,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:031:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[31].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:031:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[31].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:031:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[31].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:031:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[31].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:031:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[31].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:031:Reset
@@ -22463,10 +24701,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:032:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[32].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:032:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[32].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:032:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[32].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:032:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[32].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:032:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[32].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:032:Reset
@@ -22577,10 +24839,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:033:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[33].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:033:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[33].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:033:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[33].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:033:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[33].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:033:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[33].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:033:Reset
@@ -22691,10 +24977,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:034:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[34].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:034:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[34].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:034:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[34].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:034:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[34].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:034:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[34].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:034:Reset
@@ -22805,10 +25115,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:035:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[35].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:035:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[35].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:035:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[35].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:035:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[35].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:035:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[35].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:035:Reset
@@ -22919,10 +25253,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:036:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[36].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:036:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[36].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:036:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[36].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:036:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[36].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:036:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[36].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:036:Reset
@@ -23033,10 +25391,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:037:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[37].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:037:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[37].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:037:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[37].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:037:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[37].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:037:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[37].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:037:Reset
@@ -23147,10 +25529,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:038:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[38].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:038:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[38].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:038:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[38].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:038:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[38].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:038:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[38].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:038:Reset
@@ -23261,10 +25667,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:039:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[39].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:039:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[39].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:039:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[39].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:039:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[39].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:039:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[39].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:039:Reset
@@ -23375,10 +25805,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:040:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[40].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:040:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[40].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:040:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[40].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:040:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[40].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:040:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[40].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:040:Reset
@@ -23489,10 +25943,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:041:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[41].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:041:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[41].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:041:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[41].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:041:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[41].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:041:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[41].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:041:Reset
@@ -23603,10 +26081,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:042:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[42].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:042:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[42].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:042:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[42].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:042:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[42].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:042:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[42].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:042:Reset
@@ -23717,10 +26219,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:043:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[43].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:043:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[43].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:043:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[43].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:043:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[43].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:043:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[43].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:043:Reset
@@ -23831,10 +26357,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:044:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[44].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:044:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[44].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:044:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[44].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:044:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[44].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:044:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[44].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:044:Reset
@@ -23945,10 +26495,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:045:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[45].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:045:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[45].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:045:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[45].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:045:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[45].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:045:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[45].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:045:Reset
@@ -24059,10 +26633,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:046:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[46].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:046:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[46].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:046:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[46].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:046:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[46].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:046:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[46].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:046:Reset
@@ -24173,10 +26771,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:047:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[47].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:047:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[47].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:047:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[47].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:047:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[47].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:047:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[47].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:047:Reset
@@ -24287,10 +26909,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:048:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[48].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:048:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[48].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:048:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[48].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:048:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[48].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:048:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[48].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:048:Reset
@@ -24401,10 +27047,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:049:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[49].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:049:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[49].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:049:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[49].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:049:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[49].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:049:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[49].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:049:Reset
@@ -24515,10 +27185,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:01:FF:050:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[50].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:050:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[50].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:01:FF:050:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[50].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:050:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[50].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:01:FF:050:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput1.astFF[50].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:01:FF:050:Reset
@@ -24677,10 +27371,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:001:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[1].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:001:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[1].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:001:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[1].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:001:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[1].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:001:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[1].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:001:Reset
@@ -24791,10 +27509,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:002:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[2].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:002:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[2].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:002:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[2].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:002:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[2].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:002:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[2].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:002:Reset
@@ -24905,10 +27647,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:003:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[3].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:003:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[3].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:003:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[3].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:003:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[3].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:003:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[3].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:003:Reset
@@ -25019,10 +27785,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:004:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[4].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:004:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[4].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:004:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[4].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:004:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[4].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:004:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[4].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:004:Reset
@@ -25133,10 +27923,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:005:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[5].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:005:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[5].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:005:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[5].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:005:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[5].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:005:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[5].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:005:Reset
@@ -25247,10 +28061,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:006:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[6].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:006:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[6].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:006:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[6].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:006:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[6].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:006:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[6].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:006:Reset
@@ -25361,10 +28199,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:007:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[7].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:007:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[7].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:007:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[7].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:007:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[7].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:007:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[7].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:007:Reset
@@ -25475,10 +28337,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:008:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[8].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:008:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[8].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:008:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[8].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:008:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[8].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:008:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[8].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:008:Reset
@@ -25589,10 +28475,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:009:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[9].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:009:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[9].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:009:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[9].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:009:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[9].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:009:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[9].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:009:Reset
@@ -25703,10 +28613,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:010:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[10].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:010:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[10].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:010:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[10].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:010:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[10].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:010:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[10].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:010:Reset
@@ -25817,10 +28751,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:011:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[11].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:011:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[11].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:011:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[11].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:011:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[11].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:011:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[11].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:011:Reset
@@ -25931,10 +28889,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:012:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[12].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:012:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[12].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:012:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[12].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:012:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[12].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:012:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[12].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:012:Reset
@@ -26045,10 +29027,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:013:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[13].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:013:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[13].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:013:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[13].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:013:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[13].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:013:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[13].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:013:Reset
@@ -26159,10 +29165,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:014:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[14].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:014:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[14].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:014:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[14].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:014:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[14].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:014:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[14].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:014:Reset
@@ -26273,10 +29303,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:015:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[15].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:015:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[15].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:015:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[15].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:015:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[15].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:015:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[15].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:015:Reset
@@ -26387,10 +29441,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:016:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[16].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:016:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[16].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:016:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[16].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:016:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[16].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:016:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[16].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:016:Reset
@@ -26501,10 +29579,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:017:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[17].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:017:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[17].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:017:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[17].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:017:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[17].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:017:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[17].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:017:Reset
@@ -26615,10 +29717,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:018:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[18].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:018:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[18].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:018:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[18].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:018:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[18].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:018:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[18].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:018:Reset
@@ -26729,10 +29855,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:019:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[19].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:019:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[19].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:019:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[19].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:019:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[19].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:019:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[19].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:019:Reset
@@ -26843,10 +29993,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:020:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[20].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:020:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[20].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:020:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[20].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:020:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[20].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:020:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[20].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:020:Reset
@@ -26957,10 +30131,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:021:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[21].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:021:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[21].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:021:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[21].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:021:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[21].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:021:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[21].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:021:Reset
@@ -27071,10 +30269,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:022:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[22].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:022:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[22].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:022:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[22].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:022:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[22].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:022:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[22].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:022:Reset
@@ -27185,10 +30407,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:023:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[23].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:023:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[23].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:023:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[23].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:023:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[23].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:023:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[23].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:023:Reset
@@ -27299,10 +30545,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:024:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[24].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:024:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[24].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:024:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[24].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:024:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[24].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:024:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[24].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:024:Reset
@@ -27413,10 +30683,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:025:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[25].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:025:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[25].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:025:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[25].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:025:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[25].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:025:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[25].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:025:Reset
@@ -27527,10 +30821,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:026:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[26].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:026:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[26].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:026:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[26].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:026:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[26].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:026:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[26].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:026:Reset
@@ -27641,10 +30959,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:027:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[27].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:027:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[27].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:027:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[27].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:027:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[27].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:027:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[27].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:027:Reset
@@ -27755,10 +31097,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:028:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[28].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:028:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[28].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:028:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[28].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:028:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[28].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:028:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[28].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:028:Reset
@@ -27869,10 +31235,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:029:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[29].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:029:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[29].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:029:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[29].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:029:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[29].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:029:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[29].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:029:Reset
@@ -27983,10 +31373,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:030:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[30].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:030:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[30].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:030:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[30].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:030:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[30].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:030:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[30].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:030:Reset
@@ -28097,10 +31511,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:031:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[31].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:031:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[31].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:031:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[31].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:031:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[31].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:031:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[31].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:031:Reset
@@ -28211,10 +31649,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:032:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[32].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:032:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[32].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:032:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[32].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:032:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[32].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:032:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[32].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:032:Reset
@@ -28325,10 +31787,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:033:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[33].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:033:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[33].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:033:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[33].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:033:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[33].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:033:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[33].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:033:Reset
@@ -28439,10 +31925,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:034:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[34].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:034:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[34].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:034:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[34].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:034:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[34].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:034:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[34].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:034:Reset
@@ -28553,10 +32063,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:035:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[35].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:035:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[35].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:035:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[35].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:035:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[35].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:035:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[35].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:035:Reset
@@ -28667,10 +32201,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:036:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[36].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:036:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[36].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:036:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[36].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:036:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[36].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:036:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[36].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:036:Reset
@@ -28781,10 +32339,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:037:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[37].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:037:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[37].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:037:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[37].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:037:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[37].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:037:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[37].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:037:Reset
@@ -28895,10 +32477,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:038:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[38].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:038:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[38].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:038:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[38].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:038:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[38].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:038:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[38].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:038:Reset
@@ -29009,10 +32615,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:039:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[39].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:039:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[39].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:039:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[39].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:039:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[39].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:039:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[39].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:039:Reset
@@ -29123,10 +32753,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:040:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[40].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:040:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[40].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:040:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[40].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:040:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[40].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:040:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[40].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:040:Reset
@@ -29237,10 +32891,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:041:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[41].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:041:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[41].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:041:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[41].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:041:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[41].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:041:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[41].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:041:Reset
@@ -29351,10 +33029,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:042:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[42].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:042:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[42].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:042:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[42].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:042:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[42].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:042:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[42].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:042:Reset
@@ -29465,10 +33167,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:043:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[43].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:043:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[43].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:043:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[43].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:043:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[43].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:043:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[43].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:043:Reset
@@ -29579,10 +33305,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:044:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[44].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:044:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[44].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:044:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[44].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:044:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[44].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:044:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[44].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:044:Reset
@@ -29693,10 +33443,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:045:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[45].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:045:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[45].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:045:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[45].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:045:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[45].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:045:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[45].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:045:Reset
@@ -29807,10 +33581,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:046:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[46].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:046:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[46].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:046:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[46].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:046:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[46].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:046:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[46].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:046:Reset
@@ -29921,10 +33719,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:047:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[47].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:047:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[47].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:047:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[47].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:047:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[47].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:047:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[47].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:047:Reset
@@ -30035,10 +33857,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:048:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[48].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:048:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[48].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:048:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[48].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:048:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[48].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:048:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[48].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:048:Reset
@@ -30149,10 +33995,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:049:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[49].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:049:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[49].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:049:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[49].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:049:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[49].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:049:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[49].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:049:Reset
@@ -30263,10 +34133,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:02:FF:050:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[50].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:050:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[50].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:02:FF:050:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[50].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:050:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[50].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:02:FF:050:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_PMPS.g_FastFaultOutput2.astFF[50].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:02:FF:050:Reset
@@ -30425,10 +34319,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:001:Reset
@@ -30539,10 +34457,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:002:Reset
@@ -30653,10 +34595,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:003:Reset
@@ -30767,10 +34733,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:004:Reset
@@ -30881,10 +34871,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:005:Reset
@@ -30995,10 +35009,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:006:Reset
@@ -31109,10 +35147,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:007:Reset
@@ -31223,10 +35285,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:008:Reset
@@ -31337,10 +35423,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:009:Reset
@@ -31451,10 +35561,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:010:Reset
@@ -31565,10 +35699,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:011:Reset
@@ -31679,10 +35837,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:012:Reset
@@ -31793,10 +35975,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:013:Reset
@@ -31907,10 +36113,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:014:Reset
@@ -32021,10 +36251,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:015:Reset
@@ -32135,10 +36389,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:016:Reset
@@ -32249,10 +36527,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:017:Reset
@@ -32363,10 +36665,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:018:Reset
@@ -32477,10 +36803,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:019:Reset
@@ -32591,10 +36941,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:020:Reset
@@ -32705,10 +37079,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:021:Reset
@@ -32819,10 +37217,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:022:Reset
@@ -32933,10 +37355,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:023:Reset
@@ -33047,10 +37493,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:024:Reset
@@ -33161,10 +37631,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:025:Reset
@@ -33275,10 +37769,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:026:Reset
@@ -33389,10 +37907,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:027:Reset
@@ -33503,10 +38045,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:028:Reset
@@ -33617,10 +38183,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:029:Reset
@@ -33731,10 +38321,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:030:Reset
@@ -33845,10 +38459,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:031:Reset
@@ -33959,10 +38597,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:032:Reset
@@ -34073,10 +38735,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:033:Reset
@@ -34187,10 +38873,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:034:Reset
@@ -34301,10 +39011,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:035:Reset
@@ -34415,10 +39149,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:036:Reset
@@ -34529,10 +39287,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:037:Reset
@@ -34643,10 +39425,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:038:Reset
@@ -34757,10 +39563,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:039:Reset
@@ -34871,10 +39701,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:040:Reset
@@ -34985,10 +39839,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:041:Reset
@@ -35099,10 +39977,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:042:Reset
@@ -35213,10 +40115,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:043:Reset
@@ -35327,10 +40253,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:044:Reset
@@ -35441,10 +40391,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:045:Reset
@@ -35555,10 +40529,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:046:Reset
@@ -35669,10 +40667,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:047:Reset
@@ -35783,10 +40805,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:048:Reset
@@ -35897,10 +40943,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:049:Reset
@@ -36011,10 +41081,34 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Expiration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Expiration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Expiration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Expiration
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:RemainingTime_RBV
       - longin
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.RemainingTime
       - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:StartDT
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.StartDT
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:StartDT_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.StartDT
+      - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:050:Reset
