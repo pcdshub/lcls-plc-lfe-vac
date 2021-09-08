@@ -767,6 +767,10 @@ GVL_Devices
     END_VAR
 
 
+Related:
+    * `GVL_FS_Devices`_
+
+
 GVL_FS_Devices
 ^^^^^^^^^^^^^^
 
@@ -805,6 +809,8 @@ GVL_FS_Devices
     END_VAR
 
 
+
+
 GVL_LFE_VAC_FSV_PMPS
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -829,6 +835,8 @@ GVL_LFE_VAC_FSV_PMPS
 
 
     END_VAR
+
+
 
 
 GVL_LFE_VAC_PMPS
@@ -870,6 +878,8 @@ GVL_LFE_VAC_PMPS
     	fb_to_LFE_Arbiter :	FB_SubSysToArbiter_IO;
     	g_fbArbiter1    :   FB_Arbiter(1);
     END_VAR
+
+
 
 
 GVL_PLC_Interfaces
@@ -915,6 +925,8 @@ GVL_PLC_Interfaces
     END_VAR
 
 
+
+
 GVL_Variables
 ^^^^^^^^^^^^^
 
@@ -940,6 +952,8 @@ GVL_Variables
     	'}
     	xSystemOverrideMode_H1_1_H1_2	: BOOL := FALSE; (* Global system override for the HXR Vacuum System Hutch1.1 and Hutch1.2*)
     END_VAR
+
+
 
 
 POUs
@@ -982,6 +996,8 @@ DIAGNOSTICS
     	q_nSlaves=> nSlaveNumber);
 
     END_PROGRAM
+
+
 
 
 MAIN
@@ -1406,6 +1422,11 @@ MAIN
     END_PROGRAM
 
 
+Related:
+    * `DIAGNOSTICS`_
+    * `GVL_LFE_VAC_PMPS`_
+
+
 PRG_FastShutter
 ^^^^^^^^^^^^^^^
 
@@ -1431,4 +1452,6 @@ PRG_FastShutter
     g_FastFaultOutput3.Execute(bAutoReset:= TRUE);
 
     END_PROGRAM
+
+
 

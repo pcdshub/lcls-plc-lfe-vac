@@ -977,6 +977,28 @@ LCLS_Vacuum.FB_MKS275
         | io: input
 
 
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).PG.iAutoOnTimer
+      - | io: input
+
+
     * - $(PREFIX):DISC_ACTIVE_RBV
       - bi
       - $(SYMBOL).PG.i_xDisc_Active
@@ -1115,9 +1137,9 @@ LCLS_Vacuum.FB_MKS275
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -1163,6 +1185,28 @@ LCLS_Vacuum.FB_MKS317
         | io: input
 
 
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).PG.iAutoOnTimer
+      - | io: input
+
+
     * - $(PREFIX):DISC_ACTIVE_RBV
       - bi
       - $(SYMBOL).PG.i_xDisc_Active
@@ -1301,9 +1345,9 @@ LCLS_Vacuum.FB_MKS317
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -1349,6 +1393,28 @@ LCLS_Vacuum.FB_MKS422
         | io: input
 
 
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).IG.iAutoOnTimer
+      - | io: input
+
+
     * - $(PREFIX):DISC_ACTIVE_RBV
       - bi
       - $(SYMBOL).IG.i_xDisc_Active
@@ -1487,9 +1553,9 @@ LCLS_Vacuum.FB_MKS422
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -1535,6 +1601,28 @@ LCLS_Vacuum.FB_MKS500
         | io: input
 
 
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).IG.iAutoOnTimer
+      - | io: input
+
+
     * - $(PREFIX):DISC_ACTIVE_RBV
       - bi
       - $(SYMBOL).IG.i_xDisc_Active
@@ -1673,9 +1761,9 @@ LCLS_Vacuum.FB_MKS500
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -1747,12 +1835,26 @@ LCLS_Vacuum.FB_PIP_Gamma
         | io: output
 
 
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - $(PREFIX):Auto_On_RBV
       - bi
       - $(SYMBOL).stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).stPump.iAutoOnTimer
+      - | io: input
 
 
     * - $(PREFIX):ERROR_RBV
@@ -2570,12 +2672,26 @@ LCLS_Vacuum.ST_PIP
         | io: output
 
 
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - $(PREFIX):Auto_On_RBV
       - bi
       - $(SYMBOL).xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).iAutoOnTimer
+      - | io: input
 
 
     * - $(PREFIX):ERROR_RBV
@@ -3185,6 +3301,28 @@ LCLS_Vacuum.ST_VG
         | io: input
 
 
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).iAutoOnTimer
+      - | io: input
+
+
     * - $(PREFIX):DISC_ACTIVE_RBV
       - bi
       - $(SYMBOL).i_xDisc_Active
@@ -3323,9 +3461,9 @@ LCLS_Vacuum.ST_VG
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -3645,7 +3783,7 @@ LCLS_Vacuum.ST_VGC
         | io: input
 
 
-                                                                                
+                                                                                 
 PMPS.FB_Arbiter
 ^^^^^^^^^^^^^^^
 
@@ -14099,6 +14237,28 @@ Database Records
         | io: input
 
 
+    * - AT2L0:SOLID:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.AT2L0_SOLID_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - AT2L0:SOLID:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.AT2L0_SOLID_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - AT2L0:SOLID:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.AT2L0_SOLID_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - AT2L0:SOLID:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.AT2L0_SOLID_GCC_01.IG.i_xDisc_Active
@@ -14237,9 +14397,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -14271,6 +14431,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - AT2L0:SOLID:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.AT2L0_SOLID_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - AT2L0:SOLID:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.AT2L0_SOLID_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - AT2L0:SOLID:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.AT2L0_SOLID_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - AT2L0:SOLID:GPI:01:DISC_ACTIVE_RBV
@@ -14411,9 +14593,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -14473,12 +14655,26 @@ Database Records
         | io: output
 
 
+    * - AT2L0:SOLID:PIN:01:Auto_On
+      - bo
+      - GVL_Devices.AT2L0_SOLID_PIN_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - AT2L0:SOLID:PIN:01:Auto_On_RBV
       - bi
       - GVL_Devices.AT2L0_SOLID_PIN_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - AT2L0:SOLID:PIN:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.AT2L0_SOLID_PIN_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - AT2L0:SOLID:PIN:01:ERROR_RBV
@@ -14656,6 +14852,28 @@ Database Records
         | io: input
 
 
+    * - BT2L0:PLEG:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.BT2L0_PLEG_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - BT2L0:PLEG:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.BT2L0_PLEG_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - BT2L0:PLEG:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.BT2L0_PLEG_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - BT2L0:PLEG:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.BT2L0_PLEG_GCC_01.IG.i_xDisc_Active
@@ -14794,9 +15012,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -14828,6 +15046,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - BT2L0:PLEG:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.BT2L0_PLEG_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - BT2L0:PLEG:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.BT2L0_PLEG_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - BT2L0:PLEG:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.BT2L0_PLEG_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - BT2L0:PLEG:GPI:01:DISC_ACTIVE_RBV
@@ -14968,9 +15208,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -15030,12 +15270,26 @@ Database Records
         | io: output
 
 
+    * - BT2L0:PLEG:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.BT2L0_PLEG_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - BT2L0:PLEG:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.BT2L0_PLEG_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - BT2L0:PLEG:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.BT2L0_PLEG_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - BT2L0:PLEG:PIP:01:ERROR_RBV
@@ -15585,12 +15839,26 @@ Database Records
         | io: output
 
 
+    * - IM1L0:XTES:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.IM1L0_XTES_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - IM1L0:XTES:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.IM1L0_XTES_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - IM1L0:XTES:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.IM1L0_XTES_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - IM1L0:XTES:PIP:01:ERROR_RBV
@@ -16114,6 +16382,28 @@ Database Records
         | io: input
 
 
+    * - MR1L0:HOMS:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.MR1L0_HOMS_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L0:HOMS:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.MR1L0_HOMS_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L0:HOMS:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR1L0_HOMS_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - MR1L0:HOMS:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.MR1L0_HOMS_GCC_01.IG.i_xDisc_Active
@@ -16252,9 +16542,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -16286,6 +16576,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - MR1L0:HOMS:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.MR1L0_HOMS_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L0:HOMS:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.MR1L0_HOMS_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L0:HOMS:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR1L0_HOMS_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - MR1L0:HOMS:GPI:01:DISC_ACTIVE_RBV
@@ -16426,9 +16738,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -16488,12 +16800,26 @@ Database Records
         | io: output
 
 
+    * - MR1L0:HOMS:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.MR1L0_HOMS_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - MR1L0:HOMS:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.MR1L0_HOMS_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - MR1L0:HOMS:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR1L0_HOMS_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - MR1L0:HOMS:PIP:01:ERROR_RBV
@@ -17017,6 +17343,28 @@ Database Records
         | io: input
 
 
+    * - MR1L1:TXI:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.MR1L1_TXI_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L1:TXI:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.MR1L1_TXI_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L1:TXI:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR1L1_TXI_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - MR1L1:TXI:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.MR1L1_TXI_GCC_01.IG.i_xDisc_Active
@@ -17155,9 +17503,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -17189,6 +17537,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - MR1L1:TXI:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.MR1L1_TXI_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L1:TXI:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.MR1L1_TXI_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR1L1:TXI:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR1L1_TXI_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - MR1L1:TXI:GPI:01:DISC_ACTIVE_RBV
@@ -17329,9 +17699,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -17391,12 +17761,26 @@ Database Records
         | io: output
 
 
+    * - MR1L1:TXI:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.MR1L1_TXI_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - MR1L1:TXI:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.MR1L1_TXI_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - MR1L1:TXI:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR1L1_TXI_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - MR1L1:TXI:PIP:01:ERROR_RBV
@@ -17574,6 +17958,28 @@ Database Records
         | io: input
 
 
+    * - MR2L0:HOMS:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.MR2L0_HOMS_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR2L0:HOMS:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.MR2L0_HOMS_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR2L0:HOMS:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR2L0_HOMS_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - MR2L0:HOMS:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.MR2L0_HOMS_GCC_01.IG.i_xDisc_Active
@@ -17712,9 +18118,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -17746,6 +18152,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - MR2L0:HOMS:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.MR2L0_HOMS_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR2L0:HOMS:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.MR2L0_HOMS_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - MR2L0:HOMS:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR2L0_HOMS_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - MR2L0:HOMS:GPI:01:DISC_ACTIVE_RBV
@@ -17886,9 +18314,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -17948,12 +18376,26 @@ Database Records
         | io: output
 
 
+    * - MR2L0:HOMS:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.MR2L0_HOMS_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - MR2L0:HOMS:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.MR2L0_HOMS_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - MR2L0:HOMS:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.MR2L0_HOMS_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - MR2L0:HOMS:PIP:01:ERROR_RBV
@@ -18823,6 +19265,28 @@ Database Records
         | io: input
 
 
+    * - PA1L0:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.PA1L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - PA1L0:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.PA1L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - PA1L0:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.PA1L0_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - PA1L0:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.PA1L0_GCC_01.IG.i_xDisc_Active
@@ -18961,9 +19425,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -18995,6 +19459,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - PA1L0:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.PA1L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - PA1L0:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.PA1L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - PA1L0:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.PA1L0_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - PA1L0:GPI:01:DISC_ACTIVE_RBV
@@ -19135,9 +19621,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -19197,12 +19683,26 @@ Database Records
         | io: output
 
 
+    * - PA1L0:PIN:01:Auto_On
+      - bo
+      - GVL_Devices.PA1L0_PIN_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - PA1L0:PIN:01:Auto_On_RBV
       - bi
       - GVL_Devices.PA1L0_PIN_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - PA1L0:PIN:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.PA1L0_PIN_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - PA1L0:PIN:01:ERROR_RBV
@@ -19406,12 +19906,26 @@ Database Records
         | io: output
 
 
+    * - PA2L0:PIN:01:Auto_On
+      - bo
+      - GVL_Devices.PA2L0_PIN_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - PA2L0:PIN:01:Auto_On_RBV
       - bi
       - GVL_Devices.PA2L0_PIN_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - PA2L0:PIN:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.PA2L0_PIN_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - PA2L0:PIN:01:ERROR_RBV
@@ -41225,6 +41739,28 @@ Database Records
         | io: input
 
 
+    * - PLC:LFE:VAC:XPP:DS:GCC_EPICS:Auto_On
+      - bo
+      - GVL_PLC_Interfaces.XPP_Downstream_Gauge.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - PLC:LFE:VAC:XPP:DS:GCC_EPICS:Auto_On_RBV
+      - bi
+      - GVL_PLC_Interfaces.XPP_Downstream_Gauge.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - PLC:LFE:VAC:XPP:DS:GCC_EPICS:AutoOn_timer_RBV
+      - longin
+      - GVL_PLC_Interfaces.XPP_Downstream_Gauge.iAutoOnTimer
+      - | io: input
+
+
     * - PLC:LFE:VAC:XPP:DS:GCC_EPICS:DISC_ACTIVE_RBV
       - bi
       - GVL_PLC_Interfaces.XPP_Downstream_Gauge.i_xDisc_Active
@@ -41363,9 +41899,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -41425,12 +41961,26 @@ Database Records
         | io: output
 
 
+    * - RTDSL0:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.RTDSL0_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - RTDSL0:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.RTDSL0_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - RTDSL0:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.RTDSL0_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - RTDSL0:PIP:01:ERROR_RBV
@@ -41634,12 +42184,26 @@ Database Records
         | io: output
 
 
+    * - RTDSL0:PIP:02:Auto_On
+      - bo
+      - GVL_Devices.RTDSL0_PIP_02.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - RTDSL0:PIP:02:Auto_On_RBV
       - bi
       - GVL_Devices.RTDSL0_PIP_02.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - RTDSL0:PIP:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.RTDSL0_PIP_02.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - RTDSL0:PIP:02:ERROR_RBV
@@ -41843,12 +42407,26 @@ Database Records
         | io: output
 
 
+    * - RTDSL0:PIP:03:Auto_On
+      - bo
+      - GVL_Devices.RTDSL0_PIP_03.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - RTDSL0:PIP:03:Auto_On_RBV
       - bi
       - GVL_Devices.RTDSL0_PIP_03.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - RTDSL0:PIP:03:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.RTDSL0_PIP_03.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - RTDSL0:PIP:03:ERROR_RBV
@@ -42052,12 +42630,26 @@ Database Records
         | io: output
 
 
+    * - RTDSL0:PIP:04:Auto_On
+      - bo
+      - GVL_Devices.RTDSL0_PIP_04.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - RTDSL0:PIP:04:Auto_On_RBV
       - bi
       - GVL_Devices.RTDSL0_PIP_04.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - RTDSL0:PIP:04:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.RTDSL0_PIP_04.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - RTDSL0:PIP:04:ERROR_RBV
@@ -42261,12 +42853,26 @@ Database Records
         | io: output
 
 
+    * - RTDSL0:PIP:05:Auto_On
+      - bo
+      - GVL_Devices.RTDSL0_PIP_05.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - RTDSL0:PIP:05:Auto_On_RBV
       - bi
       - GVL_Devices.RTDSL0_PIP_05.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - RTDSL0:PIP:05:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.RTDSL0_PIP_05.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - RTDSL0:PIP:05:ERROR_RBV
@@ -42444,6 +43050,28 @@ Database Records
         | io: input
 
 
+    * - SL1L0:POWER:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.SL1L0_POWER_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SL1L0:POWER:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.SL1L0_POWER_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SL1L0:POWER:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.SL1L0_POWER_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - SL1L0:POWER:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.SL1L0_POWER_GCC_01.IG.i_xDisc_Active
@@ -42582,9 +43210,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -42616,6 +43244,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - SL1L0:POWER:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.SL1L0_POWER_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SL1L0:POWER:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.SL1L0_POWER_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SL1L0:POWER:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.SL1L0_POWER_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - SL1L0:POWER:GPI:01:DISC_ACTIVE_RBV
@@ -42756,9 +43406,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -42818,12 +43468,26 @@ Database Records
         | io: output
 
 
+    * - SL1L0:POWER:PIN:01:Auto_On
+      - bo
+      - GVL_Devices.SL1L0_POWER_PIN_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - SL1L0:POWER:PIN:01:Auto_On_RBV
       - bi
       - GVL_Devices.SL1L0_POWER_PIN_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - SL1L0:POWER:PIN:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.SL1L0_POWER_PIN_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - SL1L0:POWER:PIN:01:ERROR_RBV
@@ -43001,6 +43665,28 @@ Database Records
         | io: input
 
 
+    * - SP1L0:KMONO:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.SP1L0_KMONO_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1L0:KMONO:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.SP1L0_KMONO_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1L0:KMONO:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.SP1L0_KMONO_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - SP1L0:KMONO:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.SP1L0_KMONO_GCC_01.IG.i_xDisc_Active
@@ -43139,9 +43825,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -43173,6 +43859,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - SP1L0:KMONO:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.SP1L0_KMONO_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1L0:KMONO:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.SP1L0_KMONO_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1L0:KMONO:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.SP1L0_KMONO_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - SP1L0:KMONO:GPI:01:DISC_ACTIVE_RBV
@@ -43313,9 +44021,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -43375,12 +44083,26 @@ Database Records
         | io: output
 
 
+    * - SP1L0:KMONO:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.SP1L0_KMONO_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - SP1L0:KMONO:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.SP1L0_KMONO_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - SP1L0:KMONO:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.SP1L0_KMONO_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - SP1L0:KMONO:PIP:01:ERROR_RBV
@@ -43558,6 +44280,28 @@ Database Records
         | io: input
 
 
+    * - ST1L0:XTES:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.ST1L0_XTES_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - ST1L0:XTES:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.ST1L0_XTES_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - ST1L0:XTES:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.ST1L0_XTES_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - ST1L0:XTES:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.ST1L0_XTES_GCC_01.IG.i_xDisc_Active
@@ -43696,9 +44440,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -43730,6 +44474,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - ST1L0:XTES:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.ST1L0_XTES_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - ST1L0:XTES:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.ST1L0_XTES_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - ST1L0:XTES:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.ST1L0_XTES_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - ST1L0:XTES:GPI:01:DISC_ACTIVE_RBV
@@ -43870,9 +44636,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -43932,12 +44698,26 @@ Database Records
         | io: output
 
 
+    * - ST1L0:XTES:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.ST1L0_XTES_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - ST1L0:XTES:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.ST1L0_XTES_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - ST1L0:XTES:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.ST1L0_XTES_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - ST1L0:XTES:PIP:01:ERROR_RBV
@@ -44115,6 +44895,28 @@ Database Records
         | io: input
 
 
+    * - TV1L0:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.TV1L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV1L0:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV1L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV1L0:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV1L0_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - TV1L0:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.TV1L0_GCC_01.IG.i_xDisc_Active
@@ -44253,9 +45055,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -44287,6 +45089,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV1L0:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.TV1L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV1L0:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV1L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV1L0:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV1L0_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - TV1L0:GPI:01:DISC_ACTIVE_RBV
@@ -44427,9 +45251,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -45155,6 +45979,28 @@ Database Records
         | io: input
 
 
+    * - TV2L0:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV2L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - TV2L0:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.TV2L0_GCC_01.IG.i_xDisc_Active
@@ -45293,9 +46139,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -45327,6 +46173,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV2L0:GCC:02:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_GCC_02.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GCC:02:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV2L0_GCC_02.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GCC:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_GCC_02.IG.iAutoOnTimer
+      - | io: input
 
 
     * - TV2L0:GCC:02:DISC_ACTIVE_RBV
@@ -45467,9 +46335,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -45501,6 +46369,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV2L0:GFS:01:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_GFS_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GFS:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV2L0_GFS_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GFS:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_GFS_01.IG.iAutoOnTimer
+      - | io: input
 
 
     * - TV2L0:GFS:01:DISC_ACTIVE_RBV
@@ -45641,9 +46531,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -45675,6 +46565,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV2L0:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV2L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - TV2L0:GPI:01:DISC_ACTIVE_RBV
@@ -45815,9 +46727,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -45849,6 +46761,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV2L0:GPI:02:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_GPI_02.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GPI:02:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV2L0_GPI_02.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV2L0:GPI:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_GPI_02.PG.iAutoOnTimer
+      - | io: input
 
 
     * - TV2L0:GPI:02:DISC_ACTIVE_RBV
@@ -45989,9 +46923,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -46051,12 +46985,26 @@ Database Records
         | io: output
 
 
+    * - TV2L0:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV2L0:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.TV2L0_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV2L0:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV2L0:PIP:01:ERROR_RBV
@@ -46260,12 +47208,26 @@ Database Records
         | io: output
 
 
+    * - TV2L0:PIP:02:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_PIP_02.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV2L0:PIP:02:Auto_On_RBV
       - bi
       - GVL_Devices.TV2L0_PIP_02.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV2L0:PIP:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_PIP_02.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV2L0:PIP:02:ERROR_RBV
@@ -46469,12 +47431,26 @@ Database Records
         | io: output
 
 
+    * - TV2L0:PIP:03:Auto_On
+      - bo
+      - GVL_Devices.TV2L0_PIP_03.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV2L0:PIP:03:Auto_On_RBV
       - bi
       - GVL_Devices.TV2L0_PIP_03.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV2L0:PIP:03:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV2L0_PIP_03.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV2L0:PIP:03:ERROR_RBV
@@ -47370,12 +48346,26 @@ Database Records
         | io: output
 
 
+    * - TV3L0:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.TV3L0_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV3L0:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.TV3L0_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV3L0:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV3L0_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV3L0:PIP:01:ERROR_RBV
@@ -47785,6 +48775,28 @@ Database Records
         | io: input
 
 
+    * - TV4L0:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.TV4L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV4L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV4L0_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - TV4L0:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.TV4L0_GCC_01.IG.i_xDisc_Active
@@ -47923,9 +48935,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -47957,6 +48969,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV4L0:GCC:02:Auto_On
+      - bo
+      - GVL_Devices.TV4L0_GCC_02.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GCC:02:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV4L0_GCC_02.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GCC:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV4L0_GCC_02.IG.iAutoOnTimer
+      - | io: input
 
 
     * - TV4L0:GCC:02:DISC_ACTIVE_RBV
@@ -48097,9 +49131,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -48131,6 +49165,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV4L0:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.TV4L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV4L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV4L0_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - TV4L0:GPI:01:DISC_ACTIVE_RBV
@@ -48271,9 +49327,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -48305,6 +49361,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV4L0:GPI:02:Auto_On
+      - bo
+      - GVL_Devices.TV4L0_GPI_02.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GPI:02:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV4L0_GPI_02.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV4L0:GPI:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV4L0_GPI_02.PG.iAutoOnTimer
+      - | io: input
 
 
     * - TV4L0:GPI:02:DISC_ACTIVE_RBV
@@ -48445,9 +49523,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -48507,12 +49585,26 @@ Database Records
         | io: output
 
 
+    * - TV4L0:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.TV4L0_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV4L0:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.TV4L0_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV4L0:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV4L0_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV4L0:PIP:01:ERROR_RBV
@@ -48716,12 +49808,26 @@ Database Records
         | io: output
 
 
+    * - TV4L0:PIP:02:Auto_On
+      - bo
+      - GVL_Devices.TV4L0_PIP_02.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV4L0:PIP:02:Auto_On_RBV
       - bi
       - GVL_Devices.TV4L0_PIP_02.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV4L0:PIP:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV4L0_PIP_02.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV4L0:PIP:02:ERROR_RBV
@@ -49245,6 +50351,28 @@ Database Records
         | io: input
 
 
+    * - TV5L0:GCC:01:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GCC:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV5L0_GCC_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GCC:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_GCC_01.IG.iAutoOnTimer
+      - | io: input
+
+
     * - TV5L0:GCC:01:DISC_ACTIVE_RBV
       - bi
       - GVL_Devices.TV5L0_GCC_01.IG.i_xDisc_Active
@@ -49383,9 +50511,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -49417,6 +50545,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV5L0:GCC:02:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_GCC_02.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GCC:02:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV5L0_GCC_02.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GCC:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_GCC_02.IG.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:GCC:02:DISC_ACTIVE_RBV
@@ -49557,9 +50707,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -49591,6 +50741,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV5L0:GCC:03:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_GCC_03.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GCC:03:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV5L0_GCC_03.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GCC:03:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_GCC_03.IG.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:GCC:03:DISC_ACTIVE_RBV
@@ -49731,9 +50903,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -49765,6 +50937,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV5L0:GFS:01:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_GFS_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GFS:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV5L0_GFS_01.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GFS:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_GFS_01.IG.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:GFS:01:DISC_ACTIVE_RBV
@@ -49905,9 +51099,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -49939,6 +51133,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV5L0:GPI:01:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV5L0_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_GPI_01.PG.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:GPI:01:DISC_ACTIVE_RBV
@@ -50079,9 +51295,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -50113,6 +51329,28 @@ Database Records
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: input
+
+
+    * - TV5L0:GPI:02:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_GPI_02.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GPI:02:Auto_On_RBV
+      - bi
+      - GVL_Devices.TV5L0_GPI_02.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - TV5L0:GPI:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_GPI_02.PG.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:GPI:02:DISC_ACTIVE_RBV
@@ -50253,9 +51491,9 @@ Database Records
         | field: ONST GaugeDisconnected
         | field: SVST ValidLo
         | field: SXST ValidHi
-        | field: THST Off
+        | field: THST PressInvalid
         | field: TWST OoR
-        | field: ZRST PressInvalid
+        | field: ZRST Off
         | io: input
 
 
@@ -50315,12 +51553,26 @@ Database Records
         | io: output
 
 
+    * - TV5L0:PIP:01:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_PIP_01.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV5L0:PIP:01:Auto_On_RBV
       - bi
       - GVL_Devices.TV5L0_PIP_01.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV5L0:PIP:01:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_PIP_01.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:PIP:01:ERROR_RBV
@@ -50524,12 +51776,26 @@ Database Records
         | io: output
 
 
+    * - TV5L0:PIP:02:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_PIP_02.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV5L0:PIP:02:Auto_On_RBV
       - bi
       - GVL_Devices.TV5L0_PIP_02.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV5L0:PIP:02:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_PIP_02.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:PIP:02:ERROR_RBV
@@ -50733,12 +51999,26 @@ Database Records
         | io: output
 
 
+    * - TV5L0:PIP:03:Auto_On
+      - bo
+      - GVL_Devices.TV5L0_PIP_03.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - TV5L0:PIP:03:Auto_On_RBV
       - bi
       - GVL_Devices.TV5L0_PIP_03.stPump.xAutoOn
       - | field: ONAM TRUE
         | field: ZNAM FALSE
-        | io: input
+        | io: output
+
+
+    * - TV5L0:PIP:03:AutoOn_timer_RBV
+      - longin
+      - GVL_Devices.TV5L0_PIP_03.stPump.iAutoOnTimer
+      - | io: input
 
 
     * - TV5L0:PIP:03:ERROR_RBV
