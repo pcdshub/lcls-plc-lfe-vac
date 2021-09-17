@@ -119,7 +119,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 	
 	AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	SP1L0_KMONO_GCC_01(PG:=SP1L0_KMONO_GPI_01.PG,IG=>, b937A:=TRUE);
+	SP1L0_KMONO_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 	
 	PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 	
@@ -172,9 +172,9 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 	
 	AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	SP1L0_KMONO_PIP_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+	SP1L0_KMONO_PIP_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-	PA1L0_PIN_01(i_stGauge:=SP1L0_KMONO_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>); 
+	PA1L0_PIN_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>); //was the Kmono GPI, now its bad
 	
 	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
