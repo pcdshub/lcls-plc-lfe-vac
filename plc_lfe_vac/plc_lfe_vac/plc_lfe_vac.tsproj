@@ -2372,17 +2372,17 @@
 				<Link VarA="PlcTask Outputs^GVL_Devices.SP1L0_KMONO_PIP_01.q_xHVEna_DO" VarB="Channel 1^Output" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^QPC_E0_EK1100^QPC_E14_EL3064">
-				<Link VarA="PlcTask Inputs^GVL_Devices.MR1L1_TXI_PIP_01.i_iPRESS" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.MR1L1_TXI_PIP_01.i_iPRESS" VarB="AI Standard Channel 4^Value" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.ST1L0_XTES_PIP_01.i_iPRESS" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_PIP_01.i_iPRESS" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^QPC_E0_EK1100^QPC_E15_EL1004">
-				<Link VarA="PlcTask Inputs^GVL_Devices.MR1L1_TXI_PIP_01.i_xSP_DI" VarB="Channel 3^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.MR1L1_TXI_PIP_01.i_xSP_DI" VarB="Channel 4^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.ST1L0_XTES_PIP_01.i_xSP_DI" VarB="Channel 2^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_PIP_01.i_xSP_DI" VarB="Channel 1^Input" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^QPC_E0_EK1100^QPC_E16_EL2794">
-				<Link VarA="PlcTask Outputs^GVL_Devices.MR1L1_TXI_PIP_01.q_xHVEna_DO" VarB="Channel 3^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.MR1L1_TXI_PIP_01.q_xHVEna_DO" VarB="Channel 4^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.ST1L0_XTES_PIP_01.q_xHVEna_DO" VarB="Channel 2^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_PIP_01.q_xHVEna_DO" VarB="Channel 1^Output" AutoLink="true"/>
 			</OwnerB>

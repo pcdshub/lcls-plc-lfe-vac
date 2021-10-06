@@ -87,7 +87,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 	
 	MR1L0_HOMS_GPI_01(b937A:=TRUE, PG=>);
 	
-//	MR1L1_TXI_GPI_01(PG=>);
+	MR1L1_TXI_GPI_01(PG=>);
 	
 	BT2L0_PLEG_GPI_01(PG=>);
 	
@@ -125,7 +125,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 	
 	MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>, b937A:=TRUE);
 	
-	MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>);
+	MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>,bEP:=TRUE);
 	
 	BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>,bEP:=TRUE);
 	
@@ -178,7 +178,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 	
 	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
-//	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
 	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 	
@@ -419,5 +419,9 @@ ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
 	
 ]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="3" Count="400" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
