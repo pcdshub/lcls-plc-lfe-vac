@@ -503,9 +503,9 @@ VAR_GLOBAL
     &#39;}
     MR1L1_TXI_GCC_01 : FB_MKS500;
 
-    {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS              :=      TIIB[QPC_E14_EL3064]^AI Standard Channel 3^Value;
-                                                             .i_xSP_DI              :=      TIIB[QPC_E15_EL1004]^Channel 3^Input;
-                                                             .q_xHVEna_DO   :=      TIIB[QPC_E16_EL2794]^Channel 3^Output
+    {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS              :=      TIIB[QPC_E14_EL3064]^AI Standard Channel 4^Value;
+                                                             .i_xSP_DI              :=      TIIB[QPC_E15_EL1004]^Channel 4^Input;
+                                                             .q_xHVEna_DO   :=      TIIB[QPC_E16_EL2794]^Channel 4^Output
     &#39;}
     {attribute &#39;pytmc&#39; := &#39;
             pv: MR1L1:TXI:PIP:01
@@ -1165,7 +1165,7 @@ END_VAR
 
     <span class="n">MR1L0_HOMS_GPI_01</span><span class="p">(</span><span class="n">b937A</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">,</span> <span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 
-<span class="o">//</span>  <span class="n">MR1L1_TXI_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
+    <span class="n">MR1L1_TXI_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="n">BT2L0_PLEG_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 
@@ -1203,7 +1203,7 @@ END_VAR
 
     <span class="n">MR1L0_HOMS_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">MR1L0_HOMS_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span> <span class="n">b937A</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
-    <span class="n">MR1L1_TXI_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">MR1L1_TXI_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">);</span>
+    <span class="n">MR1L1_TXI_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">MR1L1_TXI_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
     <span class="n">BT2L0_PLEG_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">BT2L0_PLEG_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
@@ -1256,7 +1256,7 @@ END_VAR
 
     <span class="n">MR1L0_HOMS_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">MR1L0_HOMS_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
-<span class="o">//</span>  <span class="n">MR1L1_TXI_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">MR1L1_TXI_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
+    <span class="n">MR1L1_TXI_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">MR1L1_TXI_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="n">BT2L0_PLEG_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">BT2L0_PLEG_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 

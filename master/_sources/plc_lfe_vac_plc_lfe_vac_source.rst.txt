@@ -402,9 +402,9 @@ GVL_Devices
     	'}
     	MR1L1_TXI_GCC_01 : FB_MKS500;
 
-    	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 3^Value;
-    								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 3^Input;
-    								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 3^Output
+    	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 4^Value;
+    								 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 4^Input;
+    								 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 4^Output
     	'}	
     	{attribute 'pytmc' := '
     		pv: MR1L1:TXI:PIP:01
@@ -1089,7 +1089,7 @@ MAIN
     	
     	MR1L0_HOMS_GPI_01(b937A:=TRUE, PG=>);
     	
-    //	MR1L1_TXI_GPI_01(PG=>);
+    	MR1L1_TXI_GPI_01(PG=>);
     	
     	BT2L0_PLEG_GPI_01(PG=>);
     	
@@ -1127,7 +1127,7 @@ MAIN
     	
     	MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>, b937A:=TRUE);
     	
-    	MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>);
+    	MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>,bEP:=TRUE);
     	
     	BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>,bEP:=TRUE);
     	
@@ -1180,7 +1180,7 @@ MAIN
     	
     	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
     	
-    //	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+    	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
     	
     	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
     	

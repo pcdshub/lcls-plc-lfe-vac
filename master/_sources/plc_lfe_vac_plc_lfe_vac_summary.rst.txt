@@ -665,8 +665,8 @@ GVL_TcUnit
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 630384080 (16)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 4391808 (512)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 8555040 (621826944)
-        GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 630384096 (32000)
         GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 4394432 (16000)
+        GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 630384096 (32000)
         GVL_TcUnit.TestSuiteIsRegistered, BOOL, 8555024 (8)
         GVL_TcUnit.TestSuiteIsRegistered, BOOL, 4391792 (8)
 
