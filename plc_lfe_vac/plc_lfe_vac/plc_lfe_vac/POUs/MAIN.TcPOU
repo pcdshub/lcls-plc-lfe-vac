@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
   <POU Name="MAIN" Id="{53e436ba-9af9-4ca4-ad7b-a6b2399fa417}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -250,7 +250,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 	
 	TV2L0_VGC_02(
 	i_stUSG:= TV2L0_PIP_03.q_IG, 
-	i_stDSG:= SL1L0_POWER_PIN_01.q_IG, 
+	i_stDSG:= SL1L0_POWER_GCC_01.IG, 
 	i_xDis_DPIlk:= FALSE , 
 	i_xEPS_OK:= TRUE, 
 	i_xPMPS_OK:= TRUE, 
@@ -419,9 +419,5 @@ ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
 	
 ]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="3" Count="400" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
