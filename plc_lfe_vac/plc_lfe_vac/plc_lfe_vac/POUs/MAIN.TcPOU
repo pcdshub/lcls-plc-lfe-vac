@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{53e436ba-9af9-4ca4-ad7b-a6b2399fa417}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -42,7 +42,6 @@ ELSE
 	Accelerator_Upstream_Gauge.xPRESS_OK 	:= FALSE;
 	//Accelerator_Upstream_Gauge.eState 	:= 1;
 	Accelerator_Upstream_Gauge.rPRESS	 	:= 760;	//torr
-
 END_IF
 
 (*HXR Gas Attenuator PLC Interface*)
