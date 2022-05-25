@@ -1120,7 +1120,6 @@ END_VAR
     <span class="n">Accelerator_Upstream_Gauge</span><span class="o">.</span><span class="n">xPRESS_OK</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
     <span class="o">//</span><span class="n">Accelerator_Upstream_Gauge</span><span class="o">.</span><span class="n">eState</span>     <span class="o">:=</span> <span class="mi">1</span><span class="p">;</span>
     <span class="n">Accelerator_Upstream_Gauge</span><span class="o">.</span><span class="n">rPRESS</span>               <span class="o">:=</span> <span class="mi">760</span><span class="p">;</span> <span class="o">//</span><span class="n">torr</span>
-
 <span class="n">END_IF</span>
 
 <span class="p">(</span><span class="o">*</span><span class="n">HXR</span> <span class="n">Gas</span> <span class="n">Attenuator</span> <span class="n">PLC</span> <span class="n">Interface</span><span class="o">*</span><span class="p">)</span>
@@ -1328,7 +1327,7 @@ END_VAR
 
     <span class="n">TV2L0_VGC_02</span><span class="p">(</span>
     <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">TV2L0_PIP_03</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
-    <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">SL1L0_POWER_PIN_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">SL1L0_POWER_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span>
     <span class="n">i_xDis_DPIlk</span><span class="o">:=</span> <span class="n">FALSE</span> <span class="p">,</span>
     <span class="n">i_xEPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
     <span class="n">i_xPMPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
@@ -1544,7 +1543,7 @@ END_VAR
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, SLAC National Accelerator Laboratory.</p>
+    <p>&#169; Copyright 2022, SLAC National Accelerator Laboratory.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

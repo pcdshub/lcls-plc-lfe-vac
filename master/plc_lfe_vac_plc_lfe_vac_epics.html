@@ -81,10 +81,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#pmps-st-pmps-aperture">PMPS.ST_PMPS_Aperture</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pmps-t-hashtableentry">PMPS.T_HashTableEntry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#st-beamparams-io">ST_BeamParams_IO</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">ST_BeamParams_IO</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#st-loggingeventinfo">ST_LoggingEventInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#st-pmps-aperture-io">ST_PMPS_Aperture_IO</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10">ST_PMPS_Aperture_IO</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#database-records">Database Records</a></li>
@@ -18190,74 +18188,6 @@
 </tbody>
 </table>
 </section>
-<section id="id9">
-<h2>ST_BeamParams_IO<a class="headerlink" href="#id9" title="Permalink to this headline"></a></h2>
-<table class="docutils align-center">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Record</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Pragma</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>$(PREFIX):Attenuation_RBV</p></td>
-<td><p>ai</p></td>
-<td><p>$(SYMBOL).nTran</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX):Attenuation_RBV</p></td>
-<td><p>longin</p></td>
-<td><p>$(SYMBOL).nCohortInt</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX):AuxAttenuator_RBV</p></td>
-<td><p>waveform</p></td>
-<td><p>$(SYMBOL).aVetoDevices</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX):PhotonEnergy_RBV</p></td>
-<td><p>longin</p></td>
-<td><p>$(SYMBOL).neVRange</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX):Rate_RBV</p></td>
-<td><p>longin</p></td>
-<td><p>$(SYMBOL).nRate</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX):Valid_RBV</p></td>
-<td><p>bi</p></td>
-<td><p>$(SYMBOL).xValid</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="st-loggingeventinfo">
 <h2>ST_LoggingEventInfo<a class="headerlink" href="#st-loggingeventinfo" title="Permalink to this headline"></a></h2>
 <table class="docutils align-center">
@@ -18364,52 +18294,6 @@
 </section>
 <section id="st-pmps-aperture-io">
 <h2>ST_PMPS_Aperture_IO<a class="headerlink" href="#st-pmps-aperture-io" title="Permalink to this headline"></a></h2>
-<table class="docutils align-center">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Record</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Pragma</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>$(PREFIX):Height_RBV</p></td>
-<td><p>ai</p></td>
-<td><p>$(SYMBOL).Height</p></td>
-<td><div class="line-block">
-<div class="line">field: EGU mm</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX):OK_RBV</p></td>
-<td><p>bi</p></td>
-<td><p>$(SYMBOL).xOK</p></td>
-<td><div class="line-block">
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX):Width_RBV</p></td>
-<td><p>ai</p></td>
-<td><p>$(SYMBOL).Width</p></td>
-<td><div class="line-block">
-<div class="line">field: EGU mm</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="id10">
-<h2>ST_PMPS_Aperture_IO<a class="headerlink" href="#id10" title="Permalink to this headline"></a></h2>
 <table class="docutils align-center">
 <colgroup>
 <col style="width: 25%" />
@@ -54904,19 +54788,19 @@
 </tr>
 <tr class="row-odd"><td><p>PLC:LFE:VAC:XPP:Downstream:PMON:EPICSLink:LinkSeverity</p></td>
 <td><p>longout</p></td>
-<td><p>Internal variable used to monitor EPICS PV severity in PLC; Linked to PV: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id11"><span class="problematic" id="id12">*</span></a>EPICSLink.SEVR’]</p></td>
+<td><p>Internal variable used to monitor EPICS PV severity in PLC; Linked to PV: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id9"><span class="problematic" id="id10">*</span></a>EPICSLink.SEVR’]</p></td>
 <td><div class="line-block">
 <div class="line">io: output</div>
-<div class="line">link: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id13"><span class="problematic" id="id14">*</span></a>EPICSLink.SEVR’]</div>
+<div class="line">link: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id11"><span class="problematic" id="id12">*</span></a>EPICSLink.SEVR’]</div>
 </div>
 </td>
 </tr>
 <tr class="row-even"><td><p>PLC:LFE:VAC:XPP:Downstream:PMON:EPICSLink:LinkSeverity_RBV</p></td>
 <td><p>longin</p></td>
-<td><p>Internal variable used to monitor EPICS PV severity in PLC; Linked to PV: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id15"><span class="problematic" id="id16">*</span></a>EPICSLink.SEVR’]</p></td>
+<td><p>Internal variable used to monitor EPICS PV severity in PLC; Linked to PV: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id13"><span class="problematic" id="id14">*</span></a>EPICSLink.SEVR’]</p></td>
 <td><div class="line-block">
 <div class="line">io: output</div>
-<div class="line">link: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id17"><span class="problematic" id="id18">*</span></a>EPICSLink.SEVR’]</div>
+<div class="line">link: [‘HX3:MON:GCC:01:PMON’, ‘<a href="#id15"><span class="problematic" id="id16">*</span></a>EPICSLink.SEVR’]</div>
 </div>
 </td>
 </tr>
@@ -68741,7 +68625,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, SLAC National Accelerator Laboratory.</p>
+    <p>&#169; Copyright 2022, SLAC National Accelerator Laboratory.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
