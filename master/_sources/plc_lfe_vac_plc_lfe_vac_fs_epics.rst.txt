@@ -6375,1421 +6375,6 @@ Database Records
       - Type
       - Description
       - Pragma
-    * - $(PREFIX)AccumulatedFastFaults_RBV
-      - longin
-      - PMPS_GVL.AccumulatedFF
-      - | io: input
-
-
-    * - $(PREFIX)CurrentBP:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:PhotonEnergyRanges_RBV
-      - longin
-      - PMPS_GVL.stCurrentBeamParameters.neVRange
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:PulseEnergy_RBV
-      - ai
-      - This beam parameter is non-op for now.
-      - | archive: 1s monitor
-        | field: EGU mJ
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Rate_RBV
-      - longin
-      - PMPS_GVL.stCurrentBeamParameters.nRate
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:ST_RBV
-      - waveform
-      - PMPS_GVL.stCurrentBeamParameters.aStoppers
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Transmission_RBV
-      - longin
-      - PMPS_GVL.stCurrentBeamParameters.nTran
-      - | archive: 1s monitor
-        | field: EGU %
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Valid_RBV
-      - bi
-      - PMPS_GVL.stCurrentBeamParameters.xValid
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)eVRangeCnst_RBV
-      - waveform
-      - Active eV Range constants
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)eVRangeHyst_RBV
-      - ai
-      - eV Range hystersis
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV
-      - longin
-      - Full beam constant
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:PulseEnergy_RBV
-      - ai
-      - This beam parameter is non-op for now.
-      - | archive: 1s monitor
-        | field: EGU mJ
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Rate_RBV
-      - longin
-      - Full beam constant
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:ST_RBV
-      - waveform
-      - Full beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Transmission_RBV
-      - longin
-      - Full beam constant
-      - | archive: 1s monitor
-        | field: EGU %
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Valid_RBV
-      - bi
-      - Full beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)K:eVRangeCnst_RBV
-      - waveform
-      - eV Range constants
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)L:eVRangeCnst_RBV
-      - waveform
-      - eV Range constants
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)L:UND:FirstSegment_RBV
-      - longin
-      - PMPS_GVL.iLowBound_LUnd
-      - | io: input
-
-
-    * - $(PREFIX)L:UND:HiK_RBV
-      - ai
-      - PMPS_GVL.fHiK_LUnd
-      - | io: input
-
-
-    * - $(PREFIX)L:UND:LastSegment_RBV
-      - longin
-      - PMPS_GVL.iHighBound_LUnd
-      - | io: input
-
-
-    * - $(PREFIX)L:UND:LowK_RBV
-      - ai
-      - PMPS_GVL.fLowK_LUnd
-      - | io: input
-
-
-    * - $(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV
-      - bi
-      - Tripped by overall log count
-      - | io: input
-
-
-    * - $(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV
-      - bi
-      - Tripped by overall log count
-      - | io: input
-
-
-    * - $(PREFIX)LCLSGeneral:LogHost
-      - waveform
-      - The log host IP address
-      - | io: output
-
-
-    * - $(PREFIX)LCLSGeneral:LogHost
-      - waveform
-      - The log host IP address
-      - | io: output
-
-
-    * - $(PREFIX)LCLSGeneral:LogHost_RBV
-      - waveform
-      - The log host IP address
-      - | io: output
-
-
-    * - $(PREFIX)LCLSGeneral:LogHost_RBV
-      - waveform
-      - The log host IP address
-      - | io: output
-
-
-    * - $(PREFIX)LCLSGeneral:LogMessageCount_RBV
-      - longin
-      - Total log messages on the last cycle
-      - | io: input
-
-
-    * - $(PREFIX)LCLSGeneral:LogMessageCount_RBV
-      - longin
-      - Total log messages on the last cycle
-      - | io: input
-
-
-    * - $(PREFIX)LCLSGeneral:LogPort
-      - longout
-      - The log host UDP port
-      - | io: output
-
-
-    * - $(PREFIX)LCLSGeneral:LogPort
-      - longout
-      - The log host UDP port
-      - | io: output
-
-
-    * - $(PREFIX)LCLSGeneral:LogPort_RBV
-      - longin
-      - The log host UDP port
-      - | io: output
-
-
-    * - $(PREFIX)LCLSGeneral:LogPort_RBV
-      - longin
-      - The log host UDP port
-      - | io: output
-
-
-    * - $(PREFIX)RequestedBP:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:PhotonEnergyRanges_RBV
-      - longin
-      - PMPS_GVL.stRequestedBeamParameters.neVRange
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:PulseEnergy_RBV
-      - ai
-      - This beam parameter is non-op for now.
-      - | archive: 1s monitor
-        | field: EGU mJ
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Rate_RBV
-      - longin
-      - PMPS_GVL.stRequestedBeamParameters.nRate
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:ST_RBV
-      - waveform
-      - PMPS_GVL.stRequestedBeamParameters.aStoppers
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Transmission_RBV
-      - longin
-      - PMPS_GVL.stRequestedBeamParameters.nTran
-      - | archive: 1s monitor
-        | field: EGU %
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Valid_RBV
-      - bi
-      - PMPS_GVL.stRequestedBeamParameters.xValid
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV
-      - longin
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:PulseEnergy_RBV
-      - ai
-      - This beam parameter is non-op for now.
-      - | archive: 1s monitor
-        | field: EGU mJ
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Rate_RBV
-      - longin
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:ST_RBV
-      - waveform
-      - Safe beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Transmission_RBV
-      - longin
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: EGU %
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Valid_RBV
-      - bi
-      - Safe beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SuccessfulPreemptions_RBV
-      - longin
-      - PMPS_GVL.SuccessfulPreemption
-      - | io: input
-
-
-    * - Period_RBV
-      - ai
-      - PMPS_GVL.fPeriod_mm_LUnd
-      - | field: EGU mm
-        | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:ClearFault
-      - bo
-      - Might be overidden by PLC writes
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:ClearFault_RBV
-      - bi
-      - Might be overidden by PLC writes
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:EnableVeto
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.i_xVeto
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:EnableVeto_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.i_xVeto
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FaultHWO_RBV
-      - bi
-      - Hardware Output Status
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:001:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:002:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:003:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:004:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:005:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:006:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:007:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:008:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:BeamPermitted_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].BeamPermitted
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Info:Desc_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.Desc
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Info:DevName_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.DevName
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.InfoString
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Info:InUse_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.InUse
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Info:Path_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.sPath
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Info:TypeCode_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.TypeCode
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:OK_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].OK
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Activate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Activate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Activate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Active_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Active
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Deactivate_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Deactivate
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Duration_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Duration
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:ElapsedTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.ElapsedTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:RemainingTime_RBV
-      - longin
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.RemainingTime
-      - | io: input
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Reset
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Reset
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:FF:009:Reset_RBV
-      - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Reset
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:010:BeamPermitted_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].BeamPermitted
@@ -7808,21 +6393,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:010:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:010:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Info.InfoString
       - | io: input
 
 
@@ -7832,20 +6411,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:010:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:010:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Activate
       - | io: output
 
@@ -7856,26 +6441,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:010:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Ovrd.Duration
       - | io: output
 
@@ -7892,14 +6477,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:010:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:010:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:010:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[10].Reset
       - | io: output
 
@@ -7922,21 +6507,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:011:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:011:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Info.InfoString
       - | io: input
 
 
@@ -7946,20 +6525,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:011:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:011:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Activate
       - | io: output
 
@@ -7970,26 +6555,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:011:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Ovrd.Duration
       - | io: output
 
@@ -8006,14 +6591,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:011:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:011:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:011:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[11].Reset
       - | io: output
 
@@ -8036,21 +6621,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:012:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:012:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Info.InfoString
       - | io: input
 
 
@@ -8060,20 +6639,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:012:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:012:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Activate
       - | io: output
 
@@ -8084,26 +6669,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:012:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Ovrd.Duration
       - | io: output
 
@@ -8120,14 +6705,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:012:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:012:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:012:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[12].Reset
       - | io: output
 
@@ -8150,21 +6735,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:013:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:013:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Info.InfoString
       - | io: input
 
 
@@ -8174,20 +6753,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:013:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:013:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Activate
       - | io: output
 
@@ -8198,26 +6783,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:013:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Ovrd.Duration
       - | io: output
 
@@ -8234,14 +6819,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:013:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:013:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:013:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[13].Reset
       - | io: output
 
@@ -8264,21 +6849,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:014:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:014:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Info.InfoString
       - | io: input
 
 
@@ -8288,20 +6867,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:014:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:014:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Activate
       - | io: output
 
@@ -8312,26 +6897,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:014:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Ovrd.Duration
       - | io: output
 
@@ -8348,14 +6933,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:014:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:014:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:014:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[14].Reset
       - | io: output
 
@@ -8378,21 +6963,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:015:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:015:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Info.InfoString
       - | io: input
 
 
@@ -8402,20 +6981,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:015:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:015:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Activate
       - | io: output
 
@@ -8426,26 +7011,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:015:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Ovrd.Duration
       - | io: output
 
@@ -8462,14 +7047,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:015:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:015:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:015:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[15].Reset
       - | io: output
 
@@ -8492,21 +7077,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:016:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:016:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Info.InfoString
       - | io: input
 
 
@@ -8516,20 +7095,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:016:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:016:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Activate
       - | io: output
 
@@ -8540,26 +7125,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:016:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Ovrd.Duration
       - | io: output
 
@@ -8576,14 +7161,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:016:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:016:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:016:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[16].Reset
       - | io: output
 
@@ -8606,21 +7191,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:017:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:017:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Info.InfoString
       - | io: input
 
 
@@ -8630,20 +7209,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:017:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:017:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Activate
       - | io: output
 
@@ -8654,26 +7239,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:017:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Ovrd.Duration
       - | io: output
 
@@ -8690,14 +7275,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:017:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:017:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:017:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[17].Reset
       - | io: output
 
@@ -8720,21 +7305,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:018:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:018:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Info.InfoString
       - | io: input
 
 
@@ -8744,20 +7323,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:018:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:018:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Activate
       - | io: output
 
@@ -8768,26 +7353,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:018:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Ovrd.Duration
       - | io: output
 
@@ -8804,14 +7389,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:018:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:018:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:018:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[18].Reset
       - | io: output
 
@@ -8834,21 +7419,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:019:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:019:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:019:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:019:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Info.InfoString
       - | io: input
 
 
@@ -8858,20 +7437,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:019:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:019:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Activate
       - | io: output
 
@@ -8882,26 +7467,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:019:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Ovrd.Duration
       - | io: output
 
@@ -8918,15 +7503,129 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:019:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Reset
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:019:Reset
       - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:019:Reset_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:001:BeamPermitted_RBV
       - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[19].Reset
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:001:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[1].Reset
       - | io: output
 
 
@@ -8948,21 +7647,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:020:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:020:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Info.InfoString
       - | io: input
 
 
@@ -8972,20 +7665,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:020:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:020:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Activate
       - | io: output
 
@@ -8996,26 +7695,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:020:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Ovrd.Duration
       - | io: output
 
@@ -9032,14 +7731,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:020:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:020:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:020:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[20].Reset
       - | io: output
 
@@ -9062,21 +7761,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:021:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:021:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Info.InfoString
       - | io: input
 
 
@@ -9086,20 +7779,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:021:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:021:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Activate
       - | io: output
 
@@ -9110,26 +7809,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:021:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Ovrd.Duration
       - | io: output
 
@@ -9146,14 +7845,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:021:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:021:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:021:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[21].Reset
       - | io: output
 
@@ -9176,21 +7875,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:022:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:022:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Info.InfoString
       - | io: input
 
 
@@ -9200,20 +7893,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:022:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:022:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Activate
       - | io: output
 
@@ -9224,26 +7923,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:022:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Ovrd.Duration
       - | io: output
 
@@ -9260,14 +7959,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:022:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:022:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:022:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[22].Reset
       - | io: output
 
@@ -9290,21 +7989,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:023:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:023:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Info.InfoString
       - | io: input
 
 
@@ -9314,20 +8007,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:023:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:023:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Activate
       - | io: output
 
@@ -9338,26 +8037,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:023:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Ovrd.Duration
       - | io: output
 
@@ -9374,14 +8073,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:023:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:023:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:023:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[23].Reset
       - | io: output
 
@@ -9404,21 +8103,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:024:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:024:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Info.InfoString
       - | io: input
 
 
@@ -9428,20 +8121,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:024:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:024:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Activate
       - | io: output
 
@@ -9452,26 +8151,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:024:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Ovrd.Duration
       - | io: output
 
@@ -9488,14 +8187,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:024:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:024:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:024:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[24].Reset
       - | io: output
 
@@ -9518,21 +8217,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:025:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:025:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Info.InfoString
       - | io: input
 
 
@@ -9542,20 +8235,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:025:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:025:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Activate
       - | io: output
 
@@ -9566,26 +8265,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:025:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Ovrd.Duration
       - | io: output
 
@@ -9602,14 +8301,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:025:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:025:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:025:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[25].Reset
       - | io: output
 
@@ -9632,21 +8331,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:026:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:026:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Info.InfoString
       - | io: input
 
 
@@ -9656,20 +8349,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:026:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:026:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Activate
       - | io: output
 
@@ -9680,26 +8379,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:026:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Ovrd.Duration
       - | io: output
 
@@ -9716,14 +8415,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:026:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:026:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:026:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[26].Reset
       - | io: output
 
@@ -9746,21 +8445,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:027:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:027:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Info.InfoString
       - | io: input
 
 
@@ -9770,20 +8463,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:027:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:027:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Activate
       - | io: output
 
@@ -9794,26 +8493,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:027:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Ovrd.Duration
       - | io: output
 
@@ -9830,14 +8529,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:027:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:027:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:027:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[27].Reset
       - | io: output
 
@@ -9860,21 +8559,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:028:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:028:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Info.InfoString
       - | io: input
 
 
@@ -9884,20 +8577,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:028:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:028:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Activate
       - | io: output
 
@@ -9908,26 +8607,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:028:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Ovrd.Duration
       - | io: output
 
@@ -9944,14 +8643,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:028:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:028:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:028:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[28].Reset
       - | io: output
 
@@ -9974,21 +8673,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:029:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:029:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:029:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:029:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Info.InfoString
       - | io: input
 
 
@@ -9998,20 +8691,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:029:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:029:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Activate
       - | io: output
 
@@ -10022,26 +8721,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:029:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Ovrd.Duration
       - | io: output
 
@@ -10058,15 +8757,129 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:029:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Reset
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:029:Reset
       - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:029:Reset_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:002:BeamPermitted_RBV
       - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[29].Reset
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:002:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[2].Reset
       - | io: output
 
 
@@ -10088,21 +8901,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:030:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:030:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Info.InfoString
       - | io: input
 
 
@@ -10112,20 +8919,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:030:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:030:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Activate
       - | io: output
 
@@ -10136,26 +8949,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:030:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Ovrd.Duration
       - | io: output
 
@@ -10172,14 +8985,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:030:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:030:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:030:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[30].Reset
       - | io: output
 
@@ -10202,21 +9015,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:031:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:031:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Info.InfoString
       - | io: input
 
 
@@ -10226,20 +9033,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:031:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:031:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Activate
       - | io: output
 
@@ -10250,26 +9063,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:031:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Ovrd.Duration
       - | io: output
 
@@ -10286,14 +9099,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:031:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:031:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:031:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[31].Reset
       - | io: output
 
@@ -10316,21 +9129,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:032:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:032:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Info.InfoString
       - | io: input
 
 
@@ -10340,20 +9147,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:032:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:032:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Activate
       - | io: output
 
@@ -10364,26 +9177,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:032:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Ovrd.Duration
       - | io: output
 
@@ -10400,14 +9213,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:032:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:032:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:032:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[32].Reset
       - | io: output
 
@@ -10430,21 +9243,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:033:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:033:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Info.InfoString
       - | io: input
 
 
@@ -10454,20 +9261,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:033:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:033:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Activate
       - | io: output
 
@@ -10478,26 +9291,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:033:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Ovrd.Duration
       - | io: output
 
@@ -10514,14 +9327,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:033:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:033:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:033:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[33].Reset
       - | io: output
 
@@ -10544,21 +9357,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:034:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:034:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Info.InfoString
       - | io: input
 
 
@@ -10568,20 +9375,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:034:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:034:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Activate
       - | io: output
 
@@ -10592,26 +9405,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:034:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Ovrd.Duration
       - | io: output
 
@@ -10628,14 +9441,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:034:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:034:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:034:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[34].Reset
       - | io: output
 
@@ -10658,21 +9471,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:035:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:035:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Info.InfoString
       - | io: input
 
 
@@ -10682,20 +9489,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:035:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:035:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Activate
       - | io: output
 
@@ -10706,26 +9519,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:035:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Ovrd.Duration
       - | io: output
 
@@ -10742,14 +9555,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:035:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:035:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:035:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[35].Reset
       - | io: output
 
@@ -10772,21 +9585,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:036:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:036:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Info.InfoString
       - | io: input
 
 
@@ -10796,20 +9603,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:036:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:036:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Activate
       - | io: output
 
@@ -10820,26 +9633,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:036:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Ovrd.Duration
       - | io: output
 
@@ -10856,14 +9669,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:036:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:036:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:036:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[36].Reset
       - | io: output
 
@@ -10886,21 +9699,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:037:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:037:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Info.InfoString
       - | io: input
 
 
@@ -10910,20 +9717,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:037:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:037:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Activate
       - | io: output
 
@@ -10934,26 +9747,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:037:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Ovrd.Duration
       - | io: output
 
@@ -10970,14 +9783,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:037:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:037:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:037:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[37].Reset
       - | io: output
 
@@ -11000,21 +9813,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:038:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:038:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Info.InfoString
       - | io: input
 
 
@@ -11024,20 +9831,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:038:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:038:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Activate
       - | io: output
 
@@ -11048,26 +9861,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:038:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Ovrd.Duration
       - | io: output
 
@@ -11084,14 +9897,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:038:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:038:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:038:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[38].Reset
       - | io: output
 
@@ -11114,21 +9927,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:039:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:039:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:039:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:039:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Info.InfoString
       - | io: input
 
 
@@ -11138,20 +9945,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:039:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:039:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Activate
       - | io: output
 
@@ -11162,26 +9975,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:039:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Ovrd.Duration
       - | io: output
 
@@ -11198,15 +10011,129 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:039:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Reset
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:039:Reset
       - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:039:Reset_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:003:BeamPermitted_RBV
       - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[39].Reset
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:003:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[3].Reset
       - | io: output
 
 
@@ -11228,21 +10155,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:040:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:040:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Info.InfoString
       - | io: input
 
 
@@ -11252,20 +10173,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:040:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:040:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Activate
       - | io: output
 
@@ -11276,26 +10203,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:040:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Ovrd.Duration
       - | io: output
 
@@ -11312,14 +10239,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:040:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:040:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:040:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[40].Reset
       - | io: output
 
@@ -11342,21 +10269,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:041:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:041:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Info.InfoString
       - | io: input
 
 
@@ -11366,20 +10287,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:041:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:041:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Activate
       - | io: output
 
@@ -11390,26 +10317,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:041:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Ovrd.Duration
       - | io: output
 
@@ -11426,14 +10353,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:041:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:041:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:041:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[41].Reset
       - | io: output
 
@@ -11456,21 +10383,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:042:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:042:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Info.InfoString
       - | io: input
 
 
@@ -11480,20 +10401,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:042:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:042:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Activate
       - | io: output
 
@@ -11504,26 +10431,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:042:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Ovrd.Duration
       - | io: output
 
@@ -11540,14 +10467,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:042:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:042:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:042:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[42].Reset
       - | io: output
 
@@ -11570,21 +10497,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:043:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:043:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Info.InfoString
       - | io: input
 
 
@@ -11594,20 +10515,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:043:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:043:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Activate
       - | io: output
 
@@ -11618,26 +10545,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:043:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Ovrd.Duration
       - | io: output
 
@@ -11654,14 +10581,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:043:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:043:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:043:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[43].Reset
       - | io: output
 
@@ -11684,21 +10611,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:044:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:044:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Info.InfoString
       - | io: input
 
 
@@ -11708,20 +10629,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:044:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:044:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Activate
       - | io: output
 
@@ -11732,26 +10659,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:044:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Ovrd.Duration
       - | io: output
 
@@ -11768,14 +10695,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:044:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:044:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:044:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[44].Reset
       - | io: output
 
@@ -11798,21 +10725,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:045:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:045:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Info.InfoString
       - | io: input
 
 
@@ -11822,20 +10743,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:045:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:045:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Activate
       - | io: output
 
@@ -11846,26 +10773,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:045:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Ovrd.Duration
       - | io: output
 
@@ -11882,14 +10809,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:045:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:045:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:045:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[45].Reset
       - | io: output
 
@@ -11912,21 +10839,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:046:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:046:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Info.InfoString
       - | io: input
 
 
@@ -11936,20 +10857,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:046:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:046:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Activate
       - | io: output
 
@@ -11960,26 +10887,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:046:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Ovrd.Duration
       - | io: output
 
@@ -11996,14 +10923,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:046:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:046:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:046:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[46].Reset
       - | io: output
 
@@ -12026,21 +10953,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:047:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:047:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Info.InfoString
       - | io: input
 
 
@@ -12050,20 +10971,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:047:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:047:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Activate
       - | io: output
 
@@ -12074,26 +11001,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:047:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Ovrd.Duration
       - | io: output
 
@@ -12110,14 +11037,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:047:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:047:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:047:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[47].Reset
       - | io: output
 
@@ -12140,21 +11067,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:048:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:048:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Info.InfoString
       - | io: input
 
 
@@ -12164,20 +11085,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:048:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:048:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Activate
       - | io: output
 
@@ -12188,26 +11115,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:048:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Ovrd.Duration
       - | io: output
 
@@ -12224,14 +11151,14 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Reset
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:048:Reset_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:048:Reset_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:048:Reset
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[48].Reset
       - | io: output
 
@@ -12254,21 +11181,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:049:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:049:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:049:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:049:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Info.InfoString
       - | io: input
 
 
@@ -12278,20 +11199,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:049:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:049:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Activate
       - | io: output
 
@@ -12302,26 +11229,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:049:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Ovrd.Duration
       - | io: output
 
@@ -12338,15 +11265,129 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:049:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Reset
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:049:Reset
       - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:049:Reset_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:004:BeamPermitted_RBV
       - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[49].Reset
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:004:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[4].Reset
       - | io: output
 
 
@@ -12368,21 +11409,15 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:050:Info:InfoString_RBV
-      - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Info.InfoString
-      - | io: input
-
-
     * - PLC:LFE:VAC:FFO:03:FF:050:Info:InUse_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Info.InUse
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:050:Info:Path_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:050:Info:InfoString_RBV
       - waveform
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Info.sPath
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Info.InfoString
       - | io: input
 
 
@@ -12392,20 +11427,26 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:050:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Info.sPath
+      - | io: input
+
+
     * - PLC:LFE:VAC:FFO:03:FF:050:OK_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].OK
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Activate
-      - bo
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Activate_RBV
+      - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Activate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Activate_RBV
-      - bi
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Activate
+      - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Activate
       - | io: output
 
@@ -12416,26 +11457,26 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Deactivate
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Deactivate
-      - | io: output
-
-
     * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Deactivate_RBV
       - bi
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Deactivate
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Duration
-      - longout
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Duration
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Deactivate
       - | io: output
 
 
     * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Duration_RBV
       - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:050:Ovrd:Duration
+      - longout
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Ovrd.Duration
       - | io: output
 
@@ -12452,15 +11493,627 @@ Database Records
       - | io: input
 
 
+    * - PLC:LFE:VAC:FFO:03:FF:050:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Reset
+      - | io: output
+
+
     * - PLC:LFE:VAC:FFO:03:FF:050:Reset
       - bo
       - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Reset
       - | io: output
 
 
-    * - PLC:LFE:VAC:FFO:03:FF:050:Reset_RBV
+    * - PLC:LFE:VAC:FFO:03:FF:005:BeamPermitted_RBV
       - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[50].Reset
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:005:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[5].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:BeamPermitted_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:006:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[6].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:BeamPermitted_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:007:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[7].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:BeamPermitted_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:008:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[8].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:BeamPermitted_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].BeamPermitted
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Info:Desc_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.Desc
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Info:DevName_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.DevName
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Info:InUse_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.InUse
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Info:InfoString_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.InfoString
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Info:TypeCode_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.TypeCode
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Info:Path_RBV
+      - waveform
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Info.sPath
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:OK_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].OK
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Activate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Activate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Activate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Active_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Active
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Deactivate_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Deactivate
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Deactivate
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Duration_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:Duration
+      - longout
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.Duration
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:ElapsedTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.ElapsedTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Ovrd:RemainingTime_RBV
+      - longin
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Ovrd.RemainingTime
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Reset_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FF:009:Reset
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.astFF[9].Reset
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:ClearFault_RBV
+      - bi
+      - Might be overidden by PLC writes
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:ClearFault
+      - bo
+      - Might be overidden by PLC writes
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:EnableVeto_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.i_xVeto
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:EnableVeto
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.i_xVeto
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:FaultHWO_RBV
+      - bi
+      - Hardware Output Status
+      - | io: input
+
+
+    * - PLC:LFE:VAC:FFO:03:RegistrationFailure_RBV
+      - bi
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.xFastFaultRegFail
+      - | io: output
+
+
+    * - PLC:LFE:VAC:FFO:03:RegistrationFailure
+      - bo
+      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.xFastFaultRegFail
       - | io: output
 
 
@@ -12470,15 +12123,9 @@ Database Records
       - | io: input
 
 
-    * - PLC:LFE:VAC:FFO:03:RegistrationFailure
-      - bo
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.xFastFaultRegFail
-      - | io: output
-
-
-    * - PLC:LFE:VAC:FFO:03:RegistrationFailure_RBV
+    * - PLC:LFE:VAC:RESET:FF3_RBV
       - bi
-      - GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.xFastFaultRegFail
+      - GVL_LFE_VAC_FSV_PMPS.xReset_PMPS_FFO3
       - | io: output
 
 
@@ -12488,10 +12135,327 @@ Database Records
       - | io: output
 
 
-    * - PLC:LFE:VAC:RESET:FF3_RBV
+    * - $(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV
       - bi
-      - GVL_LFE_VAC_FSV_PMPS.xReset_PMPS_FFO3
+      - Tripped by overall log count
+      - | io: input
+
+
+    * - $(PREFIX)LCLSGeneral:LogHost_RBV
+      - waveform
+      - The log host IP address
       - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogHost
+      - waveform
+      - The log host IP address
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogPort_RBV
+      - longin
+      - The log host UDP port
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogPort
+      - longout
+      - The log host UDP port
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogMessageCount_RBV
+      - longin
+      - Total log messages on the last cycle
+      - | io: input
+
+
+    * - $(PREFIX)AccumulatedFastFaults_RBV
+      - longin
+      - PMPS_GVL.AccumulatedFF
+      - | io: input
+
+
+    * - $(PREFIX)SuccessfulPreemptions_RBV
+      - longin
+      - PMPS_GVL.SuccessfulPreemption
+      - | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:ST_RBV
+      - waveform
+      - Full beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Rate_RBV
+      - longin
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Transmission_RBV
+      - longin
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: EGU %
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV
+      - longin
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Valid_RBV
+      - bi
+      - Full beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:ST_RBV
+      - waveform
+      - Safe beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Rate_RBV
+      - longin
+      - Safe beam constant
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Transmission_RBV
+      - longin
+      - Safe beam constant
+      - | archive: 1s monitor
+        | field: EGU %
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV
+      - longin
+      - Safe beam constant
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Valid_RBV
+      - bi
+      - Safe beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)L:UND:HiK_RBV
+      - ai
+      - PMPS_GVL.fHiK_LUnd
+      - | io: input
+
+
+    * - $(PREFIX)L:UND:LowK_RBV
+      - ai
+      - PMPS_GVL.fLowK_LUnd
+      - | io: input
+
+
+    * - Period_RBV
+      - ai
+      - PMPS_GVL.fPeriod_mm_LUnd
+      - | field: EGU mm
+        | io: input
+
+
+    * - $(PREFIX)eVRangeCnst_RBV
+      - waveform
+      - Active eV Range constants
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)K:eVRangeCnst_RBV
+      - waveform
+      - eV Range constants
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)L:eVRangeCnst_RBV
+      - waveform
+      - eV Range constants
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)L:UND:LastSegment_RBV
+      - longin
+      - PMPS_GVL.iHighBound_LUnd
+      - | io: input
+
+
+    * - $(PREFIX)L:UND:FirstSegment_RBV
+      - longin
+      - PMPS_GVL.iLowBound_LUnd
+      - | io: input
+
+
+    * - $(PREFIX)eVRangeHyst_RBV
+      - ai
+      - eV Range hystersis
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:ST_RBV
+      - waveform
+      - PMPS_GVL.stCurrentBeamParameters.aStoppers
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Rate_RBV
+      - longin
+      - PMPS_GVL.stCurrentBeamParameters.nRate
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Transmission_RBV
+      - longin
+      - PMPS_GVL.stCurrentBeamParameters.nTran
+      - | archive: 1s monitor
+        | field: EGU %
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:PhotonEnergyRanges_RBV
+      - longin
+      - PMPS_GVL.stCurrentBeamParameters.neVRange
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Valid_RBV
+      - bi
+      - PMPS_GVL.stCurrentBeamParameters.xValid
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:ST_RBV
+      - waveform
+      - PMPS_GVL.stRequestedBeamParameters.aStoppers
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Rate_RBV
+      - longin
+      - PMPS_GVL.stRequestedBeamParameters.nRate
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Transmission_RBV
+      - longin
+      - PMPS_GVL.stRequestedBeamParameters.nTran
+      - | archive: 1s monitor
+        | field: EGU %
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:PhotonEnergyRanges_RBV
+      - longin
+      - PMPS_GVL.stRequestedBeamParameters.neVRange
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Valid_RBV
+      - bi
+      - PMPS_GVL.stRequestedBeamParameters.xValid
+      - | archive: 1s monitor
+        | io: input
 
 
 
