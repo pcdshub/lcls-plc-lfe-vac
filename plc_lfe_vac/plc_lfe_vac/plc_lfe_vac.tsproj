@@ -169,8 +169,8 @@
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}">ST_BeamParams_IO</Name>
-			<BitSize>1696</BitSize>
+			<Name GUID="{C9AB5DB1-1B57-42EF-8E17-FBE97768475C}">ST_BeamParams_IO</Name>
+			<BitSize>1760</BitSize>
 			<SubItem>
 				<Name>nTran</Name>
 				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
@@ -235,6 +235,36 @@
 				</Properties>
 			</SubItem>
 			<SubItem>
+				<Name>neV</Name>
+				<Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
+				<Comment TxtId="">
+					<![CDATA[Current Photon energy as calculated by the arbiter]]>
+				</Comment>
+				<BitSize>32</BitSize>
+				<BitOffs>96</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>nBCRange</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>128</BitOffs>
+				<Default>
+					<Min>0</Min>
+					<Max>65535</Max>
+					<Value>0</Value>
+				</Default>
+			</SubItem>
+			<SubItem>
+				<Name>nBeamClass</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>144</BitOffs>
+				<Default>
+					<Min>0</Min>
+					<Value>0</Value>
+				</Default>
+			</SubItem>
+			<SubItem>
 				<Name>astAttenuators</Name>
 				<Type GUID="{7E016B85-166E-4B4F-AAC4-ECA8DDD44F13}">ST_PMPS_Attenuator_IO</Type>
 				<ArrayInfo>
@@ -245,7 +275,7 @@
 					<![CDATA[ Beamline attenuators ]]>
 				</Comment>
 				<BitSize>1024</BitSize>
-				<BitOffs>96</BitOffs>
+				<BitOffs>160</BitOffs>
 				<Properties>
 					<Property>
 						<Name>plcAttribute_pytmc</Name>
@@ -262,7 +292,7 @@
 					<Elements>4</Elements>
 				</ArrayInfo>
 				<BitSize>384</BitSize>
-				<BitOffs>1120</BitOffs>
+				<BitOffs>1184</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>aVetoDevices</Name>
@@ -275,7 +305,7 @@
 					<![CDATA[ Stopper statuses ]]>
 				</Comment>
 				<BitSize>128</BitSize>
-				<BitOffs>1504</BitOffs>
+				<BitOffs>1568</BitOffs>
 				<Properties>
 					<Property>
 						<Name>plcAttribute_pytmc</Name>
@@ -291,7 +321,7 @@
 					<![CDATA[ Toggle for watchdog]]>
 				</Comment>
 				<BitSize>8</BitSize>
-				<BitOffs>1632</BitOffs>
+				<BitOffs>1696</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>xValid</Name>
@@ -300,7 +330,7 @@
 					<![CDATA[ Beam parameter set is valid (if readback), or acknowledged (if request)]]>
 				</Comment>
 				<BitSize>8</BitSize>
-				<BitOffs>1640</BitOffs>
+				<BitOffs>1704</BitOffs>
 				<Properties>
 					<Property>
 						<Name>plcAttribute_pytmc</Name>
@@ -316,7 +346,7 @@
 					<![CDATA[ Cohort index. Identifies which cohort this BP set was included in arbitration]]>
 				</Comment>
 				<BitSize>32</BitSize>
-				<BitOffs>1664</BitOffs>
+				<BitOffs>1728</BitOffs>
 				<Properties>
 					<Property>
 						<Name>plcAttribute_pytmc</Name>
@@ -342,6 +372,12 @@
 				<Hide GUID="{F4D82764-2299-4BB7-86C4-99ED0EBA5A76}"/>
 				<Hide GUID="{1E08C18A-0551-4C52-916A-1A7A2B58BA24}"/>
 				<Hide GUID="{1E08C18A-0551-4C52-916A-1A7A2B58BA24}"/>
+				<Hide GUID="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}"/>
+				<Hide GUID="{7BACB0F9-4BD8-4ADE-B8B1-2D069E1D0190}"/>
+				<Hide GUID="{C338245C-50EC-4E6D-B363-9DA04BB5DFA5}"/>
+				<Hide GUID="{0E623A01-D6F4-41DD-A8F2-FBC77EE11035}"/>
+				<Hide GUID="{B8136069-15B2-4545-8E40-00504F2F580D}"/>
+				<Hide GUID="{4A38F9D3-765E-4C94-9AAB-7EB5DFA13820}"/>
 			</Hides>
 		</DataType>
 	</DataTypes>
@@ -355,8 +391,8 @@
 					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
 					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect Instances="250">{103F30C9-DF25-439E-837B-9DF80CB9356C}</ManualSelect>
-					<ManualSelect>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</ManualSelect>
 					<ManualSelect>{B27B051A-CA6A-42EA-833E-82CC92903D83}</ManualSelect>
+					<ManualSelect>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</ManualSelect>
 					<TargetSelect TargetId="2">{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</TargetSelect>
 					<TargetSelect TargetId="2">{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</TargetSelect>
 					<LicenseDevice DongleHardwareId="2" DongleDevice="#x03020002" DongleSystemId="{B9B99F2E-0ADA-B904-40E6-1CE7729B83BB}"/>
@@ -548,7 +584,14 @@
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 						</Var>
 						<Var>
-							<Name>GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK</Name>
+							<Name>GVL_Devices.TV1L0_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV1L0_VGC_01.i_xClsLS</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -621,6 +664,17 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.IM1L0_XTES_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.IM1L0_XTES_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.IM1L0_XTES_PIP_01.i_iPRESS</Name>
 							<Type>INT</Type>
 						</Var>
@@ -655,6 +709,17 @@
 								<![CDATA[ Controls and I/Os]]>
 							</Comment>
 							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV2L0_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV2L0_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Devices.TV2L0_PIP_02.i_iPRESS</Name>
@@ -697,6 +762,17 @@
 							<Comment>
 								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
 							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV2L0_VGC_02.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV2L0_VGC_02.i_xClsLS</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -750,47 +826,22 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.PC1L0_XTES_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PC1L0_XTES_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.SP1L0_KMONO_GPI_01.i_iPRESS_R</Name>
 							<Comment>
 								<![CDATA[ input Pressure // Link to analog Input]]>
 							</Comment>
 							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK</Name>
-							<Comment>
-								<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger</Name>
-							<Comment>
-								<![CDATA[inputs]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK</Name>
-							<Comment>
-								<![CDATA[MPS Fault OK, is set when the Valve is Open and there is no trigger]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_eVFS_State</Name>
-							<Comment>
-								<![CDATA[Interface]]>
-							</Comment>
-							<Type GUID="{807045C9-9F81-4E2C-ACB9-51496E2C7AC7}" Namespace="LCLS_Vacuum">E_VGC</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Devices.SP1L0_KMONO_GCC_01.i_iPRESS_R</Name>
@@ -834,6 +885,17 @@
 								<![CDATA[ Controls and I/Os]]>
 							</Comment>
 							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR1L0_HOMS_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR1L0_HOMS_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Devices.MR1L0_HOMS_GPI_01.i_iPRESS_R</Name>
@@ -900,6 +962,17 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.BT2L0_PLEG_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.BT2L0_PLEG_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.BT2L0_PLEG_GPI_01.i_iPRESS_R</Name>
 							<Comment>
 								<![CDATA[ input Pressure // Link to analog Input]]>
@@ -939,6 +1012,17 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.MR2L0_HOMS_GPI_01.i_iPRESS_R</Name>
 							<Comment>
 								<![CDATA[ input Pressure // Link to analog Input]]>
@@ -967,8 +1051,377 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_PIP_01.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_PIP_01.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_VGC_02.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_VGC_02.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK</Name>
+							<Comment>
+								<![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger</Name>
+							<Comment>
+								<![CDATA[inputs]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK</Name>
+							<Comment>
+								<![CDATA[MPS Fault OK, is set when the Valve is Open and there is no trigger]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_VFS_01_Interface.i_eVFS_State</Name>
+							<Comment>
+								<![CDATA[Interface]]>
+							</Comment>
+							<Type GUID="{807045C9-9F81-4E2C-ACB9-51496E2C7AC7}" Namespace="LCLS_Vacuum">E_VGC</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV1L1_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV1L1_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_PIP_01.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV3L0_PIP_01.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.ST1L0_XTES_GPI_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ input Pressure // Link to analog Input]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.ST1L0_XTES_GCC_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ Controls and I/Os]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.ST1L0_XTES_GCC_01.i_xHV_ON</Name>
+							<Comment>
+								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.ST1L0_XTES_GCC_01.i_xDisc_Active</Name>
+							<Comment>
+								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.ST1L0_XTES_PIP_01.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.ST1L0_XTES_PIP_01.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PC2L1_L2SI_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PC2L1_L2SI_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GPI_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ input Pressure // Link to analog Input]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ Controls and I/Os]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_01.i_xHV_ON</Name>
+							<Comment>
+								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_01.i_xDisc_Active</Name>
+							<Comment>
+								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_PIP_01.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_PIP_01.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GPI_02.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ input Pressure // Link to analog Input]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_02.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ Controls and I/Os]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_02.i_xHV_ON</Name>
+							<Comment>
+								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_02.i_xDisc_Active</Name>
+							<Comment>
+								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_PIP_02.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_PIP_02.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PA2L0_PIN_01.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PA2L0_PIN_01.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GPI_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ input Pressure // Link to analog Input]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ Controls and I/Os]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_01.i_xHV_ON</Name>
+							<Comment>
+								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_01.i_xDisc_Active</Name>
+							<Comment>
+								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_01.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_01.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GPI_02.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ input Pressure // Link to analog Input]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_02.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ Controls and I/Os]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_02.i_xHV_ON</Name>
+							<Comment>
+								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_02.i_xDisc_Active</Name>
+							<Comment>
+								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_02.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_02.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GFS_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ Controls and I/Os]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_03.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[ Controls and I/Os]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_03.i_xHV_ON</Name>
+							<Comment>
+								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_03.i_xDisc_Active</Name>
+							<Comment>
+								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_03.i_iPRESS</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_03.i_xSP_DI</Name>
+							<Comment>
+								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV6L0_VGC_01.i_xOpnLS</Name>
+							<Comment>
+								<![CDATA[IO]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV6L0_VGC_01.i_xClsLS</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP</Name>
-							<Type GUID="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}">ST_BeamParams_IO</Type>
+							<Type GUID="{C9AB5DB1-1B57-42EF-8E17-FBE97768475C}">ST_BeamParams_IO</Type>
 							<SubVar>
 								<Name>nTran</Name>
 								<Comment>
@@ -985,6 +1438,12 @@
 								<Name>neVRange</Name>
 								<Comment>
 									<![CDATA[ Photon energy ranges ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>neV</Name>
+								<Comment>
+									<![CDATA[Current Photon energy as calculated by the arbiter]]>
 								</Comment>
 							</SubVar>
 							<SubVar>
@@ -1099,429 +1558,16 @@
 							<Type>BIT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_GPI_01.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ input Pressure // Link to analog Input]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_PIP_01.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_PIP_01.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV1L0_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV1L0_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.IM1L0_XTES_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.IM1L0_XTES_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV2L0_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV2L0_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV2L0_VGC_02.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV2L0_VGC_02.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PC1L0_XTES_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PC1L0_XTES_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR1L0_HOMS_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR1L0_HOMS_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.BT2L0_PLEG_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.BT2L0_PLEG_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_VGC_02.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_VGC_02.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV1L1_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV1L1_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PC2L1_L2SI_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PC2L1_L2SI_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV6L0_VGC_01.i_xOpnLS</Name>
-							<Comment>
-								<![CDATA[IO]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV6L0_VGC_01.i_xClsLS</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_PIP_01.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_PIP_01.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_GCC_01.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ Controls and I/Os]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_GCC_01.i_xHV_ON</Name>
-							<Comment>
-								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_GCC_01.i_xDisc_Active</Name>
-							<Comment>
-								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_PIP_01.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_PIP_01.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GPI_01.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ input Pressure // Link to analog Input]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_01.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ Controls and I/Os]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_01.i_xHV_ON</Name>
-							<Comment>
-								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_01.i_xDisc_Active</Name>
-							<Comment>
-								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_PIP_01.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_PIP_01.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GPI_02.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ input Pressure // Link to analog Input]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_02.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ Controls and I/Os]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_02.i_xHV_ON</Name>
-							<Comment>
-								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_02.i_xDisc_Active</Name>
-							<Comment>
-								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_PIP_02.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_PIP_02.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PA2L0_PIN_01.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PA2L0_PIN_01.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GPI_01.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ input Pressure // Link to analog Input]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_01.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ Controls and I/Os]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_01.i_xHV_ON</Name>
-							<Comment>
-								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_01.i_xDisc_Active</Name>
-							<Comment>
-								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_01.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_01.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GPI_02.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ input Pressure // Link to analog Input]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_02.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ Controls and I/Os]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_02.i_xHV_ON</Name>
-							<Comment>
-								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_02.i_xDisc_Active</Name>
-							<Comment>
-								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_02.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_02.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GFS_01.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ Controls and I/Os]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_03.i_iPRESS_R</Name>
-							<Comment>
-								<![CDATA[ Controls and I/Os]]>
-							</Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_03.i_xHV_ON</Name>
-							<Comment>
-								<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_03.i_xDisc_Active</Name>
-							<Comment>
-								<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_03.i_iPRESS</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_03.i_xSP_DI</Name>
-							<Comment>
-								<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
-							</Comment>
+							<Name>GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK</Name>
 							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
 						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>GVL_Devices.TV1L0_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
 						<Var>
 							<Name>GVL_Devices.TV1L0_GCC_01.q_xHV_DIS</Name>
 							<Comment>
@@ -1565,6 +1611,10 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.IM1L0_XTES_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.IM1L0_XTES_PIP_01.q_xHVEna_DO</Name>
 							<Comment>
 								<![CDATA[ Enable High Voltage when TRUE]]>
@@ -1583,6 +1633,10 @@
 							<Comment>
 								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
 							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV2L0_VGC_01.q_xOPN_DO</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -1614,6 +1668,10 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.TV2L0_VGC_02.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Devices.SL1L0_POWER_GCC_01.q_xHV_DIS</Name>
 							<Comment>
 								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
@@ -1639,6 +1697,110 @@
 							<Comment>
 								<![CDATA[ Enable High Voltage when TRUE]]>
 							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PC1L0_XTES_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.SP1L0_KMONO_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.SP1L0_KMONO_PIP_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PA1L0_PIN_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PA1L0_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR1L0_HOMS_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR1L0_HOMS_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR1L0_HOMS_PIP_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR1L1_TXI_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR1L1_TXI_PIP_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.BT2L0_PLEG_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.BT2L0_PLEG_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.BT2L0_PLEG_PIP_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_PIP_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.MR2L0_HOMS_VGC_02.q_xOPN_DO</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -1696,85 +1858,141 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.SP1L0_KMONO_GCC_01.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
-							</Comment>
+							<Name>GVL_Devices.TV1L1_VGC_01.q_xOPN_DO</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.SP1L0_KMONO_PIP_01.q_xHVEna_DO</Name>
+							<Name>GVL_Devices.TV3L0_PIP_01.q_xHVEna_DO</Name>
 							<Comment>
 								<![CDATA[ Enable High Voltage when TRUE]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.PA1L0_PIN_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PA1L0_GCC_01.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR1L0_HOMS_GCC_01.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR1L0_HOMS_PIP_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR1L1_TXI_GCC_01.q_xHV_DIS</Name>
+							<Name>GVL_Devices.ST1L0_XTES_GCC_01.q_xHV_DIS</Name>
 							<Comment>
 								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.MR1L1_TXI_PIP_01.q_xHVEna_DO</Name>
+							<Name>GVL_Devices.ST1L0_XTES_PIP_01.q_xHVEna_DO</Name>
 							<Comment>
 								<![CDATA[ Enable High Voltage when TRUE]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.BT2L0_PLEG_GCC_01.q_xHV_DIS</Name>
+							<Name>GVL_Devices.PC2L1_L2SI_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_01.q_xHV_DIS</Name>
 							<Comment>
 								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.BT2L0_PLEG_PIP_01.q_xHVEna_DO</Name>
+							<Name>GVL_Devices.TV4L0_PIP_01.q_xHVEna_DO</Name>
 							<Comment>
 								<![CDATA[ Enable High Voltage when TRUE]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_GCC_01.q_xHV_DIS</Name>
+							<Name>GVL_Devices.TV4L0_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_GCC_02.q_xHV_DIS</Name>
 							<Comment>
 								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
 							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV4L0_PIP_02.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.PA2L0_PIN_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_01.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_02.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_02.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GFS_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_GCC_03.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV5L0_PIP_03.q_xHVEna_DO</Name>
+							<Comment>
+								<![CDATA[ Enable High Voltage when TRUE]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Devices.TV6L0_VGC_01.q_xOPN_DO</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
 							<Name>GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP</Name>
-							<Type GUID="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}">ST_BeamParams_IO</Type>
+							<Type GUID="{C9AB5DB1-1B57-42EF-8E17-FBE97768475C}">ST_BeamParams_IO</Type>
 							<SubVar>
 								<Name>nTran</Name>
 								<Comment>
@@ -1791,6 +2009,12 @@
 								<Name>neVRange</Name>
 								<Comment>
 									<![CDATA[ Photon energy ranges ]]>
+								</Comment>
+							</SubVar>
+							<SubVar>
+								<Name>neV</Name>
+								<Comment>
+									<![CDATA[Current Photon energy as calculated by the arbiter]]>
 								</Comment>
 							</SubVar>
 							<SubVar>
@@ -1896,182 +2120,6 @@
 								</Comment>
 							</SubVar>
 						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_PIP_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV1L0_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.IM1L0_XTES_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV2L0_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV2L0_VGC_02.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PC1L0_XTES_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR1L0_HOMS_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.BT2L0_PLEG_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.MR2L0_HOMS_VGC_02.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV1L1_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PC2L1_L2SI_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV6L0_VGC_01.q_xOPN_DO</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV3L0_PIP_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_GCC_01.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.ST1L0_XTES_PIP_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_01.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_PIP_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_GCC_02.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV4L0_PIP_02.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.PA2L0_PIN_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_01.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_01.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_02.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_02.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GFS_01.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_GCC_03.q_xHV_DIS</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Devices.TV5L0_PIP_03.q_xHVEna_DO</Name>
-							<Comment>
-								<![CDATA[ Enable High Voltage when TRUE]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
 					</Vars>
 					<Vars VarGrpType="8">
 						<Name>PlcTask Retains</Name>
@@ -2081,6 +2129,11 @@
 								<![CDATA[ Any time BPTM applies a new BP request which is confirmed]]>
 							</Comment>
 							<Type>UDINT</Type>
+							<InOut>7</InOut>
+						</Var>
+						<Var>
+							<Name>PMPS_GVL.BP_jsonDoc</Name>
+							<Type>SJsonValue</Type>
 							<InOut>7</InOut>
 						</Var>
 					</Vars>
@@ -2140,6 +2193,18 @@
 						<OwnerA Name="InputDst" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="1">
 							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E9_EK1122_EBD^EBD_E0_EK1100^EBD_E5_EL1008">
 								<Link VarA="GVL_Devices.i_xUpstreamTreaty_PressOK" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^Input" AutoLink="true" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
+					<UnrestoredVarLinks ImportTime="2023-01-04T14:33:47">
+						<OwnerA Name="OutputSrc" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="2">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PMPS_PRE">
+								<Link VarA="GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.q_stRequestedBP" TypeA="ST_BeamParams_IO" InOutA="1" GuidA="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}" VarB="IO Outputs^RequestedBP" AutoLink="true" RestoreInfo="TypeMismatch" OldTypeA="ST_BeamParams_IO" OldGuidA="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}" NewTypeA="ST_BeamParams_IO" NewGuidA="{C9AB5DB1-1B57-42EF-8E17-FBE97768475C}"/>
+							</OwnerB>
+						</OwnerA>
+						<OwnerA Name="InputDst" Prefix="TIPC^plc_lfe_vac^plc_lfe_vac Instance" Type="1">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PMPS_PRE">
+								<Link VarA="GVL_LFE_VAC_PMPS.fb_to_LFE_Arbiter.i_stCurrentBP" TypeA="ST_BeamParams_IO" InOutA="0" GuidA="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}" VarB="IO Inputs^CurrentBP" AutoLink="true" RestoreInfo="TypeMismatch" OldTypeA="ST_BeamParams_IO" OldGuidA="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}" NewTypeA="ST_BeamParams_IO" NewGuidA="{C9AB5DB1-1B57-42EF-8E17-FBE97768475C}"/>
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
@@ -2504,11 +2569,11 @@
 				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideOpen" AutoLink="true"/>
 				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" AutoLink="true"/>
 				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_eVFS_State" AutoLink="true"/>
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK" AutoLink="true"/>
+				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" AutoLink="true"/>
 				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK" AutoLink="true"/>
+				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" AutoLink="true"/>
 				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xCLS_SW" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideMode" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xPRESS_OK" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK" AutoLink="true"/>

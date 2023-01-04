@@ -71,6 +71,10 @@
       <DefaultResolution>LCLS General, * (SLAC)</DefaultResolution>
       <Namespace>LCLS_General</Namespace>
     </PlaceholderReference>
+    <PlaceholderReference Include="PMPS">
+      <DefaultResolution>PMPS, * (SLAC - LCLS)</DefaultResolution>
+      <Namespace>PMPS</Namespace>
+    </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_Standard</Namespace>
@@ -95,7 +99,7 @@
       <Resolution>LCLSVacuumSerialDriverLib, 1.2.2 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, 2.0.0 (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 3.0.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="SysDir">
       <Resolution>SysDir, 3.5.8.0 (System)</Resolution>
@@ -155,9 +159,6 @@
   <ItemGroup>
     <LibraryReference Include="LCLS Vacuum,1.9.0,SLAC - LCLS">
       <Namespace>LCLS_Vacuum</Namespace>
-    </LibraryReference>
-    <LibraryReference Include="PMPS,2.0.0,SLAC - LCLS">
-      <Namespace>PMPS</Namespace>
     </LibraryReference>
   </ItemGroup>
   <ItemGroup>
