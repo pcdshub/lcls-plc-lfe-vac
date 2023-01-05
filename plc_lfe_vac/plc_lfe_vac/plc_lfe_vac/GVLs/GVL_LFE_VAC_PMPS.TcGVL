@@ -32,7 +32,7 @@ VAR_GLOBAL
 
 //Preemptive Arbiter Content
 	(*LFE Arbiter Interface*)
-	fb_to_LFE_Arbiter :	FB_SubSysToArbiter_IO;
+
 	g_fbArbiter1    :   FB_Arbiter(1);
 END_VAR]]></Declaration>
   </GVL>
