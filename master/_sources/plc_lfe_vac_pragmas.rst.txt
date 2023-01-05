@@ -7,7 +7,6 @@ Pragmas
     :align: center
 
     :ref:`plc_lfe_vac <plc_lfe_vac_overview_pragmas>`, 177, 0
-    :ref:`plc_lfe_vac_fs <plc_lfe_vac_fs_overview_pragmas>`, 8, 0
 
 
 .. _plc_lfe_vac_overview_pragmas:
@@ -17,17 +16,6 @@ plc_lfe_vac
 ^^^^^^^^^^^
 
 Total pragmas found: 177
-Total linter errors: 0
-
-
-
-.. _plc_lfe_vac_fs_overview_pragmas:
-
-
-plc_lfe_vac_fs
-^^^^^^^^^^^^^^
-
-Total pragmas found: 8
 Total linter errors: 0
 
 
