@@ -875,7 +875,7 @@ GVL_LFE_VAC_PMPS
 
     //Preemptive Arbiter Content
     	(*LFE Arbiter Interface*)
-    	fb_to_LFE_Arbiter :	FB_SubSysToArbiter_IO;
+
     	g_fbArbiter1    :   FB_Arbiter(1);
     END_VAR
 
@@ -1018,9 +1018,8 @@ MAIN
     	ft_bValid: F_TRIG;
     	
     END_VAR
-    fb_to_LFE_Arbiter(Arbiter := g_fbArbiter1, fbFFHWO := g_FastFaultOutput1);
-
     fbLogHandler();
+    PRG_PMPS ();
 
     //Writes watchdog bit to remote vac_lfe_gem reading the ion pumps around the gass attenuator
     fb_ADS_WATCHDOG_VAC_LFE_GEM(
@@ -1412,9 +1411,6 @@ MAIN
     		IG:=TV5L0_GFS_01.IG);
 
 
-    (*FastFaultOuput*)
-    g_FastFaultOutput1.Execute(bAutoReset:= TRUE);
-    g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
 
     ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
 
@@ -1424,6 +1420,7 @@ MAIN
 Related:
     * `DIAGNOSTICS`_
     * `GVL_LFE_VAC_PMPS`_
+    * `PRG_PMPS`_
 
 
 PRG_FastShutter
@@ -1449,6 +1446,28 @@ PRG_FastShutter
 
     (*FastFaultOuput*)	
     g_FastFaultOutput3.Execute(bAutoReset:= TRUE);
+
+    END_PROGRAM
+
+
+
+
+PRG_PMPS
+^^^^^^^^
+
+::
+
+    PROGRAM PRG_PMPS
+    VAR
+    	fbArbiterIO : FB_SubSysToArbiter_IO;
+    	
+    END_VAR
+    fbArbiterIO(Arbiter := g_fbArbiter1, fbFFHWO := g_FastFaultOutput1);
+    g_fbArbiter1.AddRequest(nReqID := 95 , stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-lfe-vac');	
+
+    (*FastFaultOuput*)
+    g_FastFaultOutput1.Execute(bAutoReset:= TRUE);
+    g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
 
     END_PROGRAM
 

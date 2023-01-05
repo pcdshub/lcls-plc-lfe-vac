@@ -16,6 +16,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/doctr-versions-menu.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -68,6 +69,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#diagnostics">DIAGNOSTICS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#main">MAIN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prg-fastshutter">PRG_FastShutter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prg-pmps">PRG_PMPS</a></li>
 </ul>
 </li>
 </ul>
@@ -97,8 +99,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>DUTs</li>
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">DUTs</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/plc_lfe_vac_plc_lfe_vac_source.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -969,7 +971,7 @@ END_VAR
 
 <span class="o">//</span><span class="n">Preemptive</span> <span class="n">Arbiter</span> <span class="n">Content</span>
     <span class="p">(</span><span class="o">*</span><span class="n">LFE</span> <span class="n">Arbiter</span> <span class="n">Interface</span><span class="o">*</span><span class="p">)</span>
-    <span class="n">fb_to_LFE_Arbiter</span> <span class="p">:</span>     <span class="n">FB_SubSysToArbiter_IO</span><span class="p">;</span>
+
     <span class="n">g_fbArbiter1</span>    <span class="p">:</span>   <span class="n">FB_Arbiter</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 <span class="n">END_VAR</span>
 </pre></div>
@@ -1095,9 +1097,8 @@ END_VAR
     <span class="n">ft_bValid</span><span class="p">:</span> <span class="n">F_TRIG</span><span class="p">;</span>
 
 <span class="n">END_VAR</span>
-<span class="n">fb_to_LFE_Arbiter</span><span class="p">(</span><span class="n">Arbiter</span> <span class="o">:=</span> <span class="n">g_fbArbiter1</span><span class="p">,</span> <span class="n">fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">);</span>
-
 <span class="n">fbLogHandler</span><span class="p">();</span>
+<span class="n">PRG_PMPS</span> <span class="p">();</span>
 
 <span class="o">//</span><span class="n">Writes</span> <span class="n">watchdog</span> <span class="n">bit</span> <span class="n">to</span> <span class="n">remote</span> <span class="n">vac_lfe_gem</span> <span class="n">reading</span> <span class="n">the</span> <span class="n">ion</span> <span class="n">pumps</span> <span class="n">around</span> <span class="n">the</span> <span class="n">gass</span> <span class="n">attenuator</span>
 <span class="n">fb_ADS_WATCHDOG_VAC_LFE_GEM</span><span class="p">(</span>
@@ -1489,9 +1490,6 @@ END_VAR
             <span class="n">IG</span><span class="o">:=</span><span class="n">TV5L0_GFS_01</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
 
 
-<span class="p">(</span><span class="o">*</span><span class="n">FastFaultOuput</span><span class="o">*</span><span class="p">)</span>
-<span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
-<span class="n">g_FastFaultOutput2</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">i_xVeto</span><span class="o">:=</span><span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">L_Stopper</span><span class="o">.</span><span class="n">ST1L0</span><span class="p">],</span> <span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
 
 <span class="n">ctuTest</span><span class="p">(</span><span class="n">CU</span><span class="o">:=</span><span class="n">GVL_LFE_VAC_PMPS</span><span class="o">.</span><span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">q_xFastFaultOut</span><span class="p">,</span> <span class="n">PV</span><span class="o">:=</span><span class="mi">100</span><span class="p">);</span>
 
@@ -1502,6 +1500,7 @@ END_VAR
 <dt>Related:</dt><dd><ul class="simple">
 <li><p><a class="reference internal" href="#diagnostics">DIAGNOSTICS</a></p></li>
 <li><p><a class="reference internal" href="#gvl-lfe-vac-pmps">GVL_LFE_VAC_PMPS</a></p></li>
+<li><p><a class="reference internal" href="#prg-pmps">PRG_PMPS</a></p></li>
 </ul>
 </dd>
 </dl>
@@ -1531,6 +1530,24 @@ END_VAR
 </pre></div>
 </div>
 </section>
+<section id="prg-pmps">
+<h2>PRG_PMPS<a class="headerlink" href="#prg-pmps" title="Permalink to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROGRAM</span> <span class="n">PRG_PMPS</span>
+<span class="n">VAR</span>
+    <span class="n">fbArbiterIO</span> <span class="p">:</span> <span class="n">FB_SubSysToArbiter_IO</span><span class="p">;</span>
+
+<span class="n">END_VAR</span>
+<span class="n">fbArbiterIO</span><span class="p">(</span><span class="n">Arbiter</span> <span class="o">:=</span> <span class="n">g_fbArbiter1</span><span class="p">,</span> <span class="n">fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">);</span>
+<span class="n">g_fbArbiter1</span><span class="o">.</span><span class="n">AddRequest</span><span class="p">(</span><span class="n">nReqID</span> <span class="o">:=</span> <span class="mi">95</span> <span class="p">,</span> <span class="n">stReqBp</span> <span class="o">:=</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">cstFullBeam</span><span class="p">,</span> <span class="n">sDevName</span> <span class="o">:=</span> <span class="s1">&#39;plc-lfe-vac&#39;</span><span class="p">);</span>
+
+<span class="p">(</span><span class="o">*</span><span class="n">FastFaultOuput</span><span class="o">*</span><span class="p">)</span>
+<span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
+<span class="n">g_FastFaultOutput2</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">i_xVeto</span><span class="o">:=</span><span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">L_Stopper</span><span class="o">.</span><span class="n">ST1L0</span><span class="p">],</span> <span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
+
+<span class="n">END_PROGRAM</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -1544,7 +1561,7 @@ END_VAR
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, SLAC National Accelerator Laboratory.</p>
+    <p>&#169; Copyright 2023, SLAC National Accelerator Laboratory.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -3,7 +3,7 @@ Data Types
 ----------
 
 
-      
+        
 LCLS_General.FB_Listener
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -957,7 +957,7 @@ LCLS_General.ST_PendingEvent
       - | io: input
 
 
-     
+                                                                               
 LCLS_Vacuum.FB_MKS275
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -2626,7 +2626,7 @@ LCLS_Vacuum.FB_VGC
         | io: input
 
 
-                                        
+ 
 LCLS_Vacuum.ST_PIP
 ^^^^^^^^^^^^^^^^^^
 
@@ -3783,7 +3783,7 @@ LCLS_Vacuum.ST_VGC
         | io: input
 
 
-                                                                                 
+       
 PMPS.FB_Arbiter
 ^^^^^^^^^^^^^^^
 
@@ -3795,6 +3795,18 @@ PMPS.FB_Arbiter
       - Type
       - Description
       - Pragma
+    * - $(PREFIX):AP:Entry:001:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:001:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:001:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -3817,6 +3829,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:001:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:001:PhotonEnergyRanges_RBV
@@ -3854,6 +3873,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:002:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:002:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:002:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -3876,6 +3907,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:002:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:002:PhotonEnergyRanges_RBV
@@ -3913,6 +3951,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:003:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:003:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:003:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -3935,6 +3985,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:003:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:003:PhotonEnergyRanges_RBV
@@ -3972,6 +4029,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:004:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:004:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:004:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -3994,6 +4063,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:004:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:004:PhotonEnergyRanges_RBV
@@ -4031,6 +4107,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:005:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:005:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:005:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4053,6 +4141,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:005:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:005:PhotonEnergyRanges_RBV
@@ -4090,6 +4185,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:006:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:006:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:006:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4112,6 +4219,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:006:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:006:PhotonEnergyRanges_RBV
@@ -4149,6 +4263,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:007:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:007:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:007:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4171,6 +4297,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:007:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:007:PhotonEnergyRanges_RBV
@@ -4208,6 +4341,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:008:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:008:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:008:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4230,6 +4375,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:008:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:008:PhotonEnergyRanges_RBV
@@ -4267,6 +4419,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:009:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:009:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:009:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4289,6 +4453,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:009:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:009:PhotonEnergyRanges_RBV
@@ -4326,6 +4497,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:010:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:010:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:010:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4348,6 +4531,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:010:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:010:PhotonEnergyRanges_RBV
@@ -4385,6 +4575,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:011:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:011:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:011:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4407,6 +4609,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:011:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:011:PhotonEnergyRanges_RBV
@@ -4444,6 +4653,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:012:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:012:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:012:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4466,6 +4687,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:012:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:012:PhotonEnergyRanges_RBV
@@ -4503,6 +4731,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:013:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:013:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:013:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4525,6 +4765,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:013:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:013:PhotonEnergyRanges_RBV
@@ -4562,6 +4809,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:014:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:014:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:014:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4584,6 +4843,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:014:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:014:PhotonEnergyRanges_RBV
@@ -4621,6 +4887,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:015:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:015:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:015:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4643,6 +4921,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:015:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:015:PhotonEnergyRanges_RBV
@@ -4680,6 +4965,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:016:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:016:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:016:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4702,6 +4999,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:016:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:016:PhotonEnergyRanges_RBV
@@ -4739,6 +5043,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:017:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:017:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:017:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4761,6 +5077,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:017:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:017:PhotonEnergyRanges_RBV
@@ -4798,6 +5121,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:018:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:018:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:018:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4820,6 +5155,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:018:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:018:PhotonEnergyRanges_RBV
@@ -4857,6 +5199,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:019:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:019:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:019:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4879,6 +5233,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:019:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:019:PhotonEnergyRanges_RBV
@@ -4916,6 +5277,18 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):AP:Entry:020:BeamClass_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
+    * - $(PREFIX):AP:Entry:020:BeamClassRanges_RBV
+      - longin
+      - Assertion Pool
+      - | io: input
+
+
     * - $(PREFIX):AP:Entry:020:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -4938,6 +5311,13 @@ PMPS.FB_Arbiter
       - bi
       - Assertion Pool
       - | io: input
+
+
+    * - $(PREFIX):AP:Entry:020:PhotonEnergy_RBV
+      - ai
+      - Assertion Pool
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):AP:Entry:020:PhotonEnergyRanges_RBV
@@ -4981,10 +5361,29 @@ PMPS.FB_Arbiter
       - | io: input
 
 
+    * - $(PREFIX):ArbitratedBP:BeamClass_RBV
+      - longin
+      - Arbitrated BP
+      - | io: input
+
+
+    * - $(PREFIX):ArbitratedBP:BeamClassRanges_RBV
+      - longin
+      - Arbitrated BP
+      - | io: input
+
+
     * - $(PREFIX):ArbitratedBP:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
       - | io: input
+
+
+    * - $(PREFIX):ArbitratedBP:PhotonEnergy_RBV
+      - ai
+      - Arbitrated BP
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):ArbitratedBP:PhotonEnergyRanges_RBV
@@ -5040,6 +5439,18 @@ PMPS.FB_BeamParamAssertionPool
       - Type
       - Description
       - Pragma
+    * - $(PREFIX):Entry:001:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[1].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:001:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[1].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:001:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5062,6 +5473,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[1].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:001:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[1].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:001:PhotonEnergyRanges_RBV
@@ -5099,6 +5517,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:002:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[2].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:002:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[2].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:002:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5121,6 +5551,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[2].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:002:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[2].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:002:PhotonEnergyRanges_RBV
@@ -5158,6 +5595,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:003:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[3].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:003:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[3].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:003:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5180,6 +5629,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[3].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:003:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[3].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:003:PhotonEnergyRanges_RBV
@@ -5217,6 +5673,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:004:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[4].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:004:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[4].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:004:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5239,6 +5707,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[4].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:004:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[4].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:004:PhotonEnergyRanges_RBV
@@ -5276,6 +5751,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:005:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[5].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:005:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[5].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:005:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5298,6 +5785,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[5].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:005:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[5].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:005:PhotonEnergyRanges_RBV
@@ -5335,6 +5829,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:006:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[6].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:006:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[6].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:006:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5357,6 +5863,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[6].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:006:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[6].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:006:PhotonEnergyRanges_RBV
@@ -5394,6 +5907,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:007:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[7].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:007:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[7].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:007:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5416,6 +5941,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[7].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:007:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[7].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:007:PhotonEnergyRanges_RBV
@@ -5453,6 +5985,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:008:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[8].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:008:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[8].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:008:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5475,6 +6019,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[8].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:008:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[8].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:008:PhotonEnergyRanges_RBV
@@ -5512,6 +6063,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:009:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[9].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:009:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[9].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:009:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5534,6 +6097,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[9].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:009:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[9].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:009:PhotonEnergyRanges_RBV
@@ -5571,6 +6141,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:010:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[10].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:010:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[10].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:010:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5593,6 +6175,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[10].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:010:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[10].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:010:PhotonEnergyRanges_RBV
@@ -5630,6 +6219,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:011:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[11].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:011:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[11].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:011:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5652,6 +6253,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[11].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:011:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[11].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:011:PhotonEnergyRanges_RBV
@@ -5689,6 +6297,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:012:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[12].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:012:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[12].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:012:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5711,6 +6331,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[12].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:012:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[12].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:012:PhotonEnergyRanges_RBV
@@ -5748,6 +6375,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:013:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[13].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:013:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[13].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:013:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5770,6 +6409,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[13].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:013:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[13].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:013:PhotonEnergyRanges_RBV
@@ -5807,6 +6453,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:014:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[14].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:014:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[14].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:014:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5829,6 +6487,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[14].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:014:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[14].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:014:PhotonEnergyRanges_RBV
@@ -5866,6 +6531,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:015:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[15].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:015:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[15].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:015:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5888,6 +6565,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[15].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:015:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[15].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:015:PhotonEnergyRanges_RBV
@@ -5925,6 +6609,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:016:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[16].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:016:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[16].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:016:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -5947,6 +6643,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[16].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:016:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[16].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:016:PhotonEnergyRanges_RBV
@@ -5984,6 +6687,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:017:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[17].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:017:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[17].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:017:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -6006,6 +6721,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[17].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:017:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[17].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:017:PhotonEnergyRanges_RBV
@@ -6043,6 +6765,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:018:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[18].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:018:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[18].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:018:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -6065,6 +6799,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[18].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:018:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[18].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:018:PhotonEnergyRanges_RBV
@@ -6102,6 +6843,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:019:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[19].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:019:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[19].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:019:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -6124,6 +6877,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[19].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:019:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[19].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:019:PhotonEnergyRanges_RBV
@@ -6161,6 +6921,18 @@ PMPS.FB_BeamParamAssertionPool
       - | io: input
 
 
+    * - $(PREFIX):Entry:020:BeamClass_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[20].nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):Entry:020:BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).epicsDataPool[20].nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Entry:020:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -6183,6 +6955,13 @@ PMPS.FB_BeamParamAssertionPool
       - bi
       - $(SYMBOL).epicsDataPool[20].LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):Entry:020:PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).epicsDataPool[20].neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):Entry:020:PhotonEnergyRanges_RBV
@@ -13216,10 +13995,29 @@ PMPS.ST_BeamParams
       - Type
       - Description
       - Pragma
+    * - $(PREFIX):BeamClass_RBV
+      - longin
+      - $(SYMBOL).nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
       - | io: input
+
+
+    * - $(PREFIX):PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):PhotonEnergyRanges_RBV
@@ -13269,6 +14067,18 @@ PMPS.ST_BP_ArbInternal
       - Type
       - Description
       - Pragma
+    * - $(PREFIX):BeamClass_RBV
+      - longin
+      - $(SYMBOL).nBeamClass
+      - | io: input
+
+
+    * - $(PREFIX):BeamClassRanges_RBV
+      - longin
+      - $(SYMBOL).nBCRange
+      - | io: input
+
+
     * - $(PREFIX):Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -13291,6 +14101,13 @@ PMPS.ST_BP_ArbInternal
       - bi
       - $(SYMBOL).LiveInTable
       - | io: input
+
+
+    * - $(PREFIX):PhotonEnergy_RBV
+      - ai
+      - $(SYMBOL).neV
+      - | field: EGU eV
+        | io: input
 
 
     * - $(PREFIX):PhotonEnergyRanges_RBV
@@ -13666,7 +14483,7 @@ PMPS.T_HashTableEntry
       - | io: input
 
 
- 
+                                        
 ST_BeamParams_IO
 ^^^^^^^^^^^^^^^^
 
@@ -52527,6 +53344,15 @@ Database Records
       - | io: input
 
 
+    * - $(PREFIX)LCLSMODE_RBV
+      - longin
+      - PMPS_GVL.M_Mode
+      - | field: ONST SC
+        | field: TWST Misconfigured
+        | field: ZRST NC
+        | io: input
+
+
     * - $(PREFIX)SuccessfulPreemptions_RBV
       - longin
       - PMPS_GVL.SuccessfulPreemption
@@ -52535,6 +53361,20 @@ Database Records
 
     * - $(PREFIX)0RateBeamCnst:Veto_RBV
       - waveform
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:BeamClassRanges_RBV
+      - longin
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:BeamClass_RBV
+      - longin
       - 0-rate beam constant
       - | archive: 1s monitor
         | io: input
@@ -52565,6 +53405,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)0RateBeamCnst:PhotonEnergy_RBV
+      - ai
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
     * - $(PREFIX)0RateBeamCnst:PhotonEnergyRanges_RBV
       - longin
       - 0-rate beam constant
@@ -52582,6 +53430,20 @@ Database Records
 
     * - $(PREFIX)FullBeamCnst:Veto_RBV
       - waveform
+      - Full beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:BeamClassRanges_RBV
+      - longin
+      - Full beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:BeamClass_RBV
+      - longin
       - Full beam constant
       - | archive: 1s monitor
         | io: input
@@ -52612,6 +53474,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)FullBeamCnst:PhotonEnergy_RBV
+      - ai
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
     * - $(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV
       - longin
       - Full beam constant
@@ -52623,53 +53493,6 @@ Database Records
     * - $(PREFIX)FullBeamCnst:Valid_RBV
       - bi
       - Full beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Veto_RBV
-      - waveform
-      - Safe beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Rate_RBV
-      - longin
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Transmission_RBV
-      - ai
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV
-      - longin
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Valid_RBV
-      - bi
-      - Safe beam constant
       - | archive: 1s monitor
         | io: input
 
@@ -52713,6 +53536,20 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)CurrentBP:BeamClassRanges_RBV
+      - longin
+      - PMPS_GVL.stCurrentBeamParameters.nBCRange
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:BeamClass_RBV
+      - longin
+      - PMPS_GVL.stCurrentBeamParameters.nBeamClass
+      - | archive: 1s monitor
+        | io: input
+
+
     * - $(PREFIX)CurrentBP:Cohort_RBV
       - longin
       - Cohort inc on each arb cycle
@@ -52738,6 +53575,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)CurrentBP:PhotonEnergy_RBV
+      - ai
+      - PMPS_GVL.stCurrentBeamParameters.neV
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
     * - $(PREFIX)CurrentBP:PhotonEnergyRanges_RBV
       - longin
       - PMPS_GVL.stCurrentBeamParameters.neVRange
@@ -52756,6 +53601,20 @@ Database Records
     * - $(PREFIX)RequestedBP:Veto_RBV
       - waveform
       - PMPS_GVL.stRequestedBeamParameters.aVetoDevices
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:BeamClassRanges_RBV
+      - longin
+      - PMPS_GVL.stRequestedBeamParameters.nBCRange
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:BeamClass_RBV
+      - longin
+      - PMPS_GVL.stRequestedBeamParameters.nBeamClass
       - | archive: 1s monitor
         | io: input
 
@@ -52782,6 +53641,14 @@ Database Records
         | field: HOPR 1
         | field: LOPR 0
         | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:PhotonEnergy_RBV
+      - ai
+      - PMPS_GVL.stRequestedBeamParameters.neV
+      - | archive: 1s monitor
+        | field: EGU eV
         | io: input
 
 
