@@ -19,14 +19,6 @@ plc_lfe_vac
     plc_lfe_vac_plc_lfe_vac_epics
     plc_lfe_vac_plc_lfe_vac_source
 
-.. toctree::
-    :maxdepth: 2
-    :caption: plc_lfe_vac_fs
-
-    plc_lfe_vac_plc_lfe_vac_fs_summary
-    plc_lfe_vac_plc_lfe_vac_fs_epics
-    plc_lfe_vac_plc_lfe_vac_fs_source
-
 
 
 Indices and tables

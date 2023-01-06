@@ -3,9 +3,6 @@ v2.0.0/_sources/plc_lfe_vac_boxes.rst.txt
 v2.0.0/_sources/plc_lfe_vac_links.rst.txt
 v2.0.0/_sources/plc_lfe_vac_nc.rst.txt
 v2.0.0/_sources/plc_lfe_vac_plc_lfe_vac_epics.rst.txt
-v2.0.0/_sources/plc_lfe_vac_plc_lfe_vac_fs_epics.rst.txt
-v2.0.0/_sources/plc_lfe_vac_plc_lfe_vac_fs_source.rst.txt
-v2.0.0/_sources/plc_lfe_vac_plc_lfe_vac_fs_summary.rst.txt
 v2.0.0/_sources/plc_lfe_vac_plc_lfe_vac_source.rst.txt
 v2.0.0/_sources/plc_lfe_vac_plc_lfe_vac_summary.rst.txt
 v2.0.0/_sources/plc_lfe_vac_pragmas.rst.txt
@@ -55,9 +52,6 @@ v2.0.0/plc_lfe_vac_boxes.html
 v2.0.0/plc_lfe_vac_links.html
 v2.0.0/plc_lfe_vac_nc.html
 v2.0.0/plc_lfe_vac_plc_lfe_vac_epics.html
-v2.0.0/plc_lfe_vac_plc_lfe_vac_fs_epics.html
-v2.0.0/plc_lfe_vac_plc_lfe_vac_fs_source.html
-v2.0.0/plc_lfe_vac_plc_lfe_vac_fs_summary.html
 v2.0.0/plc_lfe_vac_plc_lfe_vac_source.html
 v2.0.0/plc_lfe_vac_plc_lfe_vac_summary.html
 v2.0.0/plc_lfe_vac_pragmas.html
