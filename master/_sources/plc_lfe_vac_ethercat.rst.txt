@@ -1,0 +1,609 @@
+Box Hierarchy
+-------------
+
+
+#. **PLC_E0_EK1200 [ID: 1]**
+        EK1200-5000 EtherCAT Power supply (2A E-Bus)
+
+    #. PLC_E1_EL2202 [ID: 3]
+            EL2202 2Ch. Dig. Output 24V, 0.5A
+
+
+
+    #. PLC_E2_EL2202 [ID: 112]
+            EL2202 2Ch. Dig. Output 24V, 0.5A
+
+
+
+    #. PLC_E3_EL6070 [ID: 2]
+            EL6070 1Ch. Licensing-Terminal
+
+
+
+    #. PLC_E4_EL9184 [ID: 106]
+            EL9184 Potential Connection, 8 x 24V, 8 x Ground
+
+
+
+    #. PMPS_PRE [ID: 4]
+            EL6692 EtherCAT Bridge terminal (Primary)
+
+
+
+    #. PLC_E6_EL6692 [ID: 5]
+            EL6692 EtherCAT Bridge terminal (Primary)
+
+
+
+    #. PLC_E7_EL9410 [ID: 6]
+            EL9410 E-Bus Power Supplier  (Diagnostics)
+
+
+
+    #. PLC_E8_EK1122_QpcMks [ID: 7]
+            EK1122 2 port EtherCAT junction
+
+        #. **QPC_E0_EK1100 [ID: 8]**
+                EK1100 EtherCAT Coupler (2A E-Bus)
+
+            #. QPC_E1_EL3064 [ID: 9]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E2_EL1004 [ID: 10]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E3_EL2794 [ID: 11]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_E4_EL3064 [ID: 12]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E5_EL1004 [ID: 13]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E6_EL2794 [ID: 14]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_E7_EL3064 [ID: 15]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E8_EL1004 [ID: 16]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E9_EL2794 [ID: 17]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_E10_EL9410 [ID: 18]
+                    EL9410 E-Bus Power Supplier  (Diagnostics)
+
+
+
+            #. QPC_E11_EL3064 [ID: 19]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E12_EL1004 [ID: 20]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E13_EL2794 [ID: 21]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_E14_EL3064 [ID: 22]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E15_EL1004 [ID: 23]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E16_EL2794 [ID: 24]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_E17_EL3064 [ID: 25]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E18_EL1004 [ID: 26]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E19_EL2794 [ID: 27]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_E20_EL9410 [ID: 28]
+                    EL9410 E-Bus Power Supplier  (Diagnostics)
+
+
+
+            #. QPC_E21_EL3064 [ID: 29]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E22_EL1004 [ID: 30]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E23_EL2794 [ID: 31]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_E24_EL3064 [ID: 32]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. QPC_E25_EL1004 [ID: 33]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. QPC_E26_EL2794 [ID: 34]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. QPC_END_EL9011 [ID: 98]
+                    EL9011 End Terminal
+
+
+
+
+
+        #. **MKS_E0_EK1100 [ID: 35]**
+                EK1100 EtherCAT Coupler (2A E-Bus)
+
+            #. MKS_E1_EL3064 [ID: 36]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E2_EL3064 [ID: 37]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E3_EL2794 [ID: 38]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. MKS_E4_EL3064 [ID: 39]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E5_EL3064 [ID: 40]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E6_EL2794 [ID: 41]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. MKS_E7_EL9410 [ID: 42]
+                    EL9410 E-Bus Power Supplier  (Diagnostics)
+
+
+
+            #. MKS_E8_EL3064 [ID: 43]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E9_EL3064 [ID: 44]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E10_EL2794 [ID: 45]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. MKS_E11_EL3064 [ID: 46]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E12_EL3064 [ID: 47]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E13_EL2794 [ID: 48]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. MKS_E14_EL3064 [ID: 49]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E15_EL3064 [ID: 50]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E16_EL2794 [ID: 51]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. MKS_E17_EL9410 [ID: 52]
+                    EL9410 E-Bus Power Supplier  (Diagnostics)
+
+
+
+            #. MKS_E18_EL3064 [ID: 53]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E19_EL3064 [ID: 54]
+                    EL3064 4Ch. Ana. Input 0-10V
+
+
+
+            #. MKS_E20_EL2794 [ID: 55]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. MKS_E21_EL9505 [ID: 56]
+                    EL9505 Netzteilklemme 5V
+
+
+
+            #. MKS_E22_EL1124 [ID: 57]
+                    EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power
+
+
+
+            #. MKS_END_EL9011 [ID: 99]
+                    EL9011 End Terminal
+
+
+
+
+
+        #. **Term 58 (EK0000) [ID: 58]**
+                
+
+
+
+
+
+    #. PLC_E9_EK1122_EBD [ID: 59]
+            EK1122 2 port EtherCAT junction
+
+        #. **EBD_E0_EK1100 [ID: 60]**
+                EK1100 EtherCAT Coupler (2A E-Bus)
+
+            #. EBD_E1_EL1004 [ID: 61]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. EBD_E2_EL2004 [ID: 62]
+                    EL2004 4Ch. Dig. Output 24V, 0.5A
+
+
+
+            #. EBD_E3_EL1004 [ID: 63]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. EBD_E4_EL2004 [ID: 64]
+                    EL2004 4Ch. Dig. Output 24V, 0.5A
+
+
+
+            #. EBD_E5_EL1008 [ID: 65]
+                    EL1008 8Ch. Dig. Input 24V, 3ms
+
+
+
+            #. EBD_E6_EL9184 [ID: 107]
+                    EL9184 Potential Connection, 8 x 24V, 8 x Ground
+
+
+
+            #. EBD_E7_EL2008 [ID: 66]
+                    EL2008 8Ch. Dig. Output 24V, 0.5A
+
+
+
+            #. EBD_E8_EL2794 [ID: 67]
+                    EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+
+
+
+            #. EBD_E9_EK1110 [ID: 68]
+                    EK1110 EtherCAT extension
+
+
+
+
+
+        #. **Term 69 (EK0000) [ID: 69]**
+                
+
+
+
+
+
+    #. PLC_E10_EK1122_FSV [ID: 70]
+            EK1122 2 port EtherCAT junction
+
+        #. **FSV1_E0_EK1100_L0S10 [ID: 71]**
+                  (**Disabled**)    EK1100 EtherCAT Coupler (2A E-Bus)
+
+            #. FSV1_E1_EL1004 [ID: 72]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. FSV1_E2_EL9190 [ID: 108]
+                    EL9190 Power Supplier
+
+
+
+            #. FSV1_E3_EL2202 [ID: 77]
+                    EL2202 2Ch. Dig. Output 24V, 0.5A
+
+
+
+            #. FSV1_E4_EL2202 [ID: 78]
+                    EL2202 2Ch. Dig. Output 24V, 0.5A
+
+
+
+            #. FSV1_END_EL9011 [ID: 100]
+                    EL9011 End Terminal
+
+
+
+
+
+        #. **FSV2_E0_EK1100_L0S19 [ID: 75]**
+                EK1100 EtherCAT Coupler (2A E-Bus)
+
+            #. FSV2_E1_EL1004 [ID: 76]
+                    EL1004 4Ch. Dig. Input 24V, 3ms
+
+
+
+            #. FSV2_E2_EL9190 [ID: 109]
+                    EL9190 Power Supplier
+
+
+
+            #. FSV2_E3_EL2202 [ID: 184]
+                    EL2202 2Ch. Dig. Output 24V, 0.5A
+
+
+
+            #. FSV2_E4_EL2202 [ID: 185]
+                    EL2202 2Ch. Dig. Output 24V, 0.5A
+
+
+
+            #. FSV2_END_EL9011 [ID: 101]
+                    EL9011 End Terminal
+
+
+
+
+
+
+
+    #. PLC_E11_EK1122_FEE_Stands [ID: 79]
+            EK1122 2 port EtherCAT junction
+
+        #. **FEE_L0S21-2_EP1_EP3174-0002 [ID: 80]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **FEE_L0S21-2_EP2_EP2624-0002 [ID: 81]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **FEE_L0S21-1_EP1_EP3174-0002 [ID: 82]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **FEE_L0S21-1_EP2_EP2624-0002 [ID: 83]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **FEE_L0S19_EP1_EP2338-0002 [ID: 84]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **FEE_L0S18_EP1_EP2338-0002 [ID: 85]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **FEE_L0S18_EP2_EP3174-0002 [ID: 86]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **FEE_L0S18_EP3_EP2624-0002 [ID: 87]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **FEE_L0S14_EP1_EP2338-0002 [ID: 88]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **FEE_L0S14_EP2_EP3174-0002 [ID: 89]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **FEE_L0S14_EP3_EP2624-0002 [ID: 90]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **FEE_L0S10_EP1_EP2338-0002 [ID: 91]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **FEE_L0S9_EP1_EP2338-0002 [ID: 92]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **FEE_L0S9_EP2_EP2338-0002 [ID: 93]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **FEE_L0S8_EP1_EP2338-0002 [ID: 94]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **FEE_L0S2_EP1_EP2338-0002 [ID: 95]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **Term 96 (EK0000) [ID: 96]**
+                
+
+
+
+
+
+    #. PLC_E12_EK1122_H11_H12 [ID: 97]
+            EK1122 2 port EtherCAT junction
+
+        #. **H11_L0S2_EP1_EP2338-0002 [ID: 201]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **H11_L0S2_EP2_EP3174-0002 [ID: 202]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **H11_L0S2_EP3_EP2624-0002 [ID: 203]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **H11_L0S9_EP1_EP3174-0002 [ID: 204]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **H11_L0S9_EP2_EP2624-0002 [ID: 205]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **H12_L0S1_EP1_EP3174-0002 [ID: 206]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **H12_L0S1_EP2_EP2624-0002 [ID: 207]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **H12_L0S3_EP1_EP2338-0002 [ID: 208]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+        #. **H12_L0S3_EP2_EP3174-0002 [ID: 209]**
+                EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+
+
+
+        #. **H12_L0S3_EP3_EP2624-0002 [ID: 210]**
+                EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+
+
+
+        #. **H12_L0S6_EP1_EP2338-0002 [ID: 211]**
+                EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+
+
+
+
+
+    #. PLC_END_EL9011 [ID: 102]
+            EL9011 End Terminal
+
+
+
+    #. Term 103 (EL9010) [ID: 103]
+            EL9010 End Terminal
+
+
+
+    #. Term 104 (EL9010) [ID: 104]
+            EL9010 End Terminal
+
+
+
+    #. Term 105 (EL9010) [ID: 105]
+            EL9010 End Terminal
+
+
+
+
+

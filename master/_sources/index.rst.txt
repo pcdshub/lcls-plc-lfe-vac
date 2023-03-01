@@ -7,6 +7,7 @@ plc_lfe_vac
 
     plc_lfe_vac_pragmas
     plc_lfe_vac_nc
+    plc_lfe_vac_ethercat
     plc_lfe_vac_boxes
     plc_lfe_vac_links
 
