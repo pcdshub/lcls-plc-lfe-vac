@@ -3,39 +3,39 @@
   <GVL Name="GVL_PLC_Interfaces" Id="{fcddf43e-c4e4-4dff-b9ca-620efda50799}">
     <Declaration><![CDATA[//{attribute 'qualified_only'}
 VAR_GLOBAL
-	
-	(*HXR Accelerator side PLC Interface*)
-	Accelerator_Upstream_Gauge	:	ST_VG;
 
-	{attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input
-	'}
-	i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
+    (*HXR Accelerator side PLC Interface*)
+    Accelerator_Upstream_Gauge	:	ST_VG;
+
+    {attribute 'TcLinkTo' :=	'TIIB[EBD_E5_EL1008]^Channel 1^Input
+    '}
+    i_xUpstreamTreaty_PressOK	AT	%I*	:	BOOL;
 //	{attribute 'TcLinkTo' :=	'TIIB[EBD_E8_EL2794]^Channel 1^Output
 //	'}
 //	q_xUpstreamTreaty_PressOK	AT	%Q*	:	BOOL;
-	
-	
-	(*HXR Gas Attenuator PLC Interface*)
-	
-	fb_ADS_WATCHDOG_VAC_LFE_GEM:FB_ADS_WATCHDOG;
 
-	(*TXI PLC Interface*)
-	
-	(*XPP PLC Interface*)
-	{attribute 'pytmc' := '
+
+    (*HXR Gas Attenuator PLC Interface*)
+
+    fb_ADS_WATCHDOG_VAC_LFE_GEM:FB_ADS_WATCHDOG;
+
+    (*TXI PLC Interface*)
+
+    (*XPP PLC Interface*)
+    {attribute 'pytmc' := '
             pv: PLC:LFE:VAC:XPP:DS:GCC_EPICS
-	'}
-	XPP_Downstream_Gauge		:	ST_VG;
-	XPP_Modbus_Gauge		:	FB_GaugeModbus; //ST_VG;
-	XPP_DS_Gauge		:	ST_VG;
-	
-	
-	{attribute 'pytmc' := '
+    '}
+    XPP_Downstream_Gauge		:	ST_VG;
+    XPP_Modbus_Gauge		:	FB_GaugeModbus; //ST_VG;
+    XPP_DS_Gauge		:	ST_VG;
+
+
+    {attribute 'pytmc' := '
             pv: PLC:LFE:VAC:XPP:Downstream:PMON
             link: HX3:MON:GCC:01:PMON
-	'}
+    '}
     XPP_PressureLinkHelper : FB_LREALFromEPICS;
-	
+
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
