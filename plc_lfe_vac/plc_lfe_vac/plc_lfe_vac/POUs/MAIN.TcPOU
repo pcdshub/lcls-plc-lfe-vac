@@ -4,15 +4,15 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 
-	fbLogHandler : FB_LogHandler;
-	
-	ctuTest : CTU;
-	tof_bValid_PV	: TOF;
-	tTimeout			: TIME := T#2S;
-	fbLogger: FB_LogMessage := (eSubsystem:=E_SubSystem.VACUUM);
-	rt_bValid: R_TRIG;
-	ft_bValid: F_TRIG;
-	
+    fbLogHandler : FB_LogHandler;
+
+    ctuTest : CTU;
+    tof_bValid_PV	: TOF;
+    tTimeout			: TIME := T#2S;
+    fbLogger: FB_LogMessage := (eSubsystem:=E_SubSystem.VACUUM);
+    rt_bValid: R_TRIG;
+    ft_bValid: F_TRIG;
+
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -23,10 +23,10 @@ PRG_PMPS ();
 
 //Writes watchdog bit to remote vac_lfe_gem reading the ion pumps around the gass attenuator
 fb_ADS_WATCHDOG_VAC_LFE_GEM(
-	sNetId:= '172.21.88.32.1.1', 
-	nPort:= 851, 
-	sVarName:= 'MAIN.iWatchdog', 
-	bError=> );
+    sNetId:= '172.21.88.32.1.1',
+    nPort:= 851,
+    sVarName:= 'MAIN.iWatchdog',
+    bError=> );
 
 // Run the Diagnostics PRG
 DIAGNOSTICS();
@@ -36,13 +36,13 @@ DIAGNOSTICS();
 //Accelerator_Upstream_Gauge.xPRESS_OK	:=	i_xUpstreamTreaty_PressOK;
 
 IF(i_xUpstreamTreaty_PressOK) THEN
-	Accelerator_Upstream_Gauge.xPRESS_OK 	:= TRUE;
-	//Accelerator_Upstream_Gauge.eState 	:= gc_GaugeValidState;
-	Accelerator_Upstream_Gauge.rPRESS	 	:= 5e-6; //torr
+    Accelerator_Upstream_Gauge.xPRESS_OK 	:= TRUE;
+    //Accelerator_Upstream_Gauge.eState 	:= gc_GaugeValidState;
+    Accelerator_Upstream_Gauge.rPRESS	 	:= 5e-6; //torr
 ELSE
-	Accelerator_Upstream_Gauge.xPRESS_OK 	:= FALSE;
-	//Accelerator_Upstream_Gauge.eState 	:= 1;
-	Accelerator_Upstream_Gauge.rPRESS	 	:= 760;	//torr
+    Accelerator_Upstream_Gauge.xPRESS_OK 	:= FALSE;
+    //Accelerator_Upstream_Gauge.eState 	:= 1;
+    Accelerator_Upstream_Gauge.rPRESS	 	:= 760;	//torr
 END_IF
 
 (*HXR Gas Attenuator PLC Interface*)
@@ -58,10 +58,10 @@ XPP_Downstream_Gauge.xPRESS_OK := tof_bValid_PV.Q;
 rt_bValid(CLK:=XPP_PressureLinkHelper.bValid);
 ft_bValid(CLK:=XPP_PressureLinkHelper.bValid);
 IF(rt_bValid.Q)THEN
-	fbLogger(sMsg:=concat('EPICS Signal is Valid. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Info);
+    fbLogger(sMsg:=concat('EPICS Signal is Valid. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Info);
 END_IF
 IF(ft_bValid.Q)THEN
-	fbLogger(sMsg:=concat('EPICS Signal Disconnected. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Critical);
+    fbLogger(sMsg:=concat('EPICS Signal Disconnected. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Critical);
 END_IF
 //Modbus
 XPP_Modbus_Gauge(IP:='172.21.84.44',nMBAddr:=8#4000,iBitOffset:=24);
@@ -71,357 +71,350 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
 (*PIRANI Gauges*)
 
-	TV1L0_GPI_01(b937A:=TRUE, PG=>);
-	
-	TV2L0_GPI_01(b937A:=TRUE, PG=>);
-	
-	TV2L0_GPI_02(b937A:=TRUE, PG=>);
-	
-	SL1L0_POWER_GPI_01(b937A:=TRUE, PG=>);
-	
-	AT2L0_SOLID_GPI_01(b937A:=TRUE, PG=>);
-	
-	SP1L0_KMONO_GPI_01(b937A:=TRUE, PG=>);
-	
-	PA1L0_GPI_01(b937A:=TRUE, PG=>);
-	
-	MR1L0_HOMS_GPI_01(b937A:=TRUE, PG=>);
-	
-	MR1L1_TXI_GPI_01(PG=>);
-	
-	BT2L0_PLEG_GPI_01(PG=>);
-	
-	MR2L0_HOMS_GPI_01(PG=>);
-	
-	ST1L0_XTES_GPI_01(PG=>);
-	
-	//H1.1 and H1.2
-	TV4L0_GPI_01(PG=>);
-	
-	TV4L0_GPI_02(PG=>);
+    TV1L0_GPI_01(b937A:=TRUE, PG=>);
 
-	TV5L0_GPI_01(PG=>);
-	
-	TV5L0_GPI_02(PG=>);
-	
-	
+    TV2L0_GPI_01(b937A:=TRUE, PG=>);
+
+    TV2L0_GPI_02(b937A:=TRUE, PG=>);
+
+    SL1L0_POWER_GPI_01(b937A:=TRUE, PG=>);
+
+    AT2L0_SOLID_GPI_01(b937A:=TRUE, PG=>);
+
+    SP1L0_KMONO_GPI_01(b937A:=TRUE, PG=>);
+
+    PA1L0_GPI_01(b937A:=TRUE, PG=>);
+
+    MR1L0_HOMS_GPI_01(b937A:=TRUE, PG=>);
+
+    MR1L1_TXI_GPI_01(PG=>);
+
+    BT2L0_PLEG_GPI_01(PG=>);
+
+    MR2L0_HOMS_GPI_01(PG=>);
+
+    ST1L0_XTES_GPI_01(PG=>);
+
+    //H1.1 and H1.2
+    TV4L0_GPI_01(PG=>);
+
+    TV4L0_GPI_02(PG=>);
+
+    TV5L0_GPI_01(PG=>);
+
+    TV5L0_GPI_02(PG=>);
+
+
 (*Cold Cathode Gauges*)
 
-	TV1L0_GCC_01(PG:=TV1L0_GPI_01.PG,IG=>, b937A:=TRUE);
-	
-	TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>, b937A:=TRUE);
-	
-	TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
-	
-	TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
-	
-	SL1L0_POWER_GCC_01(PG:=SL1L0_POWER_GPI_01.PG,IG=>, b937A:=TRUE);
-	
-	AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>, b937A:=TRUE);
-	
-	SP1L0_KMONO_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
-	
-	PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
-	
-	MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>, b937A:=TRUE);
-	
-	MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>,bEP:=TRUE);
-	
-	BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>,bEP:=TRUE);
-	
-	MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>,bEP:=TRUE);
-	
-	ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>,bEP:=TRUE);
+    TV1L0_GCC_01(PG:=TV1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 
-	//H1.1 and H1.2
-	TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>,bEP:=TRUE);
+    TV2L0_GCC_01(PG:=TV2L0_GPI_01.PG, IG=>, b937A:=TRUE);
 
-	TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>,bEP:=TRUE);
+    TV2L0_GFS_01(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
 
-	TV5L0_GCC_01(PG:=TV5L0_GPI_01.PG,IG=>,bEP:=TRUE);
-	
-	TV5L0_GCC_02(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
-	
-	TV5L0_GFS_01(PG:=TV5L0_GPI_02.PG,IG=>);
-	
-	TV5L0_GCC_03(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
-	
-	
-	
+    TV2L0_GCC_02(PG:=TV2L0_GPI_02.PG,IG=>, b937A:=TRUE);
+
+    SL1L0_POWER_GCC_01(PG:=SL1L0_POWER_GPI_01.PG,IG=>, b937A:=TRUE);
+
+    AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>, b937A:=TRUE);
+
+    SP1L0_KMONO_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
+
+    PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
+
+    MR1L0_HOMS_GCC_01(PG:=MR1L0_HOMS_GPI_01.PG,IG=>, b937A:=TRUE);
+
+    MR1L1_TXI_GCC_01(PG:=MR1L1_TXI_GPI_01.PG,IG=>,bEP:=TRUE);
+
+    BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>,bEP:=TRUE);
+
+    MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>,bEP:=TRUE);
+
+    ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>,bEP:=TRUE);
+
+    //H1.1 and H1.2
+    TV4L0_GCC_01(PG:=TV4L0_GPI_01.PG,IG=>,bEP:=TRUE);
+
+    TV4L0_GCC_02(PG:=TV4L0_GPI_02.PG,IG=>,bEP:=TRUE);
+
+    TV5L0_GCC_01(PG:=TV5L0_GPI_01.PG,IG=>,bEP:=TRUE);
+
+    TV5L0_GCC_02(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
+
+    TV5L0_GFS_01(PG:=TV5L0_GPI_02.PG,IG=>);
+
+    TV5L0_GCC_03(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
+
+
+
 (*Ion Pumps*)
 
-	RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+    RTDSL0_PIP_01(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
 
-	RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
-	
-	SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	SP1L0_KMONO_PIP_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	PA1L0_PIN_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>); //was the Kmono GPI, now its bad
-	
-	MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
-	
-	
-	//H1.1 and H1.2
-	TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
-	
-	TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
-	
-	PA2L0_PIN_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
-	
-	TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
-	
-	TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
-	
-	TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+    RTDSL0_PIP_02(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    RTDSL0_PIP_03(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    RTDSL0_PIP_04(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    RTDSL0_PIP_05(i_stGauge:=TV1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    IM1L0_XTES_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    TV2L0_PIP_01(i_stGauge:=TV2L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    TV2L0_PIP_02(i_stGauge:=TV2L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    TV2L0_PIP_03(i_stGauge:=TV2L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_EBD, stPump=>);
+
+    SL1L0_POWER_PIN_01(i_stGauge:=SL1L0_POWER_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    SP1L0_KMONO_PIP_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    PA1L0_PIN_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>); //was the Kmono GPI, now its bad
+
+    MR1L0_HOMS_PIP_01(i_stGauge:=MR1L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    MR1L1_TXI_PIP_01(i_stGauge:=MR1L1_TXI_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    BT2L0_PLEG_PIP_01(i_stGauge:=BT2L0_PLEG_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+
+    //H1.1 and H1.2
+    TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+
+    TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+
+    PA2L0_PIN_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+
+    TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+
+    TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+
+    TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
 (*Vacuum Gate Valve*)
-	TV1L0_VGC_01(
-	i_stUSG:= Accelerator_Upstream_Gauge, 
-	i_stDSG:= RTDSL0_PIP_03.q_IG, 
-	i_xDis_DPIlk:= FALSE, 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_EBD, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'TV1L0:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
-	
-	IM1L0_XTES_VGC_01(
-	i_stUSG:= RTDSL0_PIP_03.q_IG, 
-	i_stDSG:= IM1L0_XTES_PIP_01.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_EBD, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'IM1L0:XTES:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
+    TV1L0_VGC_01(
+    i_stUSG:= Accelerator_Upstream_Gauge,
+    i_stDSG:= RTDSL0_PIP_03.q_IG,
+    i_xDis_DPIlk:= FALSE,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_EBD,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'TV1L0:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
 
-	TV2L0_VGC_01(
-	i_stUSG:= TV2L0_PIP_01.q_IG, 
-	i_stDSG:= TV2L0_PIP_02.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_EBD, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'TV2L0:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
-	
-	TV2L0_VGC_02(
-	i_stUSG:= TV2L0_PIP_03.q_IG, 
-	i_stDSG:= SL1L0_POWER_GCC_01.IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_FEE, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'TV2L0:VGC:02', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
-	
-	PC1L0_XTES_VGC_01(
-	i_stUSG:= AT2L0_SOLID_PIN_01.q_IG, 
-	i_stDSG:= SP1L0_KMONO_PIP_01.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_FEE, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'PC1L0:XTES:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
-	
+    IM1L0_XTES_VGC_01(
+    i_stUSG:= RTDSL0_PIP_03.q_IG,
+    i_stDSG:= IM1L0_XTES_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_EBD,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'IM1L0:XTES:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
+
+    TV2L0_VGC_01(
+    i_stUSG:= TV2L0_PIP_01.q_IG,
+    i_stDSG:= TV2L0_PIP_02.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_EBD,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'TV2L0:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
+
+    TV2L0_VGC_02(
+    i_stUSG:= TV2L0_PIP_03.q_IG,
+    i_stDSG:= SL1L0_POWER_GCC_01.IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'TV2L0:VGC:02',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
+
+    PC1L0_XTES_VGC_01(
+    i_stUSG:= AT2L0_SOLID_PIN_01.q_IG,
+    i_stDSG:= SP1L0_KMONO_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'PC1L0:XTES:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
+
 //	PA1L0_VFS_01 : FB_VFS;
 
-	MR1L0_HOMS_VGC_01(
-	i_stUSG:= PA1L0_PIN_01.q_IG, 
-	i_stDSG:= MR1L0_HOMS_PIP_01.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_FEE, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'MR1L0:HOMS:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
+    MR1L0_HOMS_VGC_01(
+    i_stUSG:= PA1L0_PIN_01.q_IG,
+    i_stDSG:= MR1L0_HOMS_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'MR1L0:HOMS:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
 
-	BT2L0_PLEG_VGC_01(
-	i_stUSG:= MR1L0_HOMS_PIP_01.q_IG, 
-	i_stDSG:= BT2L0_PLEG_PIP_01.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_FEE, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'BT2L0:PLEG:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
+    BT2L0_PLEG_VGC_01(
+    i_stUSG:= MR1L0_HOMS_PIP_01.q_IG,
+    i_stDSG:= BT2L0_PLEG_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'BT2L0:PLEG:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
 
-	MR2L0_HOMS_VGC_01(
-	i_stUSG:= BT2L0_PLEG_PIP_01.q_IG, 
-	i_stDSG:= MR2L0_HOMS_PIP_01.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_FEE, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'MR2L0:HOMS:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
-	
-	MR2L0_HOMS_VGC_02(
-	i_stUSG:= MR2L0_HOMS_PIP_01.q_IG, 
-	i_stDSG:= ST1L0_XTES_PIP_01.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK, 
-	i_xOverrideMode:= xSystemOverrideMode_FEE, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= 'MR2L0:HOMS:VGC:02', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1,
-	fbArbiter:= g_fbArbiter1 );
+    MR2L0_HOMS_VGC_01(
+    i_stUSG:= BT2L0_PLEG_PIP_01.q_IG,
+    i_stDSG:= MR2L0_HOMS_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'MR2L0:HOMS:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
+
+    MR2L0_HOMS_VGC_02(
+    i_stUSG:= MR2L0_HOMS_PIP_01.q_IG,
+    i_stDSG:= ST1L0_XTES_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'MR2L0:HOMS:VGC:02',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
 (*
-	TV1L1_VGC_01(
-	i_stUSG:= MR1L1_TXI_PIP_01.q_IG, 
-	i_stDSG:= MR2L0_HOMS_PIP_01.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_FEE, 
-	i_xReset:= xReset_PMPS_FFO1, 
-	i_sDevName:= "TV1L1:VGC:01", 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput1);		
+    TV1L1_VGC_01(
+    i_stUSG:= MR1L1_TXI_PIP_01.q_IG,
+    i_stDSG:= MR2L0_HOMS_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= "TV1L1:VGC:01",
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1);
 *)
 
 
 //	PC2L1_L2SI_VGC_01 : FB_VGC;
 
-	//H1.1
-	TV4L0_VGC_01(
-	i_stUSG:= TV4L0_PIP_01.q_IG, 
-	i_stDSG:= TV4L0_PIP_02.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK, 
-	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
-	i_xReset:= xReset_PMPS_FFO2, 
-	i_sDevName:= 'TV4L0:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2,
-   fbArbiter:= g_fbArbiter1 );	
-		
-	TV5L0_VGC_01(
-	i_stUSG:= TV5L0_PIP_01.q_IG, 
-	i_stDSG:= TV5L0_PIP_02.q_IG, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
-	i_xReset:= xReset_PMPS_FFO2,
-	i_sDevName:= 'TV5L0:VGC:01',  
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2,
-   fbArbiter:= g_fbArbiter1 );		
-	
-	TV6L0_VGC_01(
-	i_stUSG:= TV5L0_PIP_03.q_IG, 
-	i_stDSG:= XPP_DS_Gauge, 
-	i_xDis_DPIlk:= FALSE , 
-	i_xEPS_OK:= TRUE, 
-	i_xPMPS_OK:= TRUE, 
-	i_xExt_OK:= TRUE, 
-	i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2, 
-	i_xReset:= xReset_PMPS_FFO2, 
-	i_sDevName:= 'TV6L0:VGC:01', 
-	iq_stValve=> , 
-	xMPS_OK=> , 
-	io_fbFFHWO:= g_FastFaultOutput2,
-    fbArbiter:= g_fbArbiter1 );		
+    //H1.1
+    TV4L0_VGC_01(
+    i_stUSG:= TV4L0_PIP_01.q_IG,
+    i_stDSG:= TV4L0_PIP_02.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK,
+    i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2,
+    i_xReset:= xReset_PMPS_FFO2,
+    i_sDevName:= 'TV4L0:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput2,
+   fbArbiter:= g_fbArbiter1 );
 
-	
+    TV5L0_VGC_01(
+    i_stUSG:= TV5L0_PIP_01.q_IG,
+    i_stDSG:= TV5L0_PIP_02.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2,
+    i_xReset:= xReset_PMPS_FFO2,
+    i_sDevName:= 'TV5L0:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput2,
+   fbArbiter:= g_fbArbiter1 );
+
+    TV6L0_VGC_01(
+    i_stUSG:= TV5L0_PIP_03.q_IG,
+    i_stDSG:= XPP_DS_Gauge,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2,
+    i_xReset:= xReset_PMPS_FFO2,
+    i_sDevName:= 'TV6L0:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput2,
+    fbArbiter:= g_fbArbiter1 );
+
+
 
 (*Vacuum Fast Shutter Valve*)
 TV3L0_VFS_01_Interface(
-		IG:=TV5L0_GFS_01.IG);
+        IG:=TV5L0_GFS_01.IG);
 
 
 
 ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
-	
+
 ]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="3" Count="2" />
-      <LineId Id="416" Count="0" />
-      <LineId Id="6" Count="390" />
-      <LineId Id="400" Count="2" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
