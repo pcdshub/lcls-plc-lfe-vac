@@ -506,7 +506,7 @@ VAR_GLOBAL
     '}
     TV3L0_VFS_01_Interface	:	FB_VFS_Interface;
 
-(*TV1L1*)
+(*TV1L1*) //TXI Line Valve
     {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 5^Input;
                                  .i_xClsLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 6^Input;
                                  .q_xOPN_DO	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 15^Output
@@ -556,7 +556,7 @@ VAR_GLOBAL
     '}
     ST1L0_XTES_PIP_01 : FB_PIP_Gamma;
 
-(*PC2L1-L2SI*)
+ (*PC2L1-L2SI*)//TXI Line Valve
     {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 5^Input;
                                  .i_xClsLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 6^Input;
                                  .q_xOPN_DO	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 15^Output
