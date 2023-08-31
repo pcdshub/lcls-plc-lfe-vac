@@ -52,8 +52,5 @@
 		<Box File="Term 104 (EL9010).xti" Id="104">
 			<EtherCAT/>
 		</Box>
-		<Box File="Term 105 (EL9010).xti" Id="105">
-			<EtherCAT/>
-		</Box>
 	</Box>
 </TcSmItem>
