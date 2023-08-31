@@ -370,7 +370,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
     iq_stValve=> ,
     xMPS_OK=> ,
     io_fbFFHWO:= g_FastFaultOutput1,
-    fbArbiter := g_fbArbiter1 ); 
+    fbArbiter := g_fbArbiter1 );
 
     //H1.1
     TV4L0_VGC_01(

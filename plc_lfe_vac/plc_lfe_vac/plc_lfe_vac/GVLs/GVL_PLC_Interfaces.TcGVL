@@ -20,12 +20,12 @@ VAR_GLOBAL
     fb_ADS_WATCHDOG_VAC_LFE_GEM:FB_ADS_WATCHDOG;
 
     (*TXI PLC Interface*)
-	{attribute 'TcLinkTo' := 	'.i_rPRESS	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_rPress;
-								.i_xAT_VAC	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_AT_VAC;
-								.i_xPRESS_OK	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_PRESS_OK
-	
+    {attribute 'TcLinkTo' := 	'.i_rPRESS	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_rPress;
+                                .i_xAT_VAC	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_AT_VAC;
+                                .i_xPRESS_OK	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_PRESS_OK
+
     '}
-	PC2L1_L2SI_PIP_01:FB_Gauge_Interface;
+    PC2L1_L2SI_PIP_01:FB_Gauge_Interface;
     (*XPP PLC Interface*)
     {attribute 'pytmc' := '
             pv: PLC:LFE:VAC:XPP:DS:GCC_EPICS
