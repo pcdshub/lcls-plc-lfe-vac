@@ -37,6 +37,7 @@
 			<EtherCAT PortABoxInfo="#x00ffffff"/>
 		</Box>
 		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="4" MaxSwitchFrames="160" MaxSwitchMACs="100">
+			<SuNamePreDef>txi_hxr_vac</SuNamePreDef>
 			<SyncUnit Name="QPC" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="MKS" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="EBD" NoDeleteIfUnused="true"/>
@@ -44,7 +45,6 @@
 			<SyncUnit Name="FSV_downstream" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="FEE" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="H11_H12" NoDeleteIfUnused="true"/>
-			<SyncUnit Name="plc_txi_hxr_vac" NoDeleteIfUnused="true"/>
 		</EtherCAT>
 	</Device>
 </TcSmItem>
