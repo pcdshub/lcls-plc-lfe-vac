@@ -1,22 +1,24 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>plc_lfe_vac &mdash; pcdshub/lcls-plc-lfe-vac  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/tree.css?v=837a00b9" />
+      <link rel="stylesheet" type="text/css" href="_static/width.css?v=ab210c7a" />
+
   
-        <script src="_static/jquery.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
-        <script src="_static/docs-versions-menu.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/docs-versions-menu.js?v=3d6a1aea"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -46,7 +48,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_pragmas.html">Pragmas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_nc.html">NC Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_ethercat.html">Box Hierarchy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_ethercat.html">EtherCAT Terminals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_boxes.html">Boxes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_links.html">Links</a></li>
 </ul>
@@ -88,7 +90,7 @@
            <div itemprop="articleBody">
              
   <section id="plc-lfe-vac">
-<h1>plc_lfe_vac<a class="headerlink" href="#plc-lfe-vac" title="Permalink to this heading"></a></h1>
+<h1>plc_lfe_vac<a class="headerlink" href="#plc-lfe-vac" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">plc_lfe_vac</span></p>
 <ul>
@@ -97,12 +99,11 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_nc.html">NC Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_ethercat.html">Box Hierarchy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_ethercat.html">EtherCAT Terminals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_boxes.html">Boxes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e0-ek1200">PLC_E0_EK1200</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e3-el6070">PLC_E3_EL6070</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e1-el2202">PLC_E1_EL2202</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#pmps-pre">PMPS_PRE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e6-el6692">PLC_E6_EL6692</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e7-el9410">PLC_E7_EL9410</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e8-ek1122-qpcmks">PLC_E8_EK1122_QpcMks</a></li>
@@ -188,8 +189,6 @@
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fee-l0s14-ep2-ep3174-0002">FEE_L0S14_EP2_EP3174-0002</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fee-l0s14-ep3-ep2624-0002">FEE_L0S14_EP3_EP2624-0002</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fee-l0s10-ep1-ep2338-0002">FEE_L0S10_EP1_EP2338-0002</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fee-l0s9-ep1-ep2338-0002">FEE_L0S9_EP1_EP2338-0002</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fee-l0s9-ep2-ep2338-0002">FEE_L0S9_EP2_EP2338-0002</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fee-l0s8-ep1-ep2338-0002">FEE_L0S8_EP1_EP2338-0002</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fee-l0s2-ep1-ep2338-0002">FEE_L0S2_EP1_EP2338-0002</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#term-96-ek0000">Term 96 (EK0000)</a></li>
@@ -198,15 +197,25 @@
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#mks-end-el9011">MKS_END_EL9011</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fsv1-end-el9011">FSV1_END_EL9011</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fsv2-end-el9011">FSV2_END_EL9011</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-end-el9011">PLC_END_EL9011</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#term-103-el9010">Term 103 (EL9010)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#term-104-el9010">Term 104 (EL9010)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#term-105-el9010">Term 105 (EL9010)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e4-el9184">PLC_E4_EL9184</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#pmps-pre">PMPS_PRE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ebd-e6-el9184">EBD_E6_EL9184</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fsv1-e2-el9190">FSV1_E2_EL9190</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fsv2-e2-el9190">FSV2_E2_EL9190</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#plc-e2-el2202">PLC_E2_EL2202</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e0-ek1100">EXT_E0_EK1100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#txi-hxr-vac-plc-el6692">TXI_HXR_VAC_PLC (EL6692)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e1-el3064">EXT_E1_EL3064</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e2-el3046">EXT_E2_EL3046</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e3-el2794">EXT_E3_EL2794</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e4-el2794">EXT_E4_EL2794</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e5-el3064">EXT_E5_EL3064</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e6-el1004">EXT_E6_EL1004</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e7-el2794">EXT_E7_EL2794</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e8-el9505">EXT_E8_EL9505</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e9-el1124">EXT_E9_EL1124</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e10-el3174">EXT_E10_EL3174</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e12-ek1122">EXT_E12_EK1122</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fsv2-e3-el2202">FSV2_E3_EL2202</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#fsv2-e4-el2202">FSV2_E4_EL2202</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#h11-l0s2-ep1-ep2338-0002">H11_L0S2_EP1_EP2338-0002</a></li>
@@ -220,6 +229,18 @@
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#h12-l0s3-ep2-ep3174-0002">H12_L0S3_EP2_EP3174-0002</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#h12-l0s3-ep3-ep2624-0002">H12_L0S3_EP3_EP2624-0002</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#h12-l0s6-ep1-ep2338-0002">H12_L0S6_EP1_EP2338-0002</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#b950-101w-r03-drl-01-ek1100">B950-101W-R03-DRL-01 (EK1100)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el2794-00-01">XPP_EL2794_00_01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el3064-00-02">XPP_EL3064_00_02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el1004-00-03">XPP_EL1004_00_03</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el3064-00-04">XPP_EL3064_00_04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el3064-00-05">XPP_EL3064_00_05</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el2794-00-06">XPP_EL2794_00_06</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el1004-00-07">XPP_EL1004_00_07</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#xpp-el2004-00-08">XPP_EL2004_00_08</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#ext-e13-el9011">EXT_E13_EL9011</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#term-268-el9011">Term 268 (EL9011)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_boxes.html#term-269-el9010">Term 269 (EL9010)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_links.html">Links</a></li>
@@ -270,11 +291,13 @@
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-general-fb-logmessage">LCLS_General.FB_LogMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-general-fb-lrealfromepics">LCLS_General.FB_LREALFromEPICS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-general-st-pendingevent">LCLS_General.ST_PendingEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-gauge-interface">LCLS_Vacuum.FB_Gauge_Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-mks275">LCLS_Vacuum.FB_MKS275</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-mks317">LCLS_Vacuum.FB_MKS317</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-mks422">LCLS_Vacuum.FB_MKS422</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-mks500">LCLS_Vacuum.FB_MKS500</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-pip-gamma">LCLS_Vacuum.FB_PIP_Gamma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-pip-sip">LCLS_Vacuum.FB_PIP_SIP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-vfs-interface">LCLS_Vacuum.FB_VFS_Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-fb-vgc">LCLS_Vacuum.FB_VGC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#lcls-vacuum-st-pip">LCLS_Vacuum.ST_PIP</a></li>
@@ -310,6 +333,16 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#pous">POUs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkbounds">CheckBounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkdivdint">CheckDivDInt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkdivlint">CheckDivLInt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkdivlreal">CheckDivLReal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkdivreal">CheckDivReal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checklrangesigned">CheckLRangeSigned</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checklrangeunsigned">CheckLRangeUnsigned</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkpointer">CheckPointer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkrangesigned">CheckRangeSigned</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#checkrangeunsigned">CheckRangeUnsigned</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#diagnostics">DIAGNOSTICS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#main">MAIN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#prg-fastshutter">PRG_FastShutter</a></li>
@@ -319,7 +352,7 @@
 </ul>
 </div>
 <section id="indices-and-tables">
-<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h2>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
@@ -338,7 +371,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, SLAC National Accelerator Laboratory.</p>
+    <p>&#169; Copyright 2025, SLAC National Accelerator Laboratory.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
