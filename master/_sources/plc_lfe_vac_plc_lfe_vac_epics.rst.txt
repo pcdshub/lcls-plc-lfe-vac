@@ -957,7 +957,215 @@ LCLS_General.ST_PendingEvent
       - | io: input
 
 
-                                                                               
+                                                                             
+LCLS_Vacuum.FB_Gauge_Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):AT_VAC_RBV
+      - bi
+      - $(SYMBOL).VG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).VG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).VG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).VG.iAutoOnTimer
+      - | io: input
+
+
+    * - $(PREFIX):DISC_ACTIVE_RBV
+      - bi
+      - $(SYMBOL).VG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - $(PREFIX):HV_DIS_DO_RBV
+      - bi
+      - $(SYMBOL).VG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):HV_ON_RBV
+      - bi
+      - $(SYMBOL).VG.i_xHV_ON
+      - | io: input
+
+
+    * - $(PREFIX):HV_SW
+      - bo
+      - $(SYMBOL).VG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):HV_SW_RBV
+      - bi
+      - $(SYMBOL).VG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).VG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).VG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).VG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):PRESS_AI_RBV
+      - longin
+      - $(SYMBOL).VG.i_iPRESS_R
+      - | io: input
+
+
+    * - $(PREFIX):PRESS_OK_RBV
+      - bi
+      - $(SYMBOL).VG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - $(PREFIX):PRESS_RBV
+      - ai
+      - $(SYMBOL).VG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):PRO_SP
+      - ao
+      - $(SYMBOL).VG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):PRO_SP_RBV
+      - ai
+      - $(SYMBOL).VG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):SP_HYS
+      - ao
+      - $(SYMBOL).VG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):SP_HYS_RBV
+      - ai
+      - $(SYMBOL).VG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).VG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - $(PREFIX):VAC_SP
+      - ao
+      - $(SYMBOL).VG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):VAC_SP_RBV
+      - ai
+      - $(SYMBOL).VG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+   
 LCLS_Vacuum.FB_MKS275
 ^^^^^^^^^^^^^^^^^^^^^
 

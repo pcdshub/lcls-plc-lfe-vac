@@ -303,6 +303,11 @@ Box Hierarchy
 
 
 
+        #. **TXI_HXR_VAC_PLC (EL6692) [ID: 167]**
+                  ( **SyncUnit=plc_txi_hxr_vac** )    EL6692 EtherCAT Bridge terminal (Secondary)
+
+
+
         #. **Term 58 (EK0000) [ID: 58]**
                 
 
@@ -596,11 +601,6 @@ Box Hierarchy
 
 
     #. Term 104 (EL9010) [ID: 104]
-            EL9010 End Terminal
-
-
-
-    #. Term 105 (EL9010) [ID: 105]
             EL9010 End Terminal
 
 

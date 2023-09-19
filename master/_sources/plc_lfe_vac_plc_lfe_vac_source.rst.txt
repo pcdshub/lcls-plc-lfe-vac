@@ -518,7 +518,7 @@ GVL_Devices
         '}
         TV3L0_VFS_01_Interface	:	FB_VFS_Interface;
 
-    (*TV1L1*)
+    (*TV1L1*) //TXI Line Valve
         {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 5^Input;
                                      .i_xClsLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 6^Input;
                                      .q_xOPN_DO	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 15^Output
@@ -568,7 +568,7 @@ GVL_Devices
         '}
         ST1L0_XTES_PIP_01 : FB_PIP_Gamma;
 
-    (*PC2L1-L2SI*)
+     (*PC2L1-L2SI*)//TXI Line Valve
         {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 5^Input;
                                      .i_xClsLS	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 6^Input;
                                      .q_xOPN_DO	:=	TIIB[FEE_L0S19_EP1_EP2338-0002]^Channel 15^Output
@@ -906,7 +906,12 @@ GVL_PLC_Interfaces
         fb_ADS_WATCHDOG_VAC_LFE_GEM:FB_ADS_WATCHDOG;
 
         (*TXI PLC Interface*)
+        {attribute 'TcLinkTo' := 	'.i_rPRESS	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_rPress;
+                                    .i_xAT_VAC	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_AT_VAC;
+                                    .i_xPRESS_OK	:=	TIIB[TXI_HXR_VAC_PLC (EL6692)]^IO Inputs^PC2L1_PIP_01_PRESS_OK
 
+        '}
+        PC2L1_L2SI_PIP_01:FB_Gauge_Interface;
         (*XPP PLC Interface*)
         {attribute 'pytmc' := '
                 pv: PLC:LFE:VAC:XPP:DS:GCC_EPICS
@@ -1048,7 +1053,7 @@ MAIN
     (*HXR Gas Attenuator PLC Interface*)
 
     (*TXI PLC Interface*)
-
+    PC2L1_L2SI_PIP_01();
     (*XPP PLC Interface*)
     XPP_PressureLinkHelper();
     XPP_Downstream_Gauge.rPRESS := LREAL_TO_REAL(XPP_PressureLinkHelper.fValue);
@@ -1339,7 +1344,7 @@ MAIN
         xMPS_OK=> ,
         io_fbFFHWO:= g_FastFaultOutput1,
         fbArbiter:= g_fbArbiter1 );
-    (*
+
         TV1L1_VGC_01(
         i_stUSG:= MR1L1_TXI_PIP_01.q_IG,
         i_stDSG:= MR2L0_HOMS_PIP_01.q_IG,
@@ -1349,14 +1354,28 @@ MAIN
         i_xExt_OK:= TRUE,
         i_xOverrideMode:= xSystemOverrideMode_FEE,
         i_xReset:= xReset_PMPS_FFO1,
-        i_sDevName:= "TV1L1:VGC:01",
+        i_sDevName:= 'TV1L1:VGC:01',
         iq_stValve=> ,
         xMPS_OK=> ,
-        io_fbFFHWO:= g_FastFaultOutput1);
-    *)
+        io_fbFFHWO:= g_FastFaultOutput1,
+        fbArbiter := g_fbArbiter1 );
 
 
     //	PC2L1_L2SI_VGC_01 : FB_VGC;
+        PC2L1_L2SI_VGC_01(
+        i_stUSG:= MR2L0_HOMS_PIP_01.q_IG,
+        i_stDSG:= PC2L1_L2SI_PIP_01.VG,
+        i_xDis_DPIlk:= FALSE ,
+        i_xEPS_OK:= TRUE,
+        i_xPMPS_OK:= TRUE,
+        i_xExt_OK:= TRUE,
+        i_xOverrideMode:= xSystemOverrideMode_FEE,
+        i_xReset:= xReset_PMPS_FFO1,
+        i_sDevName:= 'PC2L1:L2SI:VGC:01',
+        iq_stValve=> ,
+        xMPS_OK=> ,
+        io_fbFFHWO:= g_FastFaultOutput1,
+        fbArbiter := g_fbArbiter1 );
 
         //H1.1
         TV4L0_VGC_01(
