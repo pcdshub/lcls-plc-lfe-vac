@@ -37,7 +37,6 @@
 			<EtherCAT PortABoxInfo="#x00ffffff"/>
 		</Box>
 		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="4" MaxSwitchFrames="160" MaxSwitchMACs="100">
-			<SuNamePreDef>txi_hxr_vac</SuNamePreDef>
 			<SyncUnit Name="QPC" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="MKS" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="EBD" NoDeleteIfUnused="true"/>
