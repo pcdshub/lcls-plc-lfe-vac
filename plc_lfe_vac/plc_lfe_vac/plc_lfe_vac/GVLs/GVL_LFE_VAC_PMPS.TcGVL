@@ -18,6 +18,11 @@ VAR_GLOBAL
     g_FastFaultOutput2  :   FB_HardwareFFOutput :=(i_sNetID:='172.21.88.66.1.1');	//FFO for ST1L0_XTES's Downstream Components
 
     {attribute 'pytmc' := '
+    pv: PLC:LFE:VAC:FFO:04
+    '}
+    g_FastFaultOutput4  :   FB_HardwareFFOutput :=(i_sNetID:='172.21.88.66.1.1');	//FFO for ST1L0_XTES's Downstream Components
+
+    {attribute 'pytmc' := '
     pv: PLC:LFE:VAC:RESET:FF1
     '}
     xReset_PMPS_FFO1	:	BOOL	:=	FALSE;		//FFO RESET for ST1L0_XTES's Upstream Components
