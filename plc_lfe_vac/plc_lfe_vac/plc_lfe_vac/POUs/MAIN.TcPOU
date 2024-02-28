@@ -307,7 +307,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
     i_sDevName:= 'BT2L0:PLEG:VGC:01',
     iq_stValve=> ,
     xMPS_OK=> ,
-    io_fbFFHWO:= g_FastFaultOutput1,
+    io_fbFFHWO:= g_FastFaultOutput1, // TODO(josh): ask maggie if this is sufficient because we have connected the FF
     fbArbiter:= g_fbArbiter1 );
 
     MR2L0_HOMS_VGC_01(
@@ -352,7 +352,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
     i_sDevName:= 'TV1L1:VGC:01',
     iq_stValve=> ,
     xMPS_OK=> ,
-    io_fbFFHWO:= g_FastFaultOutput1,
+    io_fbFFHWO:= g_FastFaultOutput1, // TODO(josh): ask maggie if this is sufficient because we have connected the FF
     fbArbiter := g_fbArbiter1 );
 
 
