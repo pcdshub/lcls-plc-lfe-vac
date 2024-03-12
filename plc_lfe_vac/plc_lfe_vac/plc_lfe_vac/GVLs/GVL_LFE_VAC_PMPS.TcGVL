@@ -20,7 +20,7 @@ VAR_GLOBAL
     {attribute 'pytmc' := '
     pv: PLC:LFE:VAC:FFO:04
     '}
-    g_FastFaultOutput4  :   FB_HardwareFFOutput :=(i_sNetID:='172.21.88.66.1.1');	//FFO for ST1L0_XTES's Downstream Components
+    g_FastFaultOutput4  :   FB_HardwareFFOutput :=(i_sNetID:='172.21.88.66.1.1');	// FFO for valves that are downstream of the optics and upstream of ST1L1 on the L1 line.
 
     {attribute 'pytmc' := '
     pv: PLC:LFE:VAC:RESET:FF1
