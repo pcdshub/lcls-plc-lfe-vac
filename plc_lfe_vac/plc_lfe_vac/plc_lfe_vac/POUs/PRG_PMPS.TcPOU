@@ -4,7 +4,8 @@
     <Declaration><![CDATA[PROGRAM PRG_PMPS
 VAR
     fbArbiterIO : FB_SubSysToArbiter_IO;
-
+    fb_vetoArbiter: FB_VetoArbiter;
+    ff4_ff1_link_vac: FB_FastFault := (i_xAutoReset := TRUE, i_DevName := 'FF4 to FF1 Link', i_Desc := 'This is virtual FF4 fault, Please check the Group 4 faulting device ', i_TypeCode := 16#9999);
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -14,6 +15,15 @@ g_fbArbiter1.AddRequest(nReqID := 95 , stReqBp := PMPS_GVL.cstFullBeam, sDevName
 (*FastFaultOuput*)
 g_FastFaultOutput1.Execute(bAutoReset:= TRUE);
 g_FastFaultOutput2.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.ST1L0], bAutoReset:= TRUE);
+g_FastFaultOutput4.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.MR1L1_OUT] AND PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.L_Stopper.MR1L0_L0], bAutoReset:= TRUE);
+
+ff4_ff1_link_vac(
+    io_fbFFHWO := g_FastFaultOutput1,
+    i_xOK := g_FastFaultOutput4.q_xFastFaultOut);
+
+fb_vetoArbiter( HigherAuthority := g_fbArbiter1,
+                FFO := g_FastFaultOutput1); // This should be the FFO upstream of the veto device
+fbArbiterIO(Arbiter := g_fbArbiter1, fbFFHWO := g_FastFaultOutput1);
 
 ]]></ST>
     </Implementation>
