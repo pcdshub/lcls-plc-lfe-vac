@@ -31,8 +31,5 @@
 		<Box File="EL2004_00_08.xti" Id="247">
 			<EtherCAT PortABoxInfo="#x010000f6"/>
 		</Box>
-		<Box File="EL9011_00_09.xti" Id="252">
-			<EtherCAT PortABoxInfo="#x010000f7"/>
-		</Box>
 	</Box>
 </TcSmItem>

@@ -8,8 +8,9 @@
 #    Project hash: unknown
 #     PLC IP/host: 172.21.88.138
 #      PLC Net ID: 172.21.88.138.1.1
-#  ** Production mode IOC **
-#  Using /cds/data/iocData for autosave and archiver settings.
+# ** DEVELOPMENT MODE IOC **
+# * Using IOC boot directory for autosave.
+# * Archiver settings will not be configured.
 #
 # Libraries:
 #
@@ -25,12 +26,9 @@
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
 epicsEnvSet("ENGINEER", "" )
-epicsEnvSet("LOCATION", "PLC:LFE:VAC" )
+epicsEnvSet("LOCATION", "PLC:plc_lfe_vac" )
 epicsEnvSet("IOCSH_PS1", "$(IOC)> " )
 epicsEnvSet("ACF_FILE", "$(ADS_IOC_TOP)/iocBoot/templates/unrestricted.acf")
-
-# Run common startup commands for linux soft IOC's
-< /reg/d/iocCommon/All/pre_linux.cmd
 
 # Register all support components
 dbLoadDatabase("$(ADS_IOC_TOP)/dbd/adsIoc.dbd")
@@ -77,58 +75,51 @@ adsAsynPortDriverConfigure("$(ASYN_PORT)", "$(IPADDR)", "$(AMSID)", "$(AMS_PORT)
 cd "$(ADS_IOC_TOP)/db"
 
 
-dbLoadRecords("iocSoft.db", "IOC=PLC:LFE:VAC")
-dbLoadRecords("save_restoreStatus.db", "P=PLC:LFE:VAC:")
+dbLoadRecords("iocSoft.db", "IOC=PLC:plc_lfe_vac")
+dbLoadRecords("save_restoreStatus.db", "P=PLC:plc_lfe_vac:")
 dbLoadRecords("caPutLog.db", "IOC=$(IOC)")
 
 ## TwinCAT task, application, and project information databases ##
-dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:LFE:VAC,IDX=1")
-dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:LFE:VAC,IDX=2")
-dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:LFE:VAC")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:plc_lfe_vac,IDX=1")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:plc_lfe_vac,IDX=2")
+dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:plc_lfe_vac")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:LFE:VAC,PROJECT=plc_lfe_vac.tsproj,HASH=unknown,VERSION=unknown,PYTMC=2.15.2.dev0+g73bd2d9.d20230727,PLC_HOST=172.21.88.138")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:plc_lfe_vac,PROJECT=plc_lfe_vac.tsproj,HASH=unknown,VERSION=unknown,PYTMC=2.15.2.dev0+g73bd2d9.d20230727,PLC_HOST=172.21.88.138")
 
 #   LCLS General: * -> 2.6.0 (SLAC)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:LFE:VAC,DEPENDENCY=LCLS_General,VERSION=2.6.0,VENDOR=SLAC")
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:plc_lfe_vac,DEPENDENCY=LCLS_General,VERSION=2.6.0,VENDOR=SLAC")
 #   LCLS Vacuum: * -> 2.3.0 (SLAC - LCLS)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:LFE:VAC,DEPENDENCY=LCLS_Vacuum,VERSION=2.3.0,VENDOR=SLAC - LCLS")
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:plc_lfe_vac,DEPENDENCY=LCLS_Vacuum,VERSION=2.3.0,VENDOR=SLAC - LCLS")
 #   Tc2_Standard: * -> 3.3.2.0 (Beckhoff Automation GmbH)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:LFE:VAC,DEPENDENCY=Tc2_Standard,VERSION=3.3.2.0,VENDOR=Beckhoff Automation GmbH")
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:plc_lfe_vac,DEPENDENCY=Tc2_Standard,VERSION=3.3.2.0,VENDOR=Beckhoff Automation GmbH")
 #   Tc2_System: * -> 3.4.22.0 (Beckhoff Automation GmbH)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:LFE:VAC,DEPENDENCY=Tc2_System,VERSION=3.4.22.0,VENDOR=Beckhoff Automation GmbH")
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:plc_lfe_vac,DEPENDENCY=Tc2_System,VERSION=3.4.22.0,VENDOR=Beckhoff Automation GmbH")
 #   Tc3_Module: * -> 3.3.21.0 (Beckhoff Automation GmbH)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:LFE:VAC,DEPENDENCY=Tc3_Module,VERSION=3.3.21.0,VENDOR=Beckhoff Automation GmbH")
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:plc_lfe_vac,DEPENDENCY=Tc3_Module,VERSION=3.3.21.0,VENDOR=Beckhoff Automation GmbH")
 
 cd "$(IOC_TOP)"
 
 ## PLC Project Database files ##
-dbLoadRecords("plc_lfe_vac.db", "PORT=$(ASYN_PORT),PREFIX=PLC:LFE:VAC:,IOCNAME=$(IOC),IOC=$(IOC)")
+dbLoadRecords("plc_lfe_vac.db", "PORT=$(ASYN_PORT),PREFIX=PLC:plc_lfe_vac:,IOCNAME=$(IOC),IOC=$(IOC)")
 
 # Total records: 7046
 callbackSetQueueSize(16092)
 
 # Autosave and archive settings:
-save_restoreSet_status_prefix("PLC:LFE:VAC:")
+save_restoreSet_status_prefix("PLC:plc_lfe_vac:")
 save_restoreSet_IncompleteSetsOk(1)
 save_restoreSet_DatedBackupFiles(1)
 set_pass0_restoreFile("info_positions.sav")
 set_pass1_restoreFile("info_settings.sav")
 
-# ** Production IOC Settings **
-set_savefile_path("$(IOC_DATA)/$(IOC)/autosave")
-set_requestfile_path("$(IOC_DATA)/$(IOC)/autosave")
-
-# Production IOC autosave files go in iocData:
-cd "$(IOC_DATA)/$(IOC)/autosave"
-
-# Create info_positions.req and info_settings.req
-makeAutosaveFiles()
-
-cd "$(IOC_DATA)/$(IOC)/archive"
-
-# Create $(IOC).archive
-makeArchiveFromDbInfo("$(IOC).archive", "archive")
+# ** Development IOC Settings **
+# Development IOC autosave and archive files go in the IOC top directory:
 cd "$(IOC_TOP)"
+
+# (Development mode) Create info_positions.req and info_settings.req
+makeAutosaveFiles()
+# (Development mode) Create the archiver file
+makeArchiveFromDbInfo("$(IOC).archive", "archive")
 
 # Configure access security: this is required for caPutLog.
 asSetFilename("$(ACF_FILE)")
@@ -153,7 +144,4 @@ caPutLogInit("$(EPICS_CAPUTLOG_HOST):$(EPICS_CAPUTLOG_PORT)", 0)
 # Start autosave backups
 create_monitor_set( "info_positions.req", 10, "" )
 create_monitor_set( "info_settings.req", 60, "" )
-
-# All IOCs should dump some common info after initial startup.
-< /reg/d/iocCommon/All/post_linux.cmd
 
