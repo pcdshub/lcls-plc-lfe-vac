@@ -43,11 +43,8 @@
 		<Box File="PLC_E12_EK1122_H11_H12.xti" Id="97">
 			<EtherCAT PortABoxInfo="#x0200004f"/>
 		</Box>
-		<Box File="PLC_END_EL9011.xti" Id="102">
-			<EtherCAT PortABoxInfo="#x02000061"/>
-		</Box>
 		<Box File="Term 103 (EL9010).xti" Id="103">
-			<EtherCAT/>
+			<EtherCAT PortABoxInfo="#x02000061"/>
 		</Box>
 		<Box File="Term 104 (EL9010).xti" Id="104">
 			<EtherCAT/>
