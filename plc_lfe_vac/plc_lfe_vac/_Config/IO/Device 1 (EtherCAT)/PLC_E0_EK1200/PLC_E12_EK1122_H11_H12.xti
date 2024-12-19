@@ -40,5 +40,8 @@
 		<Box File="H12_L0S6_EP1_EP2338-0002.xti" Id="211">
 			<EtherCAT PortABoxInfo="#x010000d2"/>
 		</Box>
+		<Box File="B950-101W-R03-DRL-01 (EK1100).xti" Id="239">
+			<EtherCAT PortABoxInfo="#x010000d3"/>
+		</Box>
 	</Box>
 </TcSmItem>

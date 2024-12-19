@@ -515,12 +515,12 @@
 				</Entry>
 			</Pdo>
 			<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3">
-				<Entry Name="CurrentBP" BitLen="240" Index="#x6000" Sub="#x01">
+				<Entry Name="CurrentBP" Index="#x6000" Sub="#x01">
 					<Type GUID="{292CD354-C7C0-4A61-AAD0-1C85DD69646B}">ST_BeamParams_IO</Type>
 				</Entry>
 			</Pdo>
 			<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2">
-				<Entry Name="RequestedBP" BitLen="240" Index="#x7000" Sub="#x01">
+				<Entry Name="RequestedBP" Index="#x7000" Sub="#x01">
 					<Type GUID="{292CD354-C7C0-4A61-AAD0-1C85DD69646B}">ST_BeamParams_IO</Type>
 				</Entry>
 			</Pdo>

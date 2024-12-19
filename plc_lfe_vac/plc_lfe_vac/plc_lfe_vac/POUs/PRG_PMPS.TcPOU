@@ -21,8 +21,7 @@ ff4_ff1_link_vac(
     io_fbFFHWO := g_FastFaultOutput1,
     i_xOK := g_FastFaultOutput4.q_xFastFaultOut);
 
-fb_vetoArbiter( HigherAuthority := g_fbArbiter1,
-                FFO := g_FastFaultOutput1); // This should be the FFO upstream of the veto device
+//fb_vetoArbiter( HigherAuthority := g_fbArbiter1, FFO := g_FastFaultOutput1); // This should be the FFO upstream of the veto device
 fbArbiterIO(Arbiter := g_fbArbiter1, fbFFHWO := g_FastFaultOutput1);
 
 ]]></ST>
