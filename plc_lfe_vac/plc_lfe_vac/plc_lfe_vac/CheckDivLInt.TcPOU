@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="CheckDivLInt" Id="{44d0bc1d-6583-4f54-9ed0-826f33c5e811}" SpecialFunc="CheckDivInt64">
+    <Declaration><![CDATA[// Implicitly generated code : DO NOT EDIT
+FUNCTION CheckDivLInt : LINT
+VAR_INPUT
+	divisor:LINT;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Implicitly generated code : Only an Implementation suggestion
+{noflow}
+IF divisor = 0 THEN
+	CheckDivLInt:=1;
+ELSE
+	CheckDivLInt:=divisor;
+END_IF;
+{flow}]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

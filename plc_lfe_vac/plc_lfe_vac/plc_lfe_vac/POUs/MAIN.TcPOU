@@ -435,13 +435,27 @@ ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
 (*SP1L2-LODCM*)
 
 SP1L2_LODCM_GPI_01();
-SP1L2_LODCM_GCC_01(PG:=SP1L2_LODCM_GPI_01.PG);
+SP1L2_LODCM_GCC_01(PG:=TV8L0_GPI_01.PG);
 TV8L0_GPI_01();
 TV8L0_GCC_01(PG:= TV8L0_GPI_01.PG);
 
-TV7L0_PIP_01(i_stGauge:= SP1L2_LODCM_GPI_01.PG);
+TV7L0_PIP_01(i_stGauge:= TV8L0_GPI_01.PG);
 TV8L0_PIP_01(i_stGauge:= TV8L0_GPI_01.PG);
 
+TV8L0_VGC_01(
+    i_stUSG:= TV8L0_PIP_01.q_IG,
+    i_stDSG:= TV8L0_GCC_01.IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2,
+    i_xReset:= xReset_PMPS_FFO2,
+    i_sDevName:= 'TV8L0:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput2,
+    fbArbiter:= g_fbArbiter1 );
 ]]></ST>
     </Implementation>
   </POU>

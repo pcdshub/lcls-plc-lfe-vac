@@ -288,10 +288,10 @@ VAR_GLOBAL
     '}
     SP1L0_DCCM_GCC_01 : FB_MKS422;
 
-    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[EXT_E11_EL3064]^AI Standard Channel 1^Value;
-                                 .i_xIP_ON		:= 	TIIB[EXT_E12_EL1004]^Channel 1^Input;
-								 .i_xError		:= 	TIIB[EXT_E12_EL1004]^Channel 1^Input;
-                                 .q_xHVEna_DO	:= 	TIIB[EXT_E13_EL2794]^Channel 1^Output
+    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[EXT_E10_EL3174]^AI Standard Channel 1^Value;
+                                 .i_xIP_ON		:= 	TIIB[EXT_E9_EL1124]^Channel 2^Input;
+								 .i_xError		:= 	TIIB[EXT_E9_EL1124]^Channel 1^Input;
+                                 .q_xHVEna_DO	:= 	TIIB[EXT_E7_EL2794]^Channel 1^Output
     '}
     {attribute 'pytmc' := '
         pv: SP1L0:DCCM:PIP:01
@@ -299,6 +299,7 @@ VAR_GLOBAL
     '}
     SP1L0_DCCM_PIP_01 : FB_PIP_SIP;
 	
+	(*not installed*)
 	(*{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 1^Input;
                                  .i_xClsLS	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 2^Input;
                                  .q_xOPN_DO	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 11^Output
@@ -784,9 +785,9 @@ VAR_GLOBAL
     '}
     SP1L2_LODCM_GCC_01 : FB_MKS422;
 
-    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[XPP_EL3064_00_02]^AI Standard Channel 2^Value;
-                                 .i_xSP_DI		:= 	TIIB[XPP_EL1004_00_03]^Channel 2^Input;
-                                 .q_xHVEna_DO	:= 	TIIB[XPP_EL2794_00_01]^Channel 2^Output
+    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[XPP_EL3064_00_02]^AI Standard Channel 1^Value;
+                                 .i_xSP_DI		:= 	TIIB[XPP_EL1004_00_03]^Channel 1^Input;
+                                 .q_xHVEna_DO	:= 	TIIB[XPP_EL2794_00_01]^Channel 1^Output
     '}
     {attribute 'pytmc' := '
         pv: TV7L0:PIP:01
@@ -804,8 +805,7 @@ VAR_GLOBAL
     '}
     TV8L0_PIP_01 : FB_PIP_Gamma;
 	
-	 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[XPP_EL3064_00_05]^AI Standard Channel 2^Value
-    '}
+	 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[XPP_EL3064_00_05]^AI Standard Channel 2^Value'}
     {attribute 'pytmc' := '
         pv: TV8L0:GPI:01
         io: io
@@ -829,7 +829,7 @@ VAR_GLOBAL
         pv: TV8L0:VGC:01
         io: io
     '}
-    TV8L0_PIP_VGC_01 : FB_VGC;
+    TV8L0_VGC_01 : FB_VGC;
 
 END_VAR]]></Declaration>
   </GVL>

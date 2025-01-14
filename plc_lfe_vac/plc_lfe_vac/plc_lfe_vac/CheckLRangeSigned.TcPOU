@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="CheckLRangeSigned" Id="{f234a014-faae-40ad-8698-a1b7f0174197}" SpecialFunc="CheckLRangeSigned">
+    <Declaration><![CDATA[// Implicitly generated code : DO NOT EDIT
+FUNCTION CheckLRangeSigned : LINT
+VAR_INPUT
+	value, lower, upper: LINT;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Implicitly generated code : Only an Implementation suggestion
+{noflow}
+IF (value < lower) THEN
+	CheckLRangeSigned := lower;
+ELSIF(value > upper) THEN
+	CheckLRangeSigned := upper;
+ELSE
+	CheckLRangeSigned := value;
+END_IF
+
+{flow}]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

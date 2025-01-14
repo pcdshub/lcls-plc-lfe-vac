@@ -399,8 +399,8 @@
 					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
 					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect Instances="250">{103F30C9-DF25-439E-837B-9DF80CB9356C}</ManualSelect>
-					<ManualSelect>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</ManualSelect>
 					<ManualSelect>{B27B051A-CA6A-42EA-833E-82CC92903D83}</ManualSelect>
+					<ManualSelect>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</ManualSelect>
 					<TargetSelect TargetId="2">{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</TargetSelect>
 					<TargetSelect TargetId="2">{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</TargetSelect>
 					<LicenseDevice DongleHardwareId="2" DongleDevice="#x03020002" DongleSystemId="{B9B99F2E-0ADA-B904-40E6-1CE7729B83BB}"/>
@@ -1621,14 +1621,14 @@
 							<Type>INT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.TV8L0_PIP_VGC_01.i_xOpnLS</Name>
+							<Name>GVL_Devices.TV8L0_VGC_01.i_xOpnLS</Name>
 							<Comment>
 								<![CDATA[IO]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.TV8L0_PIP_VGC_01.i_xClsLS</Name>
+							<Name>GVL_Devices.TV8L0_VGC_01.i_xClsLS</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -2223,7 +2223,7 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Devices.TV8L0_PIP_VGC_01.q_xOPN_DO</Name>
+							<Name>GVL_Devices.TV8L0_VGC_01.q_xOPN_DO</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -2464,6 +2464,37 @@
 				<Link VarA="PlcTask Inputs^GVL_Devices.PC1L0_XTES_VGC_01.i_xOpnLS" VarB="Channel 1^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.PC1L0_XTES_VGC_01.q_xOPN_DO" VarB="Channel 11^Output" AutoLink="true"/>
 			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL1004_00_03">
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV7L0_PIP_01.i_xSP_DI" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV8L0_PIP_01.i_xSP_DI" VarB="Channel 2^Input" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL1004_00_07">
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV8L0_VGC_01.i_xClsLS" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV8L0_VGC_01.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL2004_00_08">
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV8L0_VGC_01.q_xOPN_DO" VarB="Channel 1^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL2794_00_01">
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV7L0_PIP_01.q_xHVEna_DO" VarB="Channel 1^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV8L0_PIP_01.q_xHVEna_DO" VarB="Channel 2^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL2794_00_06">
+				<Link VarA="PlcTask Outputs^GVL_Devices.SP1L2_LODCM_GCC_01.q_xHV_DIS" VarB="Channel 1^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV8L0_GCC_01.q_xHV_DIS" VarB="Channel 2^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL3064_00_02">
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV7L0_PIP_01.i_iPRESS" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV8L0_PIP_01.i_iPRESS" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL3064_00_04">
+				<Link VarA="PlcTask Inputs^GVL_Devices.SP1L2_LODCM_GCC_01.i_iPRESS_R" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV8L0_GCC_01.i_iPRESS_R" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^B950-101W-R03-DRL-01 (EK1100)^XPP_EL3064_00_05">
+				<Link VarA="PlcTask Inputs^GVL_Devices.SP1L2_LODCM_GPI_01.i_iPRESS_R" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV8L0_GPI_01.i_iPRESS_R" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^H11_L0S2_EP1_EP2338-0002">
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV4L0_VGC_01.i_xClsLS" VarB="Channel 2^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV4L0_VGC_01.i_xOpnLS" VarB="Channel 1^Input" AutoLink="true"/>
@@ -2515,6 +2546,16 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E2_EL2202">
 				<Link VarA="FSV_Task Outputs^GVL_LFE_VAC_FSV_PMPS.g_FastFaultOutput3.q_xFastFaultOut" VarB="Channel 1^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^EXT_E0_EK1100^EXT_E10_EL3174">
+				<Link VarA="PlcTask Inputs^GVL_Devices.SP1L0_DCCM_PIP_01.i_iPRESS" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^EXT_E0_EK1100^EXT_E7_EL2794">
+				<Link VarA="PlcTask Outputs^GVL_Devices.SP1L0_DCCM_PIP_01.q_xHVEna_DO" VarB="Channel 1^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^EXT_E0_EK1100^EXT_E9_EL1124">
+				<Link VarA="PlcTask Inputs^GVL_Devices.SP1L0_DCCM_PIP_01.i_xError" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.SP1L0_DCCM_PIP_01.i_xIP_ON" VarB="Channel 2^Input" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E8_EK1122_QpcMks^MKS_E0_EK1100^MKS_E10_EL2794">
 				<Link VarA="PlcTask Outputs^GVL_Devices.AT2L0_SOLID_GCC_01.q_xHV_DIS" VarB="Channel 3^Output" AutoLink="true"/>

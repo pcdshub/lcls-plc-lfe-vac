@@ -20,6 +20,36 @@
     <ProjectVersion>0.0.0</ProjectVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CheckBounds.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivDInt.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivLInt.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivLReal.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivReal.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckLRangeSigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckLRangeUnsigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckPointer.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckRangeSigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckRangeUnsigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="FSV_Task.TcTTO">
       <SubType>Code</SubType>
     </Compile>
