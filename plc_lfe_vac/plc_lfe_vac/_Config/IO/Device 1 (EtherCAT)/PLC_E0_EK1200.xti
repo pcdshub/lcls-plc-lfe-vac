@@ -16,11 +16,11 @@
 		<Box File="PLC_E3_EL6070.xti" Id="2">
 			<EtherCAT PortABoxInfo="#x01000070"/>
 		</Box>
-		<Box File="PMPS_PRE.xti" Id="4">
+		<Box File="PMPS_PRE.xti" Id="104">
 			<EtherCAT PortABoxInfo="#x01000002"/>
 		</Box>
 		<Box File="PLC_E6_EL6692.xti" Id="5">
-			<EtherCAT PortABoxInfo="#x01000004"/>
+			<EtherCAT PortABoxInfo="#x01000068"/>
 		</Box>
 		<Box File="PLC_E7_EL9410.xti" Id="6">
 			<EtherCAT PortABoxInfo="#x01000005"/>
@@ -40,11 +40,11 @@
 		<Box File="PLC_E12_EK1122_H11_H12.xti" Id="97">
 			<EtherCAT PortABoxInfo="#x0200004f"/>
 		</Box>
-		<Box File="Term 103 (EL9010).xti" Id="103">
+		<Box File="Term 269 (EL9010).xti" Id="269">
 			<EtherCAT PortABoxInfo="#x02000061"/>
 		</Box>
-		<Box File="Term 104 (EL9010).xti" Id="104">
-			<EtherCAT/>
+		<Box File="Term 103 (EL9010).xti" Id="103">
+			<EtherCAT PortABoxInfo="#x02000061"/>
 		</Box>
 	</Box>
 </TcSmItem>

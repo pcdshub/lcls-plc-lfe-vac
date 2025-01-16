@@ -290,7 +290,7 @@ VAR_GLOBAL
 
     {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[EXT_E10_EL3174]^AI Standard Channel 1^Value;
                                  .i_xIP_ON		:= 	TIIB[EXT_E9_EL1124]^Channel 2^Input;
-								 .i_xError		:= 	TIIB[EXT_E9_EL1124]^Channel 1^Input;
+                                 .i_xError		:= 	TIIB[EXT_E9_EL1124]^Channel 1^Input;
                                  .q_xHVEna_DO	:= 	TIIB[EXT_E7_EL2794]^Channel 1^Output
     '}
     {attribute 'pytmc' := '
@@ -298,9 +298,9 @@ VAR_GLOBAL
         io: io
     '}
     SP1L0_DCCM_PIP_01 : FB_PIP_SIP;
-	
-	(*not installed*)
-	(*{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 1^Input;
+
+    (*not installed*)
+    (*{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 1^Input;
                                  .i_xClsLS	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 2^Input;
                                  .q_xOPN_DO	:=	TIIB[FEE_L0S10_EP1_EP2338-0002]^Channel 11^Output
     '}
@@ -763,7 +763,7 @@ VAR_GLOBAL
     '}
     TV6L0_VGC_01 : FB_VGC;
 
-//LCLS-II-HE Intermin install	
+//LCLS-II-HE Intermin install
 //Hutch 1.3
 // To be removed when HE installation is complete
 (*SP1L2-LODCM*)
@@ -794,8 +794,8 @@ VAR_GLOBAL
         io: io
     '}
     TV7L0_PIP_01 : FB_PIP_Gamma;
-	
-	{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[XPP_EL3064_00_02]^AI Standard Channel 2^Value;
+
+    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[XPP_EL3064_00_02]^AI Standard Channel 2^Value;
                                  .i_xSP_DI		:= 	TIIB[XPP_EL1004_00_03]^Channel 2^Input;
                                  .q_xHVEna_DO	:= 	TIIB[XPP_EL2794_00_01]^Channel 2^Output
     '}
@@ -804,8 +804,8 @@ VAR_GLOBAL
         io: io
     '}
     TV8L0_PIP_01 : FB_PIP_Gamma;
-	
-	 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[XPP_EL3064_00_05]^AI Standard Channel 2^Value'}
+
+     {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[XPP_EL3064_00_05]^AI Standard Channel 2^Value'}
     {attribute 'pytmc' := '
         pv: TV8L0:GPI:01
         io: io
@@ -820,8 +820,8 @@ VAR_GLOBAL
         io: io
     '}
     TV8L0_GCC_01 : FB_MKS422;
-	
-	{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[XPP_EL1004_00_07]^Channel 2^Input;
+
+    {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[XPP_EL1004_00_07]^Channel 2^Input;
                                  .i_xClsLS	:=	TIIB[XPP_EL1004_00_07]^Channel 1^Input;
                                  .q_xOPN_DO	:=	TIIB[XPP_EL2004_00_08]^Channel 1^Output
     '}

@@ -54,7 +54,7 @@ XRT_PressureLinkHelper();
 XRT_Downstream_Gauge.rPRESS := LREAL_TO_REAL(XRT_PressureLinkHelper.fValue);
 //Add a 2 second buffer if the PV's Severity is not 0. This protects the PV from network blips
 tof_bValid_PV(IN:=XRT_PressureLinkHelper.bValid, PT:=tTimeout);
-XRT_Downstream_Gauge.xPRESS_OK := tof_bValid_PV.Q;
+XRT_Downstream_Gauge.xPRESS_OK := tof_bValid_PV.Q AND XRT_Downstream_Gauge.rPRESS >0 ;
 rt_bValid(CLK:=XRT_PressureLinkHelper.bValid);
 ft_bValid(CLK:=XRT_PressureLinkHelper.bValid);
 IF(rt_bValid.Q)THEN
@@ -68,7 +68,7 @@ XRT_Modbus_Gauge(IP:='172.21.88.67',nMBAddr:=8#4000,iBitOffset:=8);
 //Combine two readings in one gauge
 XRT_DS_Gauge.xPRESS_OK := XRT_Downstream_Gauge.xPRESS_OK OR XRT_Modbus_Gauge.VG.xPRESS_OK;
 XRT_DS_Gauge.rPRESS := XRT_Downstream_Gauge.rPRESS;
-
+XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 (*PIRANI Gauges*)
 
     TV1L0_GPI_01(b937A:=TRUE, PG=>);
@@ -172,7 +172,7 @@ XRT_DS_Gauge.rPRESS := XRT_Downstream_Gauge.rPRESS;
 
     AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
-    //SP1L0_DCCM_PIP_01(i_stGauge:=SP1L0_DCCM_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+    SP1L0_DCCM_PIP_01(i_stGauge:=SP1L0_DCCM_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
     PA1L0_PIN_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>); //was the Kmono GPI, now its bad
 
@@ -429,13 +429,13 @@ TV3L0_VFS_01_Interface(
 ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
 
 
-//LCLS-II-HE Intermin install	
+//LCLS-II-HE Intermin install
 //Hutch 1.3
 // To be removed when HE installation is complete
 (*SP1L2-LODCM*)
 
 SP1L2_LODCM_GPI_01();
-SP1L2_LODCM_GCC_01(PG:=TV8L0_GPI_01.PG);
+SP1L2_LODCM_GCC_01(PG:=SP1L2_LODCM_GPI_01.PG);
 TV8L0_GPI_01();
 TV8L0_GCC_01(PG:= TV8L0_GPI_01.PG);
 

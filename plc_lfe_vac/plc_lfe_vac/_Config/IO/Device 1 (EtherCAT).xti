@@ -36,7 +36,7 @@
 		<Box File="PLC_E0_EK1200.xti" Id="1">
 			<EtherCAT PortABoxInfo="#x00ffffff"/>
 		</Box>
-		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="4" MaxSwitchFrames="160" MaxSwitchMACs="100">
+		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="5" MaxSwitchFrames="180" MaxSwitchMACs="100">
 			<SyncUnit Name="QPC" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="MKS" NoDeleteIfUnused="true"/>
 			<SyncUnit Name="EBD" NoDeleteIfUnused="true"/>
