@@ -49,26 +49,26 @@ END_IF
 
 (*TXI PLC Interface*)
 PC2L1_L2SI_PIP_01();
-(*XPP PLC Interface*)
-XPP_PressureLinkHelper();
-XPP_Downstream_Gauge.rPRESS := LREAL_TO_REAL(XPP_PressureLinkHelper.fValue);
+(*XRT PLC Interface*)
+XRT_PressureLinkHelper();
+XRT_Downstream_Gauge.rPRESS := LREAL_TO_REAL(XRT_PressureLinkHelper.fValue);
 //Add a 2 second buffer if the PV's Severity is not 0. This protects the PV from network blips
-tof_bValid_PV(IN:=XPP_PressureLinkHelper.bValid, PT:=tTimeout);
-XPP_Downstream_Gauge.xPRESS_OK := tof_bValid_PV.Q;
-rt_bValid(CLK:=XPP_PressureLinkHelper.bValid);
-ft_bValid(CLK:=XPP_PressureLinkHelper.bValid);
+tof_bValid_PV(IN:=XRT_PressureLinkHelper.bValid, PT:=tTimeout);
+XRT_Downstream_Gauge.xPRESS_OK := tof_bValid_PV.Q AND XRT_Downstream_Gauge.rPRESS >0 ;
+rt_bValid(CLK:=XRT_PressureLinkHelper.bValid);
+ft_bValid(CLK:=XRT_PressureLinkHelper.bValid);
 IF(rt_bValid.Q)THEN
-    fbLogger(sMsg:=concat('EPICS Signal is Valid. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Info);
+    fbLogger(sMsg:=concat('EPICS Signal is Valid. Severity: ', INT_TO_STRING(XRT_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Info);
 END_IF
 IF(ft_bValid.Q)THEN
-    fbLogger(sMsg:=concat('EPICS Signal Disconnected. Severity: ', INT_TO_STRING(XPP_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Critical);
+    fbLogger(sMsg:=concat('EPICS Signal Disconnected. Severity: ', INT_TO_STRING(XRT_PressureLinkHelper.iLastValidSeverity)), eSevr:=TcEventSeverity.Critical);
 END_IF
 //Modbus
-XPP_Modbus_Gauge(IP:='172.21.84.44',nMBAddr:=8#4000,iBitOffset:=24);
+XRT_Modbus_Gauge(IP:='172.21.88.67',nMBAddr:=8#4000,iBitOffset:=8);
 //Combine two readings in one gauge
-XPP_DS_Gauge.xPRESS_OK := XPP_Downstream_Gauge.xPRESS_OK OR XPP_Modbus_Gauge.VG.xPRESS_OK;
-XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
-
+XRT_DS_Gauge.xPRESS_OK := XRT_Downstream_Gauge.xPRESS_OK OR XRT_Modbus_Gauge.VG.xPRESS_OK;
+XRT_DS_Gauge.rPRESS := XRT_Downstream_Gauge.rPRESS;
+XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 (*PIRANI Gauges*)
 
     TV1L0_GPI_01(b937A:=TRUE, PG=>);
@@ -81,7 +81,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
     AT2L0_SOLID_GPI_01(b937A:=TRUE, PG=>);
 
-    SP1L0_KMONO_GPI_01(b937A:=TRUE, PG=>);
+    SP1L0_DCCM_GPI_01(b937A:=TRUE, PG=>);
 
     PA1L0_GPI_01(b937A:=TRUE, PG=>);
 
@@ -119,7 +119,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
     AT2L0_SOLID_GCC_01(PG:=AT2L0_SOLID_GPI_01.PG,IG=>, b937A:=TRUE);
 
-    SP1L0_KMONO_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
+    SP1L0_DCCM_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 
     PA1L0_GCC_01(PG:=PA1L0_GPI_01.PG,IG=>, b937A:=TRUE);
 
@@ -172,7 +172,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
     AT2L0_SOLID_PIN_01(i_stGauge:=AT2L0_SOLID_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
-    SP1L0_KMONO_PIP_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+    SP1L0_DCCM_PIP_01(i_stGauge:=SP1L0_DCCM_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
     PA1L0_PIN_01(i_stGauge:=PA1L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>); //was the Kmono GPI, now its bad
 
@@ -198,9 +198,9 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
     TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
-    TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+    TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
-    TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+    TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
 (*Vacuum Gate Valve*)
     TV1L0_VGC_01(
@@ -265,7 +265,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
     PC1L0_XTES_VGC_01(
     i_stUSG:= AT2L0_SOLID_PIN_01.q_IG,
-    i_stDSG:= SP1L0_KMONO_PIP_01.q_IG,
+    i_stDSG:= SP1L0_DCCM_PIP_01.q_IG,
     i_xDis_DPIlk:= FALSE ,
     i_xEPS_OK:= TRUE,
     i_xPMPS_OK:= TRUE,
@@ -405,7 +405,7 @@ XPP_DS_Gauge.rPRESS := XPP_Downstream_Gauge.rPRESS;//XPP_Modbus_Gauge.VG.rPRESS;
 
     TV6L0_VGC_01(
     i_stUSG:= TV5L0_PIP_03.q_IG,
-    i_stDSG:= XPP_DS_Gauge,
+    i_stDSG:= SP1L2_LODCM_GCC_01.IG,
     i_xDis_DPIlk:= FALSE ,
     i_xEPS_OK:= TRUE,
     i_xPMPS_OK:= TRUE,
@@ -428,6 +428,34 @@ TV3L0_VFS_01_Interface(
 
 ctuTest(CU:=GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut, PV:=100);
 
+
+//LCLS-II-HE Intermin install
+//Hutch 1.3
+// To be removed when HE installation is complete
+(*SP1L2-LODCM*)
+
+SP1L2_LODCM_GPI_01();
+SP1L2_LODCM_GCC_01(PG:=SP1L2_LODCM_GPI_01.PG);
+TV8L0_GPI_01();
+TV8L0_GCC_01(PG:= TV8L0_GPI_01.PG);
+
+TV7L0_PIP_01(i_stGauge:= SP1L2_LODCM_GCC_01.IG);
+TV8L0_PIP_01(i_stGauge:= TV8L0_GCC_01.IG);
+
+TV8L0_VGC_01(
+    i_stUSG:= TV8L0_PIP_01.q_IG,
+    i_stDSG:= XRT_DS_Gauge,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TRUE,
+    i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2,
+    i_xReset:= xReset_PMPS_FFO2,
+    i_sDevName:= 'TV8L0:VGC:01',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput2,
+    fbArbiter:= g_fbArbiter1 );
 ]]></ST>
     </Implementation>
   </POU>

@@ -13,6 +13,9 @@
 		<Box File="MKS_E0_EK1100.xti" Id="35">
 			<EtherCAT PortABoxInfo="#x02000008"/>
 		</Box>
+		<Box File="EXT_E0_EK1100.xti" Id="166">
+			<EtherCAT PortABoxInfo="#x02000023"/>
+		</Box>
 		<Box File="TXI_HXR_VAC_PLC (EL6692).xti" Id="167">
 			<EtherCAT PortABoxInfo="#x01000007"/>
 		</Box>

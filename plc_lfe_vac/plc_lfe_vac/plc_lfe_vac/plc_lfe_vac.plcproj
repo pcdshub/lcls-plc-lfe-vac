@@ -20,6 +20,36 @@
     <ProjectVersion>0.0.0</ProjectVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CheckBounds.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivDInt.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivLInt.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivLReal.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckDivReal.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckLRangeSigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckLRangeUnsigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckPointer.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckRangeSigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckRangeUnsigned.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="FSV_Task.TcTTO">
       <SubType>Code</SubType>
     </Compile>
@@ -99,7 +129,7 @@
       <Resolution>LCLS Vacuum, 2.3.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, * (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 3.2.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="SysDir">
       <Resolution>SysDir, 3.5.8.0 (System)</Resolution>
@@ -156,7 +186,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <LibraryReference Include="PMPS,3.2.1,SLAC - LCLS">
+    <LibraryReference Include="PMPS,3.2.0,SLAC - LCLS">
       <Namespace>PMPS</Namespace>
     </LibraryReference>
   </ItemGroup>

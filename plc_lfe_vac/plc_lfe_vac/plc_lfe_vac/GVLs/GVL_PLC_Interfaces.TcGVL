@@ -26,20 +26,20 @@ VAR_GLOBAL
 
     '}
     PC2L1_L2SI_PIP_01:FB_Gauge_Interface;
-    (*XPP PLC Interface*)
+    (*XRT PLC Interface*)
     {attribute 'pytmc' := '
             pv: PLC:LFE:VAC:XPP:DS:GCC_EPICS
     '}
-    XPP_Downstream_Gauge		:	ST_VG;
-    XPP_Modbus_Gauge		:	FB_GaugeModbus; //ST_VG;
-    XPP_DS_Gauge		:	ST_VG;
+    XRT_Downstream_Gauge		:	ST_VG;
+    XRT_Modbus_Gauge		:	FB_GaugeModbus; //ST_VG;
+    XRT_DS_Gauge		:	ST_VG;
 
 
     {attribute 'pytmc' := '
-            pv: PLC:LFE:VAC:XPP:Downstream:PMON
-            link: HX3:MON:GCC:01:PMON
+            pv: PLC:LFE:VAC:XRT:Downstream:PMON
+            link: HXX:UM6:GCC:01:PMON
     '}
-    XPP_PressureLinkHelper : FB_LREALFromEPICS;
+    XRT_PressureLinkHelper : FB_LREALFromEPICS;
 
 END_VAR]]></Declaration>
   </GVL>
