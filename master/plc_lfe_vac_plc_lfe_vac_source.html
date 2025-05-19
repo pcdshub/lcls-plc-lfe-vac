@@ -16,7 +16,7 @@
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
-      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="_static/docs-versions-menu.js?v=3d6a1aea"></script>
     <script src="_static/js/theme.js"></script>
@@ -637,16 +637,7 @@ VAR_GLOBAL
     &#39;}
     TV3L0_VFS_01_Interface  :       FB_VFS_Interface;
 
-(*TV1L1*) //TXI Line Valve
-    {attribute &#39;TcLinkTo&#39; :=        &#39;.i_xOpnLS      :=      TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 5^Input;
-                                 .i_xClsLS  :=      TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 6^Input;
-                                 .q_xOPN_DO :=      TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 15^Output
-    &#39;}
-    {attribute &#39;pytmc&#39; := &#39;
-        pv: TV1L1:VGC:01
-        io: io
-    &#39;}
-    TV1L1_VGC_01 : FB_VGC;
+
 
 (*TV3L0*) //HXR INSTALLATION SECTION 11
     {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS              :=      TIIB[QPC_E14_EL3064]^AI Standard Channel 1^Value;
@@ -658,6 +649,60 @@ VAR_GLOBAL
         io: io
     &#39;}
     TV3L0_PIP_01 : FB_PIP_Gamma;
+
+        {attribute &#39;TcLinkTo&#39; :=    &#39;.i_iPRESS_R    :=      TIIB[EXT_E2_EL3064]^AI Standard Channel 1^Value
+    &#39;}
+    {attribute &#39;pytmc&#39; := &#39;
+        pv: TV3L0:GPI:01
+        io: io
+    &#39;}
+    TV3L0_GPI_01 : FB_MKS317;
+
+
+    {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS_R    :=      TIIB[FEE_L0S21-1_EP1_EP3174-0002]^AI Standard Channel 2^Value;
+                                 .q_xHV_DIS         :=      TIIB[FEE_L0S21-1_EP2_EP2624-0002]^Channel 2^Output
+    &#39;}
+    {attribute &#39;pytmc&#39; := &#39;
+        pv: TV3L0:GCC:01
+        io: io
+    &#39;}
+    TV3L0_GCC_01 : FB_MKS500;
+
+
+    (*PA2L0*)
+    {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS              :=      TIIB[QPC_E21_EL3064]^AI Standard Channel 4^Value;
+                                 .i_xSP_DI          :=      TIIB[QPC_E22_EL1004]^Channel 4^Input;
+                                 .q_xHVEna_DO       :=      TIIB[QPC_E23_EL2794]^Channel 4^Output
+    &#39;}
+    {attribute &#39;pytmc&#39; := &#39;
+        pv: PA2L0:PIN:01
+        io: io
+    &#39;}
+    PA2L0_PIN_01 : FB_PIP_Gamma;
+
+
+    (*TV3L0*)
+     {attribute &#39;TcLinkTo&#39; :=       &#39;.i_xOpnLS      :=      TIIB[FEE_L0S21-1_EP3_EP2338-0002]^Channel 1^Input;
+                                 .i_xClsLS  :=      TIIB[FEE_L0S21-1_EP3_EP2338-0002]^Channel 2^Input;
+                                 .q_xOPN_DO :=      TIIB[FEE_L0S21-1_EP3_EP2338-0002]^Channel 11^Output
+    &#39;}
+    {attribute &#39;pytmc&#39; := &#39;
+        pv: PA2L0:VGC:01
+        io: io
+    &#39;}
+    PA2L0_VGC_01 : FB_VGC;
+
+(*TV1L1*) //TXI Line Valve
+    {attribute &#39;TcLinkTo&#39; :=        &#39;.i_xOpnLS      :=      TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 5^Input;
+                                 .i_xClsLS  :=      TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 6^Input;
+                                 .q_xOPN_DO :=      TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 15^Output
+    &#39;}
+    {attribute &#39;pytmc&#39; := &#39;
+        pv: TV1L1:VGC:01
+        io: io
+    &#39;}
+    TV1L1_VGC_01 : FB_VGC;
+
 
 (*ST1L0-XTES*)
     {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS_R    :=      TIIB[FEE_L0S21-2_EP1_EP3174-0002]^AI Standard Channel 1^Value
@@ -764,17 +809,6 @@ VAR_GLOBAL
     &#39;}
     TV4L0_PIP_02 : FB_PIP_Gamma;
 
-(*PA2L0*)
-    {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS              :=      TIIB[QPC_E21_EL3064]^AI Standard Channel 4^Value;
-                                 .i_xSP_DI          :=      TIIB[QPC_E22_EL1004]^Channel 4^Input;
-                                 .q_xHVEna_DO       :=      TIIB[QPC_E23_EL2794]^Channel 4^Output
-    &#39;}
-    {attribute &#39;pytmc&#39; := &#39;
-        pv: PA2L0:PIN:01
-        io: io
-    &#39;}
-    PA2L0_PIN_01 : FB_PIP_Gamma;
-
 
 //Hutch 1.2
 (*TV5L0*)
@@ -852,26 +886,27 @@ VAR_GLOBAL
     &#39;}
     TV5L0_GFS_01 : FB_MKS422;
 
+(*TV6L0*)
     {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS_R    :=      TIIB[H12_L0S3_EP2_EP3174-0002]^AI Standard Channel 4^Value;
                                  .q_xHV_DIS         :=      TIIB[H12_L0S3_EP3_EP2624-0002]^Channel 4^Output
     &#39;}
     {attribute &#39;pytmc&#39; := &#39;
-        pv: TV5L0:GCC:03
+        pv: TV6L0:GCC:01
         io: io
     &#39;}
-    TV5L0_GCC_03 : FB_MKS500;
+    TV6L0_GCC_01 : FB_MKS500;
 
     {attribute &#39;TcLinkTo&#39; :=        &#39;.i_iPRESS              :=      TIIB[QPC_E4_EL3064]^AI Standard Channel 3^Value;
                                  .i_xSP_DI          :=      TIIB[QPC_E5_EL1004]^Channel 3^Input;
                                  .q_xHVEna_DO       :=      TIIB[QPC_E6_EL2794]^Channel 3^Output
     &#39;}
     {attribute &#39;pytmc&#39; := &#39;
-        pv: TV5L0:PIP:03
+        pv: TV6L0:PIP:01
         io: io
     &#39;}
-    TV5L0_PIP_03 : FB_PIP_Gamma;
+    TV6L0_PIP_01 : FB_PIP_Gamma;
 
-(*TV6L0*)
+
     {attribute &#39;TcLinkTo&#39; :=        &#39;.i_xOpnLS      :=      TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 1^Input;
                                  .i_xClsLS  :=      TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 2^Input;
                                  .q_xOPN_DO :=      TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 11^Output
@@ -1473,6 +1508,8 @@ END_VAR
 
     <span class="n">MR2L0_HOMS_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 
+    <span class="n">TV3L0_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
+
     <span class="n">ST1L0_XTES_GPI_01</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="o">//</span><span class="n">H1</span><span class="mf">.1</span> <span class="ow">and</span> <span class="n">H1</span><span class="mf">.2</span>
@@ -1511,6 +1548,8 @@ END_VAR
 
     <span class="n">MR2L0_HOMS_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">MR2L0_HOMS_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
+    <span class="n">TV3L0_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">TV3L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
+
     <span class="n">ST1L0_XTES_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">ST1L0_XTES_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
     <span class="o">//</span><span class="n">H1</span><span class="mf">.1</span> <span class="ow">and</span> <span class="n">H1</span><span class="mf">.2</span>
@@ -1524,7 +1563,7 @@ END_VAR
 
     <span class="n">TV5L0_GFS_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">TV5L0_GPI_02</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">);</span>
 
-    <span class="n">TV5L0_GCC_03</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">TV5L0_GPI_02</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
+    <span class="n">TV6L0_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span><span class="n">SP1L2_LODCM_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span><span class="n">IG</span><span class="o">=&gt;</span><span class="p">,</span><span class="n">bEP</span><span class="o">:=</span><span class="n">TRUE</span><span class="p">);</span>
 
 
 
@@ -1564,7 +1603,9 @@ END_VAR
 
     <span class="n">MR2L0_HOMS_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">MR2L0_HOMS_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
-    <span class="n">TV3L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">ST1L0_XTES_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
+    <span class="n">TV3L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV3L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
+
+    <span class="n">PA2L0_PIN_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV3L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="n">ST1L0_XTES_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">ST1L0_XTES_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
@@ -1572,15 +1613,13 @@ END_VAR
     <span class="o">//</span><span class="n">H1</span><span class="mf">.1</span> <span class="ow">and</span> <span class="n">H1</span><span class="mf">.2</span>
     <span class="n">TV4L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV4L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
-    <span class="n">TV4L0_PIP_02</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV4L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
-
-    <span class="n">PA2L0_PIN_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV5L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
+    <span class="n">TV4L0_PIP_02</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV4L0_GPI_02</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="n">TV5L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV5L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
     <span class="n">TV5L0_PIP_02</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV5L0_GPI_02</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
-    <span class="n">TV5L0_PIP_03</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">TV5L0_GPI_02</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
+    <span class="n">TV6L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span><span class="n">SP1L2_LODCM_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span> <span class="n">stPump</span><span class="o">=&gt;</span><span class="p">);</span>
 
 <span class="p">(</span><span class="o">*</span><span class="n">Vacuum</span> <span class="n">Gate</span> <span class="n">Valve</span><span class="o">*</span><span class="p">)</span>
     <span class="n">TV1L0_VGC_01</span><span class="p">(</span>
@@ -1707,7 +1746,7 @@ END_VAR
 
     <span class="n">MR2L0_HOMS_VGC_02</span><span class="p">(</span>
     <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">MR2L0_HOMS_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
-    <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">ST1L0_XTES_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">TV3L0_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
     <span class="n">i_xDis_DPIlk</span><span class="o">:=</span> <span class="n">FALSE</span> <span class="p">,</span>
     <span class="n">i_xEPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
     <span class="n">i_xPMPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
@@ -1715,6 +1754,21 @@ END_VAR
     <span class="n">i_xOverrideMode</span><span class="o">:=</span> <span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span>
     <span class="n">i_xReset</span><span class="o">:=</span> <span class="n">xReset_PMPS_FFO1</span><span class="p">,</span>
     <span class="n">i_sDevName</span><span class="o">:=</span> <span class="s1">&#39;MR2L0:HOMS:VGC:02&#39;</span><span class="p">,</span>
+    <span class="n">iq_stValve</span><span class="o">=&gt;</span> <span class="p">,</span>
+    <span class="n">xMPS_OK</span><span class="o">=&gt;</span> <span class="p">,</span>
+    <span class="n">io_fbFFHWO</span><span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">,</span>
+    <span class="n">fbArbiter</span><span class="o">:=</span> <span class="n">g_fbArbiter1</span> <span class="p">);</span>
+
+    <span class="n">PA2L0_VGC_01</span><span class="p">(</span>
+    <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">PA2L0_PIN_01</span><span class="o">.</span><span class="n">q_IG</span> <span class="p">,</span>
+    <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">ST1L0_XTES_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">i_xDis_DPIlk</span><span class="o">:=</span> <span class="n">FALSE</span> <span class="p">,</span>
+    <span class="n">i_xEPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">i_xPMPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">i_xExt_OK</span><span class="o">:=</span> <span class="n">TV3L0_VFS_01_Interface</span><span class="o">.</span><span class="n">i_xVAC_FAULT_OK</span><span class="p">,</span>
+    <span class="n">i_xOverrideMode</span><span class="o">:=</span> <span class="n">xSystemOverrideMode_FEE</span><span class="p">,</span>
+    <span class="n">i_xReset</span><span class="o">:=</span> <span class="n">xReset_PMPS_FFO1</span><span class="p">,</span>
+    <span class="n">i_sDevName</span><span class="o">:=</span> <span class="s1">&#39;TV3L0:VGC:01&#39;</span><span class="p">,</span>
     <span class="n">iq_stValve</span><span class="o">=&gt;</span> <span class="p">,</span>
     <span class="n">xMPS_OK</span><span class="o">=&gt;</span> <span class="p">,</span>
     <span class="n">io_fbFFHWO</span><span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">,</span>
@@ -1759,7 +1813,7 @@ END_VAR
     <span class="n">i_xDis_DPIlk</span><span class="o">:=</span> <span class="n">FALSE</span> <span class="p">,</span>
     <span class="n">i_xEPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
     <span class="n">i_xPMPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
-    <span class="n">i_xExt_OK</span><span class="o">:=</span> <span class="n">TV3L0_VFS_01_Interface</span><span class="o">.</span><span class="n">i_xVAC_FAULT_OK</span><span class="p">,</span>
+    <span class="n">i_xExt_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
     <span class="n">i_xOverrideMode</span><span class="o">:=</span> <span class="n">xSystemOverrideMode_H1_1_H1_2</span><span class="p">,</span>
     <span class="n">i_xReset</span><span class="o">:=</span> <span class="n">xReset_PMPS_FFO2</span><span class="p">,</span>
     <span class="n">i_sDevName</span><span class="o">:=</span> <span class="s1">&#39;TV4L0:VGC:01&#39;</span><span class="p">,</span>
@@ -1784,8 +1838,8 @@ END_VAR
    <span class="n">fbArbiter</span><span class="o">:=</span> <span class="n">g_fbArbiter1</span> <span class="p">);</span>
 
     <span class="n">TV6L0_VGC_01</span><span class="p">(</span>
-    <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">TV5L0_PIP_03</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
-    <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">SP1L2_LODCM_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span>
+    <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">TV5L0_PIP_02</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">i_stDSG</span><span class="o">:=</span><span class="n">TV6L0_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
     <span class="n">i_xDis_DPIlk</span><span class="o">:=</span> <span class="n">FALSE</span> <span class="p">,</span>
     <span class="n">i_xEPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
     <span class="n">i_xPMPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
@@ -1819,11 +1873,11 @@ END_VAR
 <span class="n">TV8L0_GPI_01</span><span class="p">();</span>
 <span class="n">TV8L0_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span> <span class="n">TV8L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
 
-<span class="n">TV7L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">SP1L2_LODCM_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
-<span class="n">TV8L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">TV8L0_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
+<span class="n">TV7L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">SP1L2_LODCM_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
+<span class="n">TV8L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">TV8L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
 
 <span class="n">TV8L0_VGC_01</span><span class="p">(</span>
-    <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">TV8L0_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">SP1L2_LODCM_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span>
     <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">XRT_DS_Gauge</span><span class="p">,</span>
     <span class="n">i_xDis_DPIlk</span><span class="o">:=</span> <span class="n">FALSE</span> <span class="p">,</span>
     <span class="n">i_xEPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
