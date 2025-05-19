@@ -1819,11 +1819,11 @@ END_VAR
 <span class="n">TV8L0_GPI_01</span><span class="p">();</span>
 <span class="n">TV8L0_GCC_01</span><span class="p">(</span><span class="n">PG</span><span class="o">:=</span> <span class="n">TV8L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
 
-<span class="n">TV7L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">SP1L2_LODCM_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
-<span class="n">TV8L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">TV8L0_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
+<span class="n">TV7L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">SP1L2_LODCM_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
+<span class="n">TV8L0_PIP_01</span><span class="p">(</span><span class="n">i_stGauge</span><span class="o">:=</span> <span class="n">TV8L0_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
 
 <span class="n">TV8L0_VGC_01</span><span class="p">(</span>
-    <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">TV8L0_PIP_01</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">i_stUSG</span><span class="o">:=</span> <span class="n">SP1L2_LODCM_GCC_01</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span>
     <span class="n">i_stDSG</span><span class="o">:=</span> <span class="n">XRT_DS_Gauge</span><span class="p">,</span>
     <span class="n">i_xDis_DPIlk</span><span class="o">:=</span> <span class="n">FALSE</span> <span class="p">,</span>
     <span class="n">i_xEPS_OK</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
