@@ -188,7 +188,7 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     PA2L0_PIN_01(i_stGauge:=TV3L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
-	ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+    ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
 
     //H1.1 and H1.2
@@ -339,8 +339,8 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
     xMPS_OK=> ,
     io_fbFFHWO:= g_FastFaultOutput1,
     fbArbiter:= g_fbArbiter1 );
-	
-	PA2L0_VGC_01(
+
+    PA2L0_VGC_01(
     i_stUSG:= PA2L0_PIN_01.q_IG ,
     i_stDSG:= ST1L0_XTES_PIP_01.q_IG,
     i_xDis_DPIlk:= FALSE ,
