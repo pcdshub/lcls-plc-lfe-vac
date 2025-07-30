@@ -93,6 +93,8 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     MR2L0_HOMS_GPI_01(PG=>);
 
+    TV3L0_GPI_01(PG=>);
+
     ST1L0_XTES_GPI_01(PG=>);
 
     //H1.1 and H1.2
@@ -130,6 +132,8 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
     BT2L0_PLEG_GCC_01(PG:=BT2L0_PLEG_GPI_01.PG,IG=>,bEP:=TRUE);
 
     MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>,bEP:=TRUE);
+
+    TV3L0_GCC_01(PG:=TV3L0_GPI_01.PG,IG=>,bEP:=TRUE);
 
     ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>,bEP:=TRUE);
 
@@ -184,7 +188,7 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
-    TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+    TV3L0_PIP_01(i_stGauge:=TV3L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
     PA2L0_PIN_01(i_stGauge:=TV3L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 

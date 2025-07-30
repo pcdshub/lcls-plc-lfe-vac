@@ -531,6 +531,25 @@ VAR_GLOBAL
     '}
     TV3L0_PIP_01 : FB_PIP_Gamma;
 
+        {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[EXT_E2_EL3046]^AI Standard Channel 1^Value
+    '}
+    {attribute 'pytmc' := '
+        pv: TV3L0:GPI:01
+        io: io
+    '}
+    TV3L0_GPI_01 : FB_MKS317;
+
+
+    {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S21-1_EP1_EP3174-0002]^AI Standard Channel 2^Value;
+                                 .q_xHV_DIS		:= 	TIIB[FEE_L0S21-1_EP2_EP2624-0002]^Channel 2^Output
+    '}
+    {attribute 'pytmc' := '
+        pv: TV3L0:GCC:01
+        io: io
+    '}
+    TV3L0_GCC_01 : FB_MKS500;
+
+
     (*PA2L0*)
     {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E21_EL3064]^AI Standard Channel 4^Value;
                                  .i_xSP_DI		:= 	TIIB[QPC_E22_EL1004]^Channel 4^Input;
@@ -542,12 +561,11 @@ VAR_GLOBAL
     '}
     PA2L0_PIN_01 : FB_PIP_Gamma;
 
-    TV3L0_GPI_01 : FB_MKS275;
 
     (*TV3L0*)
-     {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S21_EP3_EP2338-0002]^Channel 1^Input;
-                                 .i_xClsLS	:=	TIIB[FEE_L0S21_EP3_EP2338-0002]^Channel 2^Input;
-                                 .q_xOPN_DO	:=	TIIB[FEE_L0S21_EP3_EP2338-0002]^Channel 11^Output
+     {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S21-1_EP3_EP2338-0002]^Channel 1^Input;
+                                 .i_xClsLS	:=	TIIB[FEE_L0S21-1_EP3_EP2338-0002]^Channel 2^Input;
+                                 .q_xOPN_DO	:=	TIIB[FEE_L0S21-1_EP3_EP2338-0002]^Channel 11^Output
     '}
     {attribute 'pytmc' := '
         pv: PA2L0:VGC:01
