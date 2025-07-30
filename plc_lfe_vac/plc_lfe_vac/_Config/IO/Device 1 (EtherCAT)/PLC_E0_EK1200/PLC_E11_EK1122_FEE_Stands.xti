@@ -19,8 +19,11 @@
 		<Box File="FEE_L0S21-1_EP2_EP2624-0002.xti" Id="83">
 			<EtherCAT PortABoxInfo="#x01000052"/>
 		</Box>
-		<Box File="FEE_L0S19_EP1_EP2338-0002.xti" Id="84">
+		<Box File="FEE_L0S21-1_EP3_EP2338-0002.xti" Id="221">
 			<EtherCAT PortABoxInfo="#x01000053"/>
+		</Box>
+		<Box File="FEE_L0S19_EP1_EP2338-0002.xti" Id="84">
+			<EtherCAT PortABoxInfo="#x010000dd"/>
 		</Box>
 		<Box File="FEE_L0S18_EP1_EP2338-0002.xti" Id="85">
 			<EtherCAT PortABoxInfo="#x01000054"/>

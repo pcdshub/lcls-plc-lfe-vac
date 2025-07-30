@@ -517,6 +517,43 @@ VAR_GLOBAL
         io: io
     '}
     TV3L0_VFS_01_Interface	:	FB_VFS_Interface;
+	
+	
+
+(*TV3L0*) //HXR INSTALLATION SECTION 11
+    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 1^Value;
+                                 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 1^Input;
+                                 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 1^Output
+    '}
+    {attribute 'pytmc' := '
+        pv: TV3L0:PIP:01
+        io: io
+    '}
+    TV3L0_PIP_01 : FB_PIP_Gamma;
+	
+	(*PA2L0*)
+    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E21_EL3064]^AI Standard Channel 4^Value;
+                                 .i_xSP_DI		:= 	TIIB[QPC_E22_EL1004]^Channel 4^Input;
+                                 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 4^Output
+    '}
+    {attribute 'pytmc' := '
+        pv: PA2L0:PIN:01
+        io: io
+    '}
+    PA2L0_PIN_01 : FB_PIP_Gamma;
+	
+	TV3L0_GPI_01 : FB_MKS275;
+	
+	(*TV3L0*)
+	 {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S21_EP3_EP2338-0002]^Channel 1^Input;
+                                 .i_xClsLS	:=	TIIB[FEE_L0S21_EP3_EP2338-0002]^Channel 2^Input;
+                                 .q_xOPN_DO	:=	TIIB[FEE_L0S21_EP3_EP2338-0002]^Channel 11^Output
+    '}
+    {attribute 'pytmc' := '
+        pv: PA2L0:VGC:01
+        io: io
+    '}
+    PA2L0_VGC_01 : FB_VGC;
 
 (*TV1L1*) //TXI Line Valve
     {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[FEE_L0S18_EP1_EP2338-0002]^Channel 5^Input;
@@ -529,17 +566,7 @@ VAR_GLOBAL
     '}
     TV1L1_VGC_01 : FB_VGC;
 
-(*TV3L0*) //HXR INSTALLATION SECTION 11
-    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E14_EL3064]^AI Standard Channel 1^Value;
-                                 .i_xSP_DI		:= 	TIIB[QPC_E15_EL1004]^Channel 1^Input;
-                                 .q_xHVEna_DO	:= 	TIIB[QPC_E16_EL2794]^Channel 1^Output
-    '}
-    {attribute 'pytmc' := '
-        pv: TV3L0:PIP:01
-        io: io
-    '}
-    TV3L0_PIP_01 : FB_PIP_Gamma;
-
+	
 (*ST1L0-XTES*)
     {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[FEE_L0S21-2_EP1_EP3174-0002]^AI Standard Channel 1^Value
     '}
@@ -644,17 +671,6 @@ VAR_GLOBAL
         io: io
     '}
     TV4L0_PIP_02 : FB_PIP_Gamma;
-
-(*PA2L0*)
-    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E21_EL3064]^AI Standard Channel 4^Value;
-                                 .i_xSP_DI		:= 	TIIB[QPC_E22_EL1004]^Channel 4^Input;
-                                 .q_xHVEna_DO	:= 	TIIB[QPC_E23_EL2794]^Channel 4^Output
-    '}
-    {attribute 'pytmc' := '
-        pv: PA2L0:PIN:01
-        io: io
-    '}
-    PA2L0_PIN_01 : FB_PIP_Gamma;
 
 
 //Hutch 1.2
