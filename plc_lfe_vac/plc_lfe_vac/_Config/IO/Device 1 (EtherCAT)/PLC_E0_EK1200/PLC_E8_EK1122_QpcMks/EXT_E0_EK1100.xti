@@ -10,7 +10,7 @@
 		<Box File="EXT_E1_EL3064.xti" Id="168">
 			<EtherCAT PortABoxInfo="#x010000a6"/>
 		</Box>
-		<Box File="EXT_E2_EL3046.xti" Id="169">
+		<Box File="EXT_E2_EL3064.xti" Id="169">
 			<EtherCAT PortABoxInfo="#x010000a8"/>
 		</Box>
 		<Box File="EXT_E3_EL2794.xti" Id="170">
