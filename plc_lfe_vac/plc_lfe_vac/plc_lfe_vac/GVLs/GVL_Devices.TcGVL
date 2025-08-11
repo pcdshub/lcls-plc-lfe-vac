@@ -531,7 +531,7 @@ VAR_GLOBAL
     '}
     TV3L0_PIP_01 : FB_PIP_Gamma;
 
-        {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[EXT_E2_EL3046]^AI Standard Channel 1^Value
+        {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[EXT_E2_EL3064]^AI Standard Channel 1^Value
     '}
     {attribute 'pytmc' := '
         pv: TV3L0:GPI:01
@@ -767,26 +767,27 @@ VAR_GLOBAL
     '}
     TV5L0_GFS_01 : FB_MKS422;
 
+(*TV6L0*)
     {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[H12_L0S3_EP2_EP3174-0002]^AI Standard Channel 4^Value;
                                  .q_xHV_DIS		:= 	TIIB[H12_L0S3_EP3_EP2624-0002]^Channel 4^Output
     '}
     {attribute 'pytmc' := '
-        pv: TV5L0:GCC:03
+        pv: TV6L0:GCC:01
         io: io
     '}
-    TV5L0_GCC_03 : FB_MKS500;
+    TV6L0_GCC_01 : FB_MKS500;
 
     {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[QPC_E4_EL3064]^AI Standard Channel 3^Value;
                                  .i_xSP_DI		:= 	TIIB[QPC_E5_EL1004]^Channel 3^Input;
                                  .q_xHVEna_DO	:= 	TIIB[QPC_E6_EL2794]^Channel 3^Output
     '}
     {attribute 'pytmc' := '
-        pv: TV5L0:PIP:03
+        pv: TV6L0:PIP:01
         io: io
     '}
-    TV5L0_PIP_03 : FB_PIP_Gamma;
+    TV6L0_PIP_01 : FB_PIP_Gamma;
 
-(*TV6L0*)
+
     {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 1^Input;
                                  .i_xClsLS	:=	TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 2^Input;
                                  .q_xOPN_DO	:=	TIIB[H12_L0S6_EP1_EP2338-0002]^Channel 11^Output
