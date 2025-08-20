@@ -1,0 +1,21 @@
+
+Pragmas
+-------
+
+.. csv-table::
+    :header: PLC Name, Total Pragmas, Errors
+    :align: center
+
+    :ref:`plc_lfe_vac <plc_lfe_vac_overview_pragmas>`, 205, 0
+
+
+.. _plc_lfe_vac_overview_pragmas:
+
+
+plc_lfe_vac
+^^^^^^^^^^^
+
+Total pragmas found: 205
+Total linter errors: 0
+
+

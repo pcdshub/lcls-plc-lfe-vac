@@ -1,0 +1,30 @@
+plc_lfe_vac
+-----------
+
+.. toctree::
+    :maxdepth: 2
+    :caption: plc_lfe_vac
+
+    plc_lfe_vac_pragmas
+    plc_lfe_vac_nc
+    plc_lfe_vac_ethercat
+    plc_lfe_vac_boxes
+    plc_lfe_vac_links
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: plc_lfe_vac
+
+    plc_lfe_vac_plc_lfe_vac_summary
+    plc_lfe_vac_plc_lfe_vac_epics
+    plc_lfe_vac_plc_lfe_vac_source
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
