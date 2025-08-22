@@ -866,6 +866,12 @@ VAR_GLOBAL
     '}
     TV8L0_VGC_01 : FB_VGC;
 
+    {attribute 'pytmc' :=' pv: TV8L0:UM6:GCC:01 '}
+    {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[XRT_EP3174_00_02]^AI Standard Channel 1^Value;
+                                  .q_xHV_DIS		:= 	TIIB[XRT_EP2624_00_01]^Channel 1^Output	'}
+    TV8L0_UM6_GCC_01 : FB_MX7M;
+
+
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

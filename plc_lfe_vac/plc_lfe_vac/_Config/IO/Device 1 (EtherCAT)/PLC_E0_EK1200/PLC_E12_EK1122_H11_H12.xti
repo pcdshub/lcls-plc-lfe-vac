@@ -43,5 +43,11 @@
 		<Box File="B950-101W-R03-DRL-01 (EK1100).xti" Id="239">
 			<EtherCAT PortABoxInfo="#x010000d3"/>
 		</Box>
+		<Box File="XRT_EP2624_00_01.xti" Id="265">
+			<EtherCAT PortABoxInfo="#x020000ef"/>
+		</Box>
+		<Box File="XRT_EP3174_00_02.xti" Id="266">
+			<EtherCAT PortABoxInfo="#x01000109"/>
+		</Box>
 	</Box>
 </TcSmItem>
