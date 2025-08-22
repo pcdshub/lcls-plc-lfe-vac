@@ -93,6 +93,8 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     MR2L0_HOMS_GPI_01(PG=>);
 
+    TV3L0_GPI_01(PG=>);
+
     ST1L0_XTES_GPI_01(PG=>);
 
     //H1.1 and H1.2
@@ -131,6 +133,8 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     MR2L0_HOMS_GCC_01(PG:=MR2L0_HOMS_GPI_01.PG,IG=>,bEP:=TRUE);
 
+    TV3L0_GCC_01(PG:=TV3L0_GPI_01.PG,IG=>,bEP:=TRUE);
+
     ST1L0_XTES_GCC_01(PG:=ST1L0_XTES_GPI_01.PG,IG=>,bEP:=TRUE);
 
     //H1.1 and H1.2
@@ -144,7 +148,7 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     TV5L0_GFS_01(PG:=TV5L0_GPI_02.PG,IG=>);
 
-    TV5L0_GCC_03(PG:=TV5L0_GPI_02.PG,IG=>,bEP:=TRUE);
+    TV6L0_GCC_01(PG:=SP1L2_LODCM_GPI_01.PG,IG=>,bEP:=TRUE);
 
 
 
@@ -184,7 +188,9 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     MR2L0_HOMS_PIP_01(i_stGauge:=MR2L0_HOMS_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
-    TV3L0_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+    TV3L0_PIP_01(i_stGauge:=TV3L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
+
+    PA2L0_PIN_01(i_stGauge:=TV3L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
     ST1L0_XTES_PIP_01(i_stGauge:=ST1L0_XTES_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_FEE, stPump=>);
 
@@ -192,15 +198,13 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
     //H1.1 and H1.2
     TV4L0_PIP_01(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
-    TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
-
-    PA2L0_PIN_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+    TV4L0_PIP_02(i_stGauge:=TV4L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
     TV5L0_PIP_01(i_stGauge:=TV5L0_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
     TV5L0_PIP_02(i_stGauge:=TV5L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
-    TV5L0_PIP_03(i_stGauge:=TV5L0_GPI_02.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
+    TV6L0_PIP_01(i_stGauge:=SP1L2_LODCM_GPI_01.PG, i_xOverrideMode:=xSystemOverrideMode_H1_1_H1_2, stPump=>);
 
 (*Vacuum Gate Valve*)
     TV1L0_VGC_01(
@@ -327,7 +331,7 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
 
     MR2L0_HOMS_VGC_02(
     i_stUSG:= MR2L0_HOMS_PIP_01.q_IG,
-    i_stDSG:= ST1L0_XTES_PIP_01.q_IG,
+    i_stDSG:= TV3L0_PIP_01.q_IG,
     i_xDis_DPIlk:= FALSE ,
     i_xEPS_OK:= TRUE,
     i_xPMPS_OK:= TRUE,
@@ -335,6 +339,21 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
     i_xOverrideMode:= xSystemOverrideMode_FEE,
     i_xReset:= xReset_PMPS_FFO1,
     i_sDevName:= 'MR2L0:HOMS:VGC:02',
+    iq_stValve=> ,
+    xMPS_OK=> ,
+    io_fbFFHWO:= g_FastFaultOutput1,
+    fbArbiter:= g_fbArbiter1 );
+
+    PA2L0_VGC_01(
+    i_stUSG:= PA2L0_PIN_01.q_IG ,
+    i_stDSG:= ST1L0_XTES_PIP_01.q_IG,
+    i_xDis_DPIlk:= FALSE ,
+    i_xEPS_OK:= TRUE,
+    i_xPMPS_OK:= TRUE,
+    i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK,
+    i_xOverrideMode:= xSystemOverrideMode_FEE,
+    i_xReset:= xReset_PMPS_FFO1,
+    i_sDevName:= 'TV3L0:VGC:01',
     iq_stValve=> ,
     xMPS_OK=> ,
     io_fbFFHWO:= g_FastFaultOutput1,
@@ -379,7 +398,7 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
     i_xDis_DPIlk:= FALSE ,
     i_xEPS_OK:= TRUE,
     i_xPMPS_OK:= TRUE,
-    i_xExt_OK:= TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK,
+    i_xExt_OK:= TRUE,
     i_xOverrideMode:= xSystemOverrideMode_H1_1_H1_2,
     i_xReset:= xReset_PMPS_FFO2,
     i_sDevName:= 'TV4L0:VGC:01',
@@ -404,8 +423,8 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
    fbArbiter:= g_fbArbiter1 );
 
     TV6L0_VGC_01(
-    i_stUSG:= TV5L0_PIP_03.q_IG,
-    i_stDSG:= SP1L2_LODCM_GCC_01.IG,
+    i_stUSG:= TV5L0_PIP_02.q_IG,
+    i_stDSG:=TV6L0_PIP_01.q_IG,
     i_xDis_DPIlk:= FALSE ,
     i_xEPS_OK:= TRUE,
     i_xPMPS_OK:= TRUE,
@@ -439,11 +458,11 @@ SP1L2_LODCM_GCC_01(PG:=SP1L2_LODCM_GPI_01.PG);
 TV8L0_GPI_01();
 TV8L0_GCC_01(PG:= TV8L0_GPI_01.PG);
 
-TV7L0_PIP_01(i_stGauge:= SP1L2_LODCM_GCC_01.IG);
-TV8L0_PIP_01(i_stGauge:= TV8L0_GCC_01.IG);
+TV7L0_PIP_01(i_stGauge:= SP1L2_LODCM_GPI_01.PG);
+TV8L0_PIP_01(i_stGauge:= TV8L0_GPI_01.PG);
 
 TV8L0_VGC_01(
-    i_stUSG:= TV8L0_PIP_01.q_IG,
+    i_stUSG:= SP1L2_LODCM_GCC_01.IG,
     i_stDSG:= XRT_DS_Gauge,
     i_xDis_DPIlk:= FALSE ,
     i_xEPS_OK:= TRUE,
