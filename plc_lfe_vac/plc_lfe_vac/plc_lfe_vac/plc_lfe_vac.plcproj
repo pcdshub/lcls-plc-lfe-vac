@@ -126,7 +126,7 @@
       <Resolution>LCLS General, 2.6.0 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="LCLS Vacuum">
-      <Resolution>LCLS Vacuum, 2.3.0 (SLAC - LCLS)</Resolution>
+      <Resolution>LCLS Vacuum, 2.4.5 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
       <Resolution>PMPS, 3.2.0 (SLAC - LCLS)</Resolution>
