@@ -465,7 +465,7 @@ TV8L0_PIP_01(i_stGauge:= TV8L0_GPI_01.PG);
   no Pirani gauge available, interlock using itself, bypass to turn on when first start *)
 
 TV8L0_UM6_GCC_01.M_SetBits(TermBits:=32767); //set bit ranage for EP3174-0002
-TV8L0_UM6_GCC_01(PG:=TV8L0_UM6_GCC_01.IG,IG=>);
+TV8L0_UM6_GCC_01(PG:=XRT_DS_Gauge,IG=>);
 
 TV8L0_VGC_01(
     i_stUSG:= SP1L2_LODCM_GCC_01.IG,
