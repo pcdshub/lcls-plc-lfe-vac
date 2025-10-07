@@ -730,10 +730,6 @@
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 						</Var>
 						<Var>
-							<Name>GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>GVL_Devices.TV1L0_VGC_01.i_xOpnLS</Name>
 							<Comment>
 								<![CDATA[IO]]>
@@ -1671,6 +1667,17 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.TV8L0_UM6_GCC_01.i_iPRESS_R</Name>
+							<Comment>
+								<![CDATA[Pressure reading // 'TcLinkTo' (EL3174-0002 or EP3174-0002)^Input]]>
+							</Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_PLC_Interfaces.i_xUpstreamTreaty_PressOK</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_PLC_Interfaces.PC2L1_L2SI_PIP_01.i_rPRESS</Name>
 							<Type>REAL</Type>
 						</Var>
@@ -2277,6 +2284,13 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Devices.TV8L0_UM6_GCC_01.q_xHV_DIS</Name>
+							<Comment>
+								<![CDATA[Enable High Voltage when True // 'TcLinkTo' (EL2624 or EP2624-0002)^Output]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut</Name>
 							<Type>BOOL</Type>
 						</Var>
@@ -2622,6 +2636,12 @@
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV6L0_VGC_01.i_xOpnLS" VarB="Channel 1^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV6L0_VGC_01.q_xOPN_DO" VarB="Channel 11^Output" AutoLink="true"/>
 			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^XRT_EP2624_00_01">
+				<Link VarA="PlcTask Outputs^GVL_Devices.TV8L0_UM6_GCC_01.q_xHV_DIS" VarB="Channel 1^Output" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E12_EK1122_H11_H12^XRT_EP3174_00_02">
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV8L0_UM6_GCC_01.i_iPRESS_R" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^PLC_E0_EK1200^PLC_E1_EL2202">
 				<Link VarA="PlcTask Outputs^GVL_LFE_VAC_PMPS.g_FastFaultOutput1.q_xFastFaultOut" VarB="Channel 1^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_LFE_VAC_PMPS.g_FastFaultOutput2.q_xFastFaultOut" VarB="Channel 2^Output" AutoLink="true"/>
@@ -2856,18 +2876,18 @@
 				<Link VarA="PlcTask Outputs^PRG_PMPS.fbArbiterIO.q_stRequestedBP" VarB="IO Outputs^RequestedBP" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIPC^plc_lfe_vac^plc_lfe_vac Instance">
+				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOPN_SW" AutoLink="true"/>
+				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideOpen" AutoLink="true"/>
+				<Link VarA="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset" VarB="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" AutoLink="true"/>
 				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_eVFS_State" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_eVFS_State" AutoLink="true"/>
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK" AutoLink="true"/>
-				<Link VarA="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open" VarB="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xMPS_OK" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xMPS_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xTrigger" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xTrigger" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVAC_FAULT_OK" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Closed" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_Devices.TV3L0_VFS_01_Interface.i_xVFS_Open" VarB="FSV_Task Outputs^GVL_FS_Devices.TV3L0_VFS_01.q_xVFS_Open" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xCLS_SW" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xCLS_SW" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOPN_SW" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOPN_SW" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideMode" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideMode" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xOverrideOpen" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xOverrideOpen" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xPRESS_OK" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xPress_OK" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_Devices.TV3L0_VFS_01_Interface.q_xVAC_FAULT_Reset" VarB="FSV_Task Inputs^GVL_FS_Devices.TV3L0_VFS_01.i_xVAC_FAULT_Reset" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
