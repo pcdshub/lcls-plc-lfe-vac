@@ -6,7 +6,7 @@ Pragmas
     :header: PLC Name, Total Pragmas, Errors
     :align: center
 
-    :ref:`plc_lfe_vac <plc_lfe_vac_overview_pragmas>`, 201, 0
+    :ref:`plc_lfe_vac <plc_lfe_vac_overview_pragmas>`, 203, 0
 
 
 .. _plc_lfe_vac_overview_pragmas:
@@ -15,7 +15,7 @@ Pragmas
 plc_lfe_vac
 ^^^^^^^^^^^
 
-Total pragmas found: 201
+Total pragmas found: 203
 Total linter errors: 0
 
 
