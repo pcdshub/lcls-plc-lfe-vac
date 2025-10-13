@@ -310,7 +310,7 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
     i_sDevName:= 'BT2L0:PLEG:VGC:01',
     iq_stValve=> ,
     xMPS_OK=> ,
-    io_fbFFHWO:= g_FastFaultOutput4, // TODO(josh): ask maggie if this is sufficient because we have connected the FF
+    io_fbFFHWO:= g_FastFaultOutput1,
     fbArbiter:= g_fbArbiter1 );
 
     MR2L0_HOMS_VGC_01(
@@ -387,7 +387,7 @@ XRT_DS_Gauge.sPath := 'XRT UM6 GCC 01';
     i_sDevName:= 'PC2L1:L2SI:VGC:01',
     iq_stValve=> ,
     xMPS_OK=> ,
-    io_fbFFHWO:= g_FastFaultOutput1,
+    io_fbFFHWO:= g_FastFaultOutput4,
     fbArbiter := g_fbArbiter1 );
 
     //H1.1
