@@ -1,0 +1,3217 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EtherCAT Terminals &mdash; pcdshub/lcls-plc-lfe-vac  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/tree.css?v=837a00b9" />
+      <link rel="stylesheet" type="text/css" href="_static/width.css?v=ab210c7a" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/docs-versions-menu.js?v=3d6a1aea"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Boxes" href="plc_lfe_vac_boxes.html" />
+    <link rel="prev" title="NC Settings" href="plc_lfe_vac_nc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pcdshub/lcls-plc-lfe-vac
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">plc_lfe_vac</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_pragmas.html">Pragmas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_nc.html">NC Settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EtherCAT Terminals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_boxes.html">Boxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_links.html">Links</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">plc_lfe_vac</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_summary.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_summary.html#pragmas">Pragmas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_summary.html#libraries">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_summary.html#symbols">Symbols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_epics.html#database-records">Database Records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html">DUTs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#gvls">GVLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc_lfe_vac_plc_lfe_vac_source.html#pous">POUs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pcdshub/lcls-plc-lfe-vac</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">EtherCAT Terminals</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/plc_lfe_vac_ethercat.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ethercat-terminals">
+<h1>EtherCAT Terminals<a class="headerlink" href="#ethercat-terminals" title="Link to this heading"></a></h1>
+  <ul class="tree">
+
+
+
+    <li>
+  <details open>
+    <summary>
+          <table width="100%">
+    <tr>
+      <td width="10%">
+        ID=1:
+      </td>
+      <td width="75%">PLC_E0_EK1200
+      </td>
+      <td>        </td>
+    </tr>
+    <tr>
+      <td>
+                </td>
+      <td colspan="2">
+        EK1200-5000 EtherCAT Power supply (2A E-Bus)
+      </td>
+    </tr>
+  </table>
+    </summary>
+    <ul>
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=3:
+                </td>
+                <td width="75%">PLC_E1_EL2202
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL2202 2Ch. Dig. Output 24V, 0.5A
+                </td>
+              </tr>
+            </table>
+          </li>
+
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=112:
+                </td>
+                <td width="75%">PLC_E2_EL2202
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL2202 2Ch. Dig. Output 24V, 0.5A
+                </td>
+              </tr>
+            </table>
+          </li>
+
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=2:
+                </td>
+                <td width="75%">PLC_E3_EL6070
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL6070 1Ch. Licensing-Terminal
+                </td>
+              </tr>
+            </table>
+          </li>
+
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=104:
+                </td>
+                <td width="75%">PMPS_PRE
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL6695 EtherCAT Bridge terminal (Primary)
+                </td>
+              </tr>
+            </table>
+          </li>
+
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=5:
+                </td>
+                <td width="75%">PLC_E6_EL6692
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL6692 EtherCAT Bridge terminal (Primary)
+                </td>
+              </tr>
+            </table>
+          </li>
+
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=6:
+                </td>
+                <td width="75%">PLC_E7_EL9410
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL9410 E-Bus Power Supplier  (Diagnostics)
+                </td>
+              </tr>
+            </table>
+          </li>
+
+
+          <li>
+            <details open>
+              <summary>
+                    <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=7:
+                </td>
+                <td width="75%">PLC_E8_EK1122_QpcMks
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EK1122 2 port EtherCAT junction
+                </td>
+              </tr>
+            </table>
+              </summary>
+              <ul>
+
+                    <li>
+                      <details open>
+                        <summary>
+                              <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=8:
+                          </td>
+                          <td width="75%">QPC_E0_EK1100
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EK1100 EtherCAT Coupler (2A E-Bus)
+                          </td>
+                        </tr>
+                      </table>
+                        </summary>
+                        <ul>
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=9:
+                                    </td>
+                                    <td width="75%">QPC_E1_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=10:
+                                    </td>
+                                    <td width="75%">QPC_E2_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=11:
+                                    </td>
+                                    <td width="75%">QPC_E3_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=12:
+                                    </td>
+                                    <td width="75%">QPC_E4_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=13:
+                                    </td>
+                                    <td width="75%">QPC_E5_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=14:
+                                    </td>
+                                    <td width="75%">QPC_E6_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=15:
+                                    </td>
+                                    <td width="75%">QPC_E7_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=16:
+                                    </td>
+                                    <td width="75%">QPC_E8_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=17:
+                                    </td>
+                                    <td width="75%">QPC_E9_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=18:
+                                    </td>
+                                    <td width="75%">QPC_E10_EL9410
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9410 E-Bus Power Supplier  (Diagnostics)
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=19:
+                                    </td>
+                                    <td width="75%">QPC_E11_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=20:
+                                    </td>
+                                    <td width="75%">QPC_E12_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=21:
+                                    </td>
+                                    <td width="75%">QPC_E13_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=22:
+                                    </td>
+                                    <td width="75%">QPC_E14_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=23:
+                                    </td>
+                                    <td width="75%">QPC_E15_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=24:
+                                    </td>
+                                    <td width="75%">QPC_E16_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=25:
+                                    </td>
+                                    <td width="75%">QPC_E17_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=26:
+                                    </td>
+                                    <td width="75%">QPC_E18_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=27:
+                                    </td>
+                                    <td width="75%">QPC_E19_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=28:
+                                    </td>
+                                    <td width="75%">QPC_E20_EL9410
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9410 E-Bus Power Supplier  (Diagnostics)
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=29:
+                                    </td>
+                                    <td width="75%">QPC_E21_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=30:
+                                    </td>
+                                    <td width="75%">QPC_E22_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=31:
+                                    </td>
+                                    <td width="75%">QPC_E23_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=32:
+                                    </td>
+                                    <td width="75%">QPC_E24_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=33:
+                                    </td>
+                                    <td width="75%">QPC_E25_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=34:
+                                    </td>
+                                    <td width="75%">QPC_E26_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=98:
+                                    </td>
+                                    <td width="75%">QPC_END_EL9011
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9011 End Terminal
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+                        </ul>
+                      </details>
+                    </li>
+
+
+                    <li>
+                      <details open>
+                        <summary>
+                              <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=35:
+                          </td>
+                          <td width="75%">MKS_E0_EK1100
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EK1100 EtherCAT Coupler (2A E-Bus)
+                          </td>
+                        </tr>
+                      </table>
+                        </summary>
+                        <ul>
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=36:
+                                    </td>
+                                    <td width="75%">MKS_E1_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=37:
+                                    </td>
+                                    <td width="75%">MKS_E2_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=38:
+                                    </td>
+                                    <td width="75%">MKS_E3_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=39:
+                                    </td>
+                                    <td width="75%">MKS_E4_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=40:
+                                    </td>
+                                    <td width="75%">MKS_E5_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=41:
+                                    </td>
+                                    <td width="75%">MKS_E6_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=42:
+                                    </td>
+                                    <td width="75%">MKS_E7_EL9410
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9410 E-Bus Power Supplier  (Diagnostics)
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=43:
+                                    </td>
+                                    <td width="75%">MKS_E8_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=44:
+                                    </td>
+                                    <td width="75%">MKS_E9_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=45:
+                                    </td>
+                                    <td width="75%">MKS_E10_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=46:
+                                    </td>
+                                    <td width="75%">MKS_E11_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=47:
+                                    </td>
+                                    <td width="75%">MKS_E12_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=48:
+                                    </td>
+                                    <td width="75%">MKS_E13_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=49:
+                                    </td>
+                                    <td width="75%">MKS_E14_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=50:
+                                    </td>
+                                    <td width="75%">MKS_E15_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=51:
+                                    </td>
+                                    <td width="75%">MKS_E16_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=52:
+                                    </td>
+                                    <td width="75%">MKS_E17_EL9410
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9410 E-Bus Power Supplier  (Diagnostics)
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=53:
+                                    </td>
+                                    <td width="75%">MKS_E18_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=54:
+                                    </td>
+                                    <td width="75%">MKS_E19_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=55:
+                                    </td>
+                                    <td width="75%">MKS_E20_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=56:
+                                    </td>
+                                    <td width="75%">MKS_E21_EL9505
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9505 Netzteilklemme 5V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=57:
+                                    </td>
+                                    <td width="75%">MKS_E22_EL1124
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=99:
+                                    </td>
+                                    <td width="75%">MKS_END_EL9011
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9011 End Terminal
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+                        </ul>
+                      </details>
+                    </li>
+
+
+                    <li>
+                      <details open>
+                        <summary>
+                              <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=166:
+                          </td>
+                          <td width="75%">EXT_E0_EK1100
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EK1100 EtherCAT Coupler (2A E-Bus)
+                          </td>
+                        </tr>
+                      </table>
+                        </summary>
+                        <ul>
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=168:
+                                    </td>
+                                    <td width="75%">EXT_E1_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=169:
+                                    </td>
+                                    <td width="75%">EXT_E2_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=170:
+                                    </td>
+                                    <td width="75%">EXT_E3_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=171:
+                                    </td>
+                                    <td width="75%">EXT_E4_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=172:
+                                    </td>
+                                    <td width="75%">EXT_E5_EL3064
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=173:
+                                    </td>
+                                    <td width="75%">EXT_E6_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=174:
+                                    </td>
+                                    <td width="75%">EXT_E7_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=175:
+                                    </td>
+                                    <td width="75%">EXT_E8_EL9505
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9505 Power supply terminal 5V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=176:
+                                    </td>
+                                    <td width="75%">EXT_E9_EL1124
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=177:
+                                    </td>
+                                    <td width="75%">EXT_E10_EL3174
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3174-0002 4Ch. Ana. Input +/-10V, +/-20mA 16 Bit, Isolated Channels
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=178:
+                                    </td>
+                                    <td width="75%">EXT_E12_EK1122
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EK1122-0080 2 port EtherCAT junction (Fast Hot Connect)
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=250:
+                                    </td>
+                                    <td width="75%">EXT_E13_EL9011
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9011 End Terminal
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+                        </ul>
+                      </details>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=167:
+                          </td>
+                          <td width="75%">TXI_HXR_VAC_PLC (EL6692)
+                          </td>
+                          <td>            <b>
+                                SyncUnit plc_txi_hxr_vac
+                              </b>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EL6692 EtherCAT Bridge terminal (Secondary)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=58:
+                          </td>
+                          <td width="75%">Term 58 (EK0000)
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+              </ul>
+            </details>
+          </li>
+
+
+          <li>
+            <details open>
+              <summary>
+                    <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=59:
+                </td>
+                <td width="75%">PLC_E9_EK1122_EBD
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EK1122 2 port EtherCAT junction
+                </td>
+              </tr>
+            </table>
+              </summary>
+              <ul>
+
+                    <li>
+                      <details open>
+                        <summary>
+                              <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=60:
+                          </td>
+                          <td width="75%">EBD_E0_EK1100
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EK1100 EtherCAT Coupler (2A E-Bus)
+                          </td>
+                        </tr>
+                      </table>
+                        </summary>
+                        <ul>
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=61:
+                                    </td>
+                                    <td width="75%">EBD_E1_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=62:
+                                    </td>
+                                    <td width="75%">EBD_E2_EL2004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2004 4Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=63:
+                                    </td>
+                                    <td width="75%">EBD_E3_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=64:
+                                    </td>
+                                    <td width="75%">EBD_E4_EL2004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2004 4Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=65:
+                                    </td>
+                                    <td width="75%">EBD_E5_EL1008
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1008 8Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=107:
+                                    </td>
+                                    <td width="75%">EBD_E6_EL9184
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9184 Potential Connection, 8 x 24V, 8 x Ground
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=66:
+                                    </td>
+                                    <td width="75%">EBD_E7_EL2008
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2008 8Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=67:
+                                    </td>
+                                    <td width="75%">EBD_E8_EL2794
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=68:
+                                    </td>
+                                    <td width="75%">EBD_E9_EK1110
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EK1110 EtherCAT extension
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+                        </ul>
+                      </details>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=69:
+                          </td>
+                          <td width="75%">Term 69 (EK0000)
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+              </ul>
+            </details>
+          </li>
+
+
+          <li>
+            <details open>
+              <summary>
+                    <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=70:
+                </td>
+                <td width="75%">PLC_E10_EK1122_FSV
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EK1122 2 port EtherCAT junction
+                </td>
+              </tr>
+            </table>
+              </summary>
+              <ul>
+
+                    <li>
+                      <details open>
+                        <summary>
+                              <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=71:
+                          </td>
+                          <td width="75%">FSV1_E0_EK1100_L0S10
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                        <b>
+                                Disabled
+                              </b>        </td>
+                          <td colspan="2">
+                            EK1100 EtherCAT Coupler (2A E-Bus)
+                          </td>
+                        </tr>
+                      </table>
+                        </summary>
+                        <ul>
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=72:
+                                    </td>
+                                    <td width="75%">FSV1_E1_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=108:
+                                    </td>
+                                    <td width="75%">FSV1_E2_EL9190
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9190 Power Supplier
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=77:
+                                    </td>
+                                    <td width="75%">FSV1_E3_EL2202
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2202 2Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=78:
+                                    </td>
+                                    <td width="75%">FSV1_E4_EL2202
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2202 2Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=100:
+                                    </td>
+                                    <td width="75%">FSV1_END_EL9011
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9011 End Terminal
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+                        </ul>
+                      </details>
+                    </li>
+
+
+                    <li>
+                      <details open>
+                        <summary>
+                              <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=75:
+                          </td>
+                          <td width="75%">FSV2_E0_EK1100_L0S19
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EK1100 EtherCAT Coupler (2A E-Bus)
+                          </td>
+                        </tr>
+                      </table>
+                        </summary>
+                        <ul>
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=76:
+                                    </td>
+                                    <td width="75%">FSV2_E1_EL1004
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=109:
+                                    </td>
+                                    <td width="75%">FSV2_E2_EL9190
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9190 Power Supplier
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=184:
+                                    </td>
+                                    <td width="75%">FSV2_E3_EL2202
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2202 2Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=185:
+                                    </td>
+                                    <td width="75%">FSV2_E4_EL2202
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2202 2Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=101:
+                                    </td>
+                                    <td width="75%">FSV2_END_EL9011
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9011 End Terminal
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+                        </ul>
+                      </details>
+                    </li>
+
+              </ul>
+            </details>
+          </li>
+
+
+          <li>
+            <details open>
+              <summary>
+                    <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=79:
+                </td>
+                <td width="75%">PLC_E11_EK1122_FEE_Stands
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EK1122 2 port EtherCAT junction
+                </td>
+              </tr>
+            </table>
+              </summary>
+              <ul>
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=80:
+                          </td>
+                          <td width="75%">FEE_L0S21-2_EP1_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=81:
+                          </td>
+                          <td width="75%">FEE_L0S21-2_EP2_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=82:
+                          </td>
+                          <td width="75%">FEE_L0S21-1_EP1_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=83:
+                          </td>
+                          <td width="75%">FEE_L0S21-1_EP2_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=221:
+                          </td>
+                          <td width="75%">FEE_L0S21-1_EP3_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=84:
+                          </td>
+                          <td width="75%">FEE_L0S19_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=85:
+                          </td>
+                          <td width="75%">FEE_L0S18_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=86:
+                          </td>
+                          <td width="75%">FEE_L0S18_EP2_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=87:
+                          </td>
+                          <td width="75%">FEE_L0S18_EP3_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=88:
+                          </td>
+                          <td width="75%">FEE_L0S14_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=89:
+                          </td>
+                          <td width="75%">FEE_L0S14_EP2_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=90:
+                          </td>
+                          <td width="75%">FEE_L0S14_EP3_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=91:
+                          </td>
+                          <td width="75%">FEE_L0S10_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=94:
+                          </td>
+                          <td width="75%">FEE_L0S8_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=95:
+                          </td>
+                          <td width="75%">FEE_L0S2_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=96:
+                          </td>
+                          <td width="75%">Term 96 (EK0000)
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+              </ul>
+            </details>
+          </li>
+
+
+          <li>
+            <details open>
+              <summary>
+                    <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=97:
+                </td>
+                <td width="75%">PLC_E12_EK1122_H11_H12
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EK1122 2 port EtherCAT junction
+                </td>
+              </tr>
+            </table>
+              </summary>
+              <ul>
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=201:
+                          </td>
+                          <td width="75%">H11_L0S2_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=202:
+                          </td>
+                          <td width="75%">H11_L0S2_EP2_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=203:
+                          </td>
+                          <td width="75%">H11_L0S2_EP3_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=204:
+                          </td>
+                          <td width="75%">H11_L0S9_EP1_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=205:
+                          </td>
+                          <td width="75%">H11_L0S9_EP2_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=206:
+                          </td>
+                          <td width="75%">H12_L0S1_EP1_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=207:
+                          </td>
+                          <td width="75%">H12_L0S1_EP2_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=208:
+                          </td>
+                          <td width="75%">H12_L0S3_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=209:
+                          </td>
+                          <td width="75%">H12_L0S3_EP2_EP3174-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=210:
+                          </td>
+                          <td width="75%">H12_L0S3_EP3_EP2624-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=211:
+                          </td>
+                          <td width="75%">H12_L0S6_EP1_EP2338-0002
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2338-0002 8 Ch. Dig. Input/Output 24V, 0,5A, M12
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                      <details open>
+                        <summary>
+                              <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=239:
+                          </td>
+                          <td width="75%">B950-101W-R03-DRL-01 (EK1100)
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EK1100 EtherCAT Coupler (2A E-Bus)
+                          </td>
+                        </tr>
+                      </table>
+                        </summary>
+                        <ul>
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=240:
+                                    </td>
+                                    <td width="75%">XPP_EL2794_00_01
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=241:
+                                    </td>
+                                    <td width="75%">XPP_EL3064_00_02
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=242:
+                                    </td>
+                                    <td width="75%">XPP_EL1004_00_03
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=243:
+                                    </td>
+                                    <td width="75%">XPP_EL3064_00_04
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=244:
+                                    </td>
+                                    <td width="75%">XPP_EL3064_00_05
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL3064 4Ch. Ana. Input 0-10V
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=245:
+                                    </td>
+                                    <td width="75%">XPP_EL2794_00_06
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=246:
+                                    </td>
+                                    <td width="75%">XPP_EL1004_00_07
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL1004 4Ch. Dig. Input 24V, 3ms
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=247:
+                                    </td>
+                                    <td width="75%">XPP_EL2004_00_08
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL2004 4Ch. Dig. Output 24V, 0.5A
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+
+                              <li>
+                                    <table width="100%">
+                                  <tr>
+                                    <td width="10%">
+                                      ID=268:
+                                    </td>
+                                    <td width="75%">Term 268 (EL9011)
+                                    </td>
+                                    <td>        </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                              </td>
+                                    <td colspan="2">
+                                      EL9011 End Terminal
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+
+                        </ul>
+                      </details>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=265:
+                          </td>
+                          <td width="75%">XRT_EP2624_00_01
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+
+                    <li>
+                          <table width="100%">
+                        <tr>
+                          <td width="10%">
+                            ID=266:
+                          </td>
+                          <td width="75%">XRT_EP3174_00_02
+                          </td>
+                          <td>        </td>
+                        </tr>
+                        <tr>
+                          <td>
+                                    </td>
+                          <td colspan="2">
+                            EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+              </ul>
+            </details>
+          </li>
+
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=269:
+                </td>
+                <td width="75%">Term 269 (EL9010)
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL9010 End Terminal
+                </td>
+              </tr>
+            </table>
+          </li>
+
+
+          <li>
+                <table width="100%">
+              <tr>
+                <td width="10%">
+                  ID=103:
+                </td>
+                <td width="75%">Term 103 (EL9010)
+                </td>
+                <td>        </td>
+              </tr>
+              <tr>
+                <td>
+                          </td>
+                <td colspan="2">
+                  EL9010 End Terminal
+                </td>
+              </tr>
+            </table>
+          </li>
+
+    </ul>
+  </details>
+</li>
+
+
+  </ul></section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="plc_lfe_vac_nc.html" class="btn btn-neutral float-left" title="NC Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="plc_lfe_vac_boxes.html" class="btn btn-neutral float-right" title="Boxes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, SLAC National Accelerator Laboratory.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
